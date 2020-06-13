@@ -6,17 +6,7 @@
 
 #IncludeRegexTransform: 
 
-../include/base.h
-cstdlib
--
-iostream
--
-vector
--
-gsl/gsl_statistics_double.h
--
-
-../include/normal.h
+../include/binomial.h
 cmath
 -
 ctime
@@ -34,23 +24,9 @@ gsl/gsl_randist.h
 gsl/gsl_cdf.h
 -
 
-/home/a008/coding/c++/MiniR/src/base.cpp
-base.h
-/home/a008/coding/c++/MiniR/src/base.h
-
-/home/a008/coding/c++/MiniR/src/main.cpp
-ctime
--
-iostream
--
-iomanip
--
-numeric
--
-normal.h
-/home/a008/coding/c++/MiniR/src/normal.h
-base.h
-/home/a008/coding/c++/MiniR/src/base.h
+/home/a008/coding/c++/MiniR/src/binomial.cpp
+binomial.h
+/home/a008/coding/c++/MiniR/src/binomial.h
 
 /usr/local/include/gsl/gsl_blas_types.h
 gsl/gsl_cblas.h
@@ -434,12 +410,6 @@ gsl/gsl_types.h
 gsl/gsl_errno.h
 -
 gsl/gsl_inline.h
--
-
-/usr/local/include/gsl/gsl_statistics_double.h
-stddef.h
--
-stdlib.h
 -
 
 /usr/local/include/gsl/gsl_types.h

@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/stat.dir/base.cpp.o CMakeFiles/stat.dir/main.cpp.o CMakeFiles/stat.dir/normal.cpp.o  -o ../../bin/stat   -L/usr/local/lib  -Wl,-rpath,/usr/local/lib -lgsl -lgslcblas -lm 
+/usr/bin/c++     CMakeFiles/stat.dir/base.cpp.o CMakeFiles/stat.dir/binomial.cpp.o CMakeFiles/stat.dir/main.cpp.o CMakeFiles/stat.dir/normal.cpp.o  -o ../../bin/stat   -L/usr/local/lib  -Wl,-rpath,/usr/local/lib -lgsl -lgslcblas -lm 

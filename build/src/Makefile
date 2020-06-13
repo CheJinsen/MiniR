@@ -172,6 +172,33 @@ base.cpp.s:
 	cd /home/a008/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/base.cpp.s
 .PHONY : base.cpp.s
 
+binomial.o: binomial.cpp.o
+
+.PHONY : binomial.o
+
+# target to build an object file
+binomial.cpp.o:
+	cd /home/a008/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/binomial.cpp.o
+.PHONY : binomial.cpp.o
+
+binomial.i: binomial.cpp.i
+
+.PHONY : binomial.i
+
+# target to preprocess a source file
+binomial.cpp.i:
+	cd /home/a008/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/binomial.cpp.i
+.PHONY : binomial.cpp.i
+
+binomial.s: binomial.cpp.s
+
+.PHONY : binomial.s
+
+# target to generate assembly for a file
+binomial.cpp.s:
+	cd /home/a008/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/binomial.cpp.s
+.PHONY : binomial.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -238,6 +265,9 @@ help:
 	@echo "... base.o"
 	@echo "... base.i"
 	@echo "... base.s"
+	@echo "... binomial.o"
+	@echo "... binomial.i"
+	@echo "... binomial.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
