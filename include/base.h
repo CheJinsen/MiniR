@@ -54,6 +54,16 @@ public:
 	 */
 	static double tss(const std::vector<double>& data);
 
+	/*
+	 * This function computes the skewness of data.
+	 */
+	static double skew(const std::vector<double>& data);
+
+	/*
+	 * This function computes the kurtosis of data.
+	 */
+	static double kurtosis(const std::vector<double>& data);
+
 	
 	~Base() = default;
 

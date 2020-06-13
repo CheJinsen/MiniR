@@ -56,6 +56,24 @@ double Base::tss(const std::vector<double>& data)
 	return gsl_stats_tss(d, 1, data.size());
 }
 
+double Base::skew(const std::vector<double>& data)
+{
+	vector_check(data);
+	double d[data.size()];
+	std::copy(data.cbegin(), data.cend(), d);
+
+	return gsl_stats_skew(d, 1, data.size());
+}
+
+double Base::kurtosis(const std::vector<double>& data)
+{
+	vector_check(data);
+	double d[data.size()];
+	std::copy(data.cbegin(), data.cend(), d);
+
+	return gsl_stats_kurtosis(d, 1, data.size());
+}
+
 void Base::vector_check(const std::vector<double>& data)
 {
 	if (data.empty()) {
