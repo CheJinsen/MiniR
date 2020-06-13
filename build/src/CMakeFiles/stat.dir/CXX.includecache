@@ -6,38 +6,18 @@
 
 #IncludeRegexTransform: 
 
-../include/chapter8.h
+../include/normal.h
 cmath
--
-utility
 -
 gsl/gsl_randist.h
 -
 gsl/gsl_cdf.h
 -
 
-../include/gaussian_integral.h
-cmath
--
-iomanip
--
-
-../include/normal.h
-gaussian_integral.h
-../include/gaussian_integral.h
-cmath
--
-
-/home/a008/coding/c++/MiniR/src/chapter8.cpp
-chapter8.h
-/home/a008/coding/c++/MiniR/src/chapter8.h
-
-/home/a008/coding/c++/MiniR/src/gaussian_integral.cpp
-gaussian_integral.h
-/home/a008/coding/c++/MiniR/src/gaussian_integral.h
-
 /home/a008/coding/c++/MiniR/src/main.cpp
 iostream
+-
+iomanip
 -
 normal.h
 /home/a008/coding/c++/MiniR/src/normal.h

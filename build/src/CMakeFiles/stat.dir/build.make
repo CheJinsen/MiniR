@@ -77,35 +77,9 @@ include src/CMakeFiles/stat.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/stat.dir/flags.make
 
-src/CMakeFiles/stat.dir/chapter8.cpp.o: src/CMakeFiles/stat.dir/flags.make
-src/CMakeFiles/stat.dir/chapter8.cpp.o: ../src/chapter8.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/stat.dir/chapter8.cpp.o"
-	cd /home/a008/coding/c++/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stat.dir/chapter8.cpp.o -c /home/a008/coding/c++/MiniR/src/chapter8.cpp
-
-src/CMakeFiles/stat.dir/chapter8.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/stat.dir/chapter8.cpp.i"
-	cd /home/a008/coding/c++/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a008/coding/c++/MiniR/src/chapter8.cpp > CMakeFiles/stat.dir/chapter8.cpp.i
-
-src/CMakeFiles/stat.dir/chapter8.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/stat.dir/chapter8.cpp.s"
-	cd /home/a008/coding/c++/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a008/coding/c++/MiniR/src/chapter8.cpp -o CMakeFiles/stat.dir/chapter8.cpp.s
-
-src/CMakeFiles/stat.dir/gaussian_integral.cpp.o: src/CMakeFiles/stat.dir/flags.make
-src/CMakeFiles/stat.dir/gaussian_integral.cpp.o: ../src/gaussian_integral.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/stat.dir/gaussian_integral.cpp.o"
-	cd /home/a008/coding/c++/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stat.dir/gaussian_integral.cpp.o -c /home/a008/coding/c++/MiniR/src/gaussian_integral.cpp
-
-src/CMakeFiles/stat.dir/gaussian_integral.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/stat.dir/gaussian_integral.cpp.i"
-	cd /home/a008/coding/c++/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a008/coding/c++/MiniR/src/gaussian_integral.cpp > CMakeFiles/stat.dir/gaussian_integral.cpp.i
-
-src/CMakeFiles/stat.dir/gaussian_integral.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/stat.dir/gaussian_integral.cpp.s"
-	cd /home/a008/coding/c++/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a008/coding/c++/MiniR/src/gaussian_integral.cpp -o CMakeFiles/stat.dir/gaussian_integral.cpp.s
-
 src/CMakeFiles/stat.dir/main.cpp.o: src/CMakeFiles/stat.dir/flags.make
 src/CMakeFiles/stat.dir/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/stat.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/stat.dir/main.cpp.o"
 	cd /home/a008/coding/c++/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stat.dir/main.cpp.o -c /home/a008/coding/c++/MiniR/src/main.cpp
 
 src/CMakeFiles/stat.dir/main.cpp.i: cmake_force
@@ -118,7 +92,7 @@ src/CMakeFiles/stat.dir/main.cpp.s: cmake_force
 
 src/CMakeFiles/stat.dir/normal.cpp.o: src/CMakeFiles/stat.dir/flags.make
 src/CMakeFiles/stat.dir/normal.cpp.o: ../src/normal.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/stat.dir/normal.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/stat.dir/normal.cpp.o"
 	cd /home/a008/coding/c++/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stat.dir/normal.cpp.o -c /home/a008/coding/c++/MiniR/src/normal.cpp
 
 src/CMakeFiles/stat.dir/normal.cpp.i: cmake_force
@@ -131,21 +105,17 @@ src/CMakeFiles/stat.dir/normal.cpp.s: cmake_force
 
 # Object files for target stat
 stat_OBJECTS = \
-"CMakeFiles/stat.dir/chapter8.cpp.o" \
-"CMakeFiles/stat.dir/gaussian_integral.cpp.o" \
 "CMakeFiles/stat.dir/main.cpp.o" \
 "CMakeFiles/stat.dir/normal.cpp.o"
 
 # External object files for target stat
 stat_EXTERNAL_OBJECTS =
 
-../bin/stat: src/CMakeFiles/stat.dir/chapter8.cpp.o
-../bin/stat: src/CMakeFiles/stat.dir/gaussian_integral.cpp.o
 ../bin/stat: src/CMakeFiles/stat.dir/main.cpp.o
 ../bin/stat: src/CMakeFiles/stat.dir/normal.cpp.o
 ../bin/stat: src/CMakeFiles/stat.dir/build.make
 ../bin/stat: src/CMakeFiles/stat.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/a008/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable ../../bin/stat"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/a008/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../bin/stat"
 	cd /home/a008/coding/c++/MiniR/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/stat.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

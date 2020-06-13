@@ -145,60 +145,6 @@ stat/fast:
 	cd /home/a008/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/build
 .PHONY : stat/fast
 
-chapter8.o: chapter8.cpp.o
-
-.PHONY : chapter8.o
-
-# target to build an object file
-chapter8.cpp.o:
-	cd /home/a008/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/chapter8.cpp.o
-.PHONY : chapter8.cpp.o
-
-chapter8.i: chapter8.cpp.i
-
-.PHONY : chapter8.i
-
-# target to preprocess a source file
-chapter8.cpp.i:
-	cd /home/a008/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/chapter8.cpp.i
-.PHONY : chapter8.cpp.i
-
-chapter8.s: chapter8.cpp.s
-
-.PHONY : chapter8.s
-
-# target to generate assembly for a file
-chapter8.cpp.s:
-	cd /home/a008/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/chapter8.cpp.s
-.PHONY : chapter8.cpp.s
-
-gaussian_integral.o: gaussian_integral.cpp.o
-
-.PHONY : gaussian_integral.o
-
-# target to build an object file
-gaussian_integral.cpp.o:
-	cd /home/a008/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/gaussian_integral.cpp.o
-.PHONY : gaussian_integral.cpp.o
-
-gaussian_integral.i: gaussian_integral.cpp.i
-
-.PHONY : gaussian_integral.i
-
-# target to preprocess a source file
-gaussian_integral.cpp.i:
-	cd /home/a008/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/gaussian_integral.cpp.i
-.PHONY : gaussian_integral.cpp.i
-
-gaussian_integral.s: gaussian_integral.cpp.s
-
-.PHONY : gaussian_integral.s
-
-# target to generate assembly for a file
-gaussian_integral.cpp.s:
-	cd /home/a008/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/gaussian_integral.cpp.s
-.PHONY : gaussian_integral.cpp.s
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -262,12 +208,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... stat"
-	@echo "... chapter8.o"
-	@echo "... chapter8.i"
-	@echo "... chapter8.s"
-	@echo "... gaussian_integral.o"
-	@echo "... gaussian_integral.i"
-	@echo "... gaussian_integral.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
