@@ -1,0 +1,10 @@
+MiniR
+
+This program depend on GNU Scientific Library(GSL)
+
+build:
+	cd ../build
+	cmake ..
+
+executive:
+	./bin/stat
