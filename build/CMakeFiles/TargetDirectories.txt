@@ -1,0 +1,5 @@
+/home/a008/coding/c++/MiniR/build/CMakeFiles/rebuild_cache.dir
+/home/a008/coding/c++/MiniR/build/CMakeFiles/edit_cache.dir
+/home/a008/coding/c++/MiniR/build/src/CMakeFiles/rebuild_cache.dir
+/home/a008/coding/c++/MiniR/build/src/CMakeFiles/edit_cache.dir
+/home/a008/coding/c++/MiniR/build/src/CMakeFiles/stat.dir
