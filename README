@@ -7,4 +7,4 @@ build:
 	cmake ..
 
 executive:
-	./bin/stat
+	../bin/stat
