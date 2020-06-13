@@ -36,6 +36,10 @@ numeric
 normal.h
 /home/a008/coding/c++/MiniR/src/normal.h
 
+/home/a008/coding/c++/MiniR/src/normal.cpp
+normal.h
+/home/a008/coding/c++/MiniR/src/normal.h
+
 /usr/local/include/gsl/gsl_blas_types.h
 gsl/gsl_cblas.h
 -
