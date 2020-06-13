@@ -145,6 +145,33 @@ stat/fast:
 	cd /home/a008/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/build
 .PHONY : stat/fast
 
+base.o: base.cpp.o
+
+.PHONY : base.o
+
+# target to build an object file
+base.cpp.o:
+	cd /home/a008/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/base.cpp.o
+.PHONY : base.cpp.o
+
+base.i: base.cpp.i
+
+.PHONY : base.i
+
+# target to preprocess a source file
+base.cpp.i:
+	cd /home/a008/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/base.cpp.i
+.PHONY : base.cpp.i
+
+base.s: base.cpp.s
+
+.PHONY : base.s
+
+# target to generate assembly for a file
+base.cpp.s:
+	cd /home/a008/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/base.cpp.s
+.PHONY : base.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -208,6 +235,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... stat"
+	@echo "... base.o"
+	@echo "... base.i"
+	@echo "... base.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

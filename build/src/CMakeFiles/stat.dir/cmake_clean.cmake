@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "../../bin/stat"
   "../../bin/stat.pdb"
+  "CMakeFiles/stat.dir/base.cpp.o"
   "CMakeFiles/stat.dir/main.cpp.o"
   "CMakeFiles/stat.dir/normal.cpp.o"
 )

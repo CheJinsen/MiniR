@@ -8,8 +8,23 @@
 #include <iomanip>
 #include <numeric>
 #include "normal.h"
+#include "base.h"
 
 int main(int argc, char *argv[])
+{
+	std::cout << std::setprecision(10);
+	std::vector<double> vecd = {1.1, 2.1, 3.2, 2.2, 5.01, 4.4};
+	std::cout << "mean = " << Base::mean(vecd) << std::endl;
+	std::cout << "variance = " << Base::var(vecd) << std::endl;
+	std::cout << "sd = " << Base::sd(vecd) << std::endl;
+	std::cout << "tss = " << Base::tss(vecd) << std::endl;
+	return 0;
+}
+
+
+
+
+int main01(int argc, char *argv[])
 {
 	std::cout << std::setprecision(15);
 	std::cout << Normal::dnorm(2, 3, 4) << std::endl;
@@ -33,4 +48,6 @@ int main(int argc, char *argv[])
 	std::cout << "now sum = "
 		<< std::accumulate(ran.cbegin(), ran.cend(), 0.0) << std::endl;
 	std::cout << "Done..." << std::endl;
+
+	return 0;
 }

@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/a008/coding/c++/MiniR/src/base.cpp" "/home/a008/coding/c++/MiniR/build/src/CMakeFiles/stat.dir/base.cpp.o"
   "/home/a008/coding/c++/MiniR/src/main.cpp" "/home/a008/coding/c++/MiniR/build/src/CMakeFiles/stat.dir/main.cpp.o"
   "/home/a008/coding/c++/MiniR/src/normal.cpp" "/home/a008/coding/c++/MiniR/build/src/CMakeFiles/stat.dir/normal.cpp.o"
   )
