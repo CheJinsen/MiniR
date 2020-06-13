@@ -21,6 +21,11 @@
 #pragma once
 
 #include <cmath>
+#include <ctime>
+#include <cstdlib>
+#include <iostream>
+#include <random>
+#include <vector>
 #include <gsl/gsl_randist.h>
 #include <gsl/gsl_cdf.h>
 
@@ -39,8 +44,13 @@ public:
 	static double qnorm(const double p,
 		const double mean = 0.0, const double sigma = 1.0);
 
-	static double rnorm(const double n,
+	static std::vector<double> rnorm(const double n,
 		const double mean = 0.0, const double sigma = 1.0);
 
+	static void set_seed(unsigned long int seed);
+
 	~Normal() = default;
+
+private:
+	static unsigned long int seed; 
 };

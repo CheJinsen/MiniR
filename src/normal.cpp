@@ -20,6 +20,8 @@
 
 #include "normal.h"
 
+unsigned long int Normal::seed = time(0);
+
 double Normal::dnorm(const double x,
 	const double mean, const double sigma)
 {
@@ -38,10 +40,25 @@ double Normal::qnorm(const double p,
 	return mean + gsl_cdf_ugaussian_Pinv(p) * sigma;
 }
 
-double Normal::rnorm(const double n,
+std::vector<double> Normal::rnorm(const double n,
 	const double mean, const double sigma)
 {
-	return 1.0;	// todo
+	if (n < 1) {
+		std::cerr << "n must be positive." << std::endl;
+		exit(1);
+	}
+	std::vector<double> result;
+	std::default_random_engine e(seed);
+	std::normal_distribution<double> normal(mean, sigma);
+
+	for (size_t i = 0; i < n; ++i)
+		result.push_back(normal(e));
+	return result;
+}
+
+void Normal::set_seed(unsigned long int s)
+{
+	seed = s;
 }
 
 /*

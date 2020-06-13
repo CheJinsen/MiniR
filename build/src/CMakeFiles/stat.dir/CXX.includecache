@@ -9,20 +9,30 @@
 ../include/normal.h
 cmath
 -
+ctime
+-
+cstdlib
+-
+iostream
+-
+random
+-
+vector
+-
 gsl/gsl_randist.h
 -
 gsl/gsl_cdf.h
 -
 
 /home/a008/coding/c++/MiniR/src/main.cpp
+ctime
+-
 iostream
 -
 iomanip
 -
-normal.h
-/home/a008/coding/c++/MiniR/src/normal.h
-
-/home/a008/coding/c++/MiniR/src/normal.cpp
+numeric
+-
 normal.h
 /home/a008/coding/c++/MiniR/src/normal.h
 
