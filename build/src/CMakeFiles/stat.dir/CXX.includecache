@@ -23,6 +23,8 @@ base.h
 /home/a008/coding/c++/MiniR/src/main.cpp
 iostream
 -
+iomanip
+-
 randist.h
 /home/a008/coding/c++/MiniR/src/randist.h
 
