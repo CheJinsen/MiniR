@@ -1,6 +1,6 @@
 MiniR
 
-This program depend on GNU Scientific Library(GSL)
+This program is the Minimial of R.
 
 build:
 	cd ../build
