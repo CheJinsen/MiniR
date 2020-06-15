@@ -26,7 +26,7 @@
 #include <cstdbool>
 
 int R_isnancpp(const double x);
-#define ISNAN(X) R_isnancpp(x)
+#define ISNAN(x) R_isnancpp(x)
 
 #define ML_POSINF	(1.0 / 0.0)
 #define ML_NEGINF	((-1.0) / 0.0)
