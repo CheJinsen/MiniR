@@ -12,6 +12,8 @@ int main()
 	std::cout << pnorm(sqrt(-1))<< std::endl;
 	std::cout << pnorm(820, 1019, 209) << std::endl;
 	std::cout << (pnorm(1500, 1019, 209) + pnorm(1500, 1019, 209, false))<< std::endl;
+
+	std::cout << qnorm(0.85) << std::endl;
 	std::cout << "Done..." << std::endl;
 	return 0;
 }
