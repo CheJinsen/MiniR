@@ -20,11 +20,7 @@ cstdbool
 base.h
 ../include/base.h
 
-/home/a008/coding/c++/MiniR/src/main.cpp
-iostream
--
-iomanip
--
+/home/a008/coding/c++/MiniR/src/qnorm.cpp
 randist.h
 /home/a008/coding/c++/MiniR/src/randist.h
 

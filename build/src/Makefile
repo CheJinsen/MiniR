@@ -253,6 +253,33 @@ pnorm.cpp.s:
 	cd /home/a008/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pnorm.cpp.s
 .PHONY : pnorm.cpp.s
 
+qnorm.o: qnorm.cpp.o
+
+.PHONY : qnorm.o
+
+# target to build an object file
+qnorm.cpp.o:
+	cd /home/a008/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qnorm.cpp.o
+.PHONY : qnorm.cpp.o
+
+qnorm.i: qnorm.cpp.i
+
+.PHONY : qnorm.i
+
+# target to preprocess a source file
+qnorm.cpp.i:
+	cd /home/a008/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qnorm.cpp.i
+.PHONY : qnorm.cpp.i
+
+qnorm.s: qnorm.cpp.s
+
+.PHONY : qnorm.s
+
+# target to generate assembly for a file
+qnorm.cpp.s:
+	cd /home/a008/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qnorm.cpp.s
+.PHONY : qnorm.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -274,6 +301,9 @@ help:
 	@echo "... pnorm.o"
 	@echo "... pnorm.i"
 	@echo "... pnorm.s"
+	@echo "... qnorm.o"
+	@echo "... qnorm.i"
+	@echo "... qnorm.s"
 .PHONY : help
 
 

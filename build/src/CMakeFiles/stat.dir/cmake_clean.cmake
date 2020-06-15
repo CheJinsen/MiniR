@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/stat.dir/dnorm.cpp.o"
   "CMakeFiles/stat.dir/main.cpp.o"
   "CMakeFiles/stat.dir/pnorm.cpp.o"
+  "CMakeFiles/stat.dir/qnorm.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.

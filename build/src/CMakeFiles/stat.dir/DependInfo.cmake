@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/a008/coding/c++/MiniR/src/dnorm.cpp" "/home/a008/coding/c++/MiniR/build/src/CMakeFiles/stat.dir/dnorm.cpp.o"
   "/home/a008/coding/c++/MiniR/src/main.cpp" "/home/a008/coding/c++/MiniR/build/src/CMakeFiles/stat.dir/main.cpp.o"
   "/home/a008/coding/c++/MiniR/src/pnorm.cpp" "/home/a008/coding/c++/MiniR/build/src/CMakeFiles/stat.dir/pnorm.cpp.o"
+  "/home/a008/coding/c++/MiniR/src/qnorm.cpp" "/home/a008/coding/c++/MiniR/build/src/CMakeFiles/stat.dir/qnorm.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 

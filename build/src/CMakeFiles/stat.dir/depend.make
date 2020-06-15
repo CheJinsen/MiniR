@@ -16,3 +16,7 @@ src/CMakeFiles/stat.dir/pnorm.cpp.o: ../include/base.h
 src/CMakeFiles/stat.dir/pnorm.cpp.o: ../include/randist.h
 src/CMakeFiles/stat.dir/pnorm.cpp.o: ../src/pnorm.cpp
 
+src/CMakeFiles/stat.dir/qnorm.cpp.o: ../include/base.h
+src/CMakeFiles/stat.dir/qnorm.cpp.o: ../include/randist.h
+src/CMakeFiles/stat.dir/qnorm.cpp.o: ../src/qnorm.cpp
+
