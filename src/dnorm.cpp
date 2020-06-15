@@ -31,10 +31,6 @@
 
 #include "randist.h"
 
-void foo()
-{
-	std::cout << "This is test." << std::endl;
-}
 
 double dnorm(double x, double mu, double sigma, bool log_p)
 {

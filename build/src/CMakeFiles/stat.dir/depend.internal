@@ -12,3 +12,7 @@ src/CMakeFiles/stat.dir/main.cpp.o
  ../include/base.h
  ../include/randist.h
  /home/a008/coding/c++/MiniR/src/main.cpp
+src/CMakeFiles/stat.dir/pnorm.cpp.o
+ ../include/base.h
+ ../include/randist.h
+ /home/a008/coding/c++/MiniR/src/pnorm.cpp

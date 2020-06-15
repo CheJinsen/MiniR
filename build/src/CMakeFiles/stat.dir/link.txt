@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/stat.dir/base.cpp.o CMakeFiles/stat.dir/dnorm.cpp.o CMakeFiles/stat.dir/main.cpp.o  -o ../../bin/stat  -lm 
+/usr/bin/c++     CMakeFiles/stat.dir/base.cpp.o CMakeFiles/stat.dir/dnorm.cpp.o CMakeFiles/stat.dir/main.cpp.o CMakeFiles/stat.dir/pnorm.cpp.o  -o ../../bin/stat  -lm 
