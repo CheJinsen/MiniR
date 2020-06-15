@@ -512,3 +512,260 @@ Parsed CXX implicit link information from above output:
   implicit fwks: []
 
 
+The system is: FreeBSD - 12.1-RELEASE-p6 - amd64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is Clang, found in "/home/a008/coding/c++/MiniR/build/CMakeFiles/3.17.2/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is Clang, found in "/home/a008/coding/c++/MiniR/build/CMakeFiles/3.17.2/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/a008/coding/c++/MiniR/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/gmake cmTC_0535e/fast && /usr/local/bin/gmake  -f CMakeFiles/cmTC_0535e.dir/build.make CMakeFiles/cmTC_0535e.dir/build
+gmake[1]: Entering directory '/usr/home/a008/coding/c++/MiniR/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0535e.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_0535e.dir/testCCompiler.c.o   -c /home/a008/coding/c++/MiniR/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_0535e
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0535e.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_0535e.dir/testCCompiler.c.o  -o cmTC_0535e 
+gmake[1]: Leaving directory '/usr/home/a008/coding/c++/MiniR/build/CMakeFiles/CMakeTmp'
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/a008/coding/c++/MiniR/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/gmake cmTC_00eee/fast && /usr/local/bin/gmake  -f CMakeFiles/cmTC_00eee.dir/build.make CMakeFiles/cmTC_00eee.dir/build
+gmake[1]: Entering directory '/usr/home/a008/coding/c++/MiniR/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_00eee.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc   -v -o CMakeFiles/cmTC_00eee.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake/Modules/CMakeCCompilerABI.c
+FreeBSD clang version 8.0.1 (tags/RELEASE_801/final 366581) (based on LLVM 8.0.1)
+Target: x86_64-unknown-freebsd12.1
+Thread model: posix
+InstalledDir: /usr/bin
+ "/usr/bin/cc" -cc1 -triple x86_64-unknown-freebsd12.1 -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -mthread-model posix -mdisable-fp-elim -masm-verbose -mconstructor-aliases -munwind-tables -fuse-init-array -target-cpu x86-64 -dwarf-column-info -debugger-tuning=gdb -v -coverage-notes-file /usr/home/a008/coding/c++/MiniR/build/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_00eee.dir/CMakeCCompilerABI.c.gcno -resource-dir /usr/lib/clang/8.0.1 -fdebug-compilation-dir /usr/home/a008/coding/c++/MiniR/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -fobjc-runtime=gnustep -fdiagnostics-show-option -o CMakeFiles/cmTC_00eee.dir/CMakeCCompilerABI.c.o -x c /usr/local/share/cmake/Modules/CMakeCCompilerABI.c -faddrsig
+clang -cc1 version 8.0.1 based upon LLVM 8.0.1 default target x86_64-unknown-freebsd12.1
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/clang/8.0.1/include
+ /usr/include
+End of search list.
+Linking C executable cmTC_00eee
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_00eee.dir/link.txt --verbose=1
+/usr/bin/cc     -v CMakeFiles/cmTC_00eee.dir/CMakeCCompilerABI.c.o  -o cmTC_00eee 
+FreeBSD clang version 8.0.1 (tags/RELEASE_801/final 366581) (based on LLVM 8.0.1)
+Target: x86_64-unknown-freebsd12.1
+Thread model: posix
+InstalledDir: /usr/bin
+ "/usr/bin/ld" --eh-frame-hdr -dynamic-linker /libexec/ld-elf.so.1 --hash-style=both --enable-new-dtags -o cmTC_00eee /usr/lib/crt1.o /usr/lib/crti.o /usr/lib/crtbegin.o -L/usr/lib CMakeFiles/cmTC_00eee.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/crtend.o /usr/lib/crtn.o
+gmake[1]: Leaving directory '/usr/home/a008/coding/c++/MiniR/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/lib/clang/8.0.1/include]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/lib/clang/8.0.1/include] ==> [/usr/lib/clang/8.0.1/include]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/lib/clang/8.0.1/include;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/a008/coding/c++/MiniR/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/local/bin/gmake cmTC_00eee/fast && /usr/local/bin/gmake  -f CMakeFiles/cmTC_00eee.dir/build.make CMakeFiles/cmTC_00eee.dir/build]
+  ignore line: [gmake[1]: Entering directory '/usr/home/a008/coding/c++/MiniR/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_00eee.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_00eee.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [FreeBSD clang version 8.0.1 (tags/RELEASE_801/final 366581) (based on LLVM 8.0.1)]
+  ignore line: [Target: x86_64-unknown-freebsd12.1]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /usr/bin]
+  ignore line: [ "/usr/bin/cc" -cc1 -triple x86_64-unknown-freebsd12.1 -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -mthread-model posix -mdisable-fp-elim -masm-verbose -mconstructor-aliases -munwind-tables -fuse-init-array -target-cpu x86-64 -dwarf-column-info -debugger-tuning=gdb -v -coverage-notes-file /usr/home/a008/coding/c++/MiniR/build/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_00eee.dir/CMakeCCompilerABI.c.gcno -resource-dir /usr/lib/clang/8.0.1 -fdebug-compilation-dir /usr/home/a008/coding/c++/MiniR/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -fobjc-runtime=gnustep -fdiagnostics-show-option -o CMakeFiles/cmTC_00eee.dir/CMakeCCompilerABI.c.o -x c /usr/local/share/cmake/Modules/CMakeCCompilerABI.c -faddrsig]
+  ignore line: [clang -cc1 version 8.0.1 based upon LLVM 8.0.1 default target x86_64-unknown-freebsd12.1]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/lib/clang/8.0.1/include]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [Linking C executable cmTC_00eee]
+  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_00eee.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_00eee.dir/CMakeCCompilerABI.c.o  -o cmTC_00eee ]
+  ignore line: [FreeBSD clang version 8.0.1 (tags/RELEASE_801/final 366581) (based on LLVM 8.0.1)]
+  ignore line: [Target: x86_64-unknown-freebsd12.1]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /usr/bin]
+  link line: [ "/usr/bin/ld" --eh-frame-hdr -dynamic-linker /libexec/ld-elf.so.1 --hash-style=both --enable-new-dtags -o cmTC_00eee /usr/lib/crt1.o /usr/lib/crti.o /usr/lib/crtbegin.o -L/usr/lib CMakeFiles/cmTC_00eee.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/crtend.o /usr/lib/crtn.o]
+    arg [/usr/bin/ld] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/libexec/ld-elf.so.1] ==> ignore
+    arg [--hash-style=both] ==> ignore
+    arg [--enable-new-dtags] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_00eee] ==> ignore
+    arg [/usr/lib/crt1.o] ==> ignore
+    arg [/usr/lib/crti.o] ==> ignore
+    arg [/usr/lib/crtbegin.o] ==> ignore
+    arg [-L/usr/lib] ==> dir [/usr/lib]
+    arg [CMakeFiles/cmTC_00eee.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/lib/crtend.o] ==> ignore
+    arg [/usr/lib/crtn.o] ==> ignore
+  collapse library dir [/usr/lib] ==> [/usr/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit dirs: [/usr/lib]
+  implicit fwks: []
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/a008/coding/c++/MiniR/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/gmake cmTC_602fa/fast && /usr/local/bin/gmake  -f CMakeFiles/cmTC_602fa.dir/build.make CMakeFiles/cmTC_602fa.dir/build
+gmake[1]: Entering directory '/usr/home/a008/coding/c++/MiniR/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_602fa.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_602fa.dir/testCXXCompiler.cxx.o -c /home/a008/coding/c++/MiniR/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_602fa
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_602fa.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_602fa.dir/testCXXCompiler.cxx.o  -o cmTC_602fa 
+gmake[1]: Leaving directory '/usr/home/a008/coding/c++/MiniR/build/CMakeFiles/CMakeTmp'
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/a008/coding/c++/MiniR/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/gmake cmTC_98ce6/fast && /usr/local/bin/gmake  -f CMakeFiles/cmTC_98ce6.dir/build.make CMakeFiles/cmTC_98ce6.dir/build
+gmake[1]: Entering directory '/usr/home/a008/coding/c++/MiniR/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_98ce6.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++    -v -o CMakeFiles/cmTC_98ce6.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+FreeBSD clang version 8.0.1 (tags/RELEASE_801/final 366581) (based on LLVM 8.0.1)
+Target: x86_64-unknown-freebsd12.1
+Thread model: posix
+InstalledDir: /usr/bin
+ "/usr/bin/c++" -cc1 -triple x86_64-unknown-freebsd12.1 -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -mthread-model posix -mdisable-fp-elim -masm-verbose -mconstructor-aliases -munwind-tables -fuse-init-array -target-cpu x86-64 -dwarf-column-info -debugger-tuning=gdb -v -coverage-notes-file /usr/home/a008/coding/c++/MiniR/build/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_98ce6.dir/CMakeCXXCompilerABI.cpp.gcno -resource-dir /usr/lib/clang/8.0.1 -internal-isystem /usr/include/c++/v1 -fdeprecated-macro -fdebug-compilation-dir /usr/home/a008/coding/c++/MiniR/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -fobjc-runtime=gnustep -fcxx-exceptions -fexceptions -fdiagnostics-show-option -o CMakeFiles/cmTC_98ce6.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/local/share/cmake/Modules/CMakeCXXCompilerABI.cpp -faddrsig
+clang -cc1 version 8.0.1 based upon LLVM 8.0.1 default target x86_64-unknown-freebsd12.1
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/include/c++/v1
+ /usr/lib/clang/8.0.1/include
+ /usr/include
+End of search list.
+Linking CXX executable cmTC_98ce6
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_98ce6.dir/link.txt --verbose=1
+/usr/bin/c++      -v CMakeFiles/cmTC_98ce6.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_98ce6 
+FreeBSD clang version 8.0.1 (tags/RELEASE_801/final 366581) (based on LLVM 8.0.1)
+Target: x86_64-unknown-freebsd12.1
+Thread model: posix
+InstalledDir: /usr/bin
+ "/usr/bin/ld" --eh-frame-hdr -dynamic-linker /libexec/ld-elf.so.1 --hash-style=both --enable-new-dtags -o cmTC_98ce6 /usr/lib/crt1.o /usr/lib/crti.o /usr/lib/crtbegin.o -L/usr/lib CMakeFiles/cmTC_98ce6.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lm -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/crtend.o /usr/lib/crtn.o
+gmake[1]: Leaving directory '/usr/home/a008/coding/c++/MiniR/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/include/c++/v1]
+    add: [/usr/lib/clang/8.0.1/include]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/include/c++/v1] ==> [/usr/include/c++/v1]
+  collapse include dir [/usr/lib/clang/8.0.1/include] ==> [/usr/lib/clang/8.0.1/include]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/include/c++/v1;/usr/lib/clang/8.0.1/include;/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/a008/coding/c++/MiniR/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/local/bin/gmake cmTC_98ce6/fast && /usr/local/bin/gmake  -f CMakeFiles/cmTC_98ce6.dir/build.make CMakeFiles/cmTC_98ce6.dir/build]
+  ignore line: [gmake[1]: Entering directory '/usr/home/a008/coding/c++/MiniR/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_98ce6.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++    -v -o CMakeFiles/cmTC_98ce6.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [FreeBSD clang version 8.0.1 (tags/RELEASE_801/final 366581) (based on LLVM 8.0.1)]
+  ignore line: [Target: x86_64-unknown-freebsd12.1]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /usr/bin]
+  ignore line: [ "/usr/bin/c++" -cc1 -triple x86_64-unknown-freebsd12.1 -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -mthread-model posix -mdisable-fp-elim -masm-verbose -mconstructor-aliases -munwind-tables -fuse-init-array -target-cpu x86-64 -dwarf-column-info -debugger-tuning=gdb -v -coverage-notes-file /usr/home/a008/coding/c++/MiniR/build/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_98ce6.dir/CMakeCXXCompilerABI.cpp.gcno -resource-dir /usr/lib/clang/8.0.1 -internal-isystem /usr/include/c++/v1 -fdeprecated-macro -fdebug-compilation-dir /usr/home/a008/coding/c++/MiniR/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -fobjc-runtime=gnustep -fcxx-exceptions -fexceptions -fdiagnostics-show-option -o CMakeFiles/cmTC_98ce6.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/local/share/cmake/Modules/CMakeCXXCompilerABI.cpp -faddrsig]
+  ignore line: [clang -cc1 version 8.0.1 based upon LLVM 8.0.1 default target x86_64-unknown-freebsd12.1]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/include/c++/v1]
+  ignore line: [ /usr/lib/clang/8.0.1/include]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [Linking CXX executable cmTC_98ce6]
+  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_98ce6.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTC_98ce6.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_98ce6 ]
+  ignore line: [FreeBSD clang version 8.0.1 (tags/RELEASE_801/final 366581) (based on LLVM 8.0.1)]
+  ignore line: [Target: x86_64-unknown-freebsd12.1]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /usr/bin]
+  link line: [ "/usr/bin/ld" --eh-frame-hdr -dynamic-linker /libexec/ld-elf.so.1 --hash-style=both --enable-new-dtags -o cmTC_98ce6 /usr/lib/crt1.o /usr/lib/crti.o /usr/lib/crtbegin.o -L/usr/lib CMakeFiles/cmTC_98ce6.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lm -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/crtend.o /usr/lib/crtn.o]
+    arg [/usr/bin/ld] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/libexec/ld-elf.so.1] ==> ignore
+    arg [--hash-style=both] ==> ignore
+    arg [--enable-new-dtags] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_98ce6] ==> ignore
+    arg [/usr/lib/crt1.o] ==> ignore
+    arg [/usr/lib/crti.o] ==> ignore
+    arg [/usr/lib/crtbegin.o] ==> ignore
+    arg [-L/usr/lib] ==> dir [/usr/lib]
+    arg [CMakeFiles/cmTC_98ce6.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lc++] ==> lib [c++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/lib/crtend.o] ==> ignore
+    arg [/usr/lib/crtn.o] ==> ignore
+  collapse library dir [/usr/lib] ==> [/usr/lib]
+  implicit libs: [c++;m;gcc;gcc_s;c;gcc;gcc_s]
+  implicit dirs: [/usr/lib]
+  implicit fwks: []
+
+

@@ -172,32 +172,32 @@ base.cpp.s:
 	cd /home/a008/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/base.cpp.s
 .PHONY : base.cpp.s
 
-binomial.o: binomial.cpp.o
+dnorm.o: dnorm.cpp.o
 
-.PHONY : binomial.o
+.PHONY : dnorm.o
 
 # target to build an object file
-binomial.cpp.o:
-	cd /home/a008/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/binomial.cpp.o
-.PHONY : binomial.cpp.o
+dnorm.cpp.o:
+	cd /home/a008/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dnorm.cpp.o
+.PHONY : dnorm.cpp.o
 
-binomial.i: binomial.cpp.i
+dnorm.i: dnorm.cpp.i
 
-.PHONY : binomial.i
+.PHONY : dnorm.i
 
 # target to preprocess a source file
-binomial.cpp.i:
-	cd /home/a008/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/binomial.cpp.i
-.PHONY : binomial.cpp.i
+dnorm.cpp.i:
+	cd /home/a008/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dnorm.cpp.i
+.PHONY : dnorm.cpp.i
 
-binomial.s: binomial.cpp.s
+dnorm.s: dnorm.cpp.s
 
-.PHONY : binomial.s
+.PHONY : dnorm.s
 
 # target to generate assembly for a file
-binomial.cpp.s:
-	cd /home/a008/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/binomial.cpp.s
-.PHONY : binomial.cpp.s
+dnorm.cpp.s:
+	cd /home/a008/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dnorm.cpp.s
+.PHONY : dnorm.cpp.s
 
 main.o: main.cpp.o
 
@@ -226,33 +226,6 @@ main.cpp.s:
 	cd /home/a008/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-normal.o: normal.cpp.o
-
-.PHONY : normal.o
-
-# target to build an object file
-normal.cpp.o:
-	cd /home/a008/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/normal.cpp.o
-.PHONY : normal.cpp.o
-
-normal.i: normal.cpp.i
-
-.PHONY : normal.i
-
-# target to preprocess a source file
-normal.cpp.i:
-	cd /home/a008/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/normal.cpp.i
-.PHONY : normal.cpp.i
-
-normal.s: normal.cpp.s
-
-.PHONY : normal.s
-
-# target to generate assembly for a file
-normal.cpp.s:
-	cd /home/a008/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/normal.cpp.s
-.PHONY : normal.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -265,15 +238,12 @@ help:
 	@echo "... base.o"
 	@echo "... base.i"
 	@echo "... base.s"
-	@echo "... binomial.o"
-	@echo "... binomial.i"
-	@echo "... binomial.s"
+	@echo "... dnorm.o"
+	@echo "... dnorm.i"
+	@echo "... dnorm.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... normal.o"
-	@echo "... normal.i"
-	@echo "... normal.s"
 .PHONY : help
 
 

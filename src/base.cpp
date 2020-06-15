@@ -1,84 +1,30 @@
 /*
- * Normal distribution functions of density probability and quantile.
- * Copyright (C) 2020 Jinsen Che
+ *  Mathlib : A C Library of Special Functions
+ *  Copyright (C) 1998-2020  The R Core Team
  *
- * This file is part of MiniR.
+ *  This program is free software; you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation; either version 2 of the License, or
+ *  (at your option) any later version.
  *
- * MiniR is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
  *
- * MiniR is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the impiled warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program. If not, see <https://www.gnu.org/license/>.
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program; if not, a copy is available at
+ *  https://www.R-project.org/Licenses/
  */
 
 #include "base.h"
 
-double Base::mean(const std::vector<double>& data)
+int R_isnancpp(const double x)
 {
-	vector_check(data);
-	double d[data.size()];
-	std::copy(data.cbegin(), data.cend(), d);
-
-	return gsl_stats_mean(d, 1, data.size());
+	return isnan(x) != 0;
 }
 
-double Base::var(const std::vector<double>& data)
+void ML_WARNING()
 {
-	vector_check(data);
-	double d[data.size()];
-	std::copy(data.cbegin(), data.cend(), d);
-
-	return gsl_stats_variance(d, 1, data.size());
+	std::cerr << "The result is NaNs" << std::endl;
 }
-
-double Base::sd(const std::vector<double>& data)
-{
-	vector_check(data);
-	double d[data.size()];
-	std::copy(data.cbegin(), data.cend(), d);
-
-	return gsl_stats_sd(d, 1, data.size());
-}
-
-double Base::tss(const std::vector<double>& data)
-{
-	vector_check(data);
-	double d[data.size()];
-	std::copy(data.cbegin(), data.cend(), d);
-
-	return gsl_stats_tss(d, 1, data.size());
-}
-
-double Base::skew(const std::vector<double>& data)
-{
-	vector_check(data);
-	double d[data.size()];
-	std::copy(data.cbegin(), data.cend(), d);
-
-	return gsl_stats_skew(d, 1, data.size());
-}
-
-double Base::kurtosis(const std::vector<double>& data)
-{
-	vector_check(data);
-	double d[data.size()];
-	std::copy(data.cbegin(), data.cend(), d);
-
-	return gsl_stats_kurtosis(d, 1, data.size());
-}
-
-void Base::vector_check(const std::vector<double>& data)
-{
-	if (data.empty()) {
-		std::cerr << "Vector is empty." << std::endl;
-		exit(1);
-	}
-}
-
