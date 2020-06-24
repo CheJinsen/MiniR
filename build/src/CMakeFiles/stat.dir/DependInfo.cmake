@@ -4,8 +4,6 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/a008/coding/MiniR/src/MiniR.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/MiniR.cpp.o"
-  "/home/a008/coding/MiniR/src/base.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/base.cpp.o"
   "/home/a008/coding/MiniR/src/bd0.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/bd0.cpp.o"
   "/home/a008/coding/MiniR/src/chebyshev.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/chebyshev.cpp.o"
   "/home/a008/coding/MiniR/src/cospi.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/cospi.cpp.o"

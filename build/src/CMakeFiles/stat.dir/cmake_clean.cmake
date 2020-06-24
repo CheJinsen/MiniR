@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
   "../../bin/stat"
   "../../bin/stat.pdb"
-  "CMakeFiles/stat.dir/MiniR.cpp.o"
-  "CMakeFiles/stat.dir/base.cpp.o"
   "CMakeFiles/stat.dir/bd0.cpp.o"
   "CMakeFiles/stat.dir/chebyshev.cpp.o"
   "CMakeFiles/stat.dir/cospi.cpp.o"

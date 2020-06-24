@@ -125,60 +125,6 @@ stat/fast:
 	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/build
 .PHONY : stat/fast
 
-MiniR.o: MiniR.cpp.o
-
-.PHONY : MiniR.o
-
-# target to build an object file
-MiniR.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/MiniR.cpp.o
-.PHONY : MiniR.cpp.o
-
-MiniR.i: MiniR.cpp.i
-
-.PHONY : MiniR.i
-
-# target to preprocess a source file
-MiniR.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/MiniR.cpp.i
-.PHONY : MiniR.cpp.i
-
-MiniR.s: MiniR.cpp.s
-
-.PHONY : MiniR.s
-
-# target to generate assembly for a file
-MiniR.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/MiniR.cpp.s
-.PHONY : MiniR.cpp.s
-
-base.o: base.cpp.o
-
-.PHONY : base.o
-
-# target to build an object file
-base.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/base.cpp.o
-.PHONY : base.cpp.o
-
-base.i: base.cpp.i
-
-.PHONY : base.i
-
-# target to preprocess a source file
-base.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/base.cpp.i
-.PHONY : base.cpp.i
-
-base.s: base.cpp.s
-
-.PHONY : base.s
-
-# target to generate assembly for a file
-base.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/base.cpp.s
-.PHONY : base.cpp.s
-
 bd0.o: bd0.cpp.o
 
 .PHONY : bd0.o
@@ -890,12 +836,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... stat"
-	@echo "... MiniR.o"
-	@echo "... MiniR.i"
-	@echo "... MiniR.s"
-	@echo "... base.o"
-	@echo "... base.i"
-	@echo "... base.s"
 	@echo "... bd0.o"
 	@echo "... bd0.i"
 	@echo "... bd0.s"

@@ -153,7 +153,7 @@ void bratio(double a, double b, double x, double y, double* w, double* w1,
 	if (a == 0.) goto L211;
 	if (b == 0.) goto L201;
 
-	eps = max(eps, 1e-15);
+	eps = std::max(eps, 1e-15);
 	
 	if (/* max(a,b) */ (a_lt_b ? b : a) < eps * .001) { /* procedure for a and b < 0.001 * eps */
 	// L230:  -- result *independent* of x (!)
@@ -185,7 +185,7 @@ void bratio(double a, double b, double x, double y, double* w, double* w1,
     a0 = b;  x0 = y; \
     b0 = a;  y0 = x;
 
-	if (min(a, b) <= 1.) { /*------------------------ a <= 1  or  b <= 1 ---- */
+	if (std::min(a, b) <= 1.) { /*------------------------ a <= 1  or  b <= 1 ---- */
 
 		do_swap = (x > 0.5);
 		if (do_swap) {
@@ -198,21 +198,21 @@ void bratio(double a, double b, double x, double y, double* w, double* w1,
 
 		R_ifDEBUG_printf(" min(a,b) <= 1, do_swap=%d;", do_swap);
 
-		if (b0 < min(eps, eps * a0)) { /* L80: */
+		if (b0 < std::min(eps, eps * a0)) { /* L80: */
 			*w = fpser(a0, b0, x0, eps, log_p);
 			*w1 = log_p ? R_Log1_Exp(*w) : 0.5 - *w + 0.5;
 			R_ifDEBUG_printf("  b0 small -> w := fpser(*) = %.15g\n", *w);
 			goto L_end;
 		}
 
-		if (a0 < min(eps, eps * b0) && b0 * x0 <= 1.) { /* L90: */
+		if (a0 < std::min(eps, eps * b0) && b0 * x0 <= 1.) { /* L90: */
 			*w1 = apser(a0, b0, x0, eps);
 			R_ifDEBUG_printf("  a0 small -> w1 := apser(*) = %.15g\n", *w1);
 			goto L_end_from_w1;
 		}
 
 		bool did_bup = false;
-		if (max(a0, b0) > 1.) { /* L20:  min(a,b) <= 1 < max(a,b)  */
+		if (std::max(a0, b0) > 1.) { /* L20:  min(a,b) <= 1 < max(a,b)  */
 			R_ifDEBUG_printf("\n L20:  min(a,b) <= 1 < max(a,b); ");
 			if (b0 <= 1.) goto L_w_bpser;
 
@@ -227,7 +227,7 @@ void bratio(double a, double b, double x, double y, double* w, double* w1,
 		}
 		else { /*  a, b <= 1 */
 			R_ifDEBUG_printf("\n      both a,b <= 1; ");
-			if (a0 >= min(0.2, b0))	goto L_w_bpser;
+			if (a0 >= std::min(0.2, b0))	goto L_w_bpser;
 
 			if (pow(x0, a0) <= 0.9) 	goto L_w_bpser;
 
@@ -535,13 +535,13 @@ static double bpser(double a, double b, double x, double eps, bool log_p)
 	/* ----------------------------------------------------------------------- */
 	/*	      compute the factor  x^a/(a*Beta(a,b)) */
 	/* ----------------------------------------------------------------------- */
-	a0 = min(a, b);
+	a0 = std::min(a, b);
 	if (a0 >= 1.) { /*		 ------	 1 <= a0 <= b0  ------ */
 		z = a * log(x) - betaln(a, b);
 		ans = log_p ? z - log(a) : exp(z) / a;
 	}
 	else {
-		b0 = max(a, b);
+		b0 = std::max(a, b);
 
 		if (b0 < 8.) {
 
@@ -839,7 +839,7 @@ static double brcomp(double a, double b, double x, double y, bool log_p)
 	if (x == 0. || y == 0.) {
 		return R_D__0;
 	}
-	a0 = min(a, b);
+	a0 = std::min(a, b);
 	if (a0 < 8.) {
 		double lnx, lny;
 		if (x <= .375) {
@@ -867,7 +867,7 @@ static double brcomp(double a, double b, double x, double y, bool log_p)
 		/*		PROCEDURE FOR a < 1 OR b < 1 */
 		/* ----------------------------------------------------------------------- */
 
-		b0 = max(a, b);
+		b0 = std::max(a, b);
 		if (b0 >= 8.) { /* L80: */
 			u = gamln1(a0) + algdiv(a0, b0);
 
@@ -979,7 +979,7 @@ static double brcmp1(int mu, double a, double b, double x, double y, bool give_l
 	/* Local variables */
 	double c, t, u, v, z, a0, b0, apb;
 
-	a0 = min(a, b);
+	a0 = std::min(a, b);
 	if (a0 < 8.) {
 		double lnx, lny;
 		if (x <= .375) {
@@ -1007,7 +1007,7 @@ static double brcmp1(int mu, double a, double b, double x, double y, bool give_l
 		/*              PROCEDURE FOR A < 1 OR B < 1 */
 		/* ----------------------------------------------------------------------- */
 		// L30:
-		b0 = max(a, b);
+		b0 = std::max(a, b);
 		if (b0 >= 8.) {
 			/* L80:                  ALGORITHM FOR b0 >= 8 */
 			u = gamln1(a0) + algdiv(a0, b0);
@@ -2065,8 +2065,8 @@ static double betaln(double a0, double b0)
 	static double e = .918938533204673;/* e == 0.5*LN(2*PI) */
 
 	double
-		a = min(a0, b0),
-		b = max(a0, b0);
+		a = std::min(a0, b0),
+		b = std::max(a0, b0);
 
 	if (a < 8.) {
 		if (a < 1.) {
@@ -2195,8 +2195,8 @@ static double bcorr(double a0, double b0)
 	/* Local variables */
 	double a, b, c, h, t, w, x, s3, s5, x2, s7, s9, s11;
 	/* ------------------------ */
-	a = min(a0, b0);
-	b = max(a0, b0);
+	a = std::min(a0, b0);
+	b = std::max(a0, b0);
 
 	h = a / b;
 	c = h / (h + 1.);

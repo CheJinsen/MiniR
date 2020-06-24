@@ -28,6 +28,7 @@
 #include <cfloat>
 #include <iostream>
 #include <cstdbool>
+#include <algorithm>
 
 #include "Rmath.h"
 //#include "Random.h"
@@ -48,18 +49,24 @@
 #define MATHLIB_WARNING4(fmt,x,x2,x3,x4) printf(fmt,x,x2,x3,x4)
 #define MATHLIB_WARNING5(fmt,x,x2,x3,x4,x5) printf(fmt,x,x2,x3,x4,x5)
 
-#define ISNAN(x) (isnan(x)!=0)
+#define ISNAN(x) (std::isnan(x)!=0)
 
-#define R_FINITE(x) isfinite(x)
+#define R_FINITE(x) std::isfinite(x)
 
+#ifdef Windows
 #define ML_POSINF	posinf()
 #define ML_NEGINF	neginf()
 #define ML_NAN		nan()
 
-double fdiv(const double a, const double b);
+double f_div(const double a, const double b);
 double posinf();
 double neginf();
 double nan();
+#else
+#define ML_POSINF	(1.0 / 0.0)
+#define ML_NEGINF	(-1.0 / 0.0)
+#define ML_NAN		(0.0 / 0.0)
+#endif
 
 #define ME_NONE		0
 /*	no error */

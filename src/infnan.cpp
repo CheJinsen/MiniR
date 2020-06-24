@@ -20,7 +20,7 @@
 
 #include "nmath.h"
 
-double fdiv(const double a, const double b)
+double f_div(const double a, const double b)
 {
 	return a / b;
 }
