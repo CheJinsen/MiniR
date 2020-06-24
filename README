@@ -1,6 +1,6 @@
 MiniR
 
-This program is the Minimial of R. It just include the statistics.
+This program is the Minimial of R. It runs under Ubuntu-20.04.
 
 build:
 	cd ../build
