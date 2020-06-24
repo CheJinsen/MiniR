@@ -1,4 +1,3 @@
-
 /*
  *  Mathlib : A C Library of Special Functions
  *  Copyright (C) 1998 Ross Ihaka
@@ -29,39 +28,36 @@
  *	Compute the density of the normal distribution.
  */
 
-#include "randist.h"
+#include "nmath.h"
+#include "dpq.h"
 
-
-double dnorm(double x, double mu, double sigma, bool log_p)
+double dnorm(double x, double mu, double sigma, bool give_log)
 {
-	
-    if (ISNAN(x) || ISNAN(mu) || ISNAN(sigma)) {
-		return x + mu + sigma;
-	}
-    if (sigma < 0)				{ ML_WARN_return_NAN; }
-    if(!R_FINITE(sigma))		{ return R_D__0; }
-    if(!R_FINITE(x) && mu == x) { return ML_NAN; }/* x-mu is NaN */
-    if (sigma == 0) {
-		return (x == mu) ? ML_POSINF : R_D__0;
-	}
+    if (ISNAN(x) || ISNAN(mu) || ISNAN(sigma))
+        return x + mu + sigma;
 
-	x = (x - mu) / sigma;
-    if(!R_FINITE(x)) { return R_D__0; }
+    if (sigma < 0) ML_WARN_return_NAN;
+    if (!R_FINITE(sigma)) return R_D__0;
+    if (!R_FINITE(x) && mu == x) return ML_NAN;/* x-mu is NaN */
+    if (sigma == 0)
+        return (x == mu) ? ML_POSINF : R_D__0;
+    x = (x - mu) / sigma;
 
-    x = fabs (x);
-    if (x >= 2 * sqrt(DBL_MAX)) { return R_D__0; }
-    if (give_log) {
-		return -(M_LN_SQRT_2PI + 0.5 * x * x + log(sigma));
-	}
+    if (!R_FINITE(x)) return R_D__0;
 
+    x = fabs(x);
+    if (x >= 2 * sqrt(DBL_MAX)) return R_D__0;
+    if (give_log)
+        return -(M_LN_SQRT_2PI + 0.5 * x * x + log(sigma));
     //  M_1_SQRT_2PI = 1 / sqrt(2 * pi)
+#ifdef MATHLIB_FAST_dnorm
+    // and for R <= 3.0.x and R-devel upto 2014-01-01:
+    return M_1_SQRT_2PI * exp(-0.5 * x * x) / sigma;
+#else
     // more accurate, less fast :
-    if (x < 5) {
-		return M_1_SQRT_2PI * exp(-0.5 * x * x) / sigma;
-	}
+    if (x < 5)    return M_1_SQRT_2PI * exp(-0.5 * x * x) / sigma;
 
-    /* 
-	 * ELSE:
+    /* ELSE:
 
      * x*x  may lose upto about two digits accuracy for "large" x
      * Morten Welinder's proposal for PR#15620
@@ -74,15 +70,13 @@ double dnorm(double x, double mu, double sigma, bool log_p)
      * but "thanks" to denormalized numbers, underflow happens a bit later,
      *  effective.D.MIN.EXP <- with(.Machine, double.min.exp + double.ulp.digits)
      * for IEEE, DBL_MIN_EXP is -1022 but "effective" is -1074
-     * ==> boundary = sqrt(-2*log(2)*(.Machine$double.min.exp +
-	 * .Machine$double.ulp.digits))
+     * ==> boundary = sqrt(-2*log(2)*(.Machine$double.min.exp + .Machine$double.ulp.digits))
      *              =IEEE=  38.58601
      * [on one x86_64 platform, effective boundary a bit lower: 38.56804]
      */
-    if (x > sqrt(-2*M_LN2*(DBL_MIN_EXP + 1-DBL_MANT_DIG))) { return 0.; }
+    if (x > sqrt(-2.0 * M_LN2 * (1.0 * DBL_MIN_EXP + 1 - 1.0 * DBL_MANT_DIG))) return 0.;
 
-    /*
-	 * Now, to get full accurary, split x into two parts,
+    /* Now, to get full accurary, split x into two parts,
      *  x = x1+x2, such that |x2| <= 2^-16.
      * Assuming that we are using IEEE doubles, that means that
      * x1*x1 is error free for x<1024 (but we have x < 38.6 anyway).
@@ -90,8 +84,9 @@ double dnorm(double x, double mu, double sigma, bool log_p)
      * If we do not have IEEE this is still an improvement over the naive formula.
      */
     double x1 = //  R_forceint(x * 65536) / 65536 =
-		ldexp( R_forceint(ldexp(x, 16)), -16);
+        ldexp(R_forceint(ldexp(x, 16)), -16);
     double x2 = x - x1;
     return M_1_SQRT_2PI / sigma *
-		(exp(-0.5 * x1 * x1) * exp((-0.5 * x2 - x1) * x2 ));
+        (exp(-0.5 * x1 * x1) * exp((-0.5 * x2 - x1) * x2));
+#endif
 }
