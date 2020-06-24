@@ -1,6 +1,6 @@
 MiniR
 
-This program is the Minimial of R.
+This program is the Minimial of R. It just include the statistics.
 
 build:
 	cd ../build
