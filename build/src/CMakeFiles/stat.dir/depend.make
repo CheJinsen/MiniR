@@ -27,10 +27,25 @@ src/CMakeFiles/stat.dir/dbinom.cpp.o: ../include/dpq.h
 src/CMakeFiles/stat.dir/dbinom.cpp.o: ../include/nmath.h
 src/CMakeFiles/stat.dir/dbinom.cpp.o: ../src/dbinom.cpp
 
+src/CMakeFiles/stat.dir/dchisq.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/dchisq.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/dchisq.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/dchisq.cpp.o: ../src/dchisq.cpp
+
+src/CMakeFiles/stat.dir/dgamma.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/dgamma.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/dgamma.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/dgamma.cpp.o: ../src/dgamma.cpp
+
 src/CMakeFiles/stat.dir/dnorm.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/dnorm.cpp.o: ../include/dpq.h
 src/CMakeFiles/stat.dir/dnorm.cpp.o: ../include/nmath.h
 src/CMakeFiles/stat.dir/dnorm.cpp.o: ../src/dnorm.cpp
+
+src/CMakeFiles/stat.dir/dpois.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/dpois.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/dpois.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/dpois.cpp.o: ../src/dpois.cpp
 
 src/CMakeFiles/stat.dir/dt.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/dt.cpp.o: ../include/dpq.h

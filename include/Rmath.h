@@ -385,9 +385,8 @@ void	pnorm_both(double, double *, double *, bool, bool);/* both tails */
 //double	qunif(double, double, double, int, int);
 //double	runif(double, double);
 //
-//	/* Gamma Distribution */
-//
-//double	dgamma(double, double, double, int);
+	/* Gamma Distribution */
+double	dgamma(double x, double shape, double scale, bool log);
 //double	pgamma(double, double, double, int, int);
 //double	qgamma(double, double, double, int, int);
 //double	rgamma(double, double);
@@ -417,7 +416,7 @@ double	qbeta(double p, double shape1, double shape2,
 //
 //	/* Chi-squared Distribution */
 //
-//double	dchisq(double, double, int);
+double	dchisq(double x, double df, bool log = false);
 //double	pchisq(double, double, int, int);
 //double	qchisq(double, double, int, int);
 //double	rchisq(double);
@@ -499,8 +498,8 @@ double	qbinom(double p, double size, double prob,
 //
 //	/* Poisson Distribution */
 //
-//double	dpois_raw (double, double, int);
-//double	dpois(double, double, int);
+double	dpois_raw (double x, double lambda, bool log);
+double	dpois(double x, double lambda, bool log = false);
 //double	ppois(double, double, int, int);
 //double	qpois(double, double, int, int);
 //double	rpois(double);

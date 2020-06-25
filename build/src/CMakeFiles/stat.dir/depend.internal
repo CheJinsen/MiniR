@@ -27,11 +27,26 @@ src/CMakeFiles/stat.dir/dbinom.cpp.o
  ../include/dpq.h
  ../include/nmath.h
  /home/a008/coding/MiniR/src/dbinom.cpp
+src/CMakeFiles/stat.dir/dchisq.cpp.o
+ ../include/Rmath.h
+ ../include/dpq.h
+ ../include/nmath.h
+ /home/a008/coding/MiniR/src/dchisq.cpp
+src/CMakeFiles/stat.dir/dgamma.cpp.o
+ ../include/Rmath.h
+ ../include/dpq.h
+ ../include/nmath.h
+ /home/a008/coding/MiniR/src/dgamma.cpp
 src/CMakeFiles/stat.dir/dnorm.cpp.o
  ../include/Rmath.h
  ../include/dpq.h
  ../include/nmath.h
  /home/a008/coding/MiniR/src/dnorm.cpp
+src/CMakeFiles/stat.dir/dpois.cpp.o
+ ../include/Rmath.h
+ ../include/dpq.h
+ ../include/nmath.h
+ /home/a008/coding/MiniR/src/dpois.cpp
 src/CMakeFiles/stat.dir/dt.cpp.o
  ../include/Rmath.h
  ../include/dpq.h

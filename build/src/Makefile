@@ -287,6 +287,60 @@ dbinom.cpp.s:
 	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dbinom.cpp.s
 .PHONY : dbinom.cpp.s
 
+dchisq.o: dchisq.cpp.o
+
+.PHONY : dchisq.o
+
+# target to build an object file
+dchisq.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dchisq.cpp.o
+.PHONY : dchisq.cpp.o
+
+dchisq.i: dchisq.cpp.i
+
+.PHONY : dchisq.i
+
+# target to preprocess a source file
+dchisq.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dchisq.cpp.i
+.PHONY : dchisq.cpp.i
+
+dchisq.s: dchisq.cpp.s
+
+.PHONY : dchisq.s
+
+# target to generate assembly for a file
+dchisq.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dchisq.cpp.s
+.PHONY : dchisq.cpp.s
+
+dgamma.o: dgamma.cpp.o
+
+.PHONY : dgamma.o
+
+# target to build an object file
+dgamma.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dgamma.cpp.o
+.PHONY : dgamma.cpp.o
+
+dgamma.i: dgamma.cpp.i
+
+.PHONY : dgamma.i
+
+# target to preprocess a source file
+dgamma.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dgamma.cpp.i
+.PHONY : dgamma.cpp.i
+
+dgamma.s: dgamma.cpp.s
+
+.PHONY : dgamma.s
+
+# target to generate assembly for a file
+dgamma.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dgamma.cpp.s
+.PHONY : dgamma.cpp.s
+
 dnorm.o: dnorm.cpp.o
 
 .PHONY : dnorm.o
@@ -313,6 +367,33 @@ dnorm.s: dnorm.cpp.s
 dnorm.cpp.s:
 	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dnorm.cpp.s
 .PHONY : dnorm.cpp.s
+
+dpois.o: dpois.cpp.o
+
+.PHONY : dpois.o
+
+# target to build an object file
+dpois.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dpois.cpp.o
+.PHONY : dpois.cpp.o
+
+dpois.i: dpois.cpp.i
+
+.PHONY : dpois.i
+
+# target to preprocess a source file
+dpois.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dpois.cpp.i
+.PHONY : dpois.cpp.i
+
+dpois.s: dpois.cpp.s
+
+.PHONY : dpois.s
+
+# target to generate assembly for a file
+dpois.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dpois.cpp.s
+.PHONY : dpois.cpp.s
 
 dt.o: dt.cpp.o
 
@@ -935,9 +1016,18 @@ help:
 	@echo "... dbinom.o"
 	@echo "... dbinom.i"
 	@echo "... dbinom.s"
+	@echo "... dchisq.o"
+	@echo "... dchisq.i"
+	@echo "... dchisq.s"
+	@echo "... dgamma.o"
+	@echo "... dgamma.i"
+	@echo "... dgamma.s"
 	@echo "... dnorm.o"
 	@echo "... dnorm.i"
 	@echo "... dnorm.s"
+	@echo "... dpois.o"
+	@echo "... dpois.i"
+	@echo "... dpois.s"
 	@echo "... dt.o"
 	@echo "... dt.i"
 	@echo "... dt.s"
