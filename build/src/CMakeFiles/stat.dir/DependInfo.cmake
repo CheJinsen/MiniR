@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/a008/coding/MiniR/src/RNG.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/RNG.cpp.o"
   "/home/a008/coding/MiniR/src/bd0.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/bd0.cpp.o"
   "/home/a008/coding/MiniR/src/chebyshev.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/chebyshev.cpp.o"
   "/home/a008/coding/MiniR/src/cospi.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/cospi.cpp.o"
@@ -28,6 +29,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/a008/coding/MiniR/src/qbinom.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/qbinom.cpp.o"
   "/home/a008/coding/MiniR/src/qnorm.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/qnorm.cpp.o"
   "/home/a008/coding/MiniR/src/qt.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/qt.cpp.o"
+  "/home/a008/coding/MiniR/src/rnorm.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/rnorm.cpp.o"
+  "/home/a008/coding/MiniR/src/snorm.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/snorm.cpp.o"
   "/home/a008/coding/MiniR/src/stirlerr.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/stirlerr.cpp.o"
   "/home/a008/coding/MiniR/src/toms708.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/toms708.cpp.o"
   )

@@ -125,6 +125,33 @@ stat/fast:
 	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/build
 .PHONY : stat/fast
 
+RNG.o: RNG.cpp.o
+
+.PHONY : RNG.o
+
+# target to build an object file
+RNG.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/RNG.cpp.o
+.PHONY : RNG.cpp.o
+
+RNG.i: RNG.cpp.i
+
+.PHONY : RNG.i
+
+# target to preprocess a source file
+RNG.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/RNG.cpp.i
+.PHONY : RNG.cpp.i
+
+RNG.s: RNG.cpp.s
+
+.PHONY : RNG.s
+
+# target to generate assembly for a file
+RNG.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/RNG.cpp.s
+.PHONY : RNG.cpp.s
+
 bd0.o: bd0.cpp.o
 
 .PHONY : bd0.o
@@ -773,6 +800,60 @@ qt.cpp.s:
 	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qt.cpp.s
 .PHONY : qt.cpp.s
 
+rnorm.o: rnorm.cpp.o
+
+.PHONY : rnorm.o
+
+# target to build an object file
+rnorm.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/rnorm.cpp.o
+.PHONY : rnorm.cpp.o
+
+rnorm.i: rnorm.cpp.i
+
+.PHONY : rnorm.i
+
+# target to preprocess a source file
+rnorm.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/rnorm.cpp.i
+.PHONY : rnorm.cpp.i
+
+rnorm.s: rnorm.cpp.s
+
+.PHONY : rnorm.s
+
+# target to generate assembly for a file
+rnorm.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/rnorm.cpp.s
+.PHONY : rnorm.cpp.s
+
+snorm.o: snorm.cpp.o
+
+.PHONY : snorm.o
+
+# target to build an object file
+snorm.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/snorm.cpp.o
+.PHONY : snorm.cpp.o
+
+snorm.i: snorm.cpp.i
+
+.PHONY : snorm.i
+
+# target to preprocess a source file
+snorm.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/snorm.cpp.i
+.PHONY : snorm.cpp.i
+
+snorm.s: snorm.cpp.s
+
+.PHONY : snorm.s
+
+# target to generate assembly for a file
+snorm.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/snorm.cpp.s
+.PHONY : snorm.cpp.s
+
 stirlerr.o: stirlerr.cpp.o
 
 .PHONY : stirlerr.o
@@ -836,6 +917,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... stat"
+	@echo "... RNG.o"
+	@echo "... RNG.i"
+	@echo "... RNG.s"
 	@echo "... bd0.o"
 	@echo "... bd0.i"
 	@echo "... bd0.s"
@@ -908,6 +992,12 @@ help:
 	@echo "... qt.o"
 	@echo "... qt.i"
 	@echo "... qt.s"
+	@echo "... rnorm.o"
+	@echo "... rnorm.i"
+	@echo "... rnorm.s"
+	@echo "... snorm.o"
+	@echo "... snorm.i"
+	@echo "... snorm.s"
 	@echo "... stirlerr.o"
 	@echo "... stirlerr.i"
 	@echo "... stirlerr.s"

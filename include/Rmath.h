@@ -375,7 +375,7 @@ double	pnorm(double q, double mean = 0.0, double sd = 1.0,
 	bool lower_tail = true, bool log_p = false);
 double	qnorm(double p, double mean = 0.0, double sd = 1.0,
 	bool lower_tail = true, bool log_p = false);
-//double	rnorm(double, double);
+double	rnorm(double mu = 0.0, double sigma = 1.0);
 void	pnorm_both(double, double *, double *, bool, bool);/* both tails */
 //
 //	/* Uniform Distribution */
@@ -401,7 +401,7 @@ double  logspace_add(double, double);
 //
 //	/* Beta Distribution */
 //
-//double	dbeta(double, double, double, int);
+double	dbeta(double x, double shape1, double shape2, bool log = false);
 double	pbeta(double q, double shape1, double shape2,
 	bool lower_tail = true, bool log_p = false);
 //double	qbeta(double, double, double, int, int);
