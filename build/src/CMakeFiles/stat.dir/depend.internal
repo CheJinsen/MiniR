@@ -73,6 +73,10 @@ src/CMakeFiles/stat.dir/main.cpp.o
  ../include/Rmath.h
  ../include/nmath.h
  /home/a008/coding/MiniR/src/main.cpp
+src/CMakeFiles/stat.dir/mlutils.cpp.o
+ ../include/Rmath.h
+ ../include/nmath.h
+ /home/a008/coding/MiniR/src/mlutils.cpp
 src/CMakeFiles/stat.dir/pbeta.cpp.o
  ../include/Rmath.h
  ../include/dpq.h
@@ -98,6 +102,11 @@ src/CMakeFiles/stat.dir/pt.cpp.o
  ../include/dpq.h
  ../include/nmath.h
  /home/a008/coding/MiniR/src/pt.cpp
+src/CMakeFiles/stat.dir/qbeta.cpp.o
+ ../include/Rmath.h
+ ../include/dpq.h
+ ../include/nmath.h
+ /home/a008/coding/MiniR/src/qbeta.cpp
 src/CMakeFiles/stat.dir/qbinom.cpp.o
  ../include/Rmath.h
  ../include/dpq.h

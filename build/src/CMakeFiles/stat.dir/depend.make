@@ -73,6 +73,10 @@ src/CMakeFiles/stat.dir/main.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/main.cpp.o: ../include/nmath.h
 src/CMakeFiles/stat.dir/main.cpp.o: ../src/main.cpp
 
+src/CMakeFiles/stat.dir/mlutils.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/mlutils.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/mlutils.cpp.o: ../src/mlutils.cpp
+
 src/CMakeFiles/stat.dir/pbeta.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/pbeta.cpp.o: ../include/dpq.h
 src/CMakeFiles/stat.dir/pbeta.cpp.o: ../include/nmath.h
@@ -97,6 +101,11 @@ src/CMakeFiles/stat.dir/pt.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/pt.cpp.o: ../include/dpq.h
 src/CMakeFiles/stat.dir/pt.cpp.o: ../include/nmath.h
 src/CMakeFiles/stat.dir/pt.cpp.o: ../src/pt.cpp
+
+src/CMakeFiles/stat.dir/qbeta.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/qbeta.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/qbeta.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/qbeta.cpp.o: ../src/qbeta.cpp
 
 src/CMakeFiles/stat.dir/qbinom.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/qbinom.cpp.o: ../include/dpq.h

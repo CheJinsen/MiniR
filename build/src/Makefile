@@ -584,6 +584,33 @@ main.cpp.s:
 	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+mlutils.o: mlutils.cpp.o
+
+.PHONY : mlutils.o
+
+# target to build an object file
+mlutils.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/mlutils.cpp.o
+.PHONY : mlutils.cpp.o
+
+mlutils.i: mlutils.cpp.i
+
+.PHONY : mlutils.i
+
+# target to preprocess a source file
+mlutils.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/mlutils.cpp.i
+.PHONY : mlutils.cpp.i
+
+mlutils.s: mlutils.cpp.s
+
+.PHONY : mlutils.s
+
+# target to generate assembly for a file
+mlutils.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/mlutils.cpp.s
+.PHONY : mlutils.cpp.s
+
 pbeta.o: pbeta.cpp.o
 
 .PHONY : pbeta.o
@@ -718,6 +745,33 @@ pt.s: pt.cpp.s
 pt.cpp.s:
 	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pt.cpp.s
 .PHONY : pt.cpp.s
+
+qbeta.o: qbeta.cpp.o
+
+.PHONY : qbeta.o
+
+# target to build an object file
+qbeta.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qbeta.cpp.o
+.PHONY : qbeta.cpp.o
+
+qbeta.i: qbeta.cpp.i
+
+.PHONY : qbeta.i
+
+# target to preprocess a source file
+qbeta.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qbeta.cpp.i
+.PHONY : qbeta.cpp.i
+
+qbeta.s: qbeta.cpp.s
+
+.PHONY : qbeta.s
+
+# target to generate assembly for a file
+qbeta.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qbeta.cpp.s
+.PHONY : qbeta.cpp.s
 
 qbinom.o: qbinom.cpp.o
 
@@ -914,6 +968,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... mlutils.o"
+	@echo "... mlutils.i"
+	@echo "... mlutils.s"
 	@echo "... pbeta.o"
 	@echo "... pbeta.i"
 	@echo "... pbeta.s"
@@ -929,6 +986,9 @@ help:
 	@echo "... pt.o"
 	@echo "... pt.i"
 	@echo "... pt.s"
+	@echo "... qbeta.o"
+	@echo "... qbeta.i"
+	@echo "... qbeta.s"
 	@echo "... qbinom.o"
 	@echo "... qbinom.i"
 	@echo "... qbinom.s"

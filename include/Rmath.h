@@ -354,8 +354,8 @@
 //#endif
 //	/* R's versions with !R_FINITE checks */
 //
-//double R_pow(double x, double y);
-//double R_pow_di(double, int);
+double R_pow(double x, double y);
+double R_pow_di(double, int);
 //
 //	/* Random Number Generators */
 //
@@ -404,7 +404,8 @@ double  logspace_add(double, double);
 double	dbeta(double x, double shape1, double shape2, bool log = false);
 double	pbeta(double q, double shape1, double shape2,
 	bool lower_tail = true, bool log_p = false);
-//double	qbeta(double, double, double, int, int);
+double	qbeta(double p, double shape1, double shape2,
+	bool lower_tail = true, bool log_p = false);
 //double	rbeta(double, double);
 //
 //	/* Lognormal Distribution */
