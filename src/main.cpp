@@ -5,7 +5,7 @@
 
 int main()
 {
-	std::cout << rnorm(0.0, 1.0) << std::endl;
+	std::cout << "Done..." << std::endl;
 	return 0;
 }
 

@@ -78,7 +78,7 @@ double dbeta(double x, double a, double b, bool give_log)
     if (a <= 2 || b <= 2)
 	lval = (a-1)*log(x) + (b-1)*log1p(-x) - lbeta(a, b);
     else
-	lval = log(a+b-1) + dbinom_raw(a-1, a+b-2, x, 1-x, TRUE);
+	lval = log(a+b-1) + dbinom_raw(a-1, a+b-2, x, 1-x, true);
 
     return R_D_exp(lval);
 }

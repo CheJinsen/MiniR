@@ -31,7 +31,7 @@
 #include <algorithm>
 
 #include "Rmath.h"
-#include "R_ext/Random.h"
+//#include "R_ext/Random.h"
 
 #define IEEE_754 1
 
