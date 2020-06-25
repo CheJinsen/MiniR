@@ -117,6 +117,11 @@ src/CMakeFiles/stat.dir/pnorm.cpp.o: ../include/dpq.h
 src/CMakeFiles/stat.dir/pnorm.cpp.o: ../include/nmath.h
 src/CMakeFiles/stat.dir/pnorm.cpp.o: ../src/pnorm.cpp
 
+src/CMakeFiles/stat.dir/ppois.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/ppois.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/ppois.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/ppois.cpp.o: ../src/ppois.cpp
+
 src/CMakeFiles/stat.dir/pt.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/pt.cpp.o: ../include/dpq.h
 src/CMakeFiles/stat.dir/pt.cpp.o: ../include/nmath.h

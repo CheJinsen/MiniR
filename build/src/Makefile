@@ -827,6 +827,33 @@ pnorm.cpp.s:
 	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pnorm.cpp.s
 .PHONY : pnorm.cpp.s
 
+ppois.o: ppois.cpp.o
+
+.PHONY : ppois.o
+
+# target to build an object file
+ppois.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/ppois.cpp.o
+.PHONY : ppois.cpp.o
+
+ppois.i: ppois.cpp.i
+
+.PHONY : ppois.i
+
+# target to preprocess a source file
+ppois.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/ppois.cpp.i
+.PHONY : ppois.cpp.i
+
+ppois.s: ppois.cpp.s
+
+.PHONY : ppois.s
+
+# target to generate assembly for a file
+ppois.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/ppois.cpp.s
+.PHONY : ppois.cpp.s
+
 pt.o: pt.cpp.o
 
 .PHONY : pt.o
@@ -1157,6 +1184,9 @@ help:
 	@echo "... pnorm.o"
 	@echo "... pnorm.i"
 	@echo "... pnorm.s"
+	@echo "... ppois.o"
+	@echo "... ppois.i"
+	@echo "... ppois.s"
 	@echo "... pt.o"
 	@echo "... pt.i"
 	@echo "... pt.s"

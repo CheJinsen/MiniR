@@ -500,7 +500,7 @@ double	qbinom(double p, double size, double prob,
 //
 double	dpois_raw (double x, double lambda, bool log);
 double	dpois(double x, double lambda, bool log = false);
-//double	ppois(double, double, int, int);
+double	ppois(double q, double lambda, bool lower_tail = true, bool log = false);
 //double	qpois(double, double, int, int);
 //double	rpois(double);
 //

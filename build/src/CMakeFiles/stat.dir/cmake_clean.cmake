@@ -27,6 +27,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/stat.dir/pchisq.cpp.o"
   "CMakeFiles/stat.dir/pgamma.cpp.o"
   "CMakeFiles/stat.dir/pnorm.cpp.o"
+  "CMakeFiles/stat.dir/ppois.cpp.o"
   "CMakeFiles/stat.dir/pt.cpp.o"
   "CMakeFiles/stat.dir/qbeta.cpp.o"
   "CMakeFiles/stat.dir/qbinom.cpp.o"

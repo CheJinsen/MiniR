@@ -30,6 +30,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/a008/coding/MiniR/src/pchisq.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/pchisq.cpp.o"
   "/home/a008/coding/MiniR/src/pgamma.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/pgamma.cpp.o"
   "/home/a008/coding/MiniR/src/pnorm.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/pnorm.cpp.o"
+  "/home/a008/coding/MiniR/src/ppois.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/ppois.cpp.o"
   "/home/a008/coding/MiniR/src/pt.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/pt.cpp.o"
   "/home/a008/coding/MiniR/src/qbeta.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/qbeta.cpp.o"
   "/home/a008/coding/MiniR/src/qbinom.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/qbinom.cpp.o"

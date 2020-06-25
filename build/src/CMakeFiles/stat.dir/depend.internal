@@ -117,6 +117,11 @@ src/CMakeFiles/stat.dir/pnorm.cpp.o
  ../include/dpq.h
  ../include/nmath.h
  /home/a008/coding/MiniR/src/pnorm.cpp
+src/CMakeFiles/stat.dir/ppois.cpp.o
+ ../include/Rmath.h
+ ../include/dpq.h
+ ../include/nmath.h
+ /home/a008/coding/MiniR/src/ppois.cpp
 src/CMakeFiles/stat.dir/pt.cpp.o
  ../include/Rmath.h
  ../include/dpq.h
