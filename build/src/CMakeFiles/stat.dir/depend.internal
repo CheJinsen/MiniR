@@ -102,6 +102,11 @@ src/CMakeFiles/stat.dir/pbinom.cpp.o
  ../include/dpq.h
  ../include/nmath.h
  /home/a008/coding/MiniR/src/pbinom.cpp
+src/CMakeFiles/stat.dir/pchisq.cpp.o
+ ../include/Rmath.h
+ ../include/dpq.h
+ ../include/nmath.h
+ /home/a008/coding/MiniR/src/pchisq.cpp
 src/CMakeFiles/stat.dir/pgamma.cpp.o
  ../include/Rmath.h
  ../include/dpq.h
@@ -127,6 +132,16 @@ src/CMakeFiles/stat.dir/qbinom.cpp.o
  ../include/dpq.h
  ../include/nmath.h
  /home/a008/coding/MiniR/src/qbinom.cpp
+src/CMakeFiles/stat.dir/qchisq.cpp.o
+ ../include/Rmath.h
+ ../include/dpq.h
+ ../include/nmath.h
+ /home/a008/coding/MiniR/src/qchisq.cpp
+src/CMakeFiles/stat.dir/qgamma.cpp.o
+ ../include/Rmath.h
+ ../include/dpq.h
+ ../include/nmath.h
+ /home/a008/coding/MiniR/src/qgamma.cpp
 src/CMakeFiles/stat.dir/qnorm.cpp.o
  ../include/Rmath.h
  ../include/dpq.h

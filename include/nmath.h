@@ -128,3 +128,5 @@ double lgammacor(double); /* log(gamma) correction */
 	/* Chebyshev Series */
 int chebyshev_init(double*, int, double);
 double chebyshev_eval(double, const double*, const int);
+
+double pgamma_raw(double, double, bool, bool);

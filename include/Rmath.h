@@ -387,13 +387,13 @@ void	pnorm_both(double, double *, double *, bool, bool);/* both tails */
 //
 	/* Gamma Distribution */
 double	dgamma(double x, double shape, double scale, bool log);
-//double	pgamma(double, double, double, int, int);
-//double	qgamma(double, double, double, int, int);
+double	pgamma(double q, double shape, double scale, bool lower_tail = true, bool log = false);
+double	qgamma(double p, double shape, double scale, bool lower_tail = true, bool log = false);
 //double	rgamma(double, double);
 //
 //double  log1pmx(double);
 //double  log1pexp(double); // <-- ../nmath/plogis.c
-//double  lgamma1p(double);
+double  lgamma1p(double);
 double  logspace_add(double, double);
 //double  logspace_sub(double, double);
 //double  logspace_sum(const double *, int);
@@ -417,8 +417,8 @@ double	qbeta(double p, double shape1, double shape2,
 //	/* Chi-squared Distribution */
 //
 double	dchisq(double x, double df, bool log = false);
-//double	pchisq(double, double, int, int);
-//double	qchisq(double, double, int, int);
+double	pchisq(double q, double df, bool lower_tail = true, bool log = false);
+double	qchisq(double p, double df, bool lower_tail = true, bool log = false);
 //double	rchisq(double);
 //
 //	/* Non-central Chi-squared Distribution */

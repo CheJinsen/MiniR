@@ -102,6 +102,11 @@ src/CMakeFiles/stat.dir/pbinom.cpp.o: ../include/dpq.h
 src/CMakeFiles/stat.dir/pbinom.cpp.o: ../include/nmath.h
 src/CMakeFiles/stat.dir/pbinom.cpp.o: ../src/pbinom.cpp
 
+src/CMakeFiles/stat.dir/pchisq.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/pchisq.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/pchisq.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/pchisq.cpp.o: ../src/pchisq.cpp
+
 src/CMakeFiles/stat.dir/pgamma.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/pgamma.cpp.o: ../include/dpq.h
 src/CMakeFiles/stat.dir/pgamma.cpp.o: ../include/nmath.h
@@ -126,6 +131,16 @@ src/CMakeFiles/stat.dir/qbinom.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/qbinom.cpp.o: ../include/dpq.h
 src/CMakeFiles/stat.dir/qbinom.cpp.o: ../include/nmath.h
 src/CMakeFiles/stat.dir/qbinom.cpp.o: ../src/qbinom.cpp
+
+src/CMakeFiles/stat.dir/qchisq.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/qchisq.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/qchisq.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/qchisq.cpp.o: ../src/qchisq.cpp
+
+src/CMakeFiles/stat.dir/qgamma.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/qgamma.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/qgamma.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/qgamma.cpp.o: ../src/qgamma.cpp
 
 src/CMakeFiles/stat.dir/qnorm.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/qnorm.cpp.o: ../include/dpq.h

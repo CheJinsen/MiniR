@@ -746,6 +746,33 @@ pbinom.cpp.s:
 	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pbinom.cpp.s
 .PHONY : pbinom.cpp.s
 
+pchisq.o: pchisq.cpp.o
+
+.PHONY : pchisq.o
+
+# target to build an object file
+pchisq.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pchisq.cpp.o
+.PHONY : pchisq.cpp.o
+
+pchisq.i: pchisq.cpp.i
+
+.PHONY : pchisq.i
+
+# target to preprocess a source file
+pchisq.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pchisq.cpp.i
+.PHONY : pchisq.cpp.i
+
+pchisq.s: pchisq.cpp.s
+
+.PHONY : pchisq.s
+
+# target to generate assembly for a file
+pchisq.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pchisq.cpp.s
+.PHONY : pchisq.cpp.s
+
 pgamma.o: pgamma.cpp.o
 
 .PHONY : pgamma.o
@@ -880,6 +907,60 @@ qbinom.s: qbinom.cpp.s
 qbinom.cpp.s:
 	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qbinom.cpp.s
 .PHONY : qbinom.cpp.s
+
+qchisq.o: qchisq.cpp.o
+
+.PHONY : qchisq.o
+
+# target to build an object file
+qchisq.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qchisq.cpp.o
+.PHONY : qchisq.cpp.o
+
+qchisq.i: qchisq.cpp.i
+
+.PHONY : qchisq.i
+
+# target to preprocess a source file
+qchisq.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qchisq.cpp.i
+.PHONY : qchisq.cpp.i
+
+qchisq.s: qchisq.cpp.s
+
+.PHONY : qchisq.s
+
+# target to generate assembly for a file
+qchisq.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qchisq.cpp.s
+.PHONY : qchisq.cpp.s
+
+qgamma.o: qgamma.cpp.o
+
+.PHONY : qgamma.o
+
+# target to build an object file
+qgamma.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qgamma.cpp.o
+.PHONY : qgamma.cpp.o
+
+qgamma.i: qgamma.cpp.i
+
+.PHONY : qgamma.i
+
+# target to preprocess a source file
+qgamma.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qgamma.cpp.i
+.PHONY : qgamma.cpp.i
+
+qgamma.s: qgamma.cpp.s
+
+.PHONY : qgamma.s
+
+# target to generate assembly for a file
+qgamma.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qgamma.cpp.s
+.PHONY : qgamma.cpp.s
 
 qnorm.o: qnorm.cpp.o
 
@@ -1067,6 +1148,9 @@ help:
 	@echo "... pbinom.o"
 	@echo "... pbinom.i"
 	@echo "... pbinom.s"
+	@echo "... pchisq.o"
+	@echo "... pchisq.i"
+	@echo "... pchisq.s"
 	@echo "... pgamma.o"
 	@echo "... pgamma.i"
 	@echo "... pgamma.s"
@@ -1082,6 +1166,12 @@ help:
 	@echo "... qbinom.o"
 	@echo "... qbinom.i"
 	@echo "... qbinom.s"
+	@echo "... qchisq.o"
+	@echo "... qchisq.i"
+	@echo "... qchisq.s"
+	@echo "... qgamma.o"
+	@echo "... qgamma.i"
+	@echo "... qgamma.s"
 	@echo "... qnorm.o"
 	@echo "... qnorm.i"
 	@echo "... qnorm.s"
