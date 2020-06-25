@@ -1016,6 +1016,33 @@ qnorm.cpp.s:
 	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qnorm.cpp.s
 .PHONY : qnorm.cpp.s
 
+qpois.o: qpois.cpp.o
+
+.PHONY : qpois.o
+
+# target to build an object file
+qpois.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qpois.cpp.o
+.PHONY : qpois.cpp.o
+
+qpois.i: qpois.cpp.i
+
+.PHONY : qpois.i
+
+# target to preprocess a source file
+qpois.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qpois.cpp.i
+.PHONY : qpois.cpp.i
+
+qpois.s: qpois.cpp.s
+
+.PHONY : qpois.s
+
+# target to generate assembly for a file
+qpois.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qpois.cpp.s
+.PHONY : qpois.cpp.s
+
 qt.o: qt.cpp.o
 
 .PHONY : qt.o
@@ -1205,6 +1232,9 @@ help:
 	@echo "... qnorm.o"
 	@echo "... qnorm.i"
 	@echo "... qnorm.s"
+	@echo "... qpois.o"
+	@echo "... qpois.i"
+	@echo "... qpois.s"
 	@echo "... qt.o"
 	@echo "... qt.i"
 	@echo "... qt.s"

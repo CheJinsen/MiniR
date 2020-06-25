@@ -152,6 +152,11 @@ src/CMakeFiles/stat.dir/qnorm.cpp.o
  ../include/dpq.h
  ../include/nmath.h
  /home/a008/coding/MiniR/src/qnorm.cpp
+src/CMakeFiles/stat.dir/qpois.cpp.o
+ ../include/Rmath.h
+ ../include/dpq.h
+ ../include/nmath.h
+ /home/a008/coding/MiniR/src/qpois.cpp
 src/CMakeFiles/stat.dir/qt.cpp.o
  ../include/Rmath.h
  ../include/dpq.h

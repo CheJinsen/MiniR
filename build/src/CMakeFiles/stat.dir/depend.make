@@ -152,6 +152,11 @@ src/CMakeFiles/stat.dir/qnorm.cpp.o: ../include/dpq.h
 src/CMakeFiles/stat.dir/qnorm.cpp.o: ../include/nmath.h
 src/CMakeFiles/stat.dir/qnorm.cpp.o: ../src/qnorm.cpp
 
+src/CMakeFiles/stat.dir/qpois.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/qpois.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/qpois.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/qpois.cpp.o: ../src/qpois.cpp
+
 src/CMakeFiles/stat.dir/qt.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/qt.cpp.o: ../include/dpq.h
 src/CMakeFiles/stat.dir/qt.cpp.o: ../include/nmath.h

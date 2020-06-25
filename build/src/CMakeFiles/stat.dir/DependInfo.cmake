@@ -37,6 +37,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/a008/coding/MiniR/src/qchisq.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/qchisq.cpp.o"
   "/home/a008/coding/MiniR/src/qgamma.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/qgamma.cpp.o"
   "/home/a008/coding/MiniR/src/qnorm.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/qnorm.cpp.o"
+  "/home/a008/coding/MiniR/src/qpois.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/qpois.cpp.o"
   "/home/a008/coding/MiniR/src/qt.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/qt.cpp.o"
   "/home/a008/coding/MiniR/src/stirlerr.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/stirlerr.cpp.o"
   "/home/a008/coding/MiniR/src/toms708.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/toms708.cpp.o"

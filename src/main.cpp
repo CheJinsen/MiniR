@@ -15,6 +15,7 @@ int main()
 	std::cout << qchisq(0.975, 10) << std::endl;
 	std::cout << qchisq(0.025, 10) << std::endl;
 	std::cout << (1 - ppois(3, 1.15)) << std::endl;
+	std::cout << qpois(0.97, 2.3) << std::endl;
 	return 0;
 }
 

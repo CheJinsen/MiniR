@@ -501,7 +501,7 @@ double	qbinom(double p, double size, double prob,
 double	dpois_raw (double x, double lambda, bool log);
 double	dpois(double x, double lambda, bool log = false);
 double	ppois(double q, double lambda, bool lower_tail = true, bool log = false);
-//double	qpois(double, double, int, int);
+double	qpois(double p, double lambda, bool lower_tail = true, bool log = false);
 //double	rpois(double);
 //
 //	/* Weibull Distribution */

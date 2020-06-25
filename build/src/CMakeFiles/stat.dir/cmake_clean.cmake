@@ -34,6 +34,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/stat.dir/qchisq.cpp.o"
   "CMakeFiles/stat.dir/qgamma.cpp.o"
   "CMakeFiles/stat.dir/qnorm.cpp.o"
+  "CMakeFiles/stat.dir/qpois.cpp.o"
   "CMakeFiles/stat.dir/qt.cpp.o"
   "CMakeFiles/stat.dir/stirlerr.cpp.o"
   "CMakeFiles/stat.dir/toms708.cpp.o"
