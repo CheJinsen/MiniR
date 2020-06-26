@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "../../bin/stat"
   "../../bin/stat.pdb"
+  "CMakeFiles/stat.dir/RNG.cpp.o"
   "CMakeFiles/stat.dir/bd0.cpp.o"
   "CMakeFiles/stat.dir/chebyshev.cpp.o"
   "CMakeFiles/stat.dir/cospi.cpp.o"
@@ -36,6 +37,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/stat.dir/qnorm.cpp.o"
   "CMakeFiles/stat.dir/qpois.cpp.o"
   "CMakeFiles/stat.dir/qt.cpp.o"
+  "CMakeFiles/stat.dir/rnorm.cpp.o"
+  "CMakeFiles/stat.dir/snorm.cpp.o"
   "CMakeFiles/stat.dir/stirlerr.cpp.o"
   "CMakeFiles/stat.dir/toms708.cpp.o"
 )

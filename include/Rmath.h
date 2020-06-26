@@ -359,8 +359,8 @@ double R_pow_di(double, int);
 //
 //	/* Random Number Generators */
 //
-//double	norm_rand(void);
-//double	unif_rand(void);
+double	norm_rand(void);
+double	unif_rand(void);
 //double  R_unif_index(double);
 //double	exp_rand(void);
 //#ifdef MATHLIB_STANDALONE
@@ -380,7 +380,7 @@ void	pnorm_both(double, double *, double *, bool, bool);/* both tails */
 //
 //	/* Uniform Distribution */
 //
-//double	dunif(double, double, double, int);
+double	dunif(double x, double min = 0.0, double max = 1.0, bool log = false);
 //double	punif(double, double, double, int, int);
 //double	qunif(double, double, double, int, int);
 //double	runif(double, double);
