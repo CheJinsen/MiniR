@@ -8,3 +8,7 @@ build:
 
 executive:
 	../bin/stat
+
+
+Notes: In file ./src/pnchisq.cpp line 111 and line 236, I comment the
+interrupte check function, it meybe have bugs.
