@@ -522,16 +522,20 @@ double	qpois(double p, double lambda, bool lower_tail = true, bool log = false);
 //
 //	/* Weibull Distribution */
 //
-double	dweibull(double, double, double, bool);
-double	pweibull(double, double, double, bool, bool);
-double	qweibull(double, double, double, bool, bool);
+double	dweibull(double x, double shape, double scale = 1.0, bool log = false);
+double	pweibull(double q, double shape, double scale = 1.0,
+	bool lower_tail = true, bool log_p = false);
+double	qweibull(double p, double shape, double scale = 1.0,
+	bool lower_tail = true, bool log_p = false);
 //double	rweibull(double, double);
 
 //	/* Logistic Distribution */
 //
-double	dlogis(double, double, double, bool);
-double	plogis(double, double, double, bool, bool);
-double	qlogis(double, double, double, bool, bool);
+double	dlogis(double x, double location = 0.0, double scale = 1.0, bool log = false);
+double	plogis(double q, double location = 0.0, double scale = 1.0,
+	bool lower_tail = true, bool log_p = false);
+double	qlogis(double p, double location = 0.0, double scale = 1.0,
+	bool lower_tail = true, bool log_p = false);
 //double	rlogis(double, double);
 //
 //	/* Non-central Beta Distribution */
@@ -555,8 +559,10 @@ double	qnt(double, double, double, bool, bool);
 //
 //	/* Studentized Range Distribution */
 //
-double	ptukey(double, double, double, double, bool, bool);
-double	qtukey(double, double, double, double, bool, bool);
+double	ptukey(double q, double nmeans, double df,
+	double nranges = 1.0, bool lower_tail = true, bool log_p = false);
+double	qtukey(double p, double nmeans, double df,
+	double nranges = 1.0, bool lower_tail = true, bool log_p = false);
 //
 //	/* Wilcoxon Rank Sum Distribution */
 //
