@@ -125,33 +125,6 @@ stat/fast:
 	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/build
 .PHONY : stat/fast
 
-RNG.o: RNG.cpp.o
-
-.PHONY : RNG.o
-
-# target to build an object file
-RNG.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/RNG.cpp.o
-.PHONY : RNG.cpp.o
-
-RNG.i: RNG.cpp.i
-
-.PHONY : RNG.i
-
-# target to preprocess a source file
-RNG.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/RNG.cpp.i
-.PHONY : RNG.cpp.i
-
-RNG.s: RNG.cpp.s
-
-.PHONY : RNG.s
-
-# target to generate assembly for a file
-RNG.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/RNG.cpp.s
-.PHONY : RNG.cpp.s
-
 bd0.o: bd0.cpp.o
 
 .PHONY : bd0.o
@@ -448,6 +421,33 @@ dt.s: dt.cpp.s
 dt.cpp.s:
 	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dt.cpp.s
 .PHONY : dt.cpp.s
+
+dunif.o: dunif.cpp.o
+
+.PHONY : dunif.o
+
+# target to build an object file
+dunif.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dunif.cpp.o
+.PHONY : dunif.cpp.o
+
+dunif.i: dunif.cpp.i
+
+.PHONY : dunif.i
+
+# target to preprocess a source file
+dunif.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dunif.cpp.i
+.PHONY : dunif.cpp.i
+
+dunif.s: dunif.cpp.s
+
+.PHONY : dunif.s
+
+# target to generate assembly for a file
+dunif.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dunif.cpp.s
+.PHONY : dunif.cpp.s
 
 fmax2.o: fmax2.cpp.o
 
@@ -908,6 +908,33 @@ pt.cpp.s:
 	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pt.cpp.s
 .PHONY : pt.cpp.s
 
+punif.o: punif.cpp.o
+
+.PHONY : punif.o
+
+# target to build an object file
+punif.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/punif.cpp.o
+.PHONY : punif.cpp.o
+
+punif.i: punif.cpp.i
+
+.PHONY : punif.i
+
+# target to preprocess a source file
+punif.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/punif.cpp.i
+.PHONY : punif.cpp.i
+
+punif.s: punif.cpp.s
+
+.PHONY : punif.s
+
+# target to generate assembly for a file
+punif.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/punif.cpp.s
+.PHONY : punif.cpp.s
+
 qbeta.o: qbeta.cpp.o
 
 .PHONY : qbeta.o
@@ -1097,59 +1124,32 @@ qt.cpp.s:
 	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qt.cpp.s
 .PHONY : qt.cpp.s
 
-rnorm.o: rnorm.cpp.o
+qunif.o: qunif.cpp.o
 
-.PHONY : rnorm.o
-
-# target to build an object file
-rnorm.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/rnorm.cpp.o
-.PHONY : rnorm.cpp.o
-
-rnorm.i: rnorm.cpp.i
-
-.PHONY : rnorm.i
-
-# target to preprocess a source file
-rnorm.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/rnorm.cpp.i
-.PHONY : rnorm.cpp.i
-
-rnorm.s: rnorm.cpp.s
-
-.PHONY : rnorm.s
-
-# target to generate assembly for a file
-rnorm.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/rnorm.cpp.s
-.PHONY : rnorm.cpp.s
-
-snorm.o: snorm.cpp.o
-
-.PHONY : snorm.o
+.PHONY : qunif.o
 
 # target to build an object file
-snorm.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/snorm.cpp.o
-.PHONY : snorm.cpp.o
+qunif.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qunif.cpp.o
+.PHONY : qunif.cpp.o
 
-snorm.i: snorm.cpp.i
+qunif.i: qunif.cpp.i
 
-.PHONY : snorm.i
+.PHONY : qunif.i
 
 # target to preprocess a source file
-snorm.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/snorm.cpp.i
-.PHONY : snorm.cpp.i
+qunif.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qunif.cpp.i
+.PHONY : qunif.cpp.i
 
-snorm.s: snorm.cpp.s
+qunif.s: qunif.cpp.s
 
-.PHONY : snorm.s
+.PHONY : qunif.s
 
 # target to generate assembly for a file
-snorm.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/snorm.cpp.s
-.PHONY : snorm.cpp.s
+qunif.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qunif.cpp.s
+.PHONY : qunif.cpp.s
 
 stirlerr.o: stirlerr.cpp.o
 
@@ -1214,9 +1214,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... stat"
-	@echo "... RNG.o"
-	@echo "... RNG.i"
-	@echo "... RNG.s"
 	@echo "... bd0.o"
 	@echo "... bd0.i"
 	@echo "... bd0.s"
@@ -1250,6 +1247,9 @@ help:
 	@echo "... dt.o"
 	@echo "... dt.i"
 	@echo "... dt.s"
+	@echo "... dunif.o"
+	@echo "... dunif.i"
+	@echo "... dunif.s"
 	@echo "... fmax2.o"
 	@echo "... fmax2.i"
 	@echo "... fmax2.s"
@@ -1301,6 +1301,9 @@ help:
 	@echo "... pt.o"
 	@echo "... pt.i"
 	@echo "... pt.s"
+	@echo "... punif.o"
+	@echo "... punif.i"
+	@echo "... punif.s"
 	@echo "... qbeta.o"
 	@echo "... qbeta.i"
 	@echo "... qbeta.s"
@@ -1322,12 +1325,9 @@ help:
 	@echo "... qt.o"
 	@echo "... qt.i"
 	@echo "... qt.s"
-	@echo "... rnorm.o"
-	@echo "... rnorm.i"
-	@echo "... rnorm.s"
-	@echo "... snorm.o"
-	@echo "... snorm.i"
-	@echo "... snorm.s"
+	@echo "... qunif.o"
+	@echo "... qunif.i"
+	@echo "... qunif.s"
 	@echo "... stirlerr.o"
 	@echo "... stirlerr.i"
 	@echo "... stirlerr.s"

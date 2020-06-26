@@ -1,7 +1,7 @@
 /*
  *  Mathlib : A C Library of Special Functions
  *  Copyright (C) 1998 Ross Ihaka
- *  Copyright (C) 2000 The R Core Team
+ *  Copyright (C) 2000-2006 The R Core Team
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -17,25 +17,27 @@
  *  along with this program; if not, a copy is available at
  *  https://www.R-project.org/Licenses/
  *
- *  SYNOPSIS
- *
- *    #include "Rnorm.h"
- *    double rnorm(double mu, double sigma);
- *
  *  DESCRIPTION
  *
- *    Random variates from the normal distribution.
- *
+ *    The distribution function of the uniform distribution.
  */
 
 #include "nmath.h"
+#include "dpq.h"
 
-double rnorm(double mu, double sigma)
+double punif(double x, double a, double b, bool lower_tail, bool log_p)
 {
-    if (ISNAN(mu) || !R_FINITE(sigma) || sigma < 0.)
-	ML_WARN_return_NAN;
-    if (sigma == 0. || !R_FINITE(mu))
-	return mu; /* includes mu = +/- Inf with finite sigma */
-    else
-	return mu + sigma * norm_rand();
+
+    if (ISNAN(x) || ISNAN(a) || ISNAN(b))
+	return x + a + b;
+
+    if (b < a) ML_WARN_return_NAN;
+    if (!R_FINITE(a) || !R_FINITE(b)) ML_WARN_return_NAN;
+
+    if (x >= b)
+	return R_DT_1;
+    if (x <= a)
+	return R_DT_0;
+    if (lower_tail) return R_D_val((x - a) / (b - a));
+    else return R_D_val((b - x) / (b - a));
 }

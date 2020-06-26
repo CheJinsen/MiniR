@@ -1,7 +1,6 @@
 file(REMOVE_RECURSE
   "../../bin/stat"
   "../../bin/stat.pdb"
-  "CMakeFiles/stat.dir/RNG.cpp.o"
   "CMakeFiles/stat.dir/bd0.cpp.o"
   "CMakeFiles/stat.dir/chebyshev.cpp.o"
   "CMakeFiles/stat.dir/cospi.cpp.o"
@@ -13,6 +12,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/stat.dir/dnorm.cpp.o"
   "CMakeFiles/stat.dir/dpois.cpp.o"
   "CMakeFiles/stat.dir/dt.cpp.o"
+  "CMakeFiles/stat.dir/dunif.cpp.o"
   "CMakeFiles/stat.dir/fmax2.cpp.o"
   "CMakeFiles/stat.dir/fmin2.cpp.o"
   "CMakeFiles/stat.dir/gamma.cpp.o"
@@ -30,6 +30,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/stat.dir/pnorm.cpp.o"
   "CMakeFiles/stat.dir/ppois.cpp.o"
   "CMakeFiles/stat.dir/pt.cpp.o"
+  "CMakeFiles/stat.dir/punif.cpp.o"
   "CMakeFiles/stat.dir/qbeta.cpp.o"
   "CMakeFiles/stat.dir/qbinom.cpp.o"
   "CMakeFiles/stat.dir/qchisq.cpp.o"
@@ -37,8 +38,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/stat.dir/qnorm.cpp.o"
   "CMakeFiles/stat.dir/qpois.cpp.o"
   "CMakeFiles/stat.dir/qt.cpp.o"
-  "CMakeFiles/stat.dir/rnorm.cpp.o"
-  "CMakeFiles/stat.dir/snorm.cpp.o"
+  "CMakeFiles/stat.dir/qunif.cpp.o"
   "CMakeFiles/stat.dir/stirlerr.cpp.o"
   "CMakeFiles/stat.dir/toms708.cpp.o"
 )

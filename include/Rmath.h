@@ -381,8 +381,10 @@ void	pnorm_both(double, double *, double *, bool, bool);/* both tails */
 //	/* Uniform Distribution */
 //
 double	dunif(double x, double min = 0.0, double max = 1.0, bool log = false);
-//double	punif(double, double, double, int, int);
-//double	qunif(double, double, double, int, int);
+double	punif(double q, double min = 0.0, double max = 1.0,
+	bool lower_tail = true, bool log = false);
+double	qunif(double p, double min = 0.0, double max = 1.0,
+	bool lower_tail = true, bool log = false);
 //double	runif(double, double);
 //
 	/* Gamma Distribution */

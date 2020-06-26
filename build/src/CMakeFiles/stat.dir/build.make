@@ -57,22 +57,9 @@ include src/CMakeFiles/stat.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/stat.dir/flags.make
 
-src/CMakeFiles/stat.dir/RNG.cpp.o: src/CMakeFiles/stat.dir/flags.make
-src/CMakeFiles/stat.dir/RNG.cpp.o: ../src/RNG.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/stat.dir/RNG.cpp.o"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stat.dir/RNG.cpp.o -c /home/a008/coding/MiniR/src/RNG.cpp
-
-src/CMakeFiles/stat.dir/RNG.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/stat.dir/RNG.cpp.i"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a008/coding/MiniR/src/RNG.cpp > CMakeFiles/stat.dir/RNG.cpp.i
-
-src/CMakeFiles/stat.dir/RNG.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/stat.dir/RNG.cpp.s"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a008/coding/MiniR/src/RNG.cpp -o CMakeFiles/stat.dir/RNG.cpp.s
-
 src/CMakeFiles/stat.dir/bd0.cpp.o: src/CMakeFiles/stat.dir/flags.make
 src/CMakeFiles/stat.dir/bd0.cpp.o: ../src/bd0.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/stat.dir/bd0.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/stat.dir/bd0.cpp.o"
 	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stat.dir/bd0.cpp.o -c /home/a008/coding/MiniR/src/bd0.cpp
 
 src/CMakeFiles/stat.dir/bd0.cpp.i: cmake_force
@@ -85,7 +72,7 @@ src/CMakeFiles/stat.dir/bd0.cpp.s: cmake_force
 
 src/CMakeFiles/stat.dir/chebyshev.cpp.o: src/CMakeFiles/stat.dir/flags.make
 src/CMakeFiles/stat.dir/chebyshev.cpp.o: ../src/chebyshev.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/stat.dir/chebyshev.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/stat.dir/chebyshev.cpp.o"
 	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stat.dir/chebyshev.cpp.o -c /home/a008/coding/MiniR/src/chebyshev.cpp
 
 src/CMakeFiles/stat.dir/chebyshev.cpp.i: cmake_force
@@ -98,7 +85,7 @@ src/CMakeFiles/stat.dir/chebyshev.cpp.s: cmake_force
 
 src/CMakeFiles/stat.dir/cospi.cpp.o: src/CMakeFiles/stat.dir/flags.make
 src/CMakeFiles/stat.dir/cospi.cpp.o: ../src/cospi.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/stat.dir/cospi.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/stat.dir/cospi.cpp.o"
 	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stat.dir/cospi.cpp.o -c /home/a008/coding/MiniR/src/cospi.cpp
 
 src/CMakeFiles/stat.dir/cospi.cpp.i: cmake_force
@@ -111,7 +98,7 @@ src/CMakeFiles/stat.dir/cospi.cpp.s: cmake_force
 
 src/CMakeFiles/stat.dir/d1mach.cpp.o: src/CMakeFiles/stat.dir/flags.make
 src/CMakeFiles/stat.dir/d1mach.cpp.o: ../src/d1mach.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/stat.dir/d1mach.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/stat.dir/d1mach.cpp.o"
 	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stat.dir/d1mach.cpp.o -c /home/a008/coding/MiniR/src/d1mach.cpp
 
 src/CMakeFiles/stat.dir/d1mach.cpp.i: cmake_force
@@ -124,7 +111,7 @@ src/CMakeFiles/stat.dir/d1mach.cpp.s: cmake_force
 
 src/CMakeFiles/stat.dir/dbeta.cpp.o: src/CMakeFiles/stat.dir/flags.make
 src/CMakeFiles/stat.dir/dbeta.cpp.o: ../src/dbeta.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/stat.dir/dbeta.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/stat.dir/dbeta.cpp.o"
 	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stat.dir/dbeta.cpp.o -c /home/a008/coding/MiniR/src/dbeta.cpp
 
 src/CMakeFiles/stat.dir/dbeta.cpp.i: cmake_force
@@ -137,7 +124,7 @@ src/CMakeFiles/stat.dir/dbeta.cpp.s: cmake_force
 
 src/CMakeFiles/stat.dir/dbinom.cpp.o: src/CMakeFiles/stat.dir/flags.make
 src/CMakeFiles/stat.dir/dbinom.cpp.o: ../src/dbinom.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/stat.dir/dbinom.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/stat.dir/dbinom.cpp.o"
 	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stat.dir/dbinom.cpp.o -c /home/a008/coding/MiniR/src/dbinom.cpp
 
 src/CMakeFiles/stat.dir/dbinom.cpp.i: cmake_force
@@ -150,7 +137,7 @@ src/CMakeFiles/stat.dir/dbinom.cpp.s: cmake_force
 
 src/CMakeFiles/stat.dir/dchisq.cpp.o: src/CMakeFiles/stat.dir/flags.make
 src/CMakeFiles/stat.dir/dchisq.cpp.o: ../src/dchisq.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/stat.dir/dchisq.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/stat.dir/dchisq.cpp.o"
 	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stat.dir/dchisq.cpp.o -c /home/a008/coding/MiniR/src/dchisq.cpp
 
 src/CMakeFiles/stat.dir/dchisq.cpp.i: cmake_force
@@ -163,7 +150,7 @@ src/CMakeFiles/stat.dir/dchisq.cpp.s: cmake_force
 
 src/CMakeFiles/stat.dir/dgamma.cpp.o: src/CMakeFiles/stat.dir/flags.make
 src/CMakeFiles/stat.dir/dgamma.cpp.o: ../src/dgamma.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/CMakeFiles/stat.dir/dgamma.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/stat.dir/dgamma.cpp.o"
 	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stat.dir/dgamma.cpp.o -c /home/a008/coding/MiniR/src/dgamma.cpp
 
 src/CMakeFiles/stat.dir/dgamma.cpp.i: cmake_force
@@ -176,7 +163,7 @@ src/CMakeFiles/stat.dir/dgamma.cpp.s: cmake_force
 
 src/CMakeFiles/stat.dir/dnorm.cpp.o: src/CMakeFiles/stat.dir/flags.make
 src/CMakeFiles/stat.dir/dnorm.cpp.o: ../src/dnorm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/CMakeFiles/stat.dir/dnorm.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/CMakeFiles/stat.dir/dnorm.cpp.o"
 	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stat.dir/dnorm.cpp.o -c /home/a008/coding/MiniR/src/dnorm.cpp
 
 src/CMakeFiles/stat.dir/dnorm.cpp.i: cmake_force
@@ -189,7 +176,7 @@ src/CMakeFiles/stat.dir/dnorm.cpp.s: cmake_force
 
 src/CMakeFiles/stat.dir/dpois.cpp.o: src/CMakeFiles/stat.dir/flags.make
 src/CMakeFiles/stat.dir/dpois.cpp.o: ../src/dpois.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object src/CMakeFiles/stat.dir/dpois.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/CMakeFiles/stat.dir/dpois.cpp.o"
 	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stat.dir/dpois.cpp.o -c /home/a008/coding/MiniR/src/dpois.cpp
 
 src/CMakeFiles/stat.dir/dpois.cpp.i: cmake_force
@@ -202,7 +189,7 @@ src/CMakeFiles/stat.dir/dpois.cpp.s: cmake_force
 
 src/CMakeFiles/stat.dir/dt.cpp.o: src/CMakeFiles/stat.dir/flags.make
 src/CMakeFiles/stat.dir/dt.cpp.o: ../src/dt.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object src/CMakeFiles/stat.dir/dt.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object src/CMakeFiles/stat.dir/dt.cpp.o"
 	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stat.dir/dt.cpp.o -c /home/a008/coding/MiniR/src/dt.cpp
 
 src/CMakeFiles/stat.dir/dt.cpp.i: cmake_force
@@ -212,6 +199,19 @@ src/CMakeFiles/stat.dir/dt.cpp.i: cmake_force
 src/CMakeFiles/stat.dir/dt.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/stat.dir/dt.cpp.s"
 	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a008/coding/MiniR/src/dt.cpp -o CMakeFiles/stat.dir/dt.cpp.s
+
+src/CMakeFiles/stat.dir/dunif.cpp.o: src/CMakeFiles/stat.dir/flags.make
+src/CMakeFiles/stat.dir/dunif.cpp.o: ../src/dunif.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object src/CMakeFiles/stat.dir/dunif.cpp.o"
+	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stat.dir/dunif.cpp.o -c /home/a008/coding/MiniR/src/dunif.cpp
+
+src/CMakeFiles/stat.dir/dunif.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/stat.dir/dunif.cpp.i"
+	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a008/coding/MiniR/src/dunif.cpp > CMakeFiles/stat.dir/dunif.cpp.i
+
+src/CMakeFiles/stat.dir/dunif.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/stat.dir/dunif.cpp.s"
+	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a008/coding/MiniR/src/dunif.cpp -o CMakeFiles/stat.dir/dunif.cpp.s
 
 src/CMakeFiles/stat.dir/fmax2.cpp.o: src/CMakeFiles/stat.dir/flags.make
 src/CMakeFiles/stat.dir/fmax2.cpp.o: ../src/fmax2.cpp
@@ -434,9 +434,22 @@ src/CMakeFiles/stat.dir/pt.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/stat.dir/pt.cpp.s"
 	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a008/coding/MiniR/src/pt.cpp -o CMakeFiles/stat.dir/pt.cpp.s
 
+src/CMakeFiles/stat.dir/punif.cpp.o: src/CMakeFiles/stat.dir/flags.make
+src/CMakeFiles/stat.dir/punif.cpp.o: ../src/punif.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object src/CMakeFiles/stat.dir/punif.cpp.o"
+	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stat.dir/punif.cpp.o -c /home/a008/coding/MiniR/src/punif.cpp
+
+src/CMakeFiles/stat.dir/punif.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/stat.dir/punif.cpp.i"
+	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a008/coding/MiniR/src/punif.cpp > CMakeFiles/stat.dir/punif.cpp.i
+
+src/CMakeFiles/stat.dir/punif.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/stat.dir/punif.cpp.s"
+	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a008/coding/MiniR/src/punif.cpp -o CMakeFiles/stat.dir/punif.cpp.s
+
 src/CMakeFiles/stat.dir/qbeta.cpp.o: src/CMakeFiles/stat.dir/flags.make
 src/CMakeFiles/stat.dir/qbeta.cpp.o: ../src/qbeta.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object src/CMakeFiles/stat.dir/qbeta.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object src/CMakeFiles/stat.dir/qbeta.cpp.o"
 	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stat.dir/qbeta.cpp.o -c /home/a008/coding/MiniR/src/qbeta.cpp
 
 src/CMakeFiles/stat.dir/qbeta.cpp.i: cmake_force
@@ -449,7 +462,7 @@ src/CMakeFiles/stat.dir/qbeta.cpp.s: cmake_force
 
 src/CMakeFiles/stat.dir/qbinom.cpp.o: src/CMakeFiles/stat.dir/flags.make
 src/CMakeFiles/stat.dir/qbinom.cpp.o: ../src/qbinom.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object src/CMakeFiles/stat.dir/qbinom.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object src/CMakeFiles/stat.dir/qbinom.cpp.o"
 	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stat.dir/qbinom.cpp.o -c /home/a008/coding/MiniR/src/qbinom.cpp
 
 src/CMakeFiles/stat.dir/qbinom.cpp.i: cmake_force
@@ -462,7 +475,7 @@ src/CMakeFiles/stat.dir/qbinom.cpp.s: cmake_force
 
 src/CMakeFiles/stat.dir/qchisq.cpp.o: src/CMakeFiles/stat.dir/flags.make
 src/CMakeFiles/stat.dir/qchisq.cpp.o: ../src/qchisq.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object src/CMakeFiles/stat.dir/qchisq.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object src/CMakeFiles/stat.dir/qchisq.cpp.o"
 	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stat.dir/qchisq.cpp.o -c /home/a008/coding/MiniR/src/qchisq.cpp
 
 src/CMakeFiles/stat.dir/qchisq.cpp.i: cmake_force
@@ -475,7 +488,7 @@ src/CMakeFiles/stat.dir/qchisq.cpp.s: cmake_force
 
 src/CMakeFiles/stat.dir/qgamma.cpp.o: src/CMakeFiles/stat.dir/flags.make
 src/CMakeFiles/stat.dir/qgamma.cpp.o: ../src/qgamma.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object src/CMakeFiles/stat.dir/qgamma.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object src/CMakeFiles/stat.dir/qgamma.cpp.o"
 	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stat.dir/qgamma.cpp.o -c /home/a008/coding/MiniR/src/qgamma.cpp
 
 src/CMakeFiles/stat.dir/qgamma.cpp.i: cmake_force
@@ -488,7 +501,7 @@ src/CMakeFiles/stat.dir/qgamma.cpp.s: cmake_force
 
 src/CMakeFiles/stat.dir/qnorm.cpp.o: src/CMakeFiles/stat.dir/flags.make
 src/CMakeFiles/stat.dir/qnorm.cpp.o: ../src/qnorm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object src/CMakeFiles/stat.dir/qnorm.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object src/CMakeFiles/stat.dir/qnorm.cpp.o"
 	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stat.dir/qnorm.cpp.o -c /home/a008/coding/MiniR/src/qnorm.cpp
 
 src/CMakeFiles/stat.dir/qnorm.cpp.i: cmake_force
@@ -501,7 +514,7 @@ src/CMakeFiles/stat.dir/qnorm.cpp.s: cmake_force
 
 src/CMakeFiles/stat.dir/qpois.cpp.o: src/CMakeFiles/stat.dir/flags.make
 src/CMakeFiles/stat.dir/qpois.cpp.o: ../src/qpois.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object src/CMakeFiles/stat.dir/qpois.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object src/CMakeFiles/stat.dir/qpois.cpp.o"
 	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stat.dir/qpois.cpp.o -c /home/a008/coding/MiniR/src/qpois.cpp
 
 src/CMakeFiles/stat.dir/qpois.cpp.i: cmake_force
@@ -514,7 +527,7 @@ src/CMakeFiles/stat.dir/qpois.cpp.s: cmake_force
 
 src/CMakeFiles/stat.dir/qt.cpp.o: src/CMakeFiles/stat.dir/flags.make
 src/CMakeFiles/stat.dir/qt.cpp.o: ../src/qt.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object src/CMakeFiles/stat.dir/qt.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object src/CMakeFiles/stat.dir/qt.cpp.o"
 	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stat.dir/qt.cpp.o -c /home/a008/coding/MiniR/src/qt.cpp
 
 src/CMakeFiles/stat.dir/qt.cpp.i: cmake_force
@@ -525,31 +538,18 @@ src/CMakeFiles/stat.dir/qt.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/stat.dir/qt.cpp.s"
 	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a008/coding/MiniR/src/qt.cpp -o CMakeFiles/stat.dir/qt.cpp.s
 
-src/CMakeFiles/stat.dir/rnorm.cpp.o: src/CMakeFiles/stat.dir/flags.make
-src/CMakeFiles/stat.dir/rnorm.cpp.o: ../src/rnorm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object src/CMakeFiles/stat.dir/rnorm.cpp.o"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stat.dir/rnorm.cpp.o -c /home/a008/coding/MiniR/src/rnorm.cpp
+src/CMakeFiles/stat.dir/qunif.cpp.o: src/CMakeFiles/stat.dir/flags.make
+src/CMakeFiles/stat.dir/qunif.cpp.o: ../src/qunif.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object src/CMakeFiles/stat.dir/qunif.cpp.o"
+	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stat.dir/qunif.cpp.o -c /home/a008/coding/MiniR/src/qunif.cpp
 
-src/CMakeFiles/stat.dir/rnorm.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/stat.dir/rnorm.cpp.i"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a008/coding/MiniR/src/rnorm.cpp > CMakeFiles/stat.dir/rnorm.cpp.i
+src/CMakeFiles/stat.dir/qunif.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/stat.dir/qunif.cpp.i"
+	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a008/coding/MiniR/src/qunif.cpp > CMakeFiles/stat.dir/qunif.cpp.i
 
-src/CMakeFiles/stat.dir/rnorm.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/stat.dir/rnorm.cpp.s"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a008/coding/MiniR/src/rnorm.cpp -o CMakeFiles/stat.dir/rnorm.cpp.s
-
-src/CMakeFiles/stat.dir/snorm.cpp.o: src/CMakeFiles/stat.dir/flags.make
-src/CMakeFiles/stat.dir/snorm.cpp.o: ../src/snorm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object src/CMakeFiles/stat.dir/snorm.cpp.o"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stat.dir/snorm.cpp.o -c /home/a008/coding/MiniR/src/snorm.cpp
-
-src/CMakeFiles/stat.dir/snorm.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/stat.dir/snorm.cpp.i"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a008/coding/MiniR/src/snorm.cpp > CMakeFiles/stat.dir/snorm.cpp.i
-
-src/CMakeFiles/stat.dir/snorm.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/stat.dir/snorm.cpp.s"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a008/coding/MiniR/src/snorm.cpp -o CMakeFiles/stat.dir/snorm.cpp.s
+src/CMakeFiles/stat.dir/qunif.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/stat.dir/qunif.cpp.s"
+	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a008/coding/MiniR/src/qunif.cpp -o CMakeFiles/stat.dir/qunif.cpp.s
 
 src/CMakeFiles/stat.dir/stirlerr.cpp.o: src/CMakeFiles/stat.dir/flags.make
 src/CMakeFiles/stat.dir/stirlerr.cpp.o: ../src/stirlerr.cpp
@@ -579,7 +579,6 @@ src/CMakeFiles/stat.dir/toms708.cpp.s: cmake_force
 
 # Object files for target stat
 stat_OBJECTS = \
-"CMakeFiles/stat.dir/RNG.cpp.o" \
 "CMakeFiles/stat.dir/bd0.cpp.o" \
 "CMakeFiles/stat.dir/chebyshev.cpp.o" \
 "CMakeFiles/stat.dir/cospi.cpp.o" \
@@ -591,6 +590,7 @@ stat_OBJECTS = \
 "CMakeFiles/stat.dir/dnorm.cpp.o" \
 "CMakeFiles/stat.dir/dpois.cpp.o" \
 "CMakeFiles/stat.dir/dt.cpp.o" \
+"CMakeFiles/stat.dir/dunif.cpp.o" \
 "CMakeFiles/stat.dir/fmax2.cpp.o" \
 "CMakeFiles/stat.dir/fmin2.cpp.o" \
 "CMakeFiles/stat.dir/gamma.cpp.o" \
@@ -608,6 +608,7 @@ stat_OBJECTS = \
 "CMakeFiles/stat.dir/pnorm.cpp.o" \
 "CMakeFiles/stat.dir/ppois.cpp.o" \
 "CMakeFiles/stat.dir/pt.cpp.o" \
+"CMakeFiles/stat.dir/punif.cpp.o" \
 "CMakeFiles/stat.dir/qbeta.cpp.o" \
 "CMakeFiles/stat.dir/qbinom.cpp.o" \
 "CMakeFiles/stat.dir/qchisq.cpp.o" \
@@ -615,15 +616,13 @@ stat_OBJECTS = \
 "CMakeFiles/stat.dir/qnorm.cpp.o" \
 "CMakeFiles/stat.dir/qpois.cpp.o" \
 "CMakeFiles/stat.dir/qt.cpp.o" \
-"CMakeFiles/stat.dir/rnorm.cpp.o" \
-"CMakeFiles/stat.dir/snorm.cpp.o" \
+"CMakeFiles/stat.dir/qunif.cpp.o" \
 "CMakeFiles/stat.dir/stirlerr.cpp.o" \
 "CMakeFiles/stat.dir/toms708.cpp.o"
 
 # External object files for target stat
 stat_EXTERNAL_OBJECTS =
 
-../bin/stat: src/CMakeFiles/stat.dir/RNG.cpp.o
 ../bin/stat: src/CMakeFiles/stat.dir/bd0.cpp.o
 ../bin/stat: src/CMakeFiles/stat.dir/chebyshev.cpp.o
 ../bin/stat: src/CMakeFiles/stat.dir/cospi.cpp.o
@@ -635,6 +634,7 @@ stat_EXTERNAL_OBJECTS =
 ../bin/stat: src/CMakeFiles/stat.dir/dnorm.cpp.o
 ../bin/stat: src/CMakeFiles/stat.dir/dpois.cpp.o
 ../bin/stat: src/CMakeFiles/stat.dir/dt.cpp.o
+../bin/stat: src/CMakeFiles/stat.dir/dunif.cpp.o
 ../bin/stat: src/CMakeFiles/stat.dir/fmax2.cpp.o
 ../bin/stat: src/CMakeFiles/stat.dir/fmin2.cpp.o
 ../bin/stat: src/CMakeFiles/stat.dir/gamma.cpp.o
@@ -652,6 +652,7 @@ stat_EXTERNAL_OBJECTS =
 ../bin/stat: src/CMakeFiles/stat.dir/pnorm.cpp.o
 ../bin/stat: src/CMakeFiles/stat.dir/ppois.cpp.o
 ../bin/stat: src/CMakeFiles/stat.dir/pt.cpp.o
+../bin/stat: src/CMakeFiles/stat.dir/punif.cpp.o
 ../bin/stat: src/CMakeFiles/stat.dir/qbeta.cpp.o
 ../bin/stat: src/CMakeFiles/stat.dir/qbinom.cpp.o
 ../bin/stat: src/CMakeFiles/stat.dir/qchisq.cpp.o
@@ -659,8 +660,7 @@ stat_EXTERNAL_OBJECTS =
 ../bin/stat: src/CMakeFiles/stat.dir/qnorm.cpp.o
 ../bin/stat: src/CMakeFiles/stat.dir/qpois.cpp.o
 ../bin/stat: src/CMakeFiles/stat.dir/qt.cpp.o
-../bin/stat: src/CMakeFiles/stat.dir/rnorm.cpp.o
-../bin/stat: src/CMakeFiles/stat.dir/snorm.cpp.o
+../bin/stat: src/CMakeFiles/stat.dir/qunif.cpp.o
 ../bin/stat: src/CMakeFiles/stat.dir/stirlerr.cpp.o
 ../bin/stat: src/CMakeFiles/stat.dir/toms708.cpp.o
 ../bin/stat: src/CMakeFiles/stat.dir/build.make

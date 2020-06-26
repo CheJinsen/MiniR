@@ -4,7 +4,6 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/a008/coding/MiniR/src/RNG.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/RNG.cpp.o"
   "/home/a008/coding/MiniR/src/bd0.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/bd0.cpp.o"
   "/home/a008/coding/MiniR/src/chebyshev.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/chebyshev.cpp.o"
   "/home/a008/coding/MiniR/src/cospi.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/cospi.cpp.o"
@@ -16,6 +15,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/a008/coding/MiniR/src/dnorm.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/dnorm.cpp.o"
   "/home/a008/coding/MiniR/src/dpois.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/dpois.cpp.o"
   "/home/a008/coding/MiniR/src/dt.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/dt.cpp.o"
+  "/home/a008/coding/MiniR/src/dunif.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/dunif.cpp.o"
   "/home/a008/coding/MiniR/src/fmax2.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/fmax2.cpp.o"
   "/home/a008/coding/MiniR/src/fmin2.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/fmin2.cpp.o"
   "/home/a008/coding/MiniR/src/gamma.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/gamma.cpp.o"
@@ -33,6 +33,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/a008/coding/MiniR/src/pnorm.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/pnorm.cpp.o"
   "/home/a008/coding/MiniR/src/ppois.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/ppois.cpp.o"
   "/home/a008/coding/MiniR/src/pt.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/pt.cpp.o"
+  "/home/a008/coding/MiniR/src/punif.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/punif.cpp.o"
   "/home/a008/coding/MiniR/src/qbeta.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/qbeta.cpp.o"
   "/home/a008/coding/MiniR/src/qbinom.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/qbinom.cpp.o"
   "/home/a008/coding/MiniR/src/qchisq.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/qchisq.cpp.o"
@@ -40,8 +41,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/a008/coding/MiniR/src/qnorm.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/qnorm.cpp.o"
   "/home/a008/coding/MiniR/src/qpois.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/qpois.cpp.o"
   "/home/a008/coding/MiniR/src/qt.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/qt.cpp.o"
-  "/home/a008/coding/MiniR/src/rnorm.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/rnorm.cpp.o"
-  "/home/a008/coding/MiniR/src/snorm.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/snorm.cpp.o"
+  "/home/a008/coding/MiniR/src/qunif.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/qunif.cpp.o"
   "/home/a008/coding/MiniR/src/stirlerr.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/stirlerr.cpp.o"
   "/home/a008/coding/MiniR/src/toms708.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/toms708.cpp.o"
   )

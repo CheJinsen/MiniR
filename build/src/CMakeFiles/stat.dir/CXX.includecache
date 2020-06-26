@@ -6,33 +6,3 @@
 
 #IncludeRegexTransform: 
 
-../include/Rmath.h
-
-../include/nmath.h
-cstdio
--
-cstdlib
--
-cmath
--
-string
--
-cfloat
--
-iostream
--
-cstdbool
--
-algorithm
--
-Rmath.h
-../include/Rmath.h
-
-/home/a008/coding/MiniR/src/main.cpp
-iostream
--
-iomanip
--
-nmath.h
-/home/a008/coding/MiniR/src/nmath.h
-
