@@ -27,6 +27,11 @@ src/CMakeFiles/stat.dir/dbinom.cpp.o: ../include/dpq.h
 src/CMakeFiles/stat.dir/dbinom.cpp.o: ../include/nmath.h
 src/CMakeFiles/stat.dir/dbinom.cpp.o: ../src/dbinom.cpp
 
+src/CMakeFiles/stat.dir/dcauchy.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/dcauchy.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/dcauchy.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/dcauchy.cpp.o: ../src/dcauchy.cpp
+
 src/CMakeFiles/stat.dir/dchisq.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/dchisq.cpp.o: ../include/dpq.h
 src/CMakeFiles/stat.dir/dchisq.cpp.o: ../include/nmath.h
@@ -117,6 +122,11 @@ src/CMakeFiles/stat.dir/pbinom.cpp.o: ../include/dpq.h
 src/CMakeFiles/stat.dir/pbinom.cpp.o: ../include/nmath.h
 src/CMakeFiles/stat.dir/pbinom.cpp.o: ../src/pbinom.cpp
 
+src/CMakeFiles/stat.dir/pcauchy.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/pcauchy.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/pcauchy.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/pcauchy.cpp.o: ../src/pcauchy.cpp
+
 src/CMakeFiles/stat.dir/pchisq.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/pchisq.cpp.o: ../include/dpq.h
 src/CMakeFiles/stat.dir/pchisq.cpp.o: ../include/nmath.h
@@ -166,6 +176,11 @@ src/CMakeFiles/stat.dir/qbinom.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/qbinom.cpp.o: ../include/dpq.h
 src/CMakeFiles/stat.dir/qbinom.cpp.o: ../include/nmath.h
 src/CMakeFiles/stat.dir/qbinom.cpp.o: ../src/qbinom.cpp
+
+src/CMakeFiles/stat.dir/qcauchy.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/qcauchy.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/qcauchy.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/qcauchy.cpp.o: ../src/qcauchy.cpp
 
 src/CMakeFiles/stat.dir/qchisq.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/qchisq.cpp.o: ../include/dpq.h

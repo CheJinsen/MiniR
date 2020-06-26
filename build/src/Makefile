@@ -287,6 +287,33 @@ dbinom.cpp.s:
 	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dbinom.cpp.s
 .PHONY : dbinom.cpp.s
 
+dcauchy.o: dcauchy.cpp.o
+
+.PHONY : dcauchy.o
+
+# target to build an object file
+dcauchy.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dcauchy.cpp.o
+.PHONY : dcauchy.cpp.o
+
+dcauchy.i: dcauchy.cpp.i
+
+.PHONY : dcauchy.i
+
+# target to preprocess a source file
+dcauchy.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dcauchy.cpp.i
+.PHONY : dcauchy.cpp.i
+
+dcauchy.s: dcauchy.cpp.s
+
+.PHONY : dcauchy.s
+
+# target to generate assembly for a file
+dcauchy.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dcauchy.cpp.s
+.PHONY : dcauchy.cpp.s
+
 dchisq.o: dchisq.cpp.o
 
 .PHONY : dchisq.o
@@ -827,6 +854,33 @@ pbinom.cpp.s:
 	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pbinom.cpp.s
 .PHONY : pbinom.cpp.s
 
+pcauchy.o: pcauchy.cpp.o
+
+.PHONY : pcauchy.o
+
+# target to build an object file
+pcauchy.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pcauchy.cpp.o
+.PHONY : pcauchy.cpp.o
+
+pcauchy.i: pcauchy.cpp.i
+
+.PHONY : pcauchy.i
+
+# target to preprocess a source file
+pcauchy.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pcauchy.cpp.i
+.PHONY : pcauchy.cpp.i
+
+pcauchy.s: pcauchy.cpp.s
+
+.PHONY : pcauchy.s
+
+# target to generate assembly for a file
+pcauchy.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pcauchy.cpp.s
+.PHONY : pcauchy.cpp.s
+
 pchisq.o: pchisq.cpp.o
 
 .PHONY : pchisq.o
@@ -1096,6 +1150,33 @@ qbinom.s: qbinom.cpp.s
 qbinom.cpp.s:
 	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qbinom.cpp.s
 .PHONY : qbinom.cpp.s
+
+qcauchy.o: qcauchy.cpp.o
+
+.PHONY : qcauchy.o
+
+# target to build an object file
+qcauchy.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qcauchy.cpp.o
+.PHONY : qcauchy.cpp.o
+
+qcauchy.i: qcauchy.cpp.i
+
+.PHONY : qcauchy.i
+
+# target to preprocess a source file
+qcauchy.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qcauchy.cpp.i
+.PHONY : qcauchy.cpp.i
+
+qcauchy.s: qcauchy.cpp.s
+
+.PHONY : qcauchy.s
+
+# target to generate assembly for a file
+qcauchy.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qcauchy.cpp.s
+.PHONY : qcauchy.cpp.s
 
 qchisq.o: qchisq.cpp.o
 
@@ -1394,6 +1475,9 @@ help:
 	@echo "... dbinom.o"
 	@echo "... dbinom.i"
 	@echo "... dbinom.s"
+	@echo "... dcauchy.o"
+	@echo "... dcauchy.i"
+	@echo "... dcauchy.s"
 	@echo "... dchisq.o"
 	@echo "... dchisq.i"
 	@echo "... dchisq.s"
@@ -1454,6 +1538,9 @@ help:
 	@echo "... pbinom.o"
 	@echo "... pbinom.i"
 	@echo "... pbinom.s"
+	@echo "... pcauchy.o"
+	@echo "... pcauchy.i"
+	@echo "... pcauchy.s"
 	@echo "... pchisq.o"
 	@echo "... pchisq.i"
 	@echo "... pchisq.s"
@@ -1484,6 +1571,9 @@ help:
 	@echo "... qbinom.o"
 	@echo "... qbinom.i"
 	@echo "... qbinom.s"
+	@echo "... qcauchy.o"
+	@echo "... qcauchy.i"
+	@echo "... qcauchy.s"
 	@echo "... qchisq.o"
 	@echo "... qchisq.i"
 	@echo "... qchisq.s"

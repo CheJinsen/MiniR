@@ -464,9 +464,11 @@ double	qbinom(double p, double size, double prob,
 //
 //	/* Cauchy Distribution */
 //
-//double	dcauchy(double, double, double, int);
-//double	pcauchy(double, double, double, int, int);
-//double	qcauchy(double, double, double, int, int);
+double	dcauchy(double x, double location = 0.0, double scale = 1.0, bool log = false);
+double	pcauchy(double q, double location = 0.0, double scale = 1.0,
+	bool lower_tail = true, bool log_p = false);
+double	qcauchy(double p, double location = 0.0, double scale = 1.0,
+	bool lower_tail = true, bool log_p = false);
 //double	rcauchy(double, double);
 //
 //	/* Exponential Distribution */

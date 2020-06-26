@@ -27,6 +27,11 @@ src/CMakeFiles/stat.dir/dbinom.cpp.o
  ../include/dpq.h
  ../include/nmath.h
  /home/a008/coding/MiniR/src/dbinom.cpp
+src/CMakeFiles/stat.dir/dcauchy.cpp.o
+ ../include/Rmath.h
+ ../include/dpq.h
+ ../include/nmath.h
+ /home/a008/coding/MiniR/src/dcauchy.cpp
 src/CMakeFiles/stat.dir/dchisq.cpp.o
  ../include/Rmath.h
  ../include/dpq.h
@@ -117,6 +122,11 @@ src/CMakeFiles/stat.dir/pbinom.cpp.o
  ../include/dpq.h
  ../include/nmath.h
  /home/a008/coding/MiniR/src/pbinom.cpp
+src/CMakeFiles/stat.dir/pcauchy.cpp.o
+ ../include/Rmath.h
+ ../include/dpq.h
+ ../include/nmath.h
+ /home/a008/coding/MiniR/src/pcauchy.cpp
 src/CMakeFiles/stat.dir/pchisq.cpp.o
  ../include/Rmath.h
  ../include/dpq.h
@@ -167,6 +177,11 @@ src/CMakeFiles/stat.dir/qbinom.cpp.o
  ../include/dpq.h
  ../include/nmath.h
  /home/a008/coding/MiniR/src/qbinom.cpp
+src/CMakeFiles/stat.dir/qcauchy.cpp.o
+ ../include/Rmath.h
+ ../include/dpq.h
+ ../include/nmath.h
+ /home/a008/coding/MiniR/src/qcauchy.cpp
 src/CMakeFiles/stat.dir/qchisq.cpp.o
  ../include/Rmath.h
  ../include/dpq.h
