@@ -32,10 +32,20 @@ src/CMakeFiles/stat.dir/dchisq.cpp.o: ../include/dpq.h
 src/CMakeFiles/stat.dir/dchisq.cpp.o: ../include/nmath.h
 src/CMakeFiles/stat.dir/dchisq.cpp.o: ../src/dchisq.cpp
 
+src/CMakeFiles/stat.dir/df.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/df.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/df.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/df.cpp.o: ../src/df.cpp
+
 src/CMakeFiles/stat.dir/dgamma.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/dgamma.cpp.o: ../include/dpq.h
 src/CMakeFiles/stat.dir/dgamma.cpp.o: ../include/nmath.h
 src/CMakeFiles/stat.dir/dgamma.cpp.o: ../src/dgamma.cpp
+
+src/CMakeFiles/stat.dir/dlnorm.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/dlnorm.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/dlnorm.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/dlnorm.cpp.o: ../src/dlnorm.cpp
 
 src/CMakeFiles/stat.dir/dnorm.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/dnorm.cpp.o: ../include/dpq.h
@@ -112,10 +122,20 @@ src/CMakeFiles/stat.dir/pchisq.cpp.o: ../include/dpq.h
 src/CMakeFiles/stat.dir/pchisq.cpp.o: ../include/nmath.h
 src/CMakeFiles/stat.dir/pchisq.cpp.o: ../src/pchisq.cpp
 
+src/CMakeFiles/stat.dir/pf.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/pf.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/pf.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/pf.cpp.o: ../src/pf.cpp
+
 src/CMakeFiles/stat.dir/pgamma.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/pgamma.cpp.o: ../include/dpq.h
 src/CMakeFiles/stat.dir/pgamma.cpp.o: ../include/nmath.h
 src/CMakeFiles/stat.dir/pgamma.cpp.o: ../src/pgamma.cpp
+
+src/CMakeFiles/stat.dir/plnorm.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/plnorm.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/plnorm.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/plnorm.cpp.o: ../src/plnorm.cpp
 
 src/CMakeFiles/stat.dir/pnorm.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/pnorm.cpp.o: ../include/dpq.h
@@ -152,10 +172,20 @@ src/CMakeFiles/stat.dir/qchisq.cpp.o: ../include/dpq.h
 src/CMakeFiles/stat.dir/qchisq.cpp.o: ../include/nmath.h
 src/CMakeFiles/stat.dir/qchisq.cpp.o: ../src/qchisq.cpp
 
+src/CMakeFiles/stat.dir/qf.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/qf.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/qf.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/qf.cpp.o: ../src/qf.cpp
+
 src/CMakeFiles/stat.dir/qgamma.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/qgamma.cpp.o: ../include/dpq.h
 src/CMakeFiles/stat.dir/qgamma.cpp.o: ../include/nmath.h
 src/CMakeFiles/stat.dir/qgamma.cpp.o: ../src/qgamma.cpp
+
+src/CMakeFiles/stat.dir/qlnorm.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/qlnorm.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/qlnorm.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/qlnorm.cpp.o: ../src/qlnorm.cpp
 
 src/CMakeFiles/stat.dir/qnorm.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/qnorm.cpp.o: ../include/dpq.h

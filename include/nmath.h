@@ -49,8 +49,8 @@
 #define MATHLIB_WARNING5(fmt,x,x2,x3,x4,x5) printf(fmt,x,x2,x3,x4,x5)
 
 #define ISNAN(x) (std::isnan(x)!=0)
-
 #define R_FINITE(x) std::isfinite(x)
+#define ML_VALID(x) (!ISNAN(x))
 
 #ifdef Windows
 #define ML_POSINF	posinf()

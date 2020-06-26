@@ -314,6 +314,33 @@ dchisq.cpp.s:
 	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dchisq.cpp.s
 .PHONY : dchisq.cpp.s
 
+df.o: df.cpp.o
+
+.PHONY : df.o
+
+# target to build an object file
+df.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/df.cpp.o
+.PHONY : df.cpp.o
+
+df.i: df.cpp.i
+
+.PHONY : df.i
+
+# target to preprocess a source file
+df.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/df.cpp.i
+.PHONY : df.cpp.i
+
+df.s: df.cpp.s
+
+.PHONY : df.s
+
+# target to generate assembly for a file
+df.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/df.cpp.s
+.PHONY : df.cpp.s
+
 dgamma.o: dgamma.cpp.o
 
 .PHONY : dgamma.o
@@ -340,6 +367,33 @@ dgamma.s: dgamma.cpp.s
 dgamma.cpp.s:
 	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dgamma.cpp.s
 .PHONY : dgamma.cpp.s
+
+dlnorm.o: dlnorm.cpp.o
+
+.PHONY : dlnorm.o
+
+# target to build an object file
+dlnorm.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dlnorm.cpp.o
+.PHONY : dlnorm.cpp.o
+
+dlnorm.i: dlnorm.cpp.i
+
+.PHONY : dlnorm.i
+
+# target to preprocess a source file
+dlnorm.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dlnorm.cpp.i
+.PHONY : dlnorm.cpp.i
+
+dlnorm.s: dlnorm.cpp.s
+
+.PHONY : dlnorm.s
+
+# target to generate assembly for a file
+dlnorm.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dlnorm.cpp.s
+.PHONY : dlnorm.cpp.s
 
 dnorm.o: dnorm.cpp.o
 
@@ -800,6 +854,33 @@ pchisq.cpp.s:
 	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pchisq.cpp.s
 .PHONY : pchisq.cpp.s
 
+pf.o: pf.cpp.o
+
+.PHONY : pf.o
+
+# target to build an object file
+pf.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pf.cpp.o
+.PHONY : pf.cpp.o
+
+pf.i: pf.cpp.i
+
+.PHONY : pf.i
+
+# target to preprocess a source file
+pf.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pf.cpp.i
+.PHONY : pf.cpp.i
+
+pf.s: pf.cpp.s
+
+.PHONY : pf.s
+
+# target to generate assembly for a file
+pf.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pf.cpp.s
+.PHONY : pf.cpp.s
+
 pgamma.o: pgamma.cpp.o
 
 .PHONY : pgamma.o
@@ -826,6 +907,33 @@ pgamma.s: pgamma.cpp.s
 pgamma.cpp.s:
 	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pgamma.cpp.s
 .PHONY : pgamma.cpp.s
+
+plnorm.o: plnorm.cpp.o
+
+.PHONY : plnorm.o
+
+# target to build an object file
+plnorm.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/plnorm.cpp.o
+.PHONY : plnorm.cpp.o
+
+plnorm.i: plnorm.cpp.i
+
+.PHONY : plnorm.i
+
+# target to preprocess a source file
+plnorm.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/plnorm.cpp.i
+.PHONY : plnorm.cpp.i
+
+plnorm.s: plnorm.cpp.s
+
+.PHONY : plnorm.s
+
+# target to generate assembly for a file
+plnorm.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/plnorm.cpp.s
+.PHONY : plnorm.cpp.s
 
 pnorm.o: pnorm.cpp.o
 
@@ -1016,6 +1124,33 @@ qchisq.cpp.s:
 	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qchisq.cpp.s
 .PHONY : qchisq.cpp.s
 
+qf.o: qf.cpp.o
+
+.PHONY : qf.o
+
+# target to build an object file
+qf.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qf.cpp.o
+.PHONY : qf.cpp.o
+
+qf.i: qf.cpp.i
+
+.PHONY : qf.i
+
+# target to preprocess a source file
+qf.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qf.cpp.i
+.PHONY : qf.cpp.i
+
+qf.s: qf.cpp.s
+
+.PHONY : qf.s
+
+# target to generate assembly for a file
+qf.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qf.cpp.s
+.PHONY : qf.cpp.s
+
 qgamma.o: qgamma.cpp.o
 
 .PHONY : qgamma.o
@@ -1042,6 +1177,33 @@ qgamma.s: qgamma.cpp.s
 qgamma.cpp.s:
 	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qgamma.cpp.s
 .PHONY : qgamma.cpp.s
+
+qlnorm.o: qlnorm.cpp.o
+
+.PHONY : qlnorm.o
+
+# target to build an object file
+qlnorm.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qlnorm.cpp.o
+.PHONY : qlnorm.cpp.o
+
+qlnorm.i: qlnorm.cpp.i
+
+.PHONY : qlnorm.i
+
+# target to preprocess a source file
+qlnorm.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qlnorm.cpp.i
+.PHONY : qlnorm.cpp.i
+
+qlnorm.s: qlnorm.cpp.s
+
+.PHONY : qlnorm.s
+
+# target to generate assembly for a file
+qlnorm.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qlnorm.cpp.s
+.PHONY : qlnorm.cpp.s
 
 qnorm.o: qnorm.cpp.o
 
@@ -1235,9 +1397,15 @@ help:
 	@echo "... dchisq.o"
 	@echo "... dchisq.i"
 	@echo "... dchisq.s"
+	@echo "... df.o"
+	@echo "... df.i"
+	@echo "... df.s"
 	@echo "... dgamma.o"
 	@echo "... dgamma.i"
 	@echo "... dgamma.s"
+	@echo "... dlnorm.o"
+	@echo "... dlnorm.i"
+	@echo "... dlnorm.s"
 	@echo "... dnorm.o"
 	@echo "... dnorm.i"
 	@echo "... dnorm.s"
@@ -1289,9 +1457,15 @@ help:
 	@echo "... pchisq.o"
 	@echo "... pchisq.i"
 	@echo "... pchisq.s"
+	@echo "... pf.o"
+	@echo "... pf.i"
+	@echo "... pf.s"
 	@echo "... pgamma.o"
 	@echo "... pgamma.i"
 	@echo "... pgamma.s"
+	@echo "... plnorm.o"
+	@echo "... plnorm.i"
+	@echo "... plnorm.s"
 	@echo "... pnorm.o"
 	@echo "... pnorm.i"
 	@echo "... pnorm.s"
@@ -1313,9 +1487,15 @@ help:
 	@echo "... qchisq.o"
 	@echo "... qchisq.i"
 	@echo "... qchisq.s"
+	@echo "... qf.o"
+	@echo "... qf.i"
+	@echo "... qf.s"
 	@echo "... qgamma.o"
 	@echo "... qgamma.i"
 	@echo "... qgamma.s"
+	@echo "... qlnorm.o"
+	@echo "... qlnorm.i"
+	@echo "... qlnorm.s"
 	@echo "... qnorm.o"
 	@echo "... qnorm.i"
 	@echo "... qnorm.s"

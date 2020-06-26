@@ -359,8 +359,8 @@ double R_pow_di(double, int);
 //
 //	/* Random Number Generators */
 //
-double	norm_rand(void);
-double	unif_rand(void);
+//double	norm_rand(void);
+//double	unif_rand(void);
 //double  R_unif_index(double);
 //double	exp_rand(void);
 //#ifdef MATHLIB_STANDALONE
@@ -411,9 +411,11 @@ double	qbeta(double p, double shape1, double shape2,
 //
 //	/* Lognormal Distribution */
 //
-//double	dlnorm(double, double, double, int);
-//double	plnorm(double, double, double, int, int);
-//double	qlnorm(double, double, double, int, int);
+double	dlnorm(double x, double meanlog = 0.0, double sdlog = 1.0, bool log = false);
+double	plnorm(double q, double meanlog = 0.0, double sdlog = 1.0,
+	bool lower_tail = true, bool log = false);
+double	qlnorm(double p, double meanlog = 0.0, double sdlog = 1.0,
+	bool lower_tail = true, bool log = false);
 //double	rlnorm(double, double);
 //
 //	/* Chi-squared Distribution */
@@ -432,9 +434,11 @@ double	qchisq(double p, double df, bool lower_tail = true, bool log = false);
 //
 //	/* F Distibution */
 //
-//double	df(double, double, double, int);
-//double	pf(double, double, double, int, int);
-//double	qf(double, double, double, int, int);
+double	df(double x, double df1, double df2, bool log = false);
+double	pf(double q, double df1, double df2,
+	bool lower_tail = true, bool log = false);
+double	qf(double p, double df1, double df2,
+	bool lower_tail = true, bool log = false);
 //double	rf(double, double);
 //
 //	/* Student t Distibution */
