@@ -129,3 +129,8 @@ int chebyshev_init(double*, int, double);
 double chebyshev_eval(double, const double*, const int);
 
 double pgamma_raw(double, double, bool, bool);
+double pnchisq_raw(double, double, double, double, double, 
+	int, bool, bool);
+long double pnbeta_raw(double, double, double, double, double);
+double pnbeta2(double, double, double, double, double, bool, bool);
+double lfastchoose(double, double);

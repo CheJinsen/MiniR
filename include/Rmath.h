@@ -427,9 +427,9 @@ double	qchisq(double p, double df, bool lower_tail = true, bool log = false);
 //
 //	/* Non-central Chi-squared Distribution */
 //
-//double	dnchisq(double, double, double, int);
-//double	pnchisq(double, double, double, int, int);
-//double	qnchisq(double, double, double, int, int);
+double	dnchisq(double, double, double, bool);
+double	pnchisq(double, double, double, bool, bool);
+double	qnchisq(double, double, double, bool, bool);
 //double	rnchisq(double, double);
 //
 //	/* F Distibution */
@@ -473,35 +473,43 @@ double	qcauchy(double p, double location = 0.0, double scale = 1.0,
 //
 //	/* Exponential Distribution */
 //
-//double	dexp(double, double, int);
-//double	pexp(double, double, int, int);
-//double	qexp(double, double, int, int);
+double	dexp(double x, double rate = 1.0, bool log = false);
+double	pexp(double q, double rate = 1.0,
+	bool lower_tail = true, bool log_p = false);
+double	qexp(double p, double rate = 1.0,
+	bool lower_tail = true, bool log_p = false);
 //double	rexp(double);
 //
 //	/* Geometric Distribution */
 //
-//double	dgeom(double, double, int);
-//double	pgeom(double, double, int, int);
-//double	qgeom(double, double, int, int);
+double	dgeom(double x, double prob, bool log = false);
+double	pgeom(double q, double prob,
+	bool lower_tail = true, bool log_p = false);
+double	qgeom(double p, double prob,
+	bool lower_tail = true, bool log_p = false);
 //double	rgeom(double);
 //
 //	/* Hypergeometric Distibution */
 //
-//double	dhyper(double, double, double, double, int);
-//double	phyper(double, double, double, double, int, int);
-//double	qhyper(double, double, double, double, int, int);
+double	dhyper(double x, double m, double n, double k, bool log = false);
+double	phyper(double q, double m, double n, double k,
+	bool lower_tail = true, bool log_p = false);
+double	qhyper(double p, double m, double n, double k,
+	bool lower_tail = true, bool log_p = false);
 //double	rhyper(double, double, double);
 //
 //	/* Negative Binomial Distribution */
 //
-//double	dnbinom(double, double, double, int);
-//double	pnbinom(double, double, double, int, int);
-//double	qnbinom(double, double, double, int, int);
+double	dnbinom(double x, double size, double prob, bool log = false);
+double	pnbinom(double q, double size, double prob,
+	bool lower_tail = true, bool log_p = false);
+double	qnbinom(double p, double size, double prob,
+	bool lower_tail = true, bool log_p = false);
 //double	rnbinom(double, double);
 //
-//double	dnbinom_mu(double, double, double, int);
-//double	pnbinom_mu(double, double, double, int, int);
-//double	qnbinom_mu(double, double, double, int, int);
+double	dnbinom_mu(double, double, double, bool);
+double	pnbinom_mu(double, double, double, bool, bool);
+double	qnbinom_mu(double, double, double, bool, bool);
 //double	rnbinom_mu(double, double);
 //
 //	/* Poisson Distribution */
@@ -514,41 +522,41 @@ double	qpois(double p, double lambda, bool lower_tail = true, bool log = false);
 //
 //	/* Weibull Distribution */
 //
-//double	dweibull(double, double, double, int);
-//double	pweibull(double, double, double, int, int);
-//double	qweibull(double, double, double, int, int);
+double	dweibull(double, double, double, bool);
+double	pweibull(double, double, double, bool, bool);
+double	qweibull(double, double, double, bool, bool);
 //double	rweibull(double, double);
-//
+
 //	/* Logistic Distribution */
 //
-//double	dlogis(double, double, double, int);
-//double	plogis(double, double, double, int, int);
-//double	qlogis(double, double, double, int, int);
+double	dlogis(double, double, double, bool);
+double	plogis(double, double, double, bool, bool);
+double	qlogis(double, double, double, bool, bool);
 //double	rlogis(double, double);
 //
 //	/* Non-central Beta Distribution */
 //
-//double	dnbeta(double, double, double, double, int);
-//double	pnbeta(double, double, double, double, int, int);
-//double	qnbeta(double, double, double, double, int, int);
+double	dnbeta(double, double, double, double, bool);
+double	pnbeta(double, double, double, double, bool, bool);
+double	qnbeta(double, double, double, double, bool, bool);
 //double	rnbeta(double, double, double);
 //
 //	/* Non-central F Distribution */
 //
-//double  dnf(double, double, double, double, int);
-//double	pnf(double, double, double, double, int, int);
-//double	qnf(double, double, double, double, int, int);
+double  dnf(double, double, double, double, bool);
+double	pnf(double, double, double, double, bool, bool);
+double	qnf(double, double, double, double, bool, bool);
 //
 //	/* Non-central Student t Distribution */
 //
-//double	dnt(double, double, double, int);
-//double	pnt(double, double, double, int, int);
-//double	qnt(double, double, double, int, int);
+double	dnt(double, double, double, bool);
+double	pnt(double, double, double, bool, bool);
+double	qnt(double, double, double, bool, bool);
 //
 //	/* Studentized Range Distribution */
 //
-//double	ptukey(double, double, double, double, int, int);
-//double	qtukey(double, double, double, double, int, int);
+double	ptukey(double, double, double, double, bool, bool);
+double	qtukey(double, double, double, double, bool, bool);
 //
 //	/* Wilcoxon Rank Sum Distribution */
 //

@@ -9,6 +9,10 @@ src/CMakeFiles/stat.dir/chebyshev.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/chebyshev.cpp.o: ../include/nmath.h
 src/CMakeFiles/stat.dir/chebyshev.cpp.o: ../src/chebyshev.cpp
 
+src/CMakeFiles/stat.dir/choose.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/choose.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/choose.cpp.o: ../src/choose.cpp
+
 src/CMakeFiles/stat.dir/cospi.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/cospi.cpp.o: ../include/nmath.h
 src/CMakeFiles/stat.dir/cospi.cpp.o: ../src/cospi.cpp
@@ -37,6 +41,11 @@ src/CMakeFiles/stat.dir/dchisq.cpp.o: ../include/dpq.h
 src/CMakeFiles/stat.dir/dchisq.cpp.o: ../include/nmath.h
 src/CMakeFiles/stat.dir/dchisq.cpp.o: ../src/dchisq.cpp
 
+src/CMakeFiles/stat.dir/dexp.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/dexp.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/dexp.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/dexp.cpp.o: ../src/dexp.cpp
+
 src/CMakeFiles/stat.dir/df.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/df.cpp.o: ../include/dpq.h
 src/CMakeFiles/stat.dir/df.cpp.o: ../include/nmath.h
@@ -47,15 +56,55 @@ src/CMakeFiles/stat.dir/dgamma.cpp.o: ../include/dpq.h
 src/CMakeFiles/stat.dir/dgamma.cpp.o: ../include/nmath.h
 src/CMakeFiles/stat.dir/dgamma.cpp.o: ../src/dgamma.cpp
 
+src/CMakeFiles/stat.dir/dgeom.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/dgeom.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/dgeom.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/dgeom.cpp.o: ../src/dgeom.cpp
+
+src/CMakeFiles/stat.dir/dhyper.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/dhyper.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/dhyper.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/dhyper.cpp.o: ../src/dhyper.cpp
+
 src/CMakeFiles/stat.dir/dlnorm.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/dlnorm.cpp.o: ../include/dpq.h
 src/CMakeFiles/stat.dir/dlnorm.cpp.o: ../include/nmath.h
 src/CMakeFiles/stat.dir/dlnorm.cpp.o: ../src/dlnorm.cpp
 
+src/CMakeFiles/stat.dir/dlogis.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/dlogis.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/dlogis.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/dlogis.cpp.o: ../src/dlogis.cpp
+
+src/CMakeFiles/stat.dir/dnbeta.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/dnbeta.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/dnbeta.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/dnbeta.cpp.o: ../src/dnbeta.cpp
+
+src/CMakeFiles/stat.dir/dnbinom.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/dnbinom.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/dnbinom.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/dnbinom.cpp.o: ../src/dnbinom.cpp
+
+src/CMakeFiles/stat.dir/dnchisq.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/dnchisq.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/dnchisq.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/dnchisq.cpp.o: ../src/dnchisq.cpp
+
+src/CMakeFiles/stat.dir/dnf.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/dnf.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/dnf.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/dnf.cpp.o: ../src/dnf.cpp
+
 src/CMakeFiles/stat.dir/dnorm.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/dnorm.cpp.o: ../include/dpq.h
 src/CMakeFiles/stat.dir/dnorm.cpp.o: ../include/nmath.h
 src/CMakeFiles/stat.dir/dnorm.cpp.o: ../src/dnorm.cpp
+
+src/CMakeFiles/stat.dir/dnt.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/dnt.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/dnt.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/dnt.cpp.o: ../src/dnt.cpp
 
 src/CMakeFiles/stat.dir/dpois.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/dpois.cpp.o: ../include/dpq.h
@@ -71,6 +120,11 @@ src/CMakeFiles/stat.dir/dunif.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/dunif.cpp.o: ../include/dpq.h
 src/CMakeFiles/stat.dir/dunif.cpp.o: ../include/nmath.h
 src/CMakeFiles/stat.dir/dunif.cpp.o: ../src/dunif.cpp
+
+src/CMakeFiles/stat.dir/dweibull.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/dweibull.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/dweibull.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/dweibull.cpp.o: ../src/dweibull.cpp
 
 src/CMakeFiles/stat.dir/fmax2.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/fmax2.cpp.o: ../include/nmath.h
@@ -132,6 +186,11 @@ src/CMakeFiles/stat.dir/pchisq.cpp.o: ../include/dpq.h
 src/CMakeFiles/stat.dir/pchisq.cpp.o: ../include/nmath.h
 src/CMakeFiles/stat.dir/pchisq.cpp.o: ../src/pchisq.cpp
 
+src/CMakeFiles/stat.dir/pexp.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/pexp.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/pexp.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/pexp.cpp.o: ../src/pexp.cpp
+
 src/CMakeFiles/stat.dir/pf.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/pf.cpp.o: ../include/dpq.h
 src/CMakeFiles/stat.dir/pf.cpp.o: ../include/nmath.h
@@ -142,15 +201,55 @@ src/CMakeFiles/stat.dir/pgamma.cpp.o: ../include/dpq.h
 src/CMakeFiles/stat.dir/pgamma.cpp.o: ../include/nmath.h
 src/CMakeFiles/stat.dir/pgamma.cpp.o: ../src/pgamma.cpp
 
+src/CMakeFiles/stat.dir/pgeom.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/pgeom.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/pgeom.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/pgeom.cpp.o: ../src/pgeom.cpp
+
+src/CMakeFiles/stat.dir/phyper.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/phyper.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/phyper.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/phyper.cpp.o: ../src/phyper.cpp
+
 src/CMakeFiles/stat.dir/plnorm.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/plnorm.cpp.o: ../include/dpq.h
 src/CMakeFiles/stat.dir/plnorm.cpp.o: ../include/nmath.h
 src/CMakeFiles/stat.dir/plnorm.cpp.o: ../src/plnorm.cpp
 
+src/CMakeFiles/stat.dir/plogis.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/plogis.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/plogis.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/plogis.cpp.o: ../src/plogis.cpp
+
+src/CMakeFiles/stat.dir/pnbeta.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/pnbeta.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/pnbeta.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/pnbeta.cpp.o: ../src/pnbeta.cpp
+
+src/CMakeFiles/stat.dir/pnbinom.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/pnbinom.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/pnbinom.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/pnbinom.cpp.o: ../src/pnbinom.cpp
+
+src/CMakeFiles/stat.dir/pnchisq.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/pnchisq.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/pnchisq.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/pnchisq.cpp.o: ../src/pnchisq.cpp
+
+src/CMakeFiles/stat.dir/pnf.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/pnf.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/pnf.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/pnf.cpp.o: ../src/pnf.cpp
+
 src/CMakeFiles/stat.dir/pnorm.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/pnorm.cpp.o: ../include/dpq.h
 src/CMakeFiles/stat.dir/pnorm.cpp.o: ../include/nmath.h
 src/CMakeFiles/stat.dir/pnorm.cpp.o: ../src/pnorm.cpp
+
+src/CMakeFiles/stat.dir/pnt.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/pnt.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/pnt.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/pnt.cpp.o: ../src/pnt.cpp
 
 src/CMakeFiles/stat.dir/ppois.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/ppois.cpp.o: ../include/dpq.h
@@ -162,10 +261,20 @@ src/CMakeFiles/stat.dir/pt.cpp.o: ../include/dpq.h
 src/CMakeFiles/stat.dir/pt.cpp.o: ../include/nmath.h
 src/CMakeFiles/stat.dir/pt.cpp.o: ../src/pt.cpp
 
+src/CMakeFiles/stat.dir/ptukey.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/ptukey.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/ptukey.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/ptukey.cpp.o: ../src/ptukey.cpp
+
 src/CMakeFiles/stat.dir/punif.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/punif.cpp.o: ../include/dpq.h
 src/CMakeFiles/stat.dir/punif.cpp.o: ../include/nmath.h
 src/CMakeFiles/stat.dir/punif.cpp.o: ../src/punif.cpp
+
+src/CMakeFiles/stat.dir/pweibull.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/pweibull.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/pweibull.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/pweibull.cpp.o: ../src/pweibull.cpp
 
 src/CMakeFiles/stat.dir/qbeta.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/qbeta.cpp.o: ../include/dpq.h
@@ -187,6 +296,11 @@ src/CMakeFiles/stat.dir/qchisq.cpp.o: ../include/dpq.h
 src/CMakeFiles/stat.dir/qchisq.cpp.o: ../include/nmath.h
 src/CMakeFiles/stat.dir/qchisq.cpp.o: ../src/qchisq.cpp
 
+src/CMakeFiles/stat.dir/qexp.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/qexp.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/qexp.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/qexp.cpp.o: ../src/qexp.cpp
+
 src/CMakeFiles/stat.dir/qf.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/qf.cpp.o: ../include/dpq.h
 src/CMakeFiles/stat.dir/qf.cpp.o: ../include/nmath.h
@@ -197,15 +311,55 @@ src/CMakeFiles/stat.dir/qgamma.cpp.o: ../include/dpq.h
 src/CMakeFiles/stat.dir/qgamma.cpp.o: ../include/nmath.h
 src/CMakeFiles/stat.dir/qgamma.cpp.o: ../src/qgamma.cpp
 
+src/CMakeFiles/stat.dir/qgeom.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/qgeom.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/qgeom.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/qgeom.cpp.o: ../src/qgeom.cpp
+
+src/CMakeFiles/stat.dir/qhyper.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/qhyper.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/qhyper.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/qhyper.cpp.o: ../src/qhyper.cpp
+
 src/CMakeFiles/stat.dir/qlnorm.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/qlnorm.cpp.o: ../include/dpq.h
 src/CMakeFiles/stat.dir/qlnorm.cpp.o: ../include/nmath.h
 src/CMakeFiles/stat.dir/qlnorm.cpp.o: ../src/qlnorm.cpp
 
+src/CMakeFiles/stat.dir/qlogis.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/qlogis.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/qlogis.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/qlogis.cpp.o: ../src/qlogis.cpp
+
+src/CMakeFiles/stat.dir/qnbeta.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/qnbeta.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/qnbeta.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/qnbeta.cpp.o: ../src/qnbeta.cpp
+
+src/CMakeFiles/stat.dir/qnbinom.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/qnbinom.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/qnbinom.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/qnbinom.cpp.o: ../src/qnbinom.cpp
+
+src/CMakeFiles/stat.dir/qnchisq.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/qnchisq.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/qnchisq.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/qnchisq.cpp.o: ../src/qnchisq.cpp
+
+src/CMakeFiles/stat.dir/qnf.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/qnf.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/qnf.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/qnf.cpp.o: ../src/qnf.cpp
+
 src/CMakeFiles/stat.dir/qnorm.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/qnorm.cpp.o: ../include/dpq.h
 src/CMakeFiles/stat.dir/qnorm.cpp.o: ../include/nmath.h
 src/CMakeFiles/stat.dir/qnorm.cpp.o: ../src/qnorm.cpp
+
+src/CMakeFiles/stat.dir/qnt.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/qnt.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/qnt.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/qnt.cpp.o: ../src/qnt.cpp
 
 src/CMakeFiles/stat.dir/qpois.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/qpois.cpp.o: ../include/dpq.h
@@ -217,10 +371,20 @@ src/CMakeFiles/stat.dir/qt.cpp.o: ../include/dpq.h
 src/CMakeFiles/stat.dir/qt.cpp.o: ../include/nmath.h
 src/CMakeFiles/stat.dir/qt.cpp.o: ../src/qt.cpp
 
+src/CMakeFiles/stat.dir/qtukey.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/qtukey.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/qtukey.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/qtukey.cpp.o: ../src/qtukey.cpp
+
 src/CMakeFiles/stat.dir/qunif.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/qunif.cpp.o: ../include/dpq.h
 src/CMakeFiles/stat.dir/qunif.cpp.o: ../include/nmath.h
 src/CMakeFiles/stat.dir/qunif.cpp.o: ../src/qunif.cpp
+
+src/CMakeFiles/stat.dir/qweibull.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/qweibull.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/qweibull.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/qweibull.cpp.o: ../src/qweibull.cpp
 
 src/CMakeFiles/stat.dir/stirlerr.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/stirlerr.cpp.o: ../include/nmath.h
