@@ -146,6 +146,10 @@ src/CMakeFiles/stat.dir/imax2.cpp.o
  ../include/Rmath.h
  ../include/nmath.h
  /home/a008/coding/MiniR/src/imax2.cpp
+src/CMakeFiles/stat.dir/imin2.cpp.o
+ ../include/Rmath.h
+ ../include/nmath.h
+ /home/a008/coding/MiniR/src/imin2.cpp
 src/CMakeFiles/stat.dir/infnan.cpp.o
  ../include/Rmath.h
  ../include/nmath.h
@@ -390,6 +394,11 @@ src/CMakeFiles/stat.dir/qweibull.cpp.o
  ../include/dpq.h
  ../include/nmath.h
  /home/a008/coding/MiniR/src/qweibull.cpp
+src/CMakeFiles/stat.dir/signrank.cpp.o
+ ../include/Rmath.h
+ ../include/dpq.h
+ ../include/nmath.h
+ /home/a008/coding/MiniR/src/signrank.cpp
 src/CMakeFiles/stat.dir/stirlerr.cpp.o
  ../include/Rmath.h
  ../include/nmath.h

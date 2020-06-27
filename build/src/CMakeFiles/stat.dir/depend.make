@@ -146,6 +146,10 @@ src/CMakeFiles/stat.dir/imax2.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/imax2.cpp.o: ../include/nmath.h
 src/CMakeFiles/stat.dir/imax2.cpp.o: ../src/imax2.cpp
 
+src/CMakeFiles/stat.dir/imin2.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/imin2.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/imin2.cpp.o: ../src/imin2.cpp
+
 src/CMakeFiles/stat.dir/infnan.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/infnan.cpp.o: ../include/nmath.h
 src/CMakeFiles/stat.dir/infnan.cpp.o: ../src/infnan.cpp
@@ -389,6 +393,11 @@ src/CMakeFiles/stat.dir/qweibull.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/qweibull.cpp.o: ../include/dpq.h
 src/CMakeFiles/stat.dir/qweibull.cpp.o: ../include/nmath.h
 src/CMakeFiles/stat.dir/qweibull.cpp.o: ../src/qweibull.cpp
+
+src/CMakeFiles/stat.dir/signrank.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/signrank.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/signrank.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/signrank.cpp.o: ../src/signrank.cpp
 
 src/CMakeFiles/stat.dir/stirlerr.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/stirlerr.cpp.o: ../include/nmath.h

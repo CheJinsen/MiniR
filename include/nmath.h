@@ -112,6 +112,7 @@ double nan();
 }
 
 int imax2(int, int);
+int imin2(int, int);
 double pbeta_raw(double, double, double, bool, bool);
 
 int	Rf_i1mach(int);

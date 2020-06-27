@@ -962,6 +962,33 @@ imax2.cpp.s:
 	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/imax2.cpp.s
 .PHONY : imax2.cpp.s
 
+imin2.o: imin2.cpp.o
+
+.PHONY : imin2.o
+
+# target to build an object file
+imin2.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/imin2.cpp.o
+.PHONY : imin2.cpp.o
+
+imin2.i: imin2.cpp.i
+
+.PHONY : imin2.i
+
+# target to preprocess a source file
+imin2.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/imin2.cpp.i
+.PHONY : imin2.cpp.i
+
+imin2.s: imin2.cpp.s
+
+.PHONY : imin2.s
+
+# target to generate assembly for a file
+imin2.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/imin2.cpp.s
+.PHONY : imin2.cpp.s
+
 infnan.o: infnan.cpp.o
 
 .PHONY : infnan.o
@@ -2312,6 +2339,33 @@ qweibull.cpp.s:
 	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qweibull.cpp.s
 .PHONY : qweibull.cpp.s
 
+signrank.o: signrank.cpp.o
+
+.PHONY : signrank.o
+
+# target to build an object file
+signrank.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/signrank.cpp.o
+.PHONY : signrank.cpp.o
+
+signrank.i: signrank.cpp.i
+
+.PHONY : signrank.i
+
+# target to preprocess a source file
+signrank.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/signrank.cpp.i
+.PHONY : signrank.cpp.i
+
+signrank.s: signrank.cpp.s
+
+.PHONY : signrank.s
+
+# target to generate assembly for a file
+signrank.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/signrank.cpp.s
+.PHONY : signrank.cpp.s
+
 stirlerr.o: stirlerr.cpp.o
 
 .PHONY : stirlerr.o
@@ -2495,6 +2549,9 @@ help:
 	@echo "... imax2.o"
 	@echo "... imax2.i"
 	@echo "... imax2.s"
+	@echo "... imin2.o"
+	@echo "... imin2.i"
+	@echo "... imin2.s"
 	@echo "... infnan.o"
 	@echo "... infnan.i"
 	@echo "... infnan.s"
@@ -2645,6 +2702,9 @@ help:
 	@echo "... qweibull.o"
 	@echo "... qweibull.i"
 	@echo "... qweibull.s"
+	@echo "... signrank.o"
+	@echo "... signrank.i"
+	@echo "... signrank.s"
 	@echo "... stirlerr.o"
 	@echo "... stirlerr.i"
 	@echo "... stirlerr.s"

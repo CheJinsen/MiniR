@@ -573,13 +573,15 @@ double qwilcox(double p, double m, double n,
 	bool lower_tail = true, bool log_p = false);
 //double rwilcox(double, double);
 //
-//	/* Wilcoxon Signed Rank Distribution */
-//
-//double dsignrank(double, double, int);
-//double psignrank(double, double, int, int);
-//double qsignrank(double, double, int, int);
+	/* Wilcoxon Signed Rank Distribution */
+
+double dsignrank(double x, double n, bool log = false);
+double psignrank(double q, double n,
+	bool lower_tail = true, bool log_p = false);
+double qsignrank(double p, double n,
+	bool lower_tail = true, bool log_p = false);
 //double rsignrank(double);
-//
+
 
 /* Gamma and Related Functions */
 double	gammafn(double);
