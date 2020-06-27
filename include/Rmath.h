@@ -614,8 +614,8 @@ double	lchoose(double, double);
 //
 //	/* General Support Functions */
 //
-//int	imax2(int, int);
-//int	imin2(int, int);
+int	imax2(int, int);
+int	imin2(int, int);
 double	fmax2(double, double);
 double	fmin2(double, double);
 //double	sign(double);
