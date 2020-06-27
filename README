@@ -14,4 +14,5 @@ Notes:
 	In file ./src/pnchisq.cpp line 111 and line 236, 
 	in file ./src/wilcox.cpp line 47 and line 118,
 	in file ./src/choose.cpp line 46, line 76, line 119,
-	I comment the stack check function, it meybe have bugs.
+	in file ./src/signrank.cpp line 89
+	I comment the stack check function, that may be has bugs.
