@@ -13,4 +13,5 @@ executive:
 Notes: 
 	In file ./src/pnchisq.cpp line 111 and line 236, 
 	in file ./src/wilcox.cpp line 47 and line 118,
-	I comment the interrupte check function(R_CheckUserInterrupt()), it meybe have bugs.
+	in file ./src/choose.cpp line 46, line 76, line 119,
+	I comment the stack check function, it meybe have bugs.
