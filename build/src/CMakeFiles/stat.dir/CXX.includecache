@@ -194,6 +194,10 @@ nmath.h
 climits
 -
 
+/home/a008/coding/MiniR/src/imax2.cpp
+nmath.h
+/home/a008/coding/MiniR/src/nmath.h
+
 /home/a008/coding/MiniR/src/infnan.cpp
 nmath.h
 /home/a008/coding/MiniR/src/nmath.h
@@ -497,4 +501,12 @@ dpq.h
 /home/a008/coding/MiniR/src/dpq.h
 climits
 -
+
+/home/a008/coding/MiniR/src/wilcox.cpp
+Rmath.h
+-
+nmath.h
+/home/a008/coding/MiniR/src/nmath.h
+dpq.h
+/home/a008/coding/MiniR/src/dpq.h
 

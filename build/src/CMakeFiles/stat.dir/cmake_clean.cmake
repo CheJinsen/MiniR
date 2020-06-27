@@ -31,6 +31,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/stat.dir/fmin2.cpp.o"
   "CMakeFiles/stat.dir/gamma.cpp.o"
   "CMakeFiles/stat.dir/i1mach.cpp.o"
+  "CMakeFiles/stat.dir/imax2.cpp.o"
   "CMakeFiles/stat.dir/infnan.cpp.o"
   "CMakeFiles/stat.dir/lbeta.cpp.o"
   "CMakeFiles/stat.dir/lgamma.cpp.o"
@@ -83,6 +84,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/stat.dir/qweibull.cpp.o"
   "CMakeFiles/stat.dir/stirlerr.cpp.o"
   "CMakeFiles/stat.dir/toms708.cpp.o"
+  "CMakeFiles/stat.dir/wilcox.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.

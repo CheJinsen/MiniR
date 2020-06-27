@@ -142,6 +142,10 @@ src/CMakeFiles/stat.dir/i1mach.cpp.o
  ../include/Rmath.h
  ../include/nmath.h
  /home/a008/coding/MiniR/src/i1mach.cpp
+src/CMakeFiles/stat.dir/imax2.cpp.o
+ ../include/Rmath.h
+ ../include/nmath.h
+ /home/a008/coding/MiniR/src/imax2.cpp
 src/CMakeFiles/stat.dir/infnan.cpp.o
  ../include/Rmath.h
  ../include/nmath.h
@@ -395,3 +399,8 @@ src/CMakeFiles/stat.dir/toms708.cpp.o
  ../include/dpq.h
  ../include/nmath.h
  /home/a008/coding/MiniR/src/toms708.cpp
+src/CMakeFiles/stat.dir/wilcox.cpp.o
+ ../include/Rmath.h
+ ../include/dpq.h
+ ../include/nmath.h
+ /home/a008/coding/MiniR/src/wilcox.cpp

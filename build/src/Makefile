@@ -935,6 +935,33 @@ i1mach.cpp.s:
 	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/i1mach.cpp.s
 .PHONY : i1mach.cpp.s
 
+imax2.o: imax2.cpp.o
+
+.PHONY : imax2.o
+
+# target to build an object file
+imax2.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/imax2.cpp.o
+.PHONY : imax2.cpp.o
+
+imax2.i: imax2.cpp.i
+
+.PHONY : imax2.i
+
+# target to preprocess a source file
+imax2.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/imax2.cpp.i
+.PHONY : imax2.cpp.i
+
+imax2.s: imax2.cpp.s
+
+.PHONY : imax2.s
+
+# target to generate assembly for a file
+imax2.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/imax2.cpp.s
+.PHONY : imax2.cpp.s
+
 infnan.o: infnan.cpp.o
 
 .PHONY : infnan.o
@@ -2339,6 +2366,33 @@ toms708.cpp.s:
 	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/toms708.cpp.s
 .PHONY : toms708.cpp.s
 
+wilcox.o: wilcox.cpp.o
+
+.PHONY : wilcox.o
+
+# target to build an object file
+wilcox.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/wilcox.cpp.o
+.PHONY : wilcox.cpp.o
+
+wilcox.i: wilcox.cpp.i
+
+.PHONY : wilcox.i
+
+# target to preprocess a source file
+wilcox.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/wilcox.cpp.i
+.PHONY : wilcox.cpp.i
+
+wilcox.s: wilcox.cpp.s
+
+.PHONY : wilcox.s
+
+# target to generate assembly for a file
+wilcox.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/wilcox.cpp.s
+.PHONY : wilcox.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2438,6 +2492,9 @@ help:
 	@echo "... i1mach.o"
 	@echo "... i1mach.i"
 	@echo "... i1mach.s"
+	@echo "... imax2.o"
+	@echo "... imax2.i"
+	@echo "... imax2.s"
 	@echo "... infnan.o"
 	@echo "... infnan.i"
 	@echo "... infnan.s"
@@ -2594,6 +2651,9 @@ help:
 	@echo "... toms708.o"
 	@echo "... toms708.i"
 	@echo "... toms708.s"
+	@echo "... wilcox.o"
+	@echo "... wilcox.i"
+	@echo "... wilcox.s"
 .PHONY : help
 
 

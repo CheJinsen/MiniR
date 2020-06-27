@@ -33,6 +33,7 @@
 #include "Rmath.h"
 
 #define IEEE_754 1
+#define WILCOX_MAX 50
 
 #define R_forceint(x)   nearbyint(x)
 
@@ -110,6 +111,7 @@ double nan();
    } \
 }
 
+int imax2(int, int);
 double pbeta_raw(double, double, double, bool, bool);
 
 int	Rf_i1mach(int);

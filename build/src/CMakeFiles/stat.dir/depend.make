@@ -142,6 +142,10 @@ src/CMakeFiles/stat.dir/i1mach.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/i1mach.cpp.o: ../include/nmath.h
 src/CMakeFiles/stat.dir/i1mach.cpp.o: ../src/i1mach.cpp
 
+src/CMakeFiles/stat.dir/imax2.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/imax2.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/imax2.cpp.o: ../src/imax2.cpp
+
 src/CMakeFiles/stat.dir/infnan.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/infnan.cpp.o: ../include/nmath.h
 src/CMakeFiles/stat.dir/infnan.cpp.o: ../src/infnan.cpp
@@ -394,4 +398,9 @@ src/CMakeFiles/stat.dir/toms708.cpp.o: ../include/Rmath.h
 src/CMakeFiles/stat.dir/toms708.cpp.o: ../include/dpq.h
 src/CMakeFiles/stat.dir/toms708.cpp.o: ../include/nmath.h
 src/CMakeFiles/stat.dir/toms708.cpp.o: ../src/toms708.cpp
+
+src/CMakeFiles/stat.dir/wilcox.cpp.o: ../include/Rmath.h
+src/CMakeFiles/stat.dir/wilcox.cpp.o: ../include/dpq.h
+src/CMakeFiles/stat.dir/wilcox.cpp.o: ../include/nmath.h
+src/CMakeFiles/stat.dir/wilcox.cpp.o: ../src/wilcox.cpp
 

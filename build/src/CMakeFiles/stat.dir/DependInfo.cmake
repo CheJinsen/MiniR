@@ -34,6 +34,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/a008/coding/MiniR/src/fmin2.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/fmin2.cpp.o"
   "/home/a008/coding/MiniR/src/gamma.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/gamma.cpp.o"
   "/home/a008/coding/MiniR/src/i1mach.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/i1mach.cpp.o"
+  "/home/a008/coding/MiniR/src/imax2.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/imax2.cpp.o"
   "/home/a008/coding/MiniR/src/infnan.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/infnan.cpp.o"
   "/home/a008/coding/MiniR/src/lbeta.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/lbeta.cpp.o"
   "/home/a008/coding/MiniR/src/lgamma.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/lgamma.cpp.o"
@@ -86,6 +87,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/a008/coding/MiniR/src/qweibull.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/qweibull.cpp.o"
   "/home/a008/coding/MiniR/src/stirlerr.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/stirlerr.cpp.o"
   "/home/a008/coding/MiniR/src/toms708.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/toms708.cpp.o"
+  "/home/a008/coding/MiniR/src/wilcox.cpp" "/home/a008/coding/MiniR/build/src/CMakeFiles/stat.dir/wilcox.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

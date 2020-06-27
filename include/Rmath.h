@@ -566,9 +566,11 @@ double	qtukey(double p, double nmeans, double df,
 //
 //	/* Wilcoxon Rank Sum Distribution */
 //
-//double dwilcox(double, double, double, int);
-//double pwilcox(double, double, double, int, int);
-//double qwilcox(double, double, double, int, int);
+double dwilcox(double x, double m, double n, bool log = false);
+double pwilcox(double q, double m, double n,
+	bool lower_tail = true, bool log_p = false);
+double qwilcox(double p, double m, double n,
+	bool lower_tail = true, bool log_p = false);
 //double rwilcox(double, double);
 //
 //	/* Wilcoxon Signed Rank Distribution */
@@ -593,8 +595,8 @@ double	lgammafn_sign(double, int*);
 //double	beta(double, double);
 double	lbeta(double, double);
 //
-//double	choose(double, double);
-//double	lchoose(double, double);
+double	choose(double, double);
+double	lchoose(double, double);
 //
 //	/* Bessel Functions */
 //
