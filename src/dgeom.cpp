@@ -31,8 +31,6 @@
 
 double dgeom(double x, double p, bool give_log)
 { 
-    double prob;
-
     if (ISNAN(x) || ISNAN(p)) return x + p;
 
     if (p <= 0 || p > 1) ML_WARN_return_NAN;
@@ -42,7 +40,7 @@ double dgeom(double x, double p, bool give_log)
     x = R_forceint(x);
 
     /* prob = (1-p)^x, stable for small p */
-    prob = dbinom_raw(0.,x, p,1-p, give_log);
+    double prob = dbinom_raw(0.0, x, p, 1 - p, give_log);
 
-    return((give_log) ? log(p) + prob : p*prob);
+    return (give_log) ? log(p) + prob : p * prob;
 }

@@ -27,5 +27,5 @@
 
 double dchisq(double x, double df, bool give_log)
 {
-    return dgamma(x, df / 2., 2., give_log);
+    return dgamma(x, df / 2.0, 2.0, give_log);
 }

@@ -31,68 +31,73 @@ double dnchisq(double x, double df, double ncp, bool give_log)
 {
     const static double eps = 5e-15;
 
-    double i, ncp2, q, mid, dfmid, imax;
-    long double sum, term;
+    double i = 0.0, q = 0.0, mid = 0.0, dfmid = 0.0;
 
     if (ISNAN(x) || ISNAN(df) || ISNAN(ncp))
-	return x + df + ncp;
+	   return x + df + ncp;
 
     if (!R_FINITE(df) || !R_FINITE(ncp) || ncp < 0 || df < 0)
     	ML_WARN_return_NAN;
 
     if(x < 0) return R_D__0;
-    if(x == 0 && df < 2.)
-	return ML_POSINF;
+    if(x == 0 && df < 2.0)
+	   return ML_POSINF;
     if(ncp == 0)
-	return (df > 0) ? dchisq(x, df, give_log) : R_D__0;
+	   return (df > 0) ? dchisq(x, df, give_log) : R_D__0;
     if(x == ML_POSINF) return R_D__0;
 
-    ncp2 = 0.5 * ncp;
+    double ncp2 = 0.5 * ncp;
 
     /* find max element of sum */
-    imax = ceil((-(2+df) +sqrt((2-df) * (2-df) + 4 * ncp * x))/4);
-    if (imax < 0) imax = 0;
+    double imax = ceil((-(2 + df) + sqrt((2 - df) * (2 - df) + 4 * ncp * x)) / 4);
+    if (imax < 0)
+        imax = 0;
     if(R_FINITE(imax)) {
-	dfmid = df + 2 * imax;
-	mid = dpois_raw(imax, ncp2, false) * dchisq(x, dfmid, false);
-    } else /* imax = Inf */
-	mid = 0;
-
-    if(mid == 0) {
-	/* underflow to 0 -- maybe numerically correct; maybe can be more accurate,
-	 * particularly when  give_log = TRUE */
-	/* Use  central-chisq approximation formula when appropriate;
-	 * ((FIXME: the optimal cutoff also depends on (x,df);  use always here? )) */
-	if(give_log || ncp > 1000.) {
-	    double nl = df + ncp, ic = nl/(nl + ncp);/* = "1/(1+b)" Abramowitz & St.*/
-	    return dchisq(x*ic, nl*ic, give_log);
-	} else
-	    return R_D__0;
+    	dfmid = df + 2 * imax;
+    	mid = dpois_raw(imax, ncp2, false) * dchisq(x, dfmid, false);
+    } else {/* imax = Inf */
+	   mid = 0;
     }
 
-    sum = mid;
+    if(mid == 0) {
+    	/* underflow to 0 -- maybe numerically correct; maybe can be more accurate,
+    	 * particularly when  give_log = TRUE */
+    	/* Use  central-chisq approximation formula when appropriate;
+    	 * ((FIXME: the optimal cutoff also depends on (x,df);  use always here? )) */
+    	if(give_log || ncp > 1000.0) {
+    	    double nl = df + ncp, ic = nl / (nl + ncp);/* = "1/(1+b)" Abramowitz & St.*/
+    	    return dchisq(x * ic, nl * ic, give_log);
+    	} else
+    	    return R_D__0;
+    }
+
+    long double sum = mid;
 
     /* errorbound := term * q / (1-q)  now subsumed in while() / if() below: */
 
     /* upper tail */
-    term = mid; df = dfmid; i = imax;
+    long double term = mid;
+    df = dfmid;
+    i = imax;
     double x2 = x * ncp2;
     do {
-	i++;
-	q = x2 / i / df;
-	df += 2;
-	term *= q;
-	sum += term;
-    } while (q >= 1 || term * q > (1-q)*eps || term > 1e-10*sum);
+    	i++;
+    	q = x2 / i / df;
+    	df += 2;
+    	term *= q;
+    	sum += term;
+    } while (q >= 1 || term * q > (1 - q) * eps || term > 1e-10 * sum);
+
     /* lower tail */
     term = mid; df = dfmid; i = imax;
     while (i != 0) {
-	df -= 2;
-	q = i * df / x2;
-	i--;
-	term *= q;
-	sum += term;
-	if (q < 1 && term * q <= (1-q)*eps) break;
+    	df -= 2;
+    	q = i * df / x2;
+    	i--;
+    	term *= q;
+    	sum += term;
+    	if (q < 1 && term * q <= (1 - q) * eps)
+            break;
     }
-    return R_D_val((double) sum);
+    return R_D_val((double)sum);
 }

@@ -8,6 +8,8 @@
 
 ../include/Rmath.h
 
+../include/dpq.h
+
 ../include/nmath.h
 cstdio
 -
@@ -28,11 +30,9 @@ algorithm
 Rmath.h
 ../include/Rmath.h
 
-/home/a008/coding/MiniR/src/main.cpp
-iostream
--
-iomanip
--
+/home/a008/coding/MiniR/src/dnbeta.cpp
 nmath.h
 /home/a008/coding/MiniR/src/nmath.h
+dpq.h
+/home/a008/coding/MiniR/src/dpq.h
 

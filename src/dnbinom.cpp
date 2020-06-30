@@ -37,8 +37,6 @@
 
 double dnbinom(double x, double size, double prob, bool give_log)
 {
-    double ans, p;
-
     if (ISNAN(x) || ISNAN(size) || ISNAN(prob))
         return x + size + prob;
 
@@ -50,9 +48,9 @@ double dnbinom(double x, double size, double prob, bool give_log)
     x = R_forceint(x);
     if(!R_FINITE(size)) size = DBL_MAX;
 
-    ans = dbinom_raw(size, x+size, prob, 1-prob, give_log);
-    p = ((double)size)/(size+x);
-    return((give_log) ? log(p) + ans : p * ans);
+    double ans = dbinom_raw(size, x + size, prob, 1 - prob, give_log);
+    double p = ((double)size) / (size + x);
+    return give_log ? log(p) + ans : p * ans;
 }
 
 double dnbinom_mu(double x, double size, double mu, bool give_log)
@@ -74,20 +72,20 @@ double dnbinom_mu(double x, double size, double mu, bool give_log)
     if (x == 0 && size == 0) return R_D__1;
     x = R_forceint(x);
     if(!R_FINITE(size)) // limit case: Poisson
-	return(dpois_raw(x, mu, give_log));
+	   return dpois_raw(x, mu, give_log);
 
     if(x == 0)/* be accurate, both for n << mu, and n >> mu :*/
-	return R_D_exp(size * (size < mu ? log(size/(size+mu)) : log1p(- mu/(size+mu))));
+	   return R_D_exp(size * (size < mu ? log(size/(size+mu)) : log1p(- mu / (size + mu))));
     if(x < 1e-10 * size) { /* don't use dbinom_raw() but MM's formula: */
-	/* FIXME --- 1e-8 shows problem; rather use algdiv() from ./toms708.c */
-	double p = (size < mu ? log(size/(1 + size/mu)) : log(mu / (1 + mu/size)));
-	return R_D_exp(x * p - mu - lgamma(x+1) +
-		       log1p(x*(x-1)/(2*size)));
+    	/* FIXME --- 1e-8 shows problem; rather use algdiv() from ./toms708.c */
+    	double p = (size < mu ? log(size / (1 + size / mu)) : log(mu / (1 + mu / size)));
+    	return R_D_exp(x * p - mu - lgamma(x + 1) +
+    		       log1p(x * (x - 1) / (2 * size)));
     } else {
-	/* no unnecessary cancellation inside dbinom_raw, when
-	 * x_ = size and n_ = x+size are so close that n_ - x_ loses accuracy */
-	double p = ((double)size)/(size+x),
-	    ans = dbinom_raw(size, x+size, size/(size+mu), mu/(size+mu), give_log);
-	return((give_log) ? log(p) + ans : p * ans);
+    	/* no unnecessary cancellation inside dbinom_raw, when
+    	 * x_ = size and n_ = x+size are so close that n_ - x_ loses accuracy */
+    	double p = ((double)size) / (size + x),
+    	    ans = dbinom_raw(size, x + size, size / (size + mu), mu / (size + mu), give_log);
+    	return give_log ? log(p) + ans : p * ans;
     }
 }

@@ -64,10 +64,10 @@
 
 double dnt(double x, double df, double ncp, bool give_log)
 {
-    double u;
+    double u = 0.0;
 
     if (ISNAN(x) || ISNAN(df))
-	return x + df;
+	   return x + df;
 
     /* If non-positive df then error */
     if (df <= 0.0) ML_WARN_return_NAN;
@@ -76,27 +76,26 @@ double dnt(double x, double df, double ncp, bool give_log)
 
     /* If x is infinite then return 0 */
     if(!R_FINITE(x))
-	return R_D__0;
+	   return R_D__0;
 
     /* If infinite df then the density is identical to a
        normal distribution with mean = ncp.  However, the formula
        loses a lot of accuracy around df=1e9
     */
     if(!R_FINITE(df) || df > 1e8)
-	return dnorm(x, ncp, 1., give_log);
+	   return dnorm(x, ncp, 1.0, give_log);
 
     /* Do calculations on log scale to stabilize */
 
     /* Consider two cases: x ~= 0 or not */
     if (fabs(x) > sqrt(df * DBL_EPSILON)) {
-	u = log(df) - log(fabs(x)) +
-	    log(fabs(pnt(x*sqrt((df+2)/df), df+2, ncp, 1, 0) -
-		     pnt(x, df, ncp, 1, 0)));
-	/* FIXME: the above still suffers from cancellation (but not horribly) */
-    }
-    else {  /* x ~= 0 : -> same value as for  x = 0 */
-	u = lgammafn((df+1)/2) - lgammafn(df/2)
-	    - (M_LN_SQRT_PI + .5*(log(df) + ncp*ncp));
+    	u = log(df) - log(fabs(x)) +
+    	    log(fabs(pnt(x * sqrt((df + 2) / df), df + 2, ncp, 1, 0) -
+    		pnt(x, df, ncp, 1, 0)));
+    	/* FIXME: the above still suffers from cancellation (but not horribly) */
+    } else {  /* x ~= 0 : -> same value as for  x = 0 */
+	   u = lgammafn((df + 1) / 2) - lgammafn(df / 2) -
+            (M_LN_SQRT_PI + 0.5 * (log(df) + ncp * ncp));
     }
 
     return (give_log ? u : exp(u));

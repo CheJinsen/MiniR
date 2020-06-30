@@ -44,26 +44,25 @@ double dt(double x, double n, bool give_log)
     if (!R_FINITE(x))
         return R_D__0;
     if (!R_FINITE(n))
-        return dnorm(x, 0., 1., give_log);
+        return dnorm(x, 0.0, 1.0, give_log);
 
-    double u, t = -bd0(n / 2., (n + 1) / 2.) + stirlerr((n + 1) / 2.) - stirlerr(n / 2.),
-        x2n = x * x / n, // in  [0, Inf]
-        ax = 0., // <- -Wpedantic
-        l_x2n; // := log(sqrt(1 + x2n)) = log(1 + x2n)/2
-    bool lrg_x2n = (x2n > 1. / DBL_EPSILON);
+    double u = 0.0;
+    double t = -bd0(n / 2.0, (n + 1) / 2.0) + stirlerr((n + 1) / 2.0) - stirlerr(n / 2.0);
+    double x2n = x * x / n;     // in  [0, Inf]
+    double ax = 0.0;            // <- -Wpedantic
+    double l_x2n = 0.0;         // := log(sqrt(1 + x2n)) = log(1 + x2n)/2
+    bool lrg_x2n = (x2n > 1.0 / DBL_EPSILON);
+
     if (lrg_x2n) { // large x^2/n :
         ax = fabs(x);
-        l_x2n = log(ax) - log(n) / 2.; // = log(x2n)/2 = 1/2 * log(x^2 / n)
-        u = //  log(1 + x2n) * n/2 =  n * log(1 + x2n)/2 =
-            n * l_x2n;
-    }
-    else if (x2n > 0.2) {
-        l_x2n = log(1 + x2n) / 2.;
+        l_x2n = log(ax) - log(n) / 2.0; // = log(x2n)/2 = 1/2 * log(x^2 / n)
+        u = n * l_x2n;                  //  log(1 + x2n) * n/2 =  n * log(1 + x2n)/2
+    } else if (x2n > 0.2) {
+        l_x2n = log(1 + x2n) / 2.0;
         u = n * l_x2n;
-    }
-    else {
-        l_x2n = log1p(x2n) / 2.;
-        u = -bd0(n / 2., (n + x * x) / 2.) + x * x / 2.;
+    } else {
+        l_x2n = log1p(x2n) / 2.0;
+        u = -bd0(n / 2.0, (n + x * x) / 2.0) + x * x / 2.0;
     }
 
     //old: return  R_D_fexp(M_2PI*(1+x2n), t-u);

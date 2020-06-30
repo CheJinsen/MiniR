@@ -43,7 +43,7 @@
 
 double dbinom_raw(double x, double n, double p, double q, bool give_log)
 {
-    double lf, lc;
+    double lf = 0.0, lc = 0.0;
 
     if (p == 0) return((x == 0) ? R_D__1 : R_D__0);
     if (q == 0) return((x == n) ? R_D__1 : R_D__0);

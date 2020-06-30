@@ -36,8 +36,7 @@
 
 double bd0(double x, double np)
 {
-	double ej, s, s1, v;
-	int j;
+	double ej = 0.0, s = 0.0, s1 = 0.0, v = 0.0;
 
 	if (!R_FINITE(x) || !R_FINITE(np) || np == 0.0) ML_WARN_return_NAN;
 
@@ -47,7 +46,7 @@ double bd0(double x, double np)
 		if (fabs(s) < DBL_MIN) return s;
 		ej = 2 * x * v;
 		v = v * v;
-		for (j = 1; j < 1000; j++) { /* Taylor series; 1000: no infinite loop
+		for (int j = 1; j < 1000; j++) { /* Taylor series; 1000: no infinite loop
 						as |v| < .1,  v^2000 is "zero" */
 			ej *= v;// = v^(2j+1)
 			s1 = s + ej / (2.0 * j + 1);

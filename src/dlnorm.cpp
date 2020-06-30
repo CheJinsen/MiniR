@@ -27,20 +27,17 @@
 
 double dlnorm(double x, double meanlog, double sdlog, bool give_log)
 {
-    double y;
-
     if (ISNAN(x) || ISNAN(meanlog) || ISNAN(sdlog))
-	return x + meanlog + sdlog;
+	   return x + meanlog + sdlog;
 
     if(sdlog < 0) ML_WARN_return_NAN;
     if(!R_FINITE(x) && log(x) == meanlog) return ML_NAN;/* log(x) - meanlog is NaN */
     if(sdlog == 0)
-	return (log(x) == meanlog) ? ML_POSINF : R_D__0;
+	   return (log(x) == meanlog) ? ML_POSINF : R_D__0;
     if(x <= 0) return R_D__0;
 
-    y = (log(x) - meanlog) / sdlog;
-    return (give_log ?
+    double y = (log(x) - meanlog) / sdlog;
+    return give_log ?
 	    -(M_LN_SQRT_2PI   + 0.5 * y * y + log(x * sdlog)) :
-	    M_1_SQRT_2PI * exp(-0.5 * y * y)  /	 (x * sdlog));
-    /* M_1_SQRT_2PI = 1 / sqrt(2 * pi) */
+	    M_1_SQRT_2PI * exp(-0.5 * y * y)  /	 (x * sdlog);
 }

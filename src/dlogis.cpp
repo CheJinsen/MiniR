@@ -23,8 +23,6 @@
 
 double dlogis(double x, double location, double scale, bool give_log)
 {
-    double e, f;
-
     if (ISNAN(x) || ISNAN(location) || ISNAN(scale))
 	return x + location + scale;
 
@@ -32,7 +30,7 @@ double dlogis(double x, double location, double scale, bool give_log)
 	ML_WARN_return_NAN;
 
     x = fabs((x - location) / scale);
-    e = exp(-x);
-    f = 1.0 + e;
+    double e = exp(-x);
+    double f = 1.0 + e;
     return give_log ? -(x + log(scale * f * f)) : e / (scale * f * f);
 }

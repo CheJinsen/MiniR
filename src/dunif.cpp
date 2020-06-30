@@ -29,11 +29,11 @@ double dunif(double x, double a, double b, bool give_log)
 {
 
     if (ISNAN(x) || ISNAN(a) || ISNAN(b))
-	return x + a + b;
+		return x + a + b;
 
     if (b <= a) ML_WARN_return_NAN;
 
     if (a <= x && x <= b)
-	return give_log ? -log(b - a) : 1. / (b - a);
+		return give_log ? -log(b - a) : 1.0 / (b - a);
     return R_D__0;
 }

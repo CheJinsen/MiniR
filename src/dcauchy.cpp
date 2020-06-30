@@ -27,15 +27,14 @@
 
 double dcauchy(double x, double location, double scale, bool give_log)
 {
-    double y;
     /* NaNs propagated correctly */
     if (ISNAN(x) || ISNAN(location) || ISNAN(scale))
-	return x + location + scale;
+		return x + location + scale;
 
     if (scale <= 0) ML_WARN_return_NAN;
 
-    y = (x - location) / scale;
+    double y = (x - location) / scale;
     return give_log ?
-	- log(M_PI * scale * (1. + y * y)) :
-	1. / (M_PI * scale * (1. + y * y));
+		-log(M_PI * scale * (1. + y * y)) :
+		1.0 / (M_PI * scale * (1. + y * y));
 }

@@ -29,10 +29,10 @@ double cospi(double x) {
 
     if (!R_FINITE(x)) ML_WARN_return_NAN;
 
-    x = fmod(fabs(x), 2.);// cos() symmetric; cos(pi(x + 2k)) == cos(pi x) for all integer k
-    if (fmod(x, 1.) == 0.5) return 0.;
-    if (x == 1.)	return -1.;
-    if (x == 0.)	return  1.;
+    x = fmod(fabs(x), 2.0);// cos() symmetric; cos(pi(x + 2k)) == cos(pi x) for all integer k
+    if (fmod(x, 1.) == 0.5) return 0.0;
+    if (x == 1.0)	return -1.0;
+    if (x == 0.0)	return  1.0;
     // otherwise
     return cos(M_PI * x);
 }
@@ -47,10 +47,10 @@ double sinpi(double x) {
     x = fmod(x, 2.); // sin(pi(x + 2k)) == sin(pi x)  for all integer k
     // map (-2,2) --> (-1,1] :
     if (x <= -1) x += 2.; else if (x > 1.) x -= 2.;
-    if (x == 0. || x == 1.) return 0.;
-    if (x == 0.5)	return  1.;
-    if (x == -0.5)	return -1.;
-    // otherwise
+    if (x == 0. || x == 1.) return 0.0;
+    if (x == 0.5)	return  1.0;
+    if (x == -0.5)	return -1.0;
+    
     return sin(M_PI * x);
 }
 
@@ -62,9 +62,9 @@ double tanpi(double x)
 
     if (!R_FINITE(x)) ML_WARN_return_NAN;
 
-    x = fmod(x, 1.); // tan(pi(x + k)) == tan(pi x)  for all integer k
+    // tan(pi(x + k)) == tan(pi x)  for all integer k
     // map (-1,1) --> (-1/2, 1/2] :
+    x = fmod(x, 1.); 
     if (x <= -0.5) x++; else if (x > 0.5) x--;
-    return (x == 0.) ? 0. : ((x == 0.5) ? ML_NAN : tan(M_PI * x));
+    return (x == 0.) ? 0.0 : ((x == 0.5) ? ML_NAN : tan(M_PI * x));
 }
-

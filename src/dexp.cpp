@@ -32,9 +32,8 @@ double dexp(double x, double scale, bool give_log)
 
     if (scale <= 0.0) ML_WARN_return_NAN;
 
-    if (x < 0.)
-	return R_D__0;
-    return (give_log ?
-	    (-x / scale) - log(scale) :
-	    exp(-x / scale) / scale);
+    if (x < 0.0)
+		return R_D__0;
+
+    return (give_log ? (-x / scale) - log(scale) : exp(-x / scale) / scale);
 }
