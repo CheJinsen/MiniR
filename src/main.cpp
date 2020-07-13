@@ -1,15 +1,22 @@
-
 #include <iostream>
 #include <iomanip>
-#include "nmath.h"
+#include "randist.h"
 
-int main(int argc, char *argv[])
+using namespace Randist;
+
+// test session
+int main(int argc, char* argv[])
 {
-	std::cout << choose(20000, 10) << std::endl;
-	std::cout << choose(20000, 100) << std::endl;
-	std::cout << choose(20000, 1000) << std::endl;
+	std::cout << std::setprecision(15);
 
-	std::cout << dsignrank(100, 20) << std::endl;
-	std::cout << psignrank(9, 5) << std::endl;
+	std::cout << Tukey::cdf(1, 1, 2, 3) << std::endl;
+	std::cout << Tukey::quantile(0.95, 1, 2, 3) << std::endl;
+	std::cout << Wilcox::pdf(23, 20, 3) << std::endl;
+	std::cout << Wilcox::cdf(151, 205, 3) << std::endl;
+	std::cout << Wilcox::quantile(0.912, 13, 200) << std::endl;
+
+	std::cout << Signrank::pdf(100, 200, true) << std::endl;
+	std::cout << Signrank::cdf(0.975, 10) << std::endl;
+	std::cout << Signrank::quantile(0.975, 190) << std::endl;
 	return 0;
 }

@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named stat
+# Target rules for targets named main
 
 # Build rule for target.
-stat: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 stat
-.PHONY : stat
+main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main
+.PHONY : main
 
 # fast build rule for target.
-stat/fast:
-	$(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/build
-.PHONY : stat/fast
+main/fast:
+	$(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
+.PHONY : main/fast
 
 # Help Target
 help:
@@ -131,7 +131,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... stat"
+	@echo "... main"
 .PHONY : help
 
 

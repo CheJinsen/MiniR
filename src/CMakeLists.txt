@@ -4,8 +4,8 @@ include_directories(../include)
 
 # link_directories(/usr/local/lib)
 
-add_executable(stat ${SRC_LIST})
+add_executable(main ${SRC_LIST})
 
-target_link_libraries(stat m)
+target_link_libraries(main m)
 
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)

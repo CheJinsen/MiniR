@@ -35,216 +35,185 @@
  *		   distribution.
  */
 
-#include "nmath.h"
-#include "dpq.h"
+#include "randist.h"
+using namespace Randist;
 
-static double *w;
-static int allocated_n;
+std::vector<double> Signrank::w;
+int Signrank::allocated_n = 0;
 
-static void
-w_free(void)
+void Signrank::wInitMaybe(int n)
 {
-    if (!w) return;
+    int u = n * (n + 1) / 2;
+    int c = (u / 2);
 
-    free((void *) w);
-    w = 0;
-    allocated_n = 0;
-}
+    w.clear();
 
-void signrank_free(void)
-{
-    w_free();
-}
-
-static void
-w_init_maybe(int n)
-{
-    int u, c;
-
-    u = n * (n + 1) / 2;
-    c = (u / 2);
-
-    if (w) {
-        if(n != allocated_n) {
-	    w_free();
-	}
-	else return;
-    }
-
-    if(!w) {
-	w = (double *) calloc((size_t) c + 1, sizeof(double));
-#ifdef MATHLIB_STANDALONE
-	if (!w) MATHLIB_ERROR("%s", _("signrank allocation error"));
-#endif
-	allocated_n = n;
+    if(w.empty()) {
+	   // w = (double *) calloc((size_t) c + 1, sizeof(double));
+        w.resize(c + 1);
+	    allocated_n = n;
     }
 }
 
-static double
-csignrank(int k, int n)
+double Signrank::csignrank(int k, int n)
 {
-    int c, u, j;
+// #ifndef MATHLIB_STANDALONE
+//     R_CheckUserInterrupt();
+// #endif
 
-//#ifndef MATHLIB_STANDALONE
-//    R_CheckUserInterrupt();
-//#endif
-
-    u = n * (n + 1) / 2;
-    c = (u / 2);
+    int u = n * (n + 1) / 2;
+    int c = (u / 2);
 
     if (k < 0 || k > u)
-	return 0;
+	   return 0;
     if (k > c)
-	k = u - k;
+	   k = u - k;
 
     if (n == 1)
-        return 1.;
-    if (w[0] == 1.)
+        return 1.0;
+    if (w[0] == 1.0)
         return w[k];
 
-    w[0] = w[1] = 1.;
-    for(j = 2; j < n+1; ++j) {
-        int i, end = imin2(j*(j+1)/2, c);
-	for(i = end; i >= j; --i)
-	    w[i] += w[i-j];
+    w[0] = w[1] = 1.0;
+    for(int j = 2; j < n+1; ++j) {
+        int end = std::min(j * (j + 1.0) / 2.0, 1.0 * c);
+
+    	for(int i = end; i >= j; --i)
+    	    w[i] += w[i-j];
     }
 
     return w[k];
 }
 
-double dsignrank(double x, double n, bool give_log)
+double Signrank::dtvalue(const double x, const bool lower_tail, const bool log_p)
 {
-    double d;
-
-#ifdef IEEE_754
-    /* NaNs propagated correctly */
-    if (ISNAN(x) || ISNAN(n)) return(x + n);
-#endif
-    n = R_forceint(n);
-    if (n <= 0)
-	ML_WARN_return_NAN;
-
-    if (fabs(x - R_forceint(x)) > 1e-7)
-	return(R_D__0);
-    x = R_forceint(x);
-    if ((x < 0) || (x > (n * (n + 1) / 2)))
-	return(R_D__0);
-
-    int nn = (int) n;
-    w_init_maybe(nn);
-    d = R_D_exp(log(csignrank((int) x, nn)) - n * M_LN2);
-
-    return(d);
+    double t1 = log_p ? log1p(-x) : (0.5 - x + 0.5);
+    double t2 = log_p ? log(x) : x;
+    return lower_tail ? t2 : t1;
 }
 
-double psignrank(double x, double n, bool lower_tail, bool log_p)
+double Signrank::pdf(double x, double n, bool give_log)
 {
-    int i;
-    double f, p;
+    if (std::isnan(x) || std::isnan(n))
+        return x + n;
 
-#ifdef IEEE_754
-    if (ISNAN(x) || ISNAN(n))
-    return(x + n);
-#endif
-    if (!R_FINITE(n)) ML_WARN_return_NAN;
-    n = R_forceint(n);
-    if (n <= 0) ML_WARN_return_NAN;
+    n = nearbyint(n);
+    if (n <= 0)
+	   return InfNaN::nan();
 
-    x = R_forceint(x + 1e-7);
+    if (fabs(x - nearbyint(x)) > 1e-7)
+	   return give_log ? InfNaN::neginf() : 0.0;
+    x = nearbyint(x);
+    if ((x < 0) || (x > (n * (n + 1) / 2)))
+	   return give_log ? InfNaN::neginf() : 0.0;
+
+    int nn = (int)n;
+    wInitMaybe(nn);
+
+    double temp = log(csignrank((int)x, nn)) - n * M_LN2;
+    double d = give_log ? temp : exp(temp);
+
+    return d;
+}
+
+double Signrank::cdf(double x, double n, bool lower_tail, bool log_p)
+{
+    if (std::isnan(x) || std::isnan(n))
+        return x + n;
+
+    if (!std::isfinite(n))
+        return InfNaN::nan();
+
+    n = nearbyint(n);
+    if (n <= 0)
+        return InfNaN::nan();
+
+    x = nearbyint(x + 1e-7);
+    double R_D__0 = log_p ? InfNaN::neginf() : 0.0;
+    double R_D__1 = log_p ? 0.0 : 1.0;
+    double R_DT_0 = lower_tail ? R_D__0 : R_D__1;
+    double R_DT_1 = lower_tail ? R_D__1 : R_D__0;
+
     if (x < 0.0)
-	return(R_DT_0);
+	   return R_DT_0;
     if (x >= n * (n + 1) / 2)
-	return(R_DT_1);
+	   return R_DT_1;
 
     int nn = (int) n;
-    w_init_maybe(nn);
-    f = exp(- n * M_LN2);
-    p = 0;
+    wInitMaybe(nn);
+    double f = exp(- n * M_LN2);
+    double p = 0.0;
+
     if (x <= (n * (n + 1) / 4)) {
-	for (i = 0; i <= x; i++)
-	    p += csignrank(i, nn) * f;
+    	for (int i = 0; i <= x; i++)
+    	    p += csignrank(i, nn) * f;
     }
     else {
-	x = n * (n + 1) / 2 - x;
-	for (i = 0; i < x; i++)
-	    p += csignrank(i, nn) * f;
-	lower_tail = !lower_tail; /* p = 1 - p; */
+    	x = n * (n + 1) / 2 - x;
+    	for (int i = 0; i < x; i++)
+    	    p += csignrank(i, nn) * f;
+    	lower_tail = !lower_tail;
     }
 
-    return(R_DT_val(p));
-} /* psignrank() */
+    return dtvalue(p, lower_tail, log_p);
+}
 
-double qsignrank(double x, double n, bool lower_tail, bool log_p)
+double Signrank::quantile(double x, double n, bool lower_tail, bool log_p)
 {
-    double f, p;
+    if (std::isnan(x) || std::isnan(n))
+	   return x + n;
 
-#ifdef IEEE_754
-    if (ISNAN(x) || ISNAN(n))
-	return(x + n);
-#endif
-    if (!R_FINITE(x) || !R_FINITE(n))
-	ML_WARN_return_NAN;
-    R_Q_P01_check(x);
+    if (!std::isfinite(x) || !std::isfinite(n))
+	   return InfNaN::nan();
 
-    n = R_forceint(n);
+    // R_Q_P01_check(x);
+    if ((log_p  && x > 0) || (!log_p && (x < 0 || x > 1)))
+        return InfNaN::nan();
+
+    n = nearbyint(n);
     if (n <= 0)
-	ML_WARN_return_NAN;
+	   return InfNaN::nan();
+
+    double R_D__0 = log_p ? InfNaN::neginf() : 0.0;
+    double R_D__1 = log_p ? 0.0 : 1.0;
+    double R_DT_0 = lower_tail ? R_D__0 : R_D__1;
+    double R_DT_1 = lower_tail ? R_D__1 : R_D__0;
 
     if (x == R_DT_0)
-	return(0);
+	   return 0.0;
     if (x == R_DT_1)
-	return(n * (n + 1) / 2);
+	   return n * (n + 1.0) / 2.0;
 
+    double temp = lower_tail ? x : (0.5 - x + 0.5);
     if(log_p || !lower_tail)
-	x = R_DT_qIv(x); /* lower_tail,non-log "p" */
+	   x = log_p ? (lower_tail ? exp(x) : - expm1(x)) : temp;
 
     int nn = (int) n;
-    w_init_maybe(nn);
-    f = exp(- n * M_LN2);
-    p = 0;
+    wInitMaybe(nn);
+    double f = exp(- n * M_LN2);
+    double p = 0.0;
     int q = 0;
+
     if (x <= 0.5) {
-	x = x - 10 * DBL_EPSILON;
-	for (;;) {
-	    p += csignrank(q, nn) * f;
-	    if (p >= x)
-		break;
-	    q++;
-	}
+    	x = x - 10 * DBL_EPSILON;
+    	for (;;) {
+    	    p += csignrank(q, nn) * f;
+    	    if (p >= x)
+    	       	break;
+    	    q++;
+    	}
     }
     else {
-	x = 1 - x + 10 * DBL_EPSILON;
-	for (;;) {
-	    p += csignrank(q, nn) * f;
-	    if (p > x) {
-		q = (int)(n * (n + 1) / 2 - q);
-		break;
-	    }
-	    q++;
-	}
+    	x = 1 - x + 10 * DBL_EPSILON;
+    	for (;;) {
+    	    p += csignrank(q, nn) * f;
+    	    if (p > x) {
+        		q = (int)(n * (n + 1) / 2 - q);
+        		break;
+    	    }
+    	    q++;
+    	}
     }
 
-    return(q);
+    return q;
 }
-
-//double rsignrank(double n)
-//{
-//    int i, k;
-//    double r;
-//
-//#ifdef IEEE_754
-//    /* NaNs propagated correctly */
-//    if (ISNAN(n)) return(n);
-//#endif
-//    n = R_forceint(n);
-//    if (n < 0) ML_WARN_return_NAN;
-//
-//    if (n == 0)
-//	return(0);
-//    r = 0.0;
-//    k = (int) n;
-//    for (i = 0; i < k; ) {
-//	r += (++i) * floor(unif_rand() + 0.5);
-//    }
-//    return(r);
-//}

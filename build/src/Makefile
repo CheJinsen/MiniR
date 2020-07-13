@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/a008/coding/MiniR/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -77,6 +66,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,73 +111,181 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/stat.dir/rule:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/stat.dir/rule
-.PHONY : src/CMakeFiles/stat.dir/rule
+src/CMakeFiles/main.dir/rule:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/main.dir/rule
+.PHONY : src/CMakeFiles/main.dir/rule
 
 # Convenience name for target.
-stat: src/CMakeFiles/stat.dir/rule
+main: src/CMakeFiles/main.dir/rule
 
-.PHONY : stat
+.PHONY : main
 
 # fast build rule for target.
-stat/fast:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/build
-.PHONY : stat/fast
+main/fast:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
+.PHONY : main/fast
 
-bd0.o: bd0.cpp.o
+acmtoms.o: acmtoms.cpp.o
 
-.PHONY : bd0.o
-
-# target to build an object file
-bd0.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/bd0.cpp.o
-.PHONY : bd0.cpp.o
-
-bd0.i: bd0.cpp.i
-
-.PHONY : bd0.i
-
-# target to preprocess a source file
-bd0.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/bd0.cpp.i
-.PHONY : bd0.cpp.i
-
-bd0.s: bd0.cpp.s
-
-.PHONY : bd0.s
-
-# target to generate assembly for a file
-bd0.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/bd0.cpp.s
-.PHONY : bd0.cpp.s
-
-chebyshev.o: chebyshev.cpp.o
-
-.PHONY : chebyshev.o
+.PHONY : acmtoms.o
 
 # target to build an object file
-chebyshev.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/chebyshev.cpp.o
-.PHONY : chebyshev.cpp.o
+acmtoms.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/acmtoms.cpp.o
+.PHONY : acmtoms.cpp.o
 
-chebyshev.i: chebyshev.cpp.i
+acmtoms.i: acmtoms.cpp.i
 
-.PHONY : chebyshev.i
+.PHONY : acmtoms.i
 
 # target to preprocess a source file
-chebyshev.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/chebyshev.cpp.i
-.PHONY : chebyshev.cpp.i
+acmtoms.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/acmtoms.cpp.i
+.PHONY : acmtoms.cpp.i
 
-chebyshev.s: chebyshev.cpp.s
+acmtoms.s: acmtoms.cpp.s
 
-.PHONY : chebyshev.s
+.PHONY : acmtoms.s
 
 # target to generate assembly for a file
-chebyshev.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/chebyshev.cpp.s
-.PHONY : chebyshev.cpp.s
+acmtoms.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/acmtoms.cpp.s
+.PHONY : acmtoms.cpp.s
+
+beta_randist.o: beta_randist.cpp.o
+
+.PHONY : beta_randist.o
+
+# target to build an object file
+beta_randist.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/beta_randist.cpp.o
+.PHONY : beta_randist.cpp.o
+
+beta_randist.i: beta_randist.cpp.i
+
+.PHONY : beta_randist.i
+
+# target to preprocess a source file
+beta_randist.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/beta_randist.cpp.i
+.PHONY : beta_randist.cpp.i
+
+beta_randist.s: beta_randist.cpp.s
+
+.PHONY : beta_randist.s
+
+# target to generate assembly for a file
+beta_randist.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/beta_randist.cpp.s
+.PHONY : beta_randist.cpp.s
+
+beta_specfun.o: beta_specfun.cpp.o
+
+.PHONY : beta_specfun.o
+
+# target to build an object file
+beta_specfun.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/beta_specfun.cpp.o
+.PHONY : beta_specfun.cpp.o
+
+beta_specfun.i: beta_specfun.cpp.i
+
+.PHONY : beta_specfun.i
+
+# target to preprocess a source file
+beta_specfun.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/beta_specfun.cpp.i
+.PHONY : beta_specfun.cpp.i
+
+beta_specfun.s: beta_specfun.cpp.s
+
+.PHONY : beta_specfun.s
+
+# target to generate assembly for a file
+beta_specfun.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/beta_specfun.cpp.s
+.PHONY : beta_specfun.cpp.s
+
+binomial.o: binomial.cpp.o
+
+.PHONY : binomial.o
+
+# target to build an object file
+binomial.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/binomial.cpp.o
+.PHONY : binomial.cpp.o
+
+binomial.i: binomial.cpp.i
+
+.PHONY : binomial.i
+
+# target to preprocess a source file
+binomial.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/binomial.cpp.i
+.PHONY : binomial.cpp.i
+
+binomial.s: binomial.cpp.s
+
+.PHONY : binomial.s
+
+# target to generate assembly for a file
+binomial.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/binomial.cpp.s
+.PHONY : binomial.cpp.s
+
+cauchy.o: cauchy.cpp.o
+
+.PHONY : cauchy.o
+
+# target to build an object file
+cauchy.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/cauchy.cpp.o
+.PHONY : cauchy.cpp.o
+
+cauchy.i: cauchy.cpp.i
+
+.PHONY : cauchy.i
+
+# target to preprocess a source file
+cauchy.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/cauchy.cpp.i
+.PHONY : cauchy.cpp.i
+
+cauchy.s: cauchy.cpp.s
+
+.PHONY : cauchy.s
+
+# target to generate assembly for a file
+cauchy.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/cauchy.cpp.s
+.PHONY : cauchy.cpp.s
+
+chisq.o: chisq.cpp.o
+
+.PHONY : chisq.o
+
+# target to build an object file
+chisq.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/chisq.cpp.o
+.PHONY : chisq.cpp.o
+
+chisq.i: chisq.cpp.i
+
+.PHONY : chisq.i
+
+# target to preprocess a source file
+chisq.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/chisq.cpp.i
+.PHONY : chisq.cpp.i
+
+chisq.s: chisq.cpp.s
+
+.PHONY : chisq.s
+
+# target to generate assembly for a file
+chisq.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/chisq.cpp.s
+.PHONY : chisq.cpp.s
 
 choose.o: choose.cpp.o
 
@@ -185,7 +293,7 @@ choose.o: choose.cpp.o
 
 # target to build an object file
 choose.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/choose.cpp.o
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/choose.cpp.o
 .PHONY : choose.cpp.o
 
 choose.i: choose.cpp.i
@@ -194,7 +302,7 @@ choose.i: choose.cpp.i
 
 # target to preprocess a source file
 choose.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/choose.cpp.i
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/choose.cpp.i
 .PHONY : choose.cpp.i
 
 choose.s: choose.cpp.s
@@ -203,791 +311,170 @@ choose.s: choose.cpp.s
 
 # target to generate assembly for a file
 choose.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/choose.cpp.s
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/choose.cpp.s
 .PHONY : choose.cpp.s
 
-cospi.o: cospi.cpp.o
+exponential.o: exponential.cpp.o
 
-.PHONY : cospi.o
-
-# target to build an object file
-cospi.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/cospi.cpp.o
-.PHONY : cospi.cpp.o
-
-cospi.i: cospi.cpp.i
-
-.PHONY : cospi.i
-
-# target to preprocess a source file
-cospi.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/cospi.cpp.i
-.PHONY : cospi.cpp.i
-
-cospi.s: cospi.cpp.s
-
-.PHONY : cospi.s
-
-# target to generate assembly for a file
-cospi.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/cospi.cpp.s
-.PHONY : cospi.cpp.s
-
-d1mach.o: d1mach.cpp.o
-
-.PHONY : d1mach.o
+.PHONY : exponential.o
 
 # target to build an object file
-d1mach.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/d1mach.cpp.o
-.PHONY : d1mach.cpp.o
+exponential.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/exponential.cpp.o
+.PHONY : exponential.cpp.o
 
-d1mach.i: d1mach.cpp.i
+exponential.i: exponential.cpp.i
 
-.PHONY : d1mach.i
+.PHONY : exponential.i
 
 # target to preprocess a source file
-d1mach.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/d1mach.cpp.i
-.PHONY : d1mach.cpp.i
+exponential.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/exponential.cpp.i
+.PHONY : exponential.cpp.i
 
-d1mach.s: d1mach.cpp.s
+exponential.s: exponential.cpp.s
 
-.PHONY : d1mach.s
+.PHONY : exponential.s
 
 # target to generate assembly for a file
-d1mach.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/d1mach.cpp.s
-.PHONY : d1mach.cpp.s
+exponential.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/exponential.cpp.s
+.PHONY : exponential.cpp.s
 
-dbeta.o: dbeta.cpp.o
+fdist.o: fdist.cpp.o
 
-.PHONY : dbeta.o
+.PHONY : fdist.o
 
 # target to build an object file
-dbeta.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dbeta.cpp.o
-.PHONY : dbeta.cpp.o
+fdist.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/fdist.cpp.o
+.PHONY : fdist.cpp.o
 
-dbeta.i: dbeta.cpp.i
+fdist.i: fdist.cpp.i
 
-.PHONY : dbeta.i
+.PHONY : fdist.i
 
 # target to preprocess a source file
-dbeta.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dbeta.cpp.i
-.PHONY : dbeta.cpp.i
+fdist.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/fdist.cpp.i
+.PHONY : fdist.cpp.i
 
-dbeta.s: dbeta.cpp.s
+fdist.s: fdist.cpp.s
 
-.PHONY : dbeta.s
+.PHONY : fdist.s
 
 # target to generate assembly for a file
-dbeta.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dbeta.cpp.s
-.PHONY : dbeta.cpp.s
+fdist.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/fdist.cpp.s
+.PHONY : fdist.cpp.s
 
-dbinom.o: dbinom.cpp.o
+gamma_randist.o: gamma_randist.cpp.o
 
-.PHONY : dbinom.o
+.PHONY : gamma_randist.o
 
 # target to build an object file
-dbinom.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dbinom.cpp.o
-.PHONY : dbinom.cpp.o
+gamma_randist.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/gamma_randist.cpp.o
+.PHONY : gamma_randist.cpp.o
 
-dbinom.i: dbinom.cpp.i
+gamma_randist.i: gamma_randist.cpp.i
 
-.PHONY : dbinom.i
+.PHONY : gamma_randist.i
 
 # target to preprocess a source file
-dbinom.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dbinom.cpp.i
-.PHONY : dbinom.cpp.i
+gamma_randist.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/gamma_randist.cpp.i
+.PHONY : gamma_randist.cpp.i
 
-dbinom.s: dbinom.cpp.s
+gamma_randist.s: gamma_randist.cpp.s
 
-.PHONY : dbinom.s
+.PHONY : gamma_randist.s
 
 # target to generate assembly for a file
-dbinom.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dbinom.cpp.s
-.PHONY : dbinom.cpp.s
+gamma_randist.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/gamma_randist.cpp.s
+.PHONY : gamma_randist.cpp.s
 
-dcauchy.o: dcauchy.cpp.o
+gamma_specfun.o: gamma_specfun.cpp.o
 
-.PHONY : dcauchy.o
+.PHONY : gamma_specfun.o
 
 # target to build an object file
-dcauchy.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dcauchy.cpp.o
-.PHONY : dcauchy.cpp.o
+gamma_specfun.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/gamma_specfun.cpp.o
+.PHONY : gamma_specfun.cpp.o
 
-dcauchy.i: dcauchy.cpp.i
+gamma_specfun.i: gamma_specfun.cpp.i
 
-.PHONY : dcauchy.i
+.PHONY : gamma_specfun.i
 
 # target to preprocess a source file
-dcauchy.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dcauchy.cpp.i
-.PHONY : dcauchy.cpp.i
+gamma_specfun.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/gamma_specfun.cpp.i
+.PHONY : gamma_specfun.cpp.i
 
-dcauchy.s: dcauchy.cpp.s
+gamma_specfun.s: gamma_specfun.cpp.s
 
-.PHONY : dcauchy.s
+.PHONY : gamma_specfun.s
 
 # target to generate assembly for a file
-dcauchy.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dcauchy.cpp.s
-.PHONY : dcauchy.cpp.s
+gamma_specfun.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/gamma_specfun.cpp.s
+.PHONY : gamma_specfun.cpp.s
 
-dchisq.o: dchisq.cpp.o
+geometric.o: geometric.cpp.o
 
-.PHONY : dchisq.o
+.PHONY : geometric.o
 
 # target to build an object file
-dchisq.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dchisq.cpp.o
-.PHONY : dchisq.cpp.o
+geometric.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/geometric.cpp.o
+.PHONY : geometric.cpp.o
 
-dchisq.i: dchisq.cpp.i
+geometric.i: geometric.cpp.i
 
-.PHONY : dchisq.i
+.PHONY : geometric.i
 
 # target to preprocess a source file
-dchisq.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dchisq.cpp.i
-.PHONY : dchisq.cpp.i
+geometric.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/geometric.cpp.i
+.PHONY : geometric.cpp.i
 
-dchisq.s: dchisq.cpp.s
+geometric.s: geometric.cpp.s
 
-.PHONY : dchisq.s
+.PHONY : geometric.s
 
 # target to generate assembly for a file
-dchisq.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dchisq.cpp.s
-.PHONY : dchisq.cpp.s
+geometric.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/geometric.cpp.s
+.PHONY : geometric.cpp.s
 
-dexp.o: dexp.cpp.o
+hypergeometric.o: hypergeometric.cpp.o
 
-.PHONY : dexp.o
+.PHONY : hypergeometric.o
 
 # target to build an object file
-dexp.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dexp.cpp.o
-.PHONY : dexp.cpp.o
+hypergeometric.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/hypergeometric.cpp.o
+.PHONY : hypergeometric.cpp.o
 
-dexp.i: dexp.cpp.i
+hypergeometric.i: hypergeometric.cpp.i
 
-.PHONY : dexp.i
-
-# target to preprocess a source file
-dexp.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dexp.cpp.i
-.PHONY : dexp.cpp.i
-
-dexp.s: dexp.cpp.s
-
-.PHONY : dexp.s
-
-# target to generate assembly for a file
-dexp.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dexp.cpp.s
-.PHONY : dexp.cpp.s
-
-df.o: df.cpp.o
-
-.PHONY : df.o
-
-# target to build an object file
-df.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/df.cpp.o
-.PHONY : df.cpp.o
-
-df.i: df.cpp.i
-
-.PHONY : df.i
+.PHONY : hypergeometric.i
 
 # target to preprocess a source file
-df.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/df.cpp.i
-.PHONY : df.cpp.i
+hypergeometric.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/hypergeometric.cpp.i
+.PHONY : hypergeometric.cpp.i
 
-df.s: df.cpp.s
+hypergeometric.s: hypergeometric.cpp.s
 
-.PHONY : df.s
-
-# target to generate assembly for a file
-df.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/df.cpp.s
-.PHONY : df.cpp.s
-
-dgamma.o: dgamma.cpp.o
-
-.PHONY : dgamma.o
-
-# target to build an object file
-dgamma.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dgamma.cpp.o
-.PHONY : dgamma.cpp.o
-
-dgamma.i: dgamma.cpp.i
-
-.PHONY : dgamma.i
-
-# target to preprocess a source file
-dgamma.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dgamma.cpp.i
-.PHONY : dgamma.cpp.i
-
-dgamma.s: dgamma.cpp.s
-
-.PHONY : dgamma.s
+.PHONY : hypergeometric.s
 
 # target to generate assembly for a file
-dgamma.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dgamma.cpp.s
-.PHONY : dgamma.cpp.s
-
-dgeom.o: dgeom.cpp.o
-
-.PHONY : dgeom.o
-
-# target to build an object file
-dgeom.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dgeom.cpp.o
-.PHONY : dgeom.cpp.o
-
-dgeom.i: dgeom.cpp.i
-
-.PHONY : dgeom.i
-
-# target to preprocess a source file
-dgeom.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dgeom.cpp.i
-.PHONY : dgeom.cpp.i
-
-dgeom.s: dgeom.cpp.s
-
-.PHONY : dgeom.s
-
-# target to generate assembly for a file
-dgeom.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dgeom.cpp.s
-.PHONY : dgeom.cpp.s
-
-dhyper.o: dhyper.cpp.o
-
-.PHONY : dhyper.o
-
-# target to build an object file
-dhyper.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dhyper.cpp.o
-.PHONY : dhyper.cpp.o
-
-dhyper.i: dhyper.cpp.i
-
-.PHONY : dhyper.i
-
-# target to preprocess a source file
-dhyper.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dhyper.cpp.i
-.PHONY : dhyper.cpp.i
-
-dhyper.s: dhyper.cpp.s
-
-.PHONY : dhyper.s
-
-# target to generate assembly for a file
-dhyper.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dhyper.cpp.s
-.PHONY : dhyper.cpp.s
-
-dlnorm.o: dlnorm.cpp.o
-
-.PHONY : dlnorm.o
-
-# target to build an object file
-dlnorm.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dlnorm.cpp.o
-.PHONY : dlnorm.cpp.o
-
-dlnorm.i: dlnorm.cpp.i
-
-.PHONY : dlnorm.i
-
-# target to preprocess a source file
-dlnorm.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dlnorm.cpp.i
-.PHONY : dlnorm.cpp.i
-
-dlnorm.s: dlnorm.cpp.s
-
-.PHONY : dlnorm.s
-
-# target to generate assembly for a file
-dlnorm.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dlnorm.cpp.s
-.PHONY : dlnorm.cpp.s
-
-dlogis.o: dlogis.cpp.o
-
-.PHONY : dlogis.o
-
-# target to build an object file
-dlogis.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dlogis.cpp.o
-.PHONY : dlogis.cpp.o
-
-dlogis.i: dlogis.cpp.i
-
-.PHONY : dlogis.i
-
-# target to preprocess a source file
-dlogis.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dlogis.cpp.i
-.PHONY : dlogis.cpp.i
-
-dlogis.s: dlogis.cpp.s
-
-.PHONY : dlogis.s
-
-# target to generate assembly for a file
-dlogis.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dlogis.cpp.s
-.PHONY : dlogis.cpp.s
-
-dnbeta.o: dnbeta.cpp.o
-
-.PHONY : dnbeta.o
-
-# target to build an object file
-dnbeta.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dnbeta.cpp.o
-.PHONY : dnbeta.cpp.o
-
-dnbeta.i: dnbeta.cpp.i
-
-.PHONY : dnbeta.i
-
-# target to preprocess a source file
-dnbeta.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dnbeta.cpp.i
-.PHONY : dnbeta.cpp.i
-
-dnbeta.s: dnbeta.cpp.s
-
-.PHONY : dnbeta.s
-
-# target to generate assembly for a file
-dnbeta.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dnbeta.cpp.s
-.PHONY : dnbeta.cpp.s
-
-dnbinom.o: dnbinom.cpp.o
-
-.PHONY : dnbinom.o
-
-# target to build an object file
-dnbinom.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dnbinom.cpp.o
-.PHONY : dnbinom.cpp.o
-
-dnbinom.i: dnbinom.cpp.i
-
-.PHONY : dnbinom.i
-
-# target to preprocess a source file
-dnbinom.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dnbinom.cpp.i
-.PHONY : dnbinom.cpp.i
-
-dnbinom.s: dnbinom.cpp.s
-
-.PHONY : dnbinom.s
-
-# target to generate assembly for a file
-dnbinom.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dnbinom.cpp.s
-.PHONY : dnbinom.cpp.s
-
-dnchisq.o: dnchisq.cpp.o
-
-.PHONY : dnchisq.o
-
-# target to build an object file
-dnchisq.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dnchisq.cpp.o
-.PHONY : dnchisq.cpp.o
-
-dnchisq.i: dnchisq.cpp.i
-
-.PHONY : dnchisq.i
-
-# target to preprocess a source file
-dnchisq.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dnchisq.cpp.i
-.PHONY : dnchisq.cpp.i
-
-dnchisq.s: dnchisq.cpp.s
-
-.PHONY : dnchisq.s
-
-# target to generate assembly for a file
-dnchisq.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dnchisq.cpp.s
-.PHONY : dnchisq.cpp.s
-
-dnf.o: dnf.cpp.o
-
-.PHONY : dnf.o
-
-# target to build an object file
-dnf.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dnf.cpp.o
-.PHONY : dnf.cpp.o
-
-dnf.i: dnf.cpp.i
-
-.PHONY : dnf.i
-
-# target to preprocess a source file
-dnf.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dnf.cpp.i
-.PHONY : dnf.cpp.i
-
-dnf.s: dnf.cpp.s
-
-.PHONY : dnf.s
-
-# target to generate assembly for a file
-dnf.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dnf.cpp.s
-.PHONY : dnf.cpp.s
-
-dnorm.o: dnorm.cpp.o
-
-.PHONY : dnorm.o
-
-# target to build an object file
-dnorm.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dnorm.cpp.o
-.PHONY : dnorm.cpp.o
-
-dnorm.i: dnorm.cpp.i
-
-.PHONY : dnorm.i
-
-# target to preprocess a source file
-dnorm.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dnorm.cpp.i
-.PHONY : dnorm.cpp.i
-
-dnorm.s: dnorm.cpp.s
-
-.PHONY : dnorm.s
-
-# target to generate assembly for a file
-dnorm.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dnorm.cpp.s
-.PHONY : dnorm.cpp.s
-
-dnt.o: dnt.cpp.o
-
-.PHONY : dnt.o
-
-# target to build an object file
-dnt.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dnt.cpp.o
-.PHONY : dnt.cpp.o
-
-dnt.i: dnt.cpp.i
-
-.PHONY : dnt.i
-
-# target to preprocess a source file
-dnt.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dnt.cpp.i
-.PHONY : dnt.cpp.i
-
-dnt.s: dnt.cpp.s
-
-.PHONY : dnt.s
-
-# target to generate assembly for a file
-dnt.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dnt.cpp.s
-.PHONY : dnt.cpp.s
-
-dpois.o: dpois.cpp.o
-
-.PHONY : dpois.o
-
-# target to build an object file
-dpois.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dpois.cpp.o
-.PHONY : dpois.cpp.o
-
-dpois.i: dpois.cpp.i
-
-.PHONY : dpois.i
-
-# target to preprocess a source file
-dpois.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dpois.cpp.i
-.PHONY : dpois.cpp.i
-
-dpois.s: dpois.cpp.s
-
-.PHONY : dpois.s
-
-# target to generate assembly for a file
-dpois.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dpois.cpp.s
-.PHONY : dpois.cpp.s
-
-dt.o: dt.cpp.o
-
-.PHONY : dt.o
-
-# target to build an object file
-dt.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dt.cpp.o
-.PHONY : dt.cpp.o
-
-dt.i: dt.cpp.i
-
-.PHONY : dt.i
-
-# target to preprocess a source file
-dt.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dt.cpp.i
-.PHONY : dt.cpp.i
-
-dt.s: dt.cpp.s
-
-.PHONY : dt.s
-
-# target to generate assembly for a file
-dt.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dt.cpp.s
-.PHONY : dt.cpp.s
-
-dunif.o: dunif.cpp.o
-
-.PHONY : dunif.o
-
-# target to build an object file
-dunif.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dunif.cpp.o
-.PHONY : dunif.cpp.o
-
-dunif.i: dunif.cpp.i
-
-.PHONY : dunif.i
-
-# target to preprocess a source file
-dunif.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dunif.cpp.i
-.PHONY : dunif.cpp.i
-
-dunif.s: dunif.cpp.s
-
-.PHONY : dunif.s
-
-# target to generate assembly for a file
-dunif.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dunif.cpp.s
-.PHONY : dunif.cpp.s
-
-dweibull.o: dweibull.cpp.o
-
-.PHONY : dweibull.o
-
-# target to build an object file
-dweibull.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dweibull.cpp.o
-.PHONY : dweibull.cpp.o
-
-dweibull.i: dweibull.cpp.i
-
-.PHONY : dweibull.i
-
-# target to preprocess a source file
-dweibull.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dweibull.cpp.i
-.PHONY : dweibull.cpp.i
-
-dweibull.s: dweibull.cpp.s
-
-.PHONY : dweibull.s
-
-# target to generate assembly for a file
-dweibull.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/dweibull.cpp.s
-.PHONY : dweibull.cpp.s
-
-fmax2.o: fmax2.cpp.o
-
-.PHONY : fmax2.o
-
-# target to build an object file
-fmax2.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/fmax2.cpp.o
-.PHONY : fmax2.cpp.o
-
-fmax2.i: fmax2.cpp.i
-
-.PHONY : fmax2.i
-
-# target to preprocess a source file
-fmax2.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/fmax2.cpp.i
-.PHONY : fmax2.cpp.i
-
-fmax2.s: fmax2.cpp.s
-
-.PHONY : fmax2.s
-
-# target to generate assembly for a file
-fmax2.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/fmax2.cpp.s
-.PHONY : fmax2.cpp.s
-
-fmin2.o: fmin2.cpp.o
-
-.PHONY : fmin2.o
-
-# target to build an object file
-fmin2.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/fmin2.cpp.o
-.PHONY : fmin2.cpp.o
-
-fmin2.i: fmin2.cpp.i
-
-.PHONY : fmin2.i
-
-# target to preprocess a source file
-fmin2.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/fmin2.cpp.i
-.PHONY : fmin2.cpp.i
-
-fmin2.s: fmin2.cpp.s
-
-.PHONY : fmin2.s
-
-# target to generate assembly for a file
-fmin2.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/fmin2.cpp.s
-.PHONY : fmin2.cpp.s
-
-gamma.o: gamma.cpp.o
-
-.PHONY : gamma.o
-
-# target to build an object file
-gamma.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/gamma.cpp.o
-.PHONY : gamma.cpp.o
-
-gamma.i: gamma.cpp.i
-
-.PHONY : gamma.i
-
-# target to preprocess a source file
-gamma.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/gamma.cpp.i
-.PHONY : gamma.cpp.i
-
-gamma.s: gamma.cpp.s
-
-.PHONY : gamma.s
-
-# target to generate assembly for a file
-gamma.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/gamma.cpp.s
-.PHONY : gamma.cpp.s
-
-i1mach.o: i1mach.cpp.o
-
-.PHONY : i1mach.o
-
-# target to build an object file
-i1mach.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/i1mach.cpp.o
-.PHONY : i1mach.cpp.o
-
-i1mach.i: i1mach.cpp.i
-
-.PHONY : i1mach.i
-
-# target to preprocess a source file
-i1mach.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/i1mach.cpp.i
-.PHONY : i1mach.cpp.i
-
-i1mach.s: i1mach.cpp.s
-
-.PHONY : i1mach.s
-
-# target to generate assembly for a file
-i1mach.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/i1mach.cpp.s
-.PHONY : i1mach.cpp.s
-
-imax2.o: imax2.cpp.o
-
-.PHONY : imax2.o
-
-# target to build an object file
-imax2.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/imax2.cpp.o
-.PHONY : imax2.cpp.o
-
-imax2.i: imax2.cpp.i
-
-.PHONY : imax2.i
-
-# target to preprocess a source file
-imax2.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/imax2.cpp.i
-.PHONY : imax2.cpp.i
-
-imax2.s: imax2.cpp.s
-
-.PHONY : imax2.s
-
-# target to generate assembly for a file
-imax2.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/imax2.cpp.s
-.PHONY : imax2.cpp.s
-
-imin2.o: imin2.cpp.o
-
-.PHONY : imin2.o
-
-# target to build an object file
-imin2.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/imin2.cpp.o
-.PHONY : imin2.cpp.o
-
-imin2.i: imin2.cpp.i
-
-.PHONY : imin2.i
-
-# target to preprocess a source file
-imin2.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/imin2.cpp.i
-.PHONY : imin2.cpp.i
-
-imin2.s: imin2.cpp.s
-
-.PHONY : imin2.s
-
-# target to generate assembly for a file
-imin2.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/imin2.cpp.s
-.PHONY : imin2.cpp.s
+hypergeometric.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/hypergeometric.cpp.s
+.PHONY : hypergeometric.cpp.s
 
 infnan.o: infnan.cpp.o
 
@@ -995,7 +482,7 @@ infnan.o: infnan.cpp.o
 
 # target to build an object file
 infnan.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/infnan.cpp.o
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/infnan.cpp.o
 .PHONY : infnan.cpp.o
 
 infnan.i: infnan.cpp.i
@@ -1004,7 +491,7 @@ infnan.i: infnan.cpp.i
 
 # target to preprocess a source file
 infnan.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/infnan.cpp.i
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/infnan.cpp.i
 .PHONY : infnan.cpp.i
 
 infnan.s: infnan.cpp.s
@@ -1013,89 +500,62 @@ infnan.s: infnan.cpp.s
 
 # target to generate assembly for a file
 infnan.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/infnan.cpp.s
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/infnan.cpp.s
 .PHONY : infnan.cpp.s
 
-lbeta.o: lbeta.cpp.o
+logistic.o: logistic.cpp.o
 
-.PHONY : lbeta.o
-
-# target to build an object file
-lbeta.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/lbeta.cpp.o
-.PHONY : lbeta.cpp.o
-
-lbeta.i: lbeta.cpp.i
-
-.PHONY : lbeta.i
-
-# target to preprocess a source file
-lbeta.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/lbeta.cpp.i
-.PHONY : lbeta.cpp.i
-
-lbeta.s: lbeta.cpp.s
-
-.PHONY : lbeta.s
-
-# target to generate assembly for a file
-lbeta.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/lbeta.cpp.s
-.PHONY : lbeta.cpp.s
-
-lgamma.o: lgamma.cpp.o
-
-.PHONY : lgamma.o
+.PHONY : logistic.o
 
 # target to build an object file
-lgamma.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/lgamma.cpp.o
-.PHONY : lgamma.cpp.o
+logistic.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/logistic.cpp.o
+.PHONY : logistic.cpp.o
 
-lgamma.i: lgamma.cpp.i
+logistic.i: logistic.cpp.i
 
-.PHONY : lgamma.i
+.PHONY : logistic.i
 
 # target to preprocess a source file
-lgamma.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/lgamma.cpp.i
-.PHONY : lgamma.cpp.i
+logistic.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/logistic.cpp.i
+.PHONY : logistic.cpp.i
 
-lgamma.s: lgamma.cpp.s
+logistic.s: logistic.cpp.s
 
-.PHONY : lgamma.s
+.PHONY : logistic.s
 
 # target to generate assembly for a file
-lgamma.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/lgamma.cpp.s
-.PHONY : lgamma.cpp.s
+logistic.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/logistic.cpp.s
+.PHONY : logistic.cpp.s
 
-lgammacor.o: lgammacor.cpp.o
+lognormal.o: lognormal.cpp.o
 
-.PHONY : lgammacor.o
+.PHONY : lognormal.o
 
 # target to build an object file
-lgammacor.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/lgammacor.cpp.o
-.PHONY : lgammacor.cpp.o
+lognormal.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/lognormal.cpp.o
+.PHONY : lognormal.cpp.o
 
-lgammacor.i: lgammacor.cpp.i
+lognormal.i: lognormal.cpp.i
 
-.PHONY : lgammacor.i
+.PHONY : lognormal.i
 
 # target to preprocess a source file
-lgammacor.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/lgammacor.cpp.i
-.PHONY : lgammacor.cpp.i
+lognormal.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/lognormal.cpp.i
+.PHONY : lognormal.cpp.i
 
-lgammacor.s: lgammacor.cpp.s
+lognormal.s: lognormal.cpp.s
 
-.PHONY : lgammacor.s
+.PHONY : lognormal.s
 
 # target to generate assembly for a file
-lgammacor.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/lgammacor.cpp.s
-.PHONY : lgammacor.cpp.s
+lognormal.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/lognormal.cpp.s
+.PHONY : lognormal.cpp.s
 
 main.o: main.cpp.o
 
@@ -1103,7 +563,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/main.cpp.o
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -1112,7 +572,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/main.cpp.i
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -1121,1223 +581,170 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/main.cpp.s
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-mlutils.o: mlutils.cpp.o
+negative_binomial.o: negative_binomial.cpp.o
 
-.PHONY : mlutils.o
-
-# target to build an object file
-mlutils.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/mlutils.cpp.o
-.PHONY : mlutils.cpp.o
-
-mlutils.i: mlutils.cpp.i
-
-.PHONY : mlutils.i
-
-# target to preprocess a source file
-mlutils.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/mlutils.cpp.i
-.PHONY : mlutils.cpp.i
-
-mlutils.s: mlutils.cpp.s
-
-.PHONY : mlutils.s
-
-# target to generate assembly for a file
-mlutils.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/mlutils.cpp.s
-.PHONY : mlutils.cpp.s
-
-pbeta.o: pbeta.cpp.o
-
-.PHONY : pbeta.o
+.PHONY : negative_binomial.o
 
 # target to build an object file
-pbeta.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pbeta.cpp.o
-.PHONY : pbeta.cpp.o
+negative_binomial.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/negative_binomial.cpp.o
+.PHONY : negative_binomial.cpp.o
 
-pbeta.i: pbeta.cpp.i
+negative_binomial.i: negative_binomial.cpp.i
 
-.PHONY : pbeta.i
+.PHONY : negative_binomial.i
 
 # target to preprocess a source file
-pbeta.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pbeta.cpp.i
-.PHONY : pbeta.cpp.i
+negative_binomial.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/negative_binomial.cpp.i
+.PHONY : negative_binomial.cpp.i
 
-pbeta.s: pbeta.cpp.s
+negative_binomial.s: negative_binomial.cpp.s
 
-.PHONY : pbeta.s
+.PHONY : negative_binomial.s
 
 # target to generate assembly for a file
-pbeta.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pbeta.cpp.s
-.PHONY : pbeta.cpp.s
+negative_binomial.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/negative_binomial.cpp.s
+.PHONY : negative_binomial.cpp.s
 
-pbinom.o: pbinom.cpp.o
+non_central_beta.o: non_central_beta.cpp.o
 
-.PHONY : pbinom.o
+.PHONY : non_central_beta.o
 
 # target to build an object file
-pbinom.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pbinom.cpp.o
-.PHONY : pbinom.cpp.o
+non_central_beta.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_beta.cpp.o
+.PHONY : non_central_beta.cpp.o
 
-pbinom.i: pbinom.cpp.i
+non_central_beta.i: non_central_beta.cpp.i
 
-.PHONY : pbinom.i
+.PHONY : non_central_beta.i
 
 # target to preprocess a source file
-pbinom.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pbinom.cpp.i
-.PHONY : pbinom.cpp.i
+non_central_beta.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_beta.cpp.i
+.PHONY : non_central_beta.cpp.i
 
-pbinom.s: pbinom.cpp.s
+non_central_beta.s: non_central_beta.cpp.s
 
-.PHONY : pbinom.s
+.PHONY : non_central_beta.s
 
 # target to generate assembly for a file
-pbinom.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pbinom.cpp.s
-.PHONY : pbinom.cpp.s
+non_central_beta.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_beta.cpp.s
+.PHONY : non_central_beta.cpp.s
 
-pcauchy.o: pcauchy.cpp.o
+non_central_chisq.o: non_central_chisq.cpp.o
 
-.PHONY : pcauchy.o
+.PHONY : non_central_chisq.o
 
 # target to build an object file
-pcauchy.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pcauchy.cpp.o
-.PHONY : pcauchy.cpp.o
+non_central_chisq.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_chisq.cpp.o
+.PHONY : non_central_chisq.cpp.o
 
-pcauchy.i: pcauchy.cpp.i
+non_central_chisq.i: non_central_chisq.cpp.i
 
-.PHONY : pcauchy.i
+.PHONY : non_central_chisq.i
 
 # target to preprocess a source file
-pcauchy.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pcauchy.cpp.i
-.PHONY : pcauchy.cpp.i
+non_central_chisq.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_chisq.cpp.i
+.PHONY : non_central_chisq.cpp.i
 
-pcauchy.s: pcauchy.cpp.s
+non_central_chisq.s: non_central_chisq.cpp.s
 
-.PHONY : pcauchy.s
+.PHONY : non_central_chisq.s
 
 # target to generate assembly for a file
-pcauchy.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pcauchy.cpp.s
-.PHONY : pcauchy.cpp.s
+non_central_chisq.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_chisq.cpp.s
+.PHONY : non_central_chisq.cpp.s
 
-pchisq.o: pchisq.cpp.o
+non_central_fdist.o: non_central_fdist.cpp.o
 
-.PHONY : pchisq.o
+.PHONY : non_central_fdist.o
 
 # target to build an object file
-pchisq.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pchisq.cpp.o
-.PHONY : pchisq.cpp.o
+non_central_fdist.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_fdist.cpp.o
+.PHONY : non_central_fdist.cpp.o
 
-pchisq.i: pchisq.cpp.i
+non_central_fdist.i: non_central_fdist.cpp.i
 
-.PHONY : pchisq.i
+.PHONY : non_central_fdist.i
 
 # target to preprocess a source file
-pchisq.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pchisq.cpp.i
-.PHONY : pchisq.cpp.i
+non_central_fdist.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_fdist.cpp.i
+.PHONY : non_central_fdist.cpp.i
 
-pchisq.s: pchisq.cpp.s
+non_central_fdist.s: non_central_fdist.cpp.s
 
-.PHONY : pchisq.s
+.PHONY : non_central_fdist.s
 
 # target to generate assembly for a file
-pchisq.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pchisq.cpp.s
-.PHONY : pchisq.cpp.s
+non_central_fdist.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_fdist.cpp.s
+.PHONY : non_central_fdist.cpp.s
 
-pexp.o: pexp.cpp.o
+normal.o: normal.cpp.o
 
-.PHONY : pexp.o
+.PHONY : normal.o
 
 # target to build an object file
-pexp.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pexp.cpp.o
-.PHONY : pexp.cpp.o
+normal.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/normal.cpp.o
+.PHONY : normal.cpp.o
 
-pexp.i: pexp.cpp.i
+normal.i: normal.cpp.i
 
-.PHONY : pexp.i
+.PHONY : normal.i
 
 # target to preprocess a source file
-pexp.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pexp.cpp.i
-.PHONY : pexp.cpp.i
+normal.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/normal.cpp.i
+.PHONY : normal.cpp.i
 
-pexp.s: pexp.cpp.s
+normal.s: normal.cpp.s
 
-.PHONY : pexp.s
+.PHONY : normal.s
 
 # target to generate assembly for a file
-pexp.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pexp.cpp.s
-.PHONY : pexp.cpp.s
+normal.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/normal.cpp.s
+.PHONY : normal.cpp.s
 
-pf.o: pf.cpp.o
+poisson.o: poisson.cpp.o
 
-.PHONY : pf.o
+.PHONY : poisson.o
 
 # target to build an object file
-pf.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pf.cpp.o
-.PHONY : pf.cpp.o
+poisson.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/poisson.cpp.o
+.PHONY : poisson.cpp.o
 
-pf.i: pf.cpp.i
+poisson.i: poisson.cpp.i
 
-.PHONY : pf.i
-
-# target to preprocess a source file
-pf.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pf.cpp.i
-.PHONY : pf.cpp.i
-
-pf.s: pf.cpp.s
-
-.PHONY : pf.s
-
-# target to generate assembly for a file
-pf.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pf.cpp.s
-.PHONY : pf.cpp.s
-
-pgamma.o: pgamma.cpp.o
-
-.PHONY : pgamma.o
-
-# target to build an object file
-pgamma.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pgamma.cpp.o
-.PHONY : pgamma.cpp.o
-
-pgamma.i: pgamma.cpp.i
-
-.PHONY : pgamma.i
+.PHONY : poisson.i
 
 # target to preprocess a source file
-pgamma.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pgamma.cpp.i
-.PHONY : pgamma.cpp.i
+poisson.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/poisson.cpp.i
+.PHONY : poisson.cpp.i
 
-pgamma.s: pgamma.cpp.s
+poisson.s: poisson.cpp.s
 
-.PHONY : pgamma.s
-
-# target to generate assembly for a file
-pgamma.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pgamma.cpp.s
-.PHONY : pgamma.cpp.s
-
-pgeom.o: pgeom.cpp.o
-
-.PHONY : pgeom.o
-
-# target to build an object file
-pgeom.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pgeom.cpp.o
-.PHONY : pgeom.cpp.o
-
-pgeom.i: pgeom.cpp.i
-
-.PHONY : pgeom.i
-
-# target to preprocess a source file
-pgeom.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pgeom.cpp.i
-.PHONY : pgeom.cpp.i
-
-pgeom.s: pgeom.cpp.s
-
-.PHONY : pgeom.s
+.PHONY : poisson.s
 
 # target to generate assembly for a file
-pgeom.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pgeom.cpp.s
-.PHONY : pgeom.cpp.s
-
-phyper.o: phyper.cpp.o
-
-.PHONY : phyper.o
-
-# target to build an object file
-phyper.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/phyper.cpp.o
-.PHONY : phyper.cpp.o
-
-phyper.i: phyper.cpp.i
-
-.PHONY : phyper.i
-
-# target to preprocess a source file
-phyper.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/phyper.cpp.i
-.PHONY : phyper.cpp.i
-
-phyper.s: phyper.cpp.s
-
-.PHONY : phyper.s
-
-# target to generate assembly for a file
-phyper.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/phyper.cpp.s
-.PHONY : phyper.cpp.s
-
-plnorm.o: plnorm.cpp.o
-
-.PHONY : plnorm.o
-
-# target to build an object file
-plnorm.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/plnorm.cpp.o
-.PHONY : plnorm.cpp.o
-
-plnorm.i: plnorm.cpp.i
-
-.PHONY : plnorm.i
-
-# target to preprocess a source file
-plnorm.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/plnorm.cpp.i
-.PHONY : plnorm.cpp.i
-
-plnorm.s: plnorm.cpp.s
-
-.PHONY : plnorm.s
-
-# target to generate assembly for a file
-plnorm.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/plnorm.cpp.s
-.PHONY : plnorm.cpp.s
-
-plogis.o: plogis.cpp.o
-
-.PHONY : plogis.o
-
-# target to build an object file
-plogis.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/plogis.cpp.o
-.PHONY : plogis.cpp.o
-
-plogis.i: plogis.cpp.i
-
-.PHONY : plogis.i
-
-# target to preprocess a source file
-plogis.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/plogis.cpp.i
-.PHONY : plogis.cpp.i
-
-plogis.s: plogis.cpp.s
-
-.PHONY : plogis.s
-
-# target to generate assembly for a file
-plogis.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/plogis.cpp.s
-.PHONY : plogis.cpp.s
-
-pnbeta.o: pnbeta.cpp.o
-
-.PHONY : pnbeta.o
-
-# target to build an object file
-pnbeta.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pnbeta.cpp.o
-.PHONY : pnbeta.cpp.o
-
-pnbeta.i: pnbeta.cpp.i
-
-.PHONY : pnbeta.i
-
-# target to preprocess a source file
-pnbeta.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pnbeta.cpp.i
-.PHONY : pnbeta.cpp.i
-
-pnbeta.s: pnbeta.cpp.s
-
-.PHONY : pnbeta.s
-
-# target to generate assembly for a file
-pnbeta.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pnbeta.cpp.s
-.PHONY : pnbeta.cpp.s
-
-pnbinom.o: pnbinom.cpp.o
-
-.PHONY : pnbinom.o
-
-# target to build an object file
-pnbinom.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pnbinom.cpp.o
-.PHONY : pnbinom.cpp.o
-
-pnbinom.i: pnbinom.cpp.i
-
-.PHONY : pnbinom.i
-
-# target to preprocess a source file
-pnbinom.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pnbinom.cpp.i
-.PHONY : pnbinom.cpp.i
-
-pnbinom.s: pnbinom.cpp.s
-
-.PHONY : pnbinom.s
-
-# target to generate assembly for a file
-pnbinom.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pnbinom.cpp.s
-.PHONY : pnbinom.cpp.s
-
-pnchisq.o: pnchisq.cpp.o
-
-.PHONY : pnchisq.o
-
-# target to build an object file
-pnchisq.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pnchisq.cpp.o
-.PHONY : pnchisq.cpp.o
-
-pnchisq.i: pnchisq.cpp.i
-
-.PHONY : pnchisq.i
-
-# target to preprocess a source file
-pnchisq.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pnchisq.cpp.i
-.PHONY : pnchisq.cpp.i
-
-pnchisq.s: pnchisq.cpp.s
-
-.PHONY : pnchisq.s
-
-# target to generate assembly for a file
-pnchisq.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pnchisq.cpp.s
-.PHONY : pnchisq.cpp.s
-
-pnf.o: pnf.cpp.o
-
-.PHONY : pnf.o
-
-# target to build an object file
-pnf.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pnf.cpp.o
-.PHONY : pnf.cpp.o
-
-pnf.i: pnf.cpp.i
-
-.PHONY : pnf.i
-
-# target to preprocess a source file
-pnf.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pnf.cpp.i
-.PHONY : pnf.cpp.i
-
-pnf.s: pnf.cpp.s
-
-.PHONY : pnf.s
-
-# target to generate assembly for a file
-pnf.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pnf.cpp.s
-.PHONY : pnf.cpp.s
-
-pnorm.o: pnorm.cpp.o
-
-.PHONY : pnorm.o
-
-# target to build an object file
-pnorm.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pnorm.cpp.o
-.PHONY : pnorm.cpp.o
-
-pnorm.i: pnorm.cpp.i
-
-.PHONY : pnorm.i
-
-# target to preprocess a source file
-pnorm.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pnorm.cpp.i
-.PHONY : pnorm.cpp.i
-
-pnorm.s: pnorm.cpp.s
-
-.PHONY : pnorm.s
-
-# target to generate assembly for a file
-pnorm.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pnorm.cpp.s
-.PHONY : pnorm.cpp.s
-
-pnt.o: pnt.cpp.o
-
-.PHONY : pnt.o
-
-# target to build an object file
-pnt.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pnt.cpp.o
-.PHONY : pnt.cpp.o
-
-pnt.i: pnt.cpp.i
-
-.PHONY : pnt.i
-
-# target to preprocess a source file
-pnt.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pnt.cpp.i
-.PHONY : pnt.cpp.i
-
-pnt.s: pnt.cpp.s
-
-.PHONY : pnt.s
-
-# target to generate assembly for a file
-pnt.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pnt.cpp.s
-.PHONY : pnt.cpp.s
-
-ppois.o: ppois.cpp.o
-
-.PHONY : ppois.o
-
-# target to build an object file
-ppois.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/ppois.cpp.o
-.PHONY : ppois.cpp.o
-
-ppois.i: ppois.cpp.i
-
-.PHONY : ppois.i
-
-# target to preprocess a source file
-ppois.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/ppois.cpp.i
-.PHONY : ppois.cpp.i
-
-ppois.s: ppois.cpp.s
-
-.PHONY : ppois.s
-
-# target to generate assembly for a file
-ppois.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/ppois.cpp.s
-.PHONY : ppois.cpp.s
-
-pt.o: pt.cpp.o
-
-.PHONY : pt.o
-
-# target to build an object file
-pt.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pt.cpp.o
-.PHONY : pt.cpp.o
-
-pt.i: pt.cpp.i
-
-.PHONY : pt.i
-
-# target to preprocess a source file
-pt.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pt.cpp.i
-.PHONY : pt.cpp.i
-
-pt.s: pt.cpp.s
-
-.PHONY : pt.s
-
-# target to generate assembly for a file
-pt.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pt.cpp.s
-.PHONY : pt.cpp.s
-
-ptukey.o: ptukey.cpp.o
-
-.PHONY : ptukey.o
-
-# target to build an object file
-ptukey.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/ptukey.cpp.o
-.PHONY : ptukey.cpp.o
-
-ptukey.i: ptukey.cpp.i
-
-.PHONY : ptukey.i
-
-# target to preprocess a source file
-ptukey.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/ptukey.cpp.i
-.PHONY : ptukey.cpp.i
-
-ptukey.s: ptukey.cpp.s
-
-.PHONY : ptukey.s
-
-# target to generate assembly for a file
-ptukey.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/ptukey.cpp.s
-.PHONY : ptukey.cpp.s
-
-punif.o: punif.cpp.o
-
-.PHONY : punif.o
-
-# target to build an object file
-punif.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/punif.cpp.o
-.PHONY : punif.cpp.o
-
-punif.i: punif.cpp.i
-
-.PHONY : punif.i
-
-# target to preprocess a source file
-punif.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/punif.cpp.i
-.PHONY : punif.cpp.i
-
-punif.s: punif.cpp.s
-
-.PHONY : punif.s
-
-# target to generate assembly for a file
-punif.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/punif.cpp.s
-.PHONY : punif.cpp.s
-
-pweibull.o: pweibull.cpp.o
-
-.PHONY : pweibull.o
-
-# target to build an object file
-pweibull.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pweibull.cpp.o
-.PHONY : pweibull.cpp.o
-
-pweibull.i: pweibull.cpp.i
-
-.PHONY : pweibull.i
-
-# target to preprocess a source file
-pweibull.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pweibull.cpp.i
-.PHONY : pweibull.cpp.i
-
-pweibull.s: pweibull.cpp.s
-
-.PHONY : pweibull.s
-
-# target to generate assembly for a file
-pweibull.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/pweibull.cpp.s
-.PHONY : pweibull.cpp.s
-
-qbeta.o: qbeta.cpp.o
-
-.PHONY : qbeta.o
-
-# target to build an object file
-qbeta.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qbeta.cpp.o
-.PHONY : qbeta.cpp.o
-
-qbeta.i: qbeta.cpp.i
-
-.PHONY : qbeta.i
-
-# target to preprocess a source file
-qbeta.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qbeta.cpp.i
-.PHONY : qbeta.cpp.i
-
-qbeta.s: qbeta.cpp.s
-
-.PHONY : qbeta.s
-
-# target to generate assembly for a file
-qbeta.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qbeta.cpp.s
-.PHONY : qbeta.cpp.s
-
-qbinom.o: qbinom.cpp.o
-
-.PHONY : qbinom.o
-
-# target to build an object file
-qbinom.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qbinom.cpp.o
-.PHONY : qbinom.cpp.o
-
-qbinom.i: qbinom.cpp.i
-
-.PHONY : qbinom.i
-
-# target to preprocess a source file
-qbinom.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qbinom.cpp.i
-.PHONY : qbinom.cpp.i
-
-qbinom.s: qbinom.cpp.s
-
-.PHONY : qbinom.s
-
-# target to generate assembly for a file
-qbinom.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qbinom.cpp.s
-.PHONY : qbinom.cpp.s
-
-qcauchy.o: qcauchy.cpp.o
-
-.PHONY : qcauchy.o
-
-# target to build an object file
-qcauchy.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qcauchy.cpp.o
-.PHONY : qcauchy.cpp.o
-
-qcauchy.i: qcauchy.cpp.i
-
-.PHONY : qcauchy.i
-
-# target to preprocess a source file
-qcauchy.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qcauchy.cpp.i
-.PHONY : qcauchy.cpp.i
-
-qcauchy.s: qcauchy.cpp.s
-
-.PHONY : qcauchy.s
-
-# target to generate assembly for a file
-qcauchy.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qcauchy.cpp.s
-.PHONY : qcauchy.cpp.s
-
-qchisq.o: qchisq.cpp.o
-
-.PHONY : qchisq.o
-
-# target to build an object file
-qchisq.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qchisq.cpp.o
-.PHONY : qchisq.cpp.o
-
-qchisq.i: qchisq.cpp.i
-
-.PHONY : qchisq.i
-
-# target to preprocess a source file
-qchisq.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qchisq.cpp.i
-.PHONY : qchisq.cpp.i
-
-qchisq.s: qchisq.cpp.s
-
-.PHONY : qchisq.s
-
-# target to generate assembly for a file
-qchisq.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qchisq.cpp.s
-.PHONY : qchisq.cpp.s
-
-qexp.o: qexp.cpp.o
-
-.PHONY : qexp.o
-
-# target to build an object file
-qexp.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qexp.cpp.o
-.PHONY : qexp.cpp.o
-
-qexp.i: qexp.cpp.i
-
-.PHONY : qexp.i
-
-# target to preprocess a source file
-qexp.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qexp.cpp.i
-.PHONY : qexp.cpp.i
-
-qexp.s: qexp.cpp.s
-
-.PHONY : qexp.s
-
-# target to generate assembly for a file
-qexp.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qexp.cpp.s
-.PHONY : qexp.cpp.s
-
-qf.o: qf.cpp.o
-
-.PHONY : qf.o
-
-# target to build an object file
-qf.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qf.cpp.o
-.PHONY : qf.cpp.o
-
-qf.i: qf.cpp.i
-
-.PHONY : qf.i
-
-# target to preprocess a source file
-qf.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qf.cpp.i
-.PHONY : qf.cpp.i
-
-qf.s: qf.cpp.s
-
-.PHONY : qf.s
-
-# target to generate assembly for a file
-qf.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qf.cpp.s
-.PHONY : qf.cpp.s
-
-qgamma.o: qgamma.cpp.o
-
-.PHONY : qgamma.o
-
-# target to build an object file
-qgamma.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qgamma.cpp.o
-.PHONY : qgamma.cpp.o
-
-qgamma.i: qgamma.cpp.i
-
-.PHONY : qgamma.i
-
-# target to preprocess a source file
-qgamma.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qgamma.cpp.i
-.PHONY : qgamma.cpp.i
-
-qgamma.s: qgamma.cpp.s
-
-.PHONY : qgamma.s
-
-# target to generate assembly for a file
-qgamma.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qgamma.cpp.s
-.PHONY : qgamma.cpp.s
-
-qgeom.o: qgeom.cpp.o
-
-.PHONY : qgeom.o
-
-# target to build an object file
-qgeom.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qgeom.cpp.o
-.PHONY : qgeom.cpp.o
-
-qgeom.i: qgeom.cpp.i
-
-.PHONY : qgeom.i
-
-# target to preprocess a source file
-qgeom.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qgeom.cpp.i
-.PHONY : qgeom.cpp.i
-
-qgeom.s: qgeom.cpp.s
-
-.PHONY : qgeom.s
-
-# target to generate assembly for a file
-qgeom.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qgeom.cpp.s
-.PHONY : qgeom.cpp.s
-
-qhyper.o: qhyper.cpp.o
-
-.PHONY : qhyper.o
-
-# target to build an object file
-qhyper.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qhyper.cpp.o
-.PHONY : qhyper.cpp.o
-
-qhyper.i: qhyper.cpp.i
-
-.PHONY : qhyper.i
-
-# target to preprocess a source file
-qhyper.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qhyper.cpp.i
-.PHONY : qhyper.cpp.i
-
-qhyper.s: qhyper.cpp.s
-
-.PHONY : qhyper.s
-
-# target to generate assembly for a file
-qhyper.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qhyper.cpp.s
-.PHONY : qhyper.cpp.s
-
-qlnorm.o: qlnorm.cpp.o
-
-.PHONY : qlnorm.o
-
-# target to build an object file
-qlnorm.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qlnorm.cpp.o
-.PHONY : qlnorm.cpp.o
-
-qlnorm.i: qlnorm.cpp.i
-
-.PHONY : qlnorm.i
-
-# target to preprocess a source file
-qlnorm.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qlnorm.cpp.i
-.PHONY : qlnorm.cpp.i
-
-qlnorm.s: qlnorm.cpp.s
-
-.PHONY : qlnorm.s
-
-# target to generate assembly for a file
-qlnorm.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qlnorm.cpp.s
-.PHONY : qlnorm.cpp.s
-
-qlogis.o: qlogis.cpp.o
-
-.PHONY : qlogis.o
-
-# target to build an object file
-qlogis.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qlogis.cpp.o
-.PHONY : qlogis.cpp.o
-
-qlogis.i: qlogis.cpp.i
-
-.PHONY : qlogis.i
-
-# target to preprocess a source file
-qlogis.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qlogis.cpp.i
-.PHONY : qlogis.cpp.i
-
-qlogis.s: qlogis.cpp.s
-
-.PHONY : qlogis.s
-
-# target to generate assembly for a file
-qlogis.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qlogis.cpp.s
-.PHONY : qlogis.cpp.s
-
-qnbeta.o: qnbeta.cpp.o
-
-.PHONY : qnbeta.o
-
-# target to build an object file
-qnbeta.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qnbeta.cpp.o
-.PHONY : qnbeta.cpp.o
-
-qnbeta.i: qnbeta.cpp.i
-
-.PHONY : qnbeta.i
-
-# target to preprocess a source file
-qnbeta.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qnbeta.cpp.i
-.PHONY : qnbeta.cpp.i
-
-qnbeta.s: qnbeta.cpp.s
-
-.PHONY : qnbeta.s
-
-# target to generate assembly for a file
-qnbeta.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qnbeta.cpp.s
-.PHONY : qnbeta.cpp.s
-
-qnbinom.o: qnbinom.cpp.o
-
-.PHONY : qnbinom.o
-
-# target to build an object file
-qnbinom.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qnbinom.cpp.o
-.PHONY : qnbinom.cpp.o
-
-qnbinom.i: qnbinom.cpp.i
-
-.PHONY : qnbinom.i
-
-# target to preprocess a source file
-qnbinom.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qnbinom.cpp.i
-.PHONY : qnbinom.cpp.i
-
-qnbinom.s: qnbinom.cpp.s
-
-.PHONY : qnbinom.s
-
-# target to generate assembly for a file
-qnbinom.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qnbinom.cpp.s
-.PHONY : qnbinom.cpp.s
-
-qnchisq.o: qnchisq.cpp.o
-
-.PHONY : qnchisq.o
-
-# target to build an object file
-qnchisq.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qnchisq.cpp.o
-.PHONY : qnchisq.cpp.o
-
-qnchisq.i: qnchisq.cpp.i
-
-.PHONY : qnchisq.i
-
-# target to preprocess a source file
-qnchisq.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qnchisq.cpp.i
-.PHONY : qnchisq.cpp.i
-
-qnchisq.s: qnchisq.cpp.s
-
-.PHONY : qnchisq.s
-
-# target to generate assembly for a file
-qnchisq.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qnchisq.cpp.s
-.PHONY : qnchisq.cpp.s
-
-qnf.o: qnf.cpp.o
-
-.PHONY : qnf.o
-
-# target to build an object file
-qnf.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qnf.cpp.o
-.PHONY : qnf.cpp.o
-
-qnf.i: qnf.cpp.i
-
-.PHONY : qnf.i
-
-# target to preprocess a source file
-qnf.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qnf.cpp.i
-.PHONY : qnf.cpp.i
-
-qnf.s: qnf.cpp.s
-
-.PHONY : qnf.s
-
-# target to generate assembly for a file
-qnf.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qnf.cpp.s
-.PHONY : qnf.cpp.s
-
-qnorm.o: qnorm.cpp.o
-
-.PHONY : qnorm.o
-
-# target to build an object file
-qnorm.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qnorm.cpp.o
-.PHONY : qnorm.cpp.o
-
-qnorm.i: qnorm.cpp.i
-
-.PHONY : qnorm.i
-
-# target to preprocess a source file
-qnorm.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qnorm.cpp.i
-.PHONY : qnorm.cpp.i
-
-qnorm.s: qnorm.cpp.s
-
-.PHONY : qnorm.s
-
-# target to generate assembly for a file
-qnorm.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qnorm.cpp.s
-.PHONY : qnorm.cpp.s
-
-qnt.o: qnt.cpp.o
-
-.PHONY : qnt.o
-
-# target to build an object file
-qnt.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qnt.cpp.o
-.PHONY : qnt.cpp.o
-
-qnt.i: qnt.cpp.i
-
-.PHONY : qnt.i
-
-# target to preprocess a source file
-qnt.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qnt.cpp.i
-.PHONY : qnt.cpp.i
-
-qnt.s: qnt.cpp.s
-
-.PHONY : qnt.s
-
-# target to generate assembly for a file
-qnt.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qnt.cpp.s
-.PHONY : qnt.cpp.s
-
-qpois.o: qpois.cpp.o
-
-.PHONY : qpois.o
-
-# target to build an object file
-qpois.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qpois.cpp.o
-.PHONY : qpois.cpp.o
-
-qpois.i: qpois.cpp.i
-
-.PHONY : qpois.i
-
-# target to preprocess a source file
-qpois.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qpois.cpp.i
-.PHONY : qpois.cpp.i
-
-qpois.s: qpois.cpp.s
-
-.PHONY : qpois.s
-
-# target to generate assembly for a file
-qpois.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qpois.cpp.s
-.PHONY : qpois.cpp.s
-
-qt.o: qt.cpp.o
-
-.PHONY : qt.o
-
-# target to build an object file
-qt.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qt.cpp.o
-.PHONY : qt.cpp.o
-
-qt.i: qt.cpp.i
-
-.PHONY : qt.i
-
-# target to preprocess a source file
-qt.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qt.cpp.i
-.PHONY : qt.cpp.i
-
-qt.s: qt.cpp.s
-
-.PHONY : qt.s
-
-# target to generate assembly for a file
-qt.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qt.cpp.s
-.PHONY : qt.cpp.s
-
-qtukey.o: qtukey.cpp.o
-
-.PHONY : qtukey.o
-
-# target to build an object file
-qtukey.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qtukey.cpp.o
-.PHONY : qtukey.cpp.o
-
-qtukey.i: qtukey.cpp.i
-
-.PHONY : qtukey.i
-
-# target to preprocess a source file
-qtukey.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qtukey.cpp.i
-.PHONY : qtukey.cpp.i
-
-qtukey.s: qtukey.cpp.s
-
-.PHONY : qtukey.s
-
-# target to generate assembly for a file
-qtukey.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qtukey.cpp.s
-.PHONY : qtukey.cpp.s
-
-qunif.o: qunif.cpp.o
-
-.PHONY : qunif.o
-
-# target to build an object file
-qunif.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qunif.cpp.o
-.PHONY : qunif.cpp.o
-
-qunif.i: qunif.cpp.i
-
-.PHONY : qunif.i
-
-# target to preprocess a source file
-qunif.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qunif.cpp.i
-.PHONY : qunif.cpp.i
-
-qunif.s: qunif.cpp.s
-
-.PHONY : qunif.s
-
-# target to generate assembly for a file
-qunif.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qunif.cpp.s
-.PHONY : qunif.cpp.s
-
-qweibull.o: qweibull.cpp.o
-
-.PHONY : qweibull.o
-
-# target to build an object file
-qweibull.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qweibull.cpp.o
-.PHONY : qweibull.cpp.o
-
-qweibull.i: qweibull.cpp.i
-
-.PHONY : qweibull.i
-
-# target to preprocess a source file
-qweibull.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qweibull.cpp.i
-.PHONY : qweibull.cpp.i
-
-qweibull.s: qweibull.cpp.s
-
-.PHONY : qweibull.s
-
-# target to generate assembly for a file
-qweibull.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/qweibull.cpp.s
-.PHONY : qweibull.cpp.s
+poisson.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/poisson.cpp.s
+.PHONY : poisson.cpp.s
 
 signrank.o: signrank.cpp.o
 
@@ -2345,7 +752,7 @@ signrank.o: signrank.cpp.o
 
 # target to build an object file
 signrank.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/signrank.cpp.o
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/signrank.cpp.o
 .PHONY : signrank.cpp.o
 
 signrank.i: signrank.cpp.i
@@ -2354,7 +761,7 @@ signrank.i: signrank.cpp.i
 
 # target to preprocess a source file
 signrank.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/signrank.cpp.i
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/signrank.cpp.i
 .PHONY : signrank.cpp.i
 
 signrank.s: signrank.cpp.s
@@ -2363,89 +770,143 @@ signrank.s: signrank.cpp.s
 
 # target to generate assembly for a file
 signrank.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/signrank.cpp.s
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/signrank.cpp.s
 .PHONY : signrank.cpp.s
 
-stirlerr.o: stirlerr.cpp.o
+tdist.o: tdist.cpp.o
 
-.PHONY : stirlerr.o
-
-# target to build an object file
-stirlerr.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/stirlerr.cpp.o
-.PHONY : stirlerr.cpp.o
-
-stirlerr.i: stirlerr.cpp.i
-
-.PHONY : stirlerr.i
-
-# target to preprocess a source file
-stirlerr.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/stirlerr.cpp.i
-.PHONY : stirlerr.cpp.i
-
-stirlerr.s: stirlerr.cpp.s
-
-.PHONY : stirlerr.s
-
-# target to generate assembly for a file
-stirlerr.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/stirlerr.cpp.s
-.PHONY : stirlerr.cpp.s
-
-toms708.o: toms708.cpp.o
-
-.PHONY : toms708.o
+.PHONY : tdist.o
 
 # target to build an object file
-toms708.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/toms708.cpp.o
-.PHONY : toms708.cpp.o
+tdist.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/tdist.cpp.o
+.PHONY : tdist.cpp.o
 
-toms708.i: toms708.cpp.i
+tdist.i: tdist.cpp.i
 
-.PHONY : toms708.i
+.PHONY : tdist.i
 
 # target to preprocess a source file
-toms708.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/toms708.cpp.i
-.PHONY : toms708.cpp.i
+tdist.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/tdist.cpp.i
+.PHONY : tdist.cpp.i
 
-toms708.s: toms708.cpp.s
+tdist.s: tdist.cpp.s
 
-.PHONY : toms708.s
+.PHONY : tdist.s
 
 # target to generate assembly for a file
-toms708.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/toms708.cpp.s
-.PHONY : toms708.cpp.s
+tdist.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/tdist.cpp.s
+.PHONY : tdist.cpp.s
 
-wilcox.o: wilcox.cpp.o
+tukey.o: tukey.cpp.o
 
-.PHONY : wilcox.o
+.PHONY : tukey.o
 
 # target to build an object file
-wilcox.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/wilcox.cpp.o
-.PHONY : wilcox.cpp.o
+tukey.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/tukey.cpp.o
+.PHONY : tukey.cpp.o
 
-wilcox.i: wilcox.cpp.i
+tukey.i: tukey.cpp.i
 
-.PHONY : wilcox.i
+.PHONY : tukey.i
 
 # target to preprocess a source file
-wilcox.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/wilcox.cpp.i
-.PHONY : wilcox.cpp.i
+tukey.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/tukey.cpp.i
+.PHONY : tukey.cpp.i
 
-wilcox.s: wilcox.cpp.s
+tukey.s: tukey.cpp.s
 
-.PHONY : wilcox.s
+.PHONY : tukey.s
 
 # target to generate assembly for a file
-wilcox.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/stat.dir/build.make src/CMakeFiles/stat.dir/wilcox.cpp.s
-.PHONY : wilcox.cpp.s
+tukey.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/tukey.cpp.s
+.PHONY : tukey.cpp.s
+
+uniform.o: uniform.cpp.o
+
+.PHONY : uniform.o
+
+# target to build an object file
+uniform.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/uniform.cpp.o
+.PHONY : uniform.cpp.o
+
+uniform.i: uniform.cpp.i
+
+.PHONY : uniform.i
+
+# target to preprocess a source file
+uniform.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/uniform.cpp.i
+.PHONY : uniform.cpp.i
+
+uniform.s: uniform.cpp.s
+
+.PHONY : uniform.s
+
+# target to generate assembly for a file
+uniform.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/uniform.cpp.s
+.PHONY : uniform.cpp.s
+
+weibull.o: weibull.cpp.o
+
+.PHONY : weibull.o
+
+# target to build an object file
+weibull.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/weibull.cpp.o
+.PHONY : weibull.cpp.o
+
+weibull.i: weibull.cpp.i
+
+.PHONY : weibull.i
+
+# target to preprocess a source file
+weibull.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/weibull.cpp.i
+.PHONY : weibull.cpp.i
+
+weibull.s: weibull.cpp.s
+
+.PHONY : weibull.s
+
+# target to generate assembly for a file
+weibull.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/weibull.cpp.s
+.PHONY : weibull.cpp.s
+
+wilcoxon.o: wilcoxon.cpp.o
+
+.PHONY : wilcoxon.o
+
+# target to build an object file
+wilcoxon.cpp.o:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/wilcoxon.cpp.o
+.PHONY : wilcoxon.cpp.o
+
+wilcoxon.i: wilcoxon.cpp.i
+
+.PHONY : wilcoxon.i
+
+# target to preprocess a source file
+wilcoxon.cpp.i:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/wilcoxon.cpp.i
+.PHONY : wilcoxon.cpp.i
+
+wilcoxon.s: wilcoxon.cpp.s
+
+.PHONY : wilcoxon.s
+
+# target to generate assembly for a file
+wilcoxon.cpp.s:
+	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/wilcoxon.cpp.s
+.PHONY : wilcoxon.cpp.s
 
 # Help Target
 help:
@@ -2453,267 +914,96 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... stat"
-	@echo "... bd0.o"
-	@echo "... bd0.i"
-	@echo "... bd0.s"
-	@echo "... chebyshev.o"
-	@echo "... chebyshev.i"
-	@echo "... chebyshev.s"
+	@echo "... edit_cache"
+	@echo "... main"
+	@echo "... acmtoms.o"
+	@echo "... acmtoms.i"
+	@echo "... acmtoms.s"
+	@echo "... beta_randist.o"
+	@echo "... beta_randist.i"
+	@echo "... beta_randist.s"
+	@echo "... beta_specfun.o"
+	@echo "... beta_specfun.i"
+	@echo "... beta_specfun.s"
+	@echo "... binomial.o"
+	@echo "... binomial.i"
+	@echo "... binomial.s"
+	@echo "... cauchy.o"
+	@echo "... cauchy.i"
+	@echo "... cauchy.s"
+	@echo "... chisq.o"
+	@echo "... chisq.i"
+	@echo "... chisq.s"
 	@echo "... choose.o"
 	@echo "... choose.i"
 	@echo "... choose.s"
-	@echo "... cospi.o"
-	@echo "... cospi.i"
-	@echo "... cospi.s"
-	@echo "... d1mach.o"
-	@echo "... d1mach.i"
-	@echo "... d1mach.s"
-	@echo "... dbeta.o"
-	@echo "... dbeta.i"
-	@echo "... dbeta.s"
-	@echo "... dbinom.o"
-	@echo "... dbinom.i"
-	@echo "... dbinom.s"
-	@echo "... dcauchy.o"
-	@echo "... dcauchy.i"
-	@echo "... dcauchy.s"
-	@echo "... dchisq.o"
-	@echo "... dchisq.i"
-	@echo "... dchisq.s"
-	@echo "... dexp.o"
-	@echo "... dexp.i"
-	@echo "... dexp.s"
-	@echo "... df.o"
-	@echo "... df.i"
-	@echo "... df.s"
-	@echo "... dgamma.o"
-	@echo "... dgamma.i"
-	@echo "... dgamma.s"
-	@echo "... dgeom.o"
-	@echo "... dgeom.i"
-	@echo "... dgeom.s"
-	@echo "... dhyper.o"
-	@echo "... dhyper.i"
-	@echo "... dhyper.s"
-	@echo "... dlnorm.o"
-	@echo "... dlnorm.i"
-	@echo "... dlnorm.s"
-	@echo "... dlogis.o"
-	@echo "... dlogis.i"
-	@echo "... dlogis.s"
-	@echo "... dnbeta.o"
-	@echo "... dnbeta.i"
-	@echo "... dnbeta.s"
-	@echo "... dnbinom.o"
-	@echo "... dnbinom.i"
-	@echo "... dnbinom.s"
-	@echo "... dnchisq.o"
-	@echo "... dnchisq.i"
-	@echo "... dnchisq.s"
-	@echo "... dnf.o"
-	@echo "... dnf.i"
-	@echo "... dnf.s"
-	@echo "... dnorm.o"
-	@echo "... dnorm.i"
-	@echo "... dnorm.s"
-	@echo "... dnt.o"
-	@echo "... dnt.i"
-	@echo "... dnt.s"
-	@echo "... dpois.o"
-	@echo "... dpois.i"
-	@echo "... dpois.s"
-	@echo "... dt.o"
-	@echo "... dt.i"
-	@echo "... dt.s"
-	@echo "... dunif.o"
-	@echo "... dunif.i"
-	@echo "... dunif.s"
-	@echo "... dweibull.o"
-	@echo "... dweibull.i"
-	@echo "... dweibull.s"
-	@echo "... fmax2.o"
-	@echo "... fmax2.i"
-	@echo "... fmax2.s"
-	@echo "... fmin2.o"
-	@echo "... fmin2.i"
-	@echo "... fmin2.s"
-	@echo "... gamma.o"
-	@echo "... gamma.i"
-	@echo "... gamma.s"
-	@echo "... i1mach.o"
-	@echo "... i1mach.i"
-	@echo "... i1mach.s"
-	@echo "... imax2.o"
-	@echo "... imax2.i"
-	@echo "... imax2.s"
-	@echo "... imin2.o"
-	@echo "... imin2.i"
-	@echo "... imin2.s"
+	@echo "... exponential.o"
+	@echo "... exponential.i"
+	@echo "... exponential.s"
+	@echo "... fdist.o"
+	@echo "... fdist.i"
+	@echo "... fdist.s"
+	@echo "... gamma_randist.o"
+	@echo "... gamma_randist.i"
+	@echo "... gamma_randist.s"
+	@echo "... gamma_specfun.o"
+	@echo "... gamma_specfun.i"
+	@echo "... gamma_specfun.s"
+	@echo "... geometric.o"
+	@echo "... geometric.i"
+	@echo "... geometric.s"
+	@echo "... hypergeometric.o"
+	@echo "... hypergeometric.i"
+	@echo "... hypergeometric.s"
 	@echo "... infnan.o"
 	@echo "... infnan.i"
 	@echo "... infnan.s"
-	@echo "... lbeta.o"
-	@echo "... lbeta.i"
-	@echo "... lbeta.s"
-	@echo "... lgamma.o"
-	@echo "... lgamma.i"
-	@echo "... lgamma.s"
-	@echo "... lgammacor.o"
-	@echo "... lgammacor.i"
-	@echo "... lgammacor.s"
+	@echo "... logistic.o"
+	@echo "... logistic.i"
+	@echo "... logistic.s"
+	@echo "... lognormal.o"
+	@echo "... lognormal.i"
+	@echo "... lognormal.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... mlutils.o"
-	@echo "... mlutils.i"
-	@echo "... mlutils.s"
-	@echo "... pbeta.o"
-	@echo "... pbeta.i"
-	@echo "... pbeta.s"
-	@echo "... pbinom.o"
-	@echo "... pbinom.i"
-	@echo "... pbinom.s"
-	@echo "... pcauchy.o"
-	@echo "... pcauchy.i"
-	@echo "... pcauchy.s"
-	@echo "... pchisq.o"
-	@echo "... pchisq.i"
-	@echo "... pchisq.s"
-	@echo "... pexp.o"
-	@echo "... pexp.i"
-	@echo "... pexp.s"
-	@echo "... pf.o"
-	@echo "... pf.i"
-	@echo "... pf.s"
-	@echo "... pgamma.o"
-	@echo "... pgamma.i"
-	@echo "... pgamma.s"
-	@echo "... pgeom.o"
-	@echo "... pgeom.i"
-	@echo "... pgeom.s"
-	@echo "... phyper.o"
-	@echo "... phyper.i"
-	@echo "... phyper.s"
-	@echo "... plnorm.o"
-	@echo "... plnorm.i"
-	@echo "... plnorm.s"
-	@echo "... plogis.o"
-	@echo "... plogis.i"
-	@echo "... plogis.s"
-	@echo "... pnbeta.o"
-	@echo "... pnbeta.i"
-	@echo "... pnbeta.s"
-	@echo "... pnbinom.o"
-	@echo "... pnbinom.i"
-	@echo "... pnbinom.s"
-	@echo "... pnchisq.o"
-	@echo "... pnchisq.i"
-	@echo "... pnchisq.s"
-	@echo "... pnf.o"
-	@echo "... pnf.i"
-	@echo "... pnf.s"
-	@echo "... pnorm.o"
-	@echo "... pnorm.i"
-	@echo "... pnorm.s"
-	@echo "... pnt.o"
-	@echo "... pnt.i"
-	@echo "... pnt.s"
-	@echo "... ppois.o"
-	@echo "... ppois.i"
-	@echo "... ppois.s"
-	@echo "... pt.o"
-	@echo "... pt.i"
-	@echo "... pt.s"
-	@echo "... ptukey.o"
-	@echo "... ptukey.i"
-	@echo "... ptukey.s"
-	@echo "... punif.o"
-	@echo "... punif.i"
-	@echo "... punif.s"
-	@echo "... pweibull.o"
-	@echo "... pweibull.i"
-	@echo "... pweibull.s"
-	@echo "... qbeta.o"
-	@echo "... qbeta.i"
-	@echo "... qbeta.s"
-	@echo "... qbinom.o"
-	@echo "... qbinom.i"
-	@echo "... qbinom.s"
-	@echo "... qcauchy.o"
-	@echo "... qcauchy.i"
-	@echo "... qcauchy.s"
-	@echo "... qchisq.o"
-	@echo "... qchisq.i"
-	@echo "... qchisq.s"
-	@echo "... qexp.o"
-	@echo "... qexp.i"
-	@echo "... qexp.s"
-	@echo "... qf.o"
-	@echo "... qf.i"
-	@echo "... qf.s"
-	@echo "... qgamma.o"
-	@echo "... qgamma.i"
-	@echo "... qgamma.s"
-	@echo "... qgeom.o"
-	@echo "... qgeom.i"
-	@echo "... qgeom.s"
-	@echo "... qhyper.o"
-	@echo "... qhyper.i"
-	@echo "... qhyper.s"
-	@echo "... qlnorm.o"
-	@echo "... qlnorm.i"
-	@echo "... qlnorm.s"
-	@echo "... qlogis.o"
-	@echo "... qlogis.i"
-	@echo "... qlogis.s"
-	@echo "... qnbeta.o"
-	@echo "... qnbeta.i"
-	@echo "... qnbeta.s"
-	@echo "... qnbinom.o"
-	@echo "... qnbinom.i"
-	@echo "... qnbinom.s"
-	@echo "... qnchisq.o"
-	@echo "... qnchisq.i"
-	@echo "... qnchisq.s"
-	@echo "... qnf.o"
-	@echo "... qnf.i"
-	@echo "... qnf.s"
-	@echo "... qnorm.o"
-	@echo "... qnorm.i"
-	@echo "... qnorm.s"
-	@echo "... qnt.o"
-	@echo "... qnt.i"
-	@echo "... qnt.s"
-	@echo "... qpois.o"
-	@echo "... qpois.i"
-	@echo "... qpois.s"
-	@echo "... qt.o"
-	@echo "... qt.i"
-	@echo "... qt.s"
-	@echo "... qtukey.o"
-	@echo "... qtukey.i"
-	@echo "... qtukey.s"
-	@echo "... qunif.o"
-	@echo "... qunif.i"
-	@echo "... qunif.s"
-	@echo "... qweibull.o"
-	@echo "... qweibull.i"
-	@echo "... qweibull.s"
+	@echo "... negative_binomial.o"
+	@echo "... negative_binomial.i"
+	@echo "... negative_binomial.s"
+	@echo "... non_central_beta.o"
+	@echo "... non_central_beta.i"
+	@echo "... non_central_beta.s"
+	@echo "... non_central_chisq.o"
+	@echo "... non_central_chisq.i"
+	@echo "... non_central_chisq.s"
+	@echo "... non_central_fdist.o"
+	@echo "... non_central_fdist.i"
+	@echo "... non_central_fdist.s"
+	@echo "... normal.o"
+	@echo "... normal.i"
+	@echo "... normal.s"
+	@echo "... poisson.o"
+	@echo "... poisson.i"
+	@echo "... poisson.s"
 	@echo "... signrank.o"
 	@echo "... signrank.i"
 	@echo "... signrank.s"
-	@echo "... stirlerr.o"
-	@echo "... stirlerr.i"
-	@echo "... stirlerr.s"
-	@echo "... toms708.o"
-	@echo "... toms708.i"
-	@echo "... toms708.s"
-	@echo "... wilcox.o"
-	@echo "... wilcox.i"
-	@echo "... wilcox.s"
+	@echo "... tdist.o"
+	@echo "... tdist.i"
+	@echo "... tdist.s"
+	@echo "... tukey.o"
+	@echo "... tukey.i"
+	@echo "... tukey.s"
+	@echo "... uniform.o"
+	@echo "... uniform.i"
+	@echo "... uniform.s"
+	@echo "... weibull.o"
+	@echo "... weibull.i"
+	@echo "... weibull.s"
+	@echo "... wilcoxon.o"
+	@echo "... wilcoxon.i"
+	@echo "... wilcoxon.s"
 .PHONY : help
 
 
