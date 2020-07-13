@@ -1,18 +1,15 @@
 MiniR
 
-This program is the Minimial of R. It runs under Ubuntu-20.04.
+This program is the Minimial/subset of R. It just include random distribution functions(density/probability/quantile functions exclude random number making function) currently. It passed test on Ubuntu-20.04/FreeBSD-12.1.
 
 build:
 	cd ../build
+	rm CMakeCache.txt 	//if exist, first compile
 	cmake ..
 
-executive:
-	../bin/stat
+run:
+	../bin/main
 
 
 Notes: 
-	In file ./src/pnchisq.cpp line 111 and line 236, 
-	in file ./src/wilcox.cpp line 47 and line 118,
-	in file ./src/choose.cpp line 46, line 76, line 119,
-	in file ./src/signrank.cpp line 89
-	I comment the stack check function, that may be has bugs.
+	In file ./src/chisq.cpp wilcox.cpp choose.cpp signrank.cpp, I close the stack\userinterupt check function, that may be has bugs.
