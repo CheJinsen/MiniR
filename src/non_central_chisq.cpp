@@ -218,10 +218,10 @@ double NonCentralChisq::cdfRaw(double x, double f, double theta,
 
     if (x <= 0.0) {
         if (x == 0. && f == 0.) {
-            double _L = -0.5 * theta;
-            double t1 = log_p ? _L : exp(_L);
-            double t2 = _L > -M_LN2 ? log(-expm1(_L)) : log1p(-exp(_L));
-            return lower_tail ? t1 : (log_p ? t2 : -expm1(_L));
+            double L = -0.5 * theta;
+            double t1 = log_p ? L : exp(L);
+            double t2 = L > -M_LN2 ? log(-expm1(L)) : log1p(-exp(L));
+            return lower_tail ? t1 : (log_p ? t2 : -expm1(L));
         }
         return R_DT_0;
     }

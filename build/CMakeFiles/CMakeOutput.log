@@ -1381,3 +1381,466 @@ Parsed CXX implicit link information from above output:
   implicit fwks: []
 
 
+The system is: MINGW64_NT-10.0-18363 - 3.1.5-340.x86_64 - unknown
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+
+The C compiler identification is GNU, found in "/d/coding/c++/MiniR/build/CMakeFiles/3.17.3/CompilerIdC/a.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/CC.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+
+The CXX compiler identification is GNU, found in "/d/coding/c++/MiniR/build/CMakeFiles/3.17.3/CompilerIdCXX/a.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /d/coding/c++/MiniR/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make.exe cmTC_b423f/fast && /usr/bin/make  -f CMakeFiles/cmTC_b423f.dir/build.make CMakeFiles/cmTC_b423f.dir/build
+make[1]: 进入目录“/d/coding/c++/MiniR/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_b423f.dir/testCCompiler.c.obj
+/usr/bin/cc.exe    -o CMakeFiles/cmTC_b423f.dir/testCCompiler.c.obj   -c /d/coding/c++/MiniR/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_b423f
+/usr/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_b423f.dir/link.txt --verbose=1
+/usr/bin/cc.exe      CMakeFiles/cmTC_b423f.dir/testCCompiler.c.obj  -o cmTC_b423f 
+make[1]: 离开目录“/d/coding/c++/MiniR/build/CMakeFiles/CMakeTmp”
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /d/coding/c++/MiniR/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make.exe cmTC_65897/fast && /usr/bin/make  -f CMakeFiles/cmTC_65897.dir/build.make CMakeFiles/cmTC_65897.dir/build
+make[1]: Entering directory '/d/coding/c++/MiniR/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_65897.dir/CMakeCCompilerABI.c.obj
+/usr/bin/cc.exe   -v -o CMakeFiles/cmTC_65897.dir/CMakeCCompilerABI.c.obj   -c /usr/share/cmake-3.17.3/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+Target: x86_64-pc-msys
+Configured with: /msysdev/gcc/src/gcc-9.3.0/configure --build=x86_64-pc-msys --prefix=/usr --libexecdir=/usr/lib --enable-bootstrap --enable-shared --enable-shared-libgcc --enable-static --enable-version-specific-runtime-libs --with-arch=x86-64 --with-tune=generic --disable-multilib --enable-__cxa_atexit --with-dwarf2 --enable-languages=c,c++,fortran,lto --enable-graphite --enable-threads=posix --enable-libatomic --enable-libgomp --disable-libitm --enable-libquadmath --enable-libquadmath-support --disable-libssp --disable-win32-registry --disable-symvers --with-gnu-ld --with-gnu-as --disable-isl-version-check --enable-checking=release --without-libiconv-prefix --without-libintl-prefix --with-system-zlib --enable-linker-build-id --with-default-libstdcxx-abi=gcc4-compatible --enable-libstdcxx-filesystem-ts
+Thread model: posix
+gcc version 9.3.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_65897.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-pc-msys/9.3.0/cc1.exe -quiet -v -idirafter /usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../lib/../include/w32api -idirafter /usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/lib/../lib/../../include/w32api /usr/share/cmake-3.17.3/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_65897.dir/CMakeCCompilerABI.c.obj -version -o /tmp/ccS0BuUH.s
+GNU C17 (GCC) version 9.3.0 (x86_64-pc-msys)
+	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/local/include"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/include"
+ignoring duplicate directory "/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/lib/../lib/../../include/w32api"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/gcc/x86_64-pc-msys/9.3.0/include
+ /usr/lib/gcc/x86_64-pc-msys/9.3.0/include-fixed
+ /usr/include
+ /usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../lib/../include/w32api
+End of search list.
+GNU C17 (GCC) version 9.3.0 (x86_64-pc-msys)
+	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 5bdfbe77306fca326892b44a8c31c98d
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_65897.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/bin/as.exe -v -o CMakeFiles/cmTC_65897.dir/CMakeCCompilerABI.c.obj /tmp/ccS0BuUH.s
+GNU assembler version 2.34 (x86_64-pc-msys) using BFD version (GNU Binutils) 2.34
+COMPILER_PATH=/usr/lib/gcc/x86_64-pc-msys/9.3.0/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/:/usr/lib/gcc/x86_64-pc-msys/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/:/usr/lib/gcc/x86_64-pc-msys/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/bin/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-msys/9.3.0/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/lib/../lib/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/lib/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_65897.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64'
+Linking C executable cmTC_65897
+/usr/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_65897.dir/link.txt --verbose=1
+/usr/bin/cc.exe     -v CMakeFiles/cmTC_65897.dir/CMakeCCompilerABI.c.obj  -o cmTC_65897 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-msys/9.3.0/lto-wrapper.exe
+Target: x86_64-pc-msys
+Configured with: /msysdev/gcc/src/gcc-9.3.0/configure --build=x86_64-pc-msys --prefix=/usr --libexecdir=/usr/lib --enable-bootstrap --enable-shared --enable-shared-libgcc --enable-static --enable-version-specific-runtime-libs --with-arch=x86-64 --with-tune=generic --disable-multilib --enable-__cxa_atexit --with-dwarf2 --enable-languages=c,c++,fortran,lto --enable-graphite --enable-threads=posix --enable-libatomic --enable-libgomp --disable-libitm --enable-libquadmath --enable-libquadmath-support --disable-libssp --disable-win32-registry --disable-symvers --with-gnu-ld --with-gnu-as --disable-isl-version-check --enable-checking=release --without-libiconv-prefix --without-libintl-prefix --with-system-zlib --enable-linker-build-id --with-default-libstdcxx-abi=gcc4-compatible --enable-libstdcxx-filesystem-ts
+Thread model: posix
+gcc version 9.3.0 (GCC) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-pc-msys/9.3.0/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/:/usr/lib/gcc/x86_64-pc-msys/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/:/usr/lib/gcc/x86_64-pc-msys/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/bin/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-msys/9.3.0/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/lib/../lib/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/lib/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_65897.exe' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-pc-msys/9.3.0/collect2.exe -plugin /usr/lib/gcc/x86_64-pc-msys/9.3.0/msys-lto_plugin.dll -plugin-opt=/usr/lib/gcc/x86_64-pc-msys/9.3.0/lto-wrapper.exe -plugin-opt=-fresolution=/tmp/ccWjCmBR.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmsys-2.0 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id -m i386pep --wrap _Znwm --wrap _Znam --wrap _ZdlPv --wrap _ZdaPv --wrap _ZnwmRKSt9nothrow_t --wrap _ZnamRKSt9nothrow_t --wrap _ZdlPvRKSt9nothrow_t --wrap _ZdaPvRKSt9nothrow_t -Bdynamic --dll-search-prefix=msys- --tsaware -o cmTC_65897.exe /usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../lib/crt0.o /usr/lib/gcc/x86_64-pc-msys/9.3.0/crtbegin.o -L/usr/lib/gcc/x86_64-pc-msys/9.3.0 -L/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/lib/../lib -L/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/lib -L/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../.. CMakeFiles/cmTC_65897.dir/CMakeCCompilerABI.c.obj -lgcc_s -lgcc -lmsys-2.0 -ladvapi32 -lshell32 -luser32 -lkernel32 -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../lib/default-manifest.o /usr/lib/gcc/x86_64-pc-msys/9.3.0/crtend.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_65897.exe' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/d/coding/c++/MiniR/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/lib/gcc/x86_64-pc-msys/9.3.0/include]
+    add: [/usr/lib/gcc/x86_64-pc-msys/9.3.0/include-fixed]
+    add: [/usr/include]
+    add: [/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../lib/../include/w32api]
+  end of search list found
+  collapse include dir [/usr/lib/gcc/x86_64-pc-msys/9.3.0/include] ==> [/usr/lib/gcc/x86_64-pc-msys/9.3.0/include]
+  collapse include dir [/usr/lib/gcc/x86_64-pc-msys/9.3.0/include-fixed] ==> [/usr/lib/gcc/x86_64-pc-msys/9.3.0/include-fixed]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  collapse include dir [/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../lib/../include/w32api] ==> [/usr/include/w32api]
+  implicit include dirs: [/usr/lib/gcc/x86_64-pc-msys/9.3.0/include;/usr/lib/gcc/x86_64-pc-msys/9.3.0/include-fixed;/usr/include;/usr/include/w32api]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /d/coding/c++/MiniR/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make.exe cmTC_65897/fast && /usr/bin/make  -f CMakeFiles/cmTC_65897.dir/build.make CMakeFiles/cmTC_65897.dir/build]
+  ignore line: [make[1]: Entering directory '/d/coding/c++/MiniR/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_65897.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [/usr/bin/cc.exe   -v -o CMakeFiles/cmTC_65897.dir/CMakeCCompilerABI.c.obj   -c /usr/share/cmake-3.17.3/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [Target: x86_64-pc-msys]
+  ignore line: [Configured with: /msysdev/gcc/src/gcc-9.3.0/configure --build=x86_64-pc-msys --prefix=/usr --libexecdir=/usr/lib --enable-bootstrap --enable-shared --enable-shared-libgcc --enable-static --enable-version-specific-runtime-libs --with-arch=x86-64 --with-tune=generic --disable-multilib --enable-__cxa_atexit --with-dwarf2 --enable-languages=c,c++,fortran,lto --enable-graphite --enable-threads=posix --enable-libatomic --enable-libgomp --disable-libitm --enable-libquadmath --enable-libquadmath-support --disable-libssp --disable-win32-registry --disable-symvers --with-gnu-ld --with-gnu-as --disable-isl-version-check --enable-checking=release --without-libiconv-prefix --without-libintl-prefix --with-system-zlib --enable-linker-build-id --with-default-libstdcxx-abi=gcc4-compatible --enable-libstdcxx-filesystem-ts]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.3.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_65897.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /usr/lib/gcc/x86_64-pc-msys/9.3.0/cc1.exe -quiet -v -idirafter /usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../lib/../include/w32api -idirafter /usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/lib/../lib/../../include/w32api /usr/share/cmake-3.17.3/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_65897.dir/CMakeCCompilerABI.c.obj -version -o /tmp/ccS0BuUH.s]
+  ignore line: [GNU C17 (GCC) version 9.3.0 (x86_64-pc-msys)]
+  ignore line: [	compiled by GNU C version 9.3.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/local/include"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/include"]
+  ignore line: [ignoring duplicate directory "/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/lib/../lib/../../include/w32api"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/lib/gcc/x86_64-pc-msys/9.3.0/include]
+  ignore line: [ /usr/lib/gcc/x86_64-pc-msys/9.3.0/include-fixed]
+  ignore line: [ /usr/include]
+  ignore line: [ /usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../lib/../include/w32api]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (GCC) version 9.3.0 (x86_64-pc-msys)]
+  ignore line: [	compiled by GNU C version 9.3.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 5bdfbe77306fca326892b44a8c31c98d]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_65897.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/bin/as.exe -v -o CMakeFiles/cmTC_65897.dir/CMakeCCompilerABI.c.obj /tmp/ccS0BuUH.s]
+  ignore line: [GNU assembler version 2.34 (x86_64-pc-msys) using BFD version (GNU Binutils) 2.34]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-msys/9.3.0/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/:/usr/lib/gcc/x86_64-pc-msys/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/:/usr/lib/gcc/x86_64-pc-msys/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/bin/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-msys/9.3.0/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/lib/../lib/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/lib/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_65897.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking C executable cmTC_65897]
+  ignore line: [/usr/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_65897.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc.exe     -v CMakeFiles/cmTC_65897.dir/CMakeCCompilerABI.c.obj  -o cmTC_65897 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-msys/9.3.0/lto-wrapper.exe]
+  ignore line: [Target: x86_64-pc-msys]
+  ignore line: [Configured with: /msysdev/gcc/src/gcc-9.3.0/configure --build=x86_64-pc-msys --prefix=/usr --libexecdir=/usr/lib --enable-bootstrap --enable-shared --enable-shared-libgcc --enable-static --enable-version-specific-runtime-libs --with-arch=x86-64 --with-tune=generic --disable-multilib --enable-__cxa_atexit --with-dwarf2 --enable-languages=c,c++,fortran,lto --enable-graphite --enable-threads=posix --enable-libatomic --enable-libgomp --disable-libitm --enable-libquadmath --enable-libquadmath-support --disable-libssp --disable-win32-registry --disable-symvers --with-gnu-ld --with-gnu-as --disable-isl-version-check --enable-checking=release --without-libiconv-prefix --without-libintl-prefix --with-system-zlib --enable-linker-build-id --with-default-libstdcxx-abi=gcc4-compatible --enable-libstdcxx-filesystem-ts]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.3.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-msys/9.3.0/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/:/usr/lib/gcc/x86_64-pc-msys/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/:/usr/lib/gcc/x86_64-pc-msys/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/bin/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-msys/9.3.0/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/lib/../lib/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/lib/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_65897.exe' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-pc-msys/9.3.0/collect2.exe -plugin /usr/lib/gcc/x86_64-pc-msys/9.3.0/msys-lto_plugin.dll -plugin-opt=/usr/lib/gcc/x86_64-pc-msys/9.3.0/lto-wrapper.exe -plugin-opt=-fresolution=/tmp/ccWjCmBR.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmsys-2.0 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id -m i386pep --wrap _Znwm --wrap _Znam --wrap _ZdlPv --wrap _ZdaPv --wrap _ZnwmRKSt9nothrow_t --wrap _ZnamRKSt9nothrow_t --wrap _ZdlPvRKSt9nothrow_t --wrap _ZdaPvRKSt9nothrow_t -Bdynamic --dll-search-prefix=msys- --tsaware -o cmTC_65897.exe /usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../lib/crt0.o /usr/lib/gcc/x86_64-pc-msys/9.3.0/crtbegin.o -L/usr/lib/gcc/x86_64-pc-msys/9.3.0 -L/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/lib/../lib -L/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/lib -L/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../.. CMakeFiles/cmTC_65897.dir/CMakeCCompilerABI.c.obj -lgcc_s -lgcc -lmsys-2.0 -ladvapi32 -lshell32 -luser32 -lkernel32 -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../lib/default-manifest.o /usr/lib/gcc/x86_64-pc-msys/9.3.0/crtend.o]
+    arg [/usr/lib/gcc/x86_64-pc-msys/9.3.0/collect2.exe] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-msys/9.3.0/msys-lto_plugin.dll] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-msys/9.3.0/lto-wrapper.exe] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccWjCmBR.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmsys-2.0] ==> ignore
+    arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
+    arg [-plugin-opt=-pass-through=-luser32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [-m] ==> ignore
+    arg [i386pep] ==> ignore
+    arg [--wrap] ==> ignore
+    arg [_Znwm] ==> ignore
+    arg [--wrap] ==> ignore
+    arg [_Znam] ==> ignore
+    arg [--wrap] ==> ignore
+    arg [_ZdlPv] ==> ignore
+    arg [--wrap] ==> ignore
+    arg [_ZdaPv] ==> ignore
+    arg [--wrap] ==> ignore
+    arg [_ZnwmRKSt9nothrow_t] ==> ignore
+    arg [--wrap] ==> ignore
+    arg [_ZnamRKSt9nothrow_t] ==> ignore
+    arg [--wrap] ==> ignore
+    arg [_ZdlPvRKSt9nothrow_t] ==> ignore
+    arg [--wrap] ==> ignore
+    arg [_ZdaPvRKSt9nothrow_t] ==> ignore
+    arg [-Bdynamic] ==> ignore
+    arg [--dll-search-prefix=msys-] ==> ignore
+    arg [--tsaware] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_65897.exe] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../lib/crt0.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-msys/9.3.0/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-pc-msys/9.3.0] ==> dir [/usr/lib/gcc/x86_64-pc-msys/9.3.0]
+    arg [-L/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/lib/../lib] ==> dir [/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../lib]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/lib] ==> dir [/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/lib]
+    arg [-L/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../..]
+    arg [CMakeFiles/cmTC_65897.dir/CMakeCCompilerABI.c.obj] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lmsys-2.0] ==> lib [msys-2.0]
+    arg [-ladvapi32] ==> lib [advapi32]
+    arg [-lshell32] ==> lib [shell32]
+    arg [-luser32] ==> lib [user32]
+    arg [-lkernel32] ==> lib [kernel32]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../lib/default-manifest.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-msys/9.3.0/crtend.o] ==> ignore
+  collapse library dir [/usr/lib/gcc/x86_64-pc-msys/9.3.0] ==> [/usr/lib/gcc/x86_64-pc-msys/9.3.0]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/lib/../lib] ==> [/usr/x86_64-pc-msys/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/lib] ==> [/usr/x86_64-pc-msys/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../..] ==> [/usr/lib]
+  implicit libs: [gcc_s;gcc;msys-2.0;advapi32;shell32;user32;kernel32;gcc_s;gcc]
+  implicit dirs: [/usr/lib/gcc/x86_64-pc-msys/9.3.0;/usr/x86_64-pc-msys/lib;/usr/lib]
+  implicit fwks: []
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /d/coding/c++/MiniR/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make.exe cmTC_2376f/fast && /usr/bin/make  -f CMakeFiles/cmTC_2376f.dir/build.make CMakeFiles/cmTC_2376f.dir/build
+make[1]: 进入目录“/d/coding/c++/MiniR/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_2376f.dir/testCXXCompiler.cxx.o
+/usr/bin/CC.exe     -o CMakeFiles/cmTC_2376f.dir/testCXXCompiler.cxx.o -c /d/coding/c++/MiniR/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_2376f
+/usr/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_2376f.dir/link.txt --verbose=1
+/usr/bin/CC.exe       CMakeFiles/cmTC_2376f.dir/testCXXCompiler.cxx.o  -o cmTC_2376f 
+make[1]: 离开目录“/d/coding/c++/MiniR/build/CMakeFiles/CMakeTmp”
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /d/coding/c++/MiniR/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make.exe cmTC_44d4f/fast && /usr/bin/make  -f CMakeFiles/cmTC_44d4f.dir/build.make CMakeFiles/cmTC_44d4f.dir/build
+make[1]: Entering directory '/d/coding/c++/MiniR/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_44d4f.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/CC.exe    -v -o CMakeFiles/cmTC_44d4f.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.17.3/Modules/CMakeCXXCompilerABI.cpp
+Using built-in specs.
+COLLECT_GCC=/usr/bin/CC
+Target: x86_64-pc-msys
+Configured with: /msysdev/gcc/src/gcc-9.3.0/configure --build=x86_64-pc-msys --prefix=/usr --libexecdir=/usr/lib --enable-bootstrap --enable-shared --enable-shared-libgcc --enable-static --enable-version-specific-runtime-libs --with-arch=x86-64 --with-tune=generic --disable-multilib --enable-__cxa_atexit --with-dwarf2 --enable-languages=c,c++,fortran,lto --enable-graphite --enable-threads=posix --enable-libatomic --enable-libgomp --disable-libitm --enable-libquadmath --enable-libquadmath-support --disable-libssp --disable-win32-registry --disable-symvers --with-gnu-ld --with-gnu-as --disable-isl-version-check --enable-checking=release --without-libiconv-prefix --without-libintl-prefix --with-system-zlib --enable-linker-build-id --with-default-libstdcxx-abi=gcc4-compatible --enable-libstdcxx-filesystem-ts
+Thread model: posix
+gcc version 9.3.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_44d4f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-pc-msys/9.3.0/cc1plus.exe -quiet -v -idirafter /usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../lib/../include/w32api -idirafter /usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/lib/../lib/../../include/w32api /usr/share/cmake-3.17.3/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_44d4f.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccUJgzBX.s
+GNU C++14 (GCC) version 9.3.0 (x86_64-pc-msys)
+	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/local/include"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/include"
+ignoring duplicate directory "/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/lib/../lib/../../include/w32api"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/gcc/x86_64-pc-msys/9.3.0/include/c++
+ /usr/lib/gcc/x86_64-pc-msys/9.3.0/include/c++/x86_64-pc-msys
+ /usr/lib/gcc/x86_64-pc-msys/9.3.0/include/c++/backward
+ /usr/lib/gcc/x86_64-pc-msys/9.3.0/include
+ /usr/lib/gcc/x86_64-pc-msys/9.3.0/include-fixed
+ /usr/include
+ /usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../lib/../include/w32api
+End of search list.
+GNU C++14 (GCC) version 9.3.0 (x86_64-pc-msys)
+	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: d6bb37c3c75d9f05352068509e1efd03
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_44d4f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/bin/as.exe -v -o CMakeFiles/cmTC_44d4f.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccUJgzBX.s
+GNU assembler version 2.34 (x86_64-pc-msys) using BFD version (GNU Binutils) 2.34
+COMPILER_PATH=/usr/lib/gcc/x86_64-pc-msys/9.3.0/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/:/usr/lib/gcc/x86_64-pc-msys/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/:/usr/lib/gcc/x86_64-pc-msys/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/bin/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-msys/9.3.0/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/lib/../lib/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/lib/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_44d4f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mtune=generic' '-march=x86-64'
+Linking CXX executable cmTC_44d4f
+/usr/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_44d4f.dir/link.txt --verbose=1
+/usr/bin/CC.exe      -v CMakeFiles/cmTC_44d4f.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_44d4f 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/CC
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-msys/9.3.0/lto-wrapper.exe
+Target: x86_64-pc-msys
+Configured with: /msysdev/gcc/src/gcc-9.3.0/configure --build=x86_64-pc-msys --prefix=/usr --libexecdir=/usr/lib --enable-bootstrap --enable-shared --enable-shared-libgcc --enable-static --enable-version-specific-runtime-libs --with-arch=x86-64 --with-tune=generic --disable-multilib --enable-__cxa_atexit --with-dwarf2 --enable-languages=c,c++,fortran,lto --enable-graphite --enable-threads=posix --enable-libatomic --enable-libgomp --disable-libitm --enable-libquadmath --enable-libquadmath-support --disable-libssp --disable-win32-registry --disable-symvers --with-gnu-ld --with-gnu-as --disable-isl-version-check --enable-checking=release --without-libiconv-prefix --without-libintl-prefix --with-system-zlib --enable-linker-build-id --with-default-libstdcxx-abi=gcc4-compatible --enable-libstdcxx-filesystem-ts
+Thread model: posix
+gcc version 9.3.0 (GCC) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-pc-msys/9.3.0/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/:/usr/lib/gcc/x86_64-pc-msys/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/:/usr/lib/gcc/x86_64-pc-msys/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/bin/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-msys/9.3.0/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/lib/../lib/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/lib/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_44d4f.exe' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-pc-msys/9.3.0/collect2.exe -plugin /usr/lib/gcc/x86_64-pc-msys/9.3.0/msys-lto_plugin.dll -plugin-opt=/usr/lib/gcc/x86_64-pc-msys/9.3.0/lto-wrapper.exe -plugin-opt=-fresolution=/tmp/cc0oB8l0.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmsys-2.0 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id -m i386pep --wrap _Znwm --wrap _Znam --wrap _ZdlPv --wrap _ZdaPv --wrap _ZnwmRKSt9nothrow_t --wrap _ZnamRKSt9nothrow_t --wrap _ZdlPvRKSt9nothrow_t --wrap _ZdaPvRKSt9nothrow_t -Bdynamic --dll-search-prefix=msys- --tsaware -o cmTC_44d4f.exe /usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../lib/crt0.o /usr/lib/gcc/x86_64-pc-msys/9.3.0/crtbegin.o -L/usr/lib/gcc/x86_64-pc-msys/9.3.0 -L/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/lib/../lib -L/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/lib -L/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../.. CMakeFiles/cmTC_44d4f.dir/CMakeCXXCompilerABI.cpp.o -lgcc_s -lgcc -lmsys-2.0 -ladvapi32 -lshell32 -luser32 -lkernel32 -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../lib/default-manifest.o /usr/lib/gcc/x86_64-pc-msys/9.3.0/crtend.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_44d4f.exe' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/d/coding/c++/MiniR/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/lib/gcc/x86_64-pc-msys/9.3.0/include/c++]
+    add: [/usr/lib/gcc/x86_64-pc-msys/9.3.0/include/c++/x86_64-pc-msys]
+    add: [/usr/lib/gcc/x86_64-pc-msys/9.3.0/include/c++/backward]
+    add: [/usr/lib/gcc/x86_64-pc-msys/9.3.0/include]
+    add: [/usr/lib/gcc/x86_64-pc-msys/9.3.0/include-fixed]
+    add: [/usr/include]
+    add: [/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../lib/../include/w32api]
+  end of search list found
+  collapse include dir [/usr/lib/gcc/x86_64-pc-msys/9.3.0/include/c++] ==> [/usr/lib/gcc/x86_64-pc-msys/9.3.0/include/c++]
+  collapse include dir [/usr/lib/gcc/x86_64-pc-msys/9.3.0/include/c++/x86_64-pc-msys] ==> [/usr/lib/gcc/x86_64-pc-msys/9.3.0/include/c++/x86_64-pc-msys]
+  collapse include dir [/usr/lib/gcc/x86_64-pc-msys/9.3.0/include/c++/backward] ==> [/usr/lib/gcc/x86_64-pc-msys/9.3.0/include/c++/backward]
+  collapse include dir [/usr/lib/gcc/x86_64-pc-msys/9.3.0/include] ==> [/usr/lib/gcc/x86_64-pc-msys/9.3.0/include]
+  collapse include dir [/usr/lib/gcc/x86_64-pc-msys/9.3.0/include-fixed] ==> [/usr/lib/gcc/x86_64-pc-msys/9.3.0/include-fixed]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  collapse include dir [/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../lib/../include/w32api] ==> [/usr/include/w32api]
+  implicit include dirs: [/usr/lib/gcc/x86_64-pc-msys/9.3.0/include/c++;/usr/lib/gcc/x86_64-pc-msys/9.3.0/include/c++/x86_64-pc-msys;/usr/lib/gcc/x86_64-pc-msys/9.3.0/include/c++/backward;/usr/lib/gcc/x86_64-pc-msys/9.3.0/include;/usr/lib/gcc/x86_64-pc-msys/9.3.0/include-fixed;/usr/include;/usr/include/w32api]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /d/coding/c++/MiniR/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make.exe cmTC_44d4f/fast && /usr/bin/make  -f CMakeFiles/cmTC_44d4f.dir/build.make CMakeFiles/cmTC_44d4f.dir/build]
+  ignore line: [make[1]: Entering directory '/d/coding/c++/MiniR/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_44d4f.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/CC.exe    -v -o CMakeFiles/cmTC_44d4f.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.17.3/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/CC]
+  ignore line: [Target: x86_64-pc-msys]
+  ignore line: [Configured with: /msysdev/gcc/src/gcc-9.3.0/configure --build=x86_64-pc-msys --prefix=/usr --libexecdir=/usr/lib --enable-bootstrap --enable-shared --enable-shared-libgcc --enable-static --enable-version-specific-runtime-libs --with-arch=x86-64 --with-tune=generic --disable-multilib --enable-__cxa_atexit --with-dwarf2 --enable-languages=c,c++,fortran,lto --enable-graphite --enable-threads=posix --enable-libatomic --enable-libgomp --disable-libitm --enable-libquadmath --enable-libquadmath-support --disable-libssp --disable-win32-registry --disable-symvers --with-gnu-ld --with-gnu-as --disable-isl-version-check --enable-checking=release --without-libiconv-prefix --without-libintl-prefix --with-system-zlib --enable-linker-build-id --with-default-libstdcxx-abi=gcc4-compatible --enable-libstdcxx-filesystem-ts]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.3.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_44d4f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /usr/lib/gcc/x86_64-pc-msys/9.3.0/cc1plus.exe -quiet -v -idirafter /usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../lib/../include/w32api -idirafter /usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/lib/../lib/../../include/w32api /usr/share/cmake-3.17.3/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_44d4f.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccUJgzBX.s]
+  ignore line: [GNU C++14 (GCC) version 9.3.0 (x86_64-pc-msys)]
+  ignore line: [	compiled by GNU C version 9.3.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/local/include"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/include"]
+  ignore line: [ignoring duplicate directory "/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/lib/../lib/../../include/w32api"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/lib/gcc/x86_64-pc-msys/9.3.0/include/c++]
+  ignore line: [ /usr/lib/gcc/x86_64-pc-msys/9.3.0/include/c++/x86_64-pc-msys]
+  ignore line: [ /usr/lib/gcc/x86_64-pc-msys/9.3.0/include/c++/backward]
+  ignore line: [ /usr/lib/gcc/x86_64-pc-msys/9.3.0/include]
+  ignore line: [ /usr/lib/gcc/x86_64-pc-msys/9.3.0/include-fixed]
+  ignore line: [ /usr/include]
+  ignore line: [ /usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../lib/../include/w32api]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++14 (GCC) version 9.3.0 (x86_64-pc-msys)]
+  ignore line: [	compiled by GNU C version 9.3.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: d6bb37c3c75d9f05352068509e1efd03]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_44d4f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/bin/as.exe -v -o CMakeFiles/cmTC_44d4f.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccUJgzBX.s]
+  ignore line: [GNU assembler version 2.34 (x86_64-pc-msys) using BFD version (GNU Binutils) 2.34]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-msys/9.3.0/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/:/usr/lib/gcc/x86_64-pc-msys/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/:/usr/lib/gcc/x86_64-pc-msys/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/bin/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-msys/9.3.0/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/lib/../lib/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/lib/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_44d4f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking CXX executable cmTC_44d4f]
+  ignore line: [/usr/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_44d4f.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/CC.exe      -v CMakeFiles/cmTC_44d4f.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_44d4f ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/CC]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-msys/9.3.0/lto-wrapper.exe]
+  ignore line: [Target: x86_64-pc-msys]
+  ignore line: [Configured with: /msysdev/gcc/src/gcc-9.3.0/configure --build=x86_64-pc-msys --prefix=/usr --libexecdir=/usr/lib --enable-bootstrap --enable-shared --enable-shared-libgcc --enable-static --enable-version-specific-runtime-libs --with-arch=x86-64 --with-tune=generic --disable-multilib --enable-__cxa_atexit --with-dwarf2 --enable-languages=c,c++,fortran,lto --enable-graphite --enable-threads=posix --enable-libatomic --enable-libgomp --disable-libitm --enable-libquadmath --enable-libquadmath-support --disable-libssp --disable-win32-registry --disable-symvers --with-gnu-ld --with-gnu-as --disable-isl-version-check --enable-checking=release --without-libiconv-prefix --without-libintl-prefix --with-system-zlib --enable-linker-build-id --with-default-libstdcxx-abi=gcc4-compatible --enable-libstdcxx-filesystem-ts]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.3.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-msys/9.3.0/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/:/usr/lib/gcc/x86_64-pc-msys/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/:/usr/lib/gcc/x86_64-pc-msys/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/bin/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-msys/9.3.0/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/lib/../lib/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/lib/:/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_44d4f.exe' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-pc-msys/9.3.0/collect2.exe -plugin /usr/lib/gcc/x86_64-pc-msys/9.3.0/msys-lto_plugin.dll -plugin-opt=/usr/lib/gcc/x86_64-pc-msys/9.3.0/lto-wrapper.exe -plugin-opt=-fresolution=/tmp/cc0oB8l0.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmsys-2.0 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id -m i386pep --wrap _Znwm --wrap _Znam --wrap _ZdlPv --wrap _ZdaPv --wrap _ZnwmRKSt9nothrow_t --wrap _ZnamRKSt9nothrow_t --wrap _ZdlPvRKSt9nothrow_t --wrap _ZdaPvRKSt9nothrow_t -Bdynamic --dll-search-prefix=msys- --tsaware -o cmTC_44d4f.exe /usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../lib/crt0.o /usr/lib/gcc/x86_64-pc-msys/9.3.0/crtbegin.o -L/usr/lib/gcc/x86_64-pc-msys/9.3.0 -L/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/lib/../lib -L/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/lib -L/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../.. CMakeFiles/cmTC_44d4f.dir/CMakeCXXCompilerABI.cpp.o -lgcc_s -lgcc -lmsys-2.0 -ladvapi32 -lshell32 -luser32 -lkernel32 -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../lib/default-manifest.o /usr/lib/gcc/x86_64-pc-msys/9.3.0/crtend.o]
+    arg [/usr/lib/gcc/x86_64-pc-msys/9.3.0/collect2.exe] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-msys/9.3.0/msys-lto_plugin.dll] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-msys/9.3.0/lto-wrapper.exe] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc0oB8l0.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmsys-2.0] ==> ignore
+    arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
+    arg [-plugin-opt=-pass-through=-luser32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [-m] ==> ignore
+    arg [i386pep] ==> ignore
+    arg [--wrap] ==> ignore
+    arg [_Znwm] ==> ignore
+    arg [--wrap] ==> ignore
+    arg [_Znam] ==> ignore
+    arg [--wrap] ==> ignore
+    arg [_ZdlPv] ==> ignore
+    arg [--wrap] ==> ignore
+    arg [_ZdaPv] ==> ignore
+    arg [--wrap] ==> ignore
+    arg [_ZnwmRKSt9nothrow_t] ==> ignore
+    arg [--wrap] ==> ignore
+    arg [_ZnamRKSt9nothrow_t] ==> ignore
+    arg [--wrap] ==> ignore
+    arg [_ZdlPvRKSt9nothrow_t] ==> ignore
+    arg [--wrap] ==> ignore
+    arg [_ZdaPvRKSt9nothrow_t] ==> ignore
+    arg [-Bdynamic] ==> ignore
+    arg [--dll-search-prefix=msys-] ==> ignore
+    arg [--tsaware] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_44d4f.exe] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../lib/crt0.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-msys/9.3.0/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-pc-msys/9.3.0] ==> dir [/usr/lib/gcc/x86_64-pc-msys/9.3.0]
+    arg [-L/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/lib/../lib] ==> dir [/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../lib]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/lib] ==> dir [/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/lib]
+    arg [-L/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../..]
+    arg [CMakeFiles/cmTC_44d4f.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lmsys-2.0] ==> lib [msys-2.0]
+    arg [-ladvapi32] ==> lib [advapi32]
+    arg [-lshell32] ==> lib [shell32]
+    arg [-luser32] ==> lib [user32]
+    arg [-lkernel32] ==> lib [kernel32]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../lib/default-manifest.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-msys/9.3.0/crtend.o] ==> ignore
+  collapse library dir [/usr/lib/gcc/x86_64-pc-msys/9.3.0] ==> [/usr/lib/gcc/x86_64-pc-msys/9.3.0]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/lib/../lib] ==> [/usr/x86_64-pc-msys/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../../../x86_64-pc-msys/lib] ==> [/usr/x86_64-pc-msys/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-msys/9.3.0/../../..] ==> [/usr/lib]
+  implicit libs: [gcc_s;gcc;msys-2.0;advapi32;shell32;user32;kernel32;gcc_s;gcc]
+  implicit dirs: [/usr/lib/gcc/x86_64-pc-msys/9.3.0;/usr/x86_64-pc-msys/lib;/usr/lib]
+  implicit fwks: []
+
+
