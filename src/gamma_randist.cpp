@@ -839,3 +839,23 @@ END:
 	}
 	return x;
 }
+
+double Gamma::rand(const double shape, const double scale)
+{
+	if (std::isnan(shape) || std::isnan(scale)) {
+		return InfNaN::nan();
+	}
+    if (shape <= 0.0 || scale <= 0.0) {
+		if(scale == 0.0 || shape == 0.0)
+			return 0.0;
+		return InfNaN::nan();
+    }
+    if(!std::isfinite(shape) || !std::isfinite(scale)) {
+    	return InfNaN::posinf();
+    }
+
+    std::random_device d;   // non-deterministic random number
+    std::mt19937_64 e(d()); // random engine
+    std::gamma_distribution<double> u(shape, scale);
+    return u(e);
+}

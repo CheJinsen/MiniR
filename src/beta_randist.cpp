@@ -649,3 +649,108 @@ L_return:
 	}
 	return;
 }
+
+void Beta::showBet(double aa, double beta, double u1,
+	double& v, double& w)
+{
+	constexpr double expmax = DBL_MAX_EXP * M_LN2;
+	v = beta * log(u1 / (1.0 - u1));
+	if (v <= expmax) {
+		w = aa * exp(v);
+		if (!std::isfinite(w)) w = DBL_MAX;
+	}
+	else {
+		w = DBL_MAX;
+	}
+}
+
+double Beta::rand(const double aa, const double bb)
+{
+    if (std::isnan(aa) || std::isnan(bb) || aa < 0.0 || bb < 0.0)
+		return InfNaN::nan();
+    if (!std::isfinite(aa) && !std::isfinite(bb))
+		return 0.5;
+    if (aa == 0.0 && bb == 0.0)
+		return (Uniform::rand() < 0.5) ? 0.0 : 1.;
+ 
+    if (!std::isfinite(aa) || bb == 0.0)
+    	return 1.0;
+    if (!std::isfinite(bb) || aa == 0.0)
+    	return 0.0;
+
+    double u1 = 0.0, u2 = 0.0, v = 0.0;
+    double w = 0.0, y = 0.0, z = 0.0;
+    
+    double beta = 0.0;
+    bool qsame = (-1.0 == aa) && (-1.0 == bb);
+    double a = std::min(aa, bb);
+    double b = std::max(aa, bb);
+    double alpha = a + b;
+
+    if (a <= 1.0) {
+    	double k1 = 0.0, k2 = 0.0;
+
+		if (!qsame) {
+		    beta = 1.0 / a;
+		    double delta = 1.0 + b - a;
+		    k1 = delta * (0.0138889 + 0.0416667 * a) / (b * beta - 0.777778);
+		    k2 = 0.25 + (0.5 + 0.25 / delta) * a;
+		}
+		
+		for(;;) {
+		    u1 = Uniform::rand();
+		    u2 = Uniform::rand();
+		    if (u1 < 0.5) {
+				y = u1 * u2;
+				z = u1 * y;
+				if (0.25 * u2 + z - y >= k1)
+				    continue;
+		    }
+		    else {
+				z = u1 * u1 * u2;
+				if (z <= 0.25) {
+				    showBet(b, beta, u1, v, w);
+				    break;
+				}
+				if (z >= k2)
+				    continue;
+		    }
+
+		    showBet(b, beta, u1, v, w);
+
+		    if (alpha * (log(alpha / (a + w)) + v) - 1.3862944 >= log(z))
+				break;
+		}
+		return (aa == a) ? a / (a + w) : w / (a + w);
+    }
+    else {
+    	double gamma = 0.0;
+
+		if (!qsame) {
+		    beta = sqrt((alpha - 2.0) / (2.0 * a * b - alpha));
+		    gamma = a + 1.0 / beta;
+		}
+
+		double r = 0.0;
+		double s = 0.0;
+		double t = 0.0;
+		do {
+		    u1 = Uniform::rand();
+		    u2 = Uniform::rand();
+
+		    showBet(a, beta, u1, v, w);
+
+		    z = u1 * u1 * u2;
+		    r = gamma * v - 1.3862944;
+		    s = a + r - w;
+		    if (s + 2.609438 >= 5.0 * z)
+				break;
+		    t = log(z);
+		    if (s > t)
+				break;
+		}
+		while (r + alpha * log(alpha / (b + w)) < t);
+
+		return (aa != a) ? b / (b + w) : w / (b + w);
+    }
+}

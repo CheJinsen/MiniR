@@ -5,6 +5,10 @@
 #include <algorithm>
 #include <cfloat>
 #include <vector>
+#include <random>
+#include <ctime>
+#include <cstdlib>
+
 #include "infnan.h"
 #include "acmtoms.h"
 #include "specfun.h"
@@ -32,9 +36,11 @@ namespace Randist
 			double sd = 1.0, bool lower_tail = true, bool log_p = false);
 		static double quantile(double p, double mean = 0.0,
 			double sd = 1.0, bool lower_tail = true, bool log_p = false);
-		//double	rnorm(double n, double mean = 0.0, double sd = 0.0);
+		static double rand(const double mean = 0.0, const double sd = 1.0);
+		static void setSeed(const unsigned long int s);
 
 	private:
+		static unsigned long int seed;
 		static void cdfBoth(double x, double& cum, double& ccum, bool i_tail, bool log_p);
 	};
 
@@ -47,7 +53,7 @@ namespace Randist
 			double max = 1, bool lower_tail = true, bool give_log = false);
 		static double quantile(double x, double min = 0.0,
 			double max = 1, bool lower_tail = true, bool give_log = false);
-		//	double runif(double n, double min = 0.0, double max = 1.0);
+		static double rand(const double min = 0.0, const double max = 1.0);
 	};
 
 	class Gamma
@@ -59,7 +65,7 @@ namespace Randist
 			double scale, bool lower_tail = true, bool give_log = false);
 		static double quantile(double q, double shape,
 			double scale, bool lower_tail = true, bool give_log = false);
-		// double rgamma(double n, double shape, double rate, double scale);
+		static double rand(const double shape = 1.0, const double scale = 1.0);
 
 	private:
 		static double poissonPdfRaw(double x, double lambda, bool give_log);
@@ -93,6 +99,10 @@ namespace Randist
 			bool lower_tail = true, bool log_p = false);
 		static double quantile(double p, double a, double b,
 			bool lower_tail = true, bool log_p = false);
+		static double rand(const double shape1 = 1.0, const double scale = 1.0);
+		// static double rand(const double shape1 = 1.0,
+		// 	const double scale = 1.0, const double ncp = 0.0);	// todo
+
 	private:
 		static double bd0(const double x, const double np);
 		static double stirlerr(const double x);
@@ -104,6 +114,7 @@ namespace Randist
 			bool lower_tail, bool log_p, int swap_01, double log_q_cut,
 			int n_N, double* qb);
 		static double powDi(double x, int i);
+		static void showBet(double aa, double beta, double u1, double& v, double& w);
 	};
 
 	class Lognormal

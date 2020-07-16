@@ -59,3 +59,15 @@ double Uniform::quantile(double p, double a, double b,
 
     return a + temp * (b - a);
 }
+
+double Uniform::rand(const double a, const double b)
+{
+    if (!std::isfinite(a) || !std::isfinite(b) || b < a) {
+        return InfNaN::nan();
+    }
+
+    std::random_device d;   // non-deterministic random number
+    std::mt19937_64 e(d()); // random engine
+    std::uniform_real_distribution<double> u(a, b);
+    return u(e);
+}

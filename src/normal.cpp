@@ -306,3 +306,28 @@ double Normal::quantile(double p, double mu, double sigma,
 	}
 	return mu + sigma * val;
 }
+
+unsigned long int Normal::seed = time(0);
+
+void Normal::setSeed(const unsigned long int s)
+{
+	seed = s;
+}
+
+double Normal::rand(const double mu, const double sigma)
+{
+	if (std::isnan(mu) || !std::isfinite(sigma) || sigma < 0.0)  {
+		return InfNaN::nan();
+	}
+
+	std::random_device d;	// non-deterministic random number
+	std::mt19937_64 e(d());	// random engine
+	std::normal_distribution<double> u(mu, sigma);
+
+    if (sigma == 0.0 || !std::isfinite(mu)) {
+		return mu;
+    }
+    else {
+    	return u(e);
+    }
+}
