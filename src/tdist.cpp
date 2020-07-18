@@ -334,3 +334,15 @@ double Tdist::tanpi(double x)
 	if (x <= -0.5) x++; else if (x > 0.5) x--;
 	return (x == 0.) ? 0. : ((x == 0.5) ? InfNaN::nan() : tan(M_PI * x));
 }
+
+double Tdist::rand(const double df)
+{
+	if (std::isnan(df) || df <= 0.0) {
+		return InfNaN::nan();
+	}
+
+	std::random_device d;	// non-deterministic random number
+	std::mt19937_64 e(d());	// random engine
+	std::student_t_distribution<double> u(df);
+	return u(e);
+}

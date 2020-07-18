@@ -223,3 +223,15 @@ double Fdist::quantile(double p, double df1, double df2,
 	p = (1.0 / Beta::quantile(p, df2 / 2, df1 / 2, !lower_tail, log_p) - 1.0) * (df2 / df1);
 	return !std::isnan(p) ? p : InfNaN::nan();
 }
+
+double Fdist::rand(const double n1, const double n2)
+{
+    if (std::isnan(n1) || std::isnan(n2) || n1 <= 0.0 || n2 <= 0.0) {
+		return InfNaN::nan();
+    }
+
+    std::random_device d;	// non-deterministic random number
+	std::mt19937_64 e(d());	// random engine
+	std::fisher_f_distribution<double> u(n1, n2);
+	return u(e);
+}

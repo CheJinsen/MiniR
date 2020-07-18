@@ -37,10 +37,8 @@ namespace Randist
 		static double quantile(double p, double mean = 0.0,
 			double sd = 1.0, bool lower_tail = true, bool log_p = false);
 		static double rand(const double mean = 0.0, const double sd = 1.0);
-		static void setSeed(const unsigned long int s);
 
 	private:
-		static unsigned long int seed;
 		static void cdfBoth(double x, double& cum, double& ccum, bool i_tail, bool log_p);
 	};
 
@@ -126,6 +124,7 @@ namespace Randist
 			bool lower_tail = true, bool give_log = false);
 		static double quantile(double p, double meanlog, double sdlog,
 			bool lower_tail = true, bool give_log = false);
+		static double rand(const double meanlog = 0.0, const double sdlog = 1.0);
 	};
 
 	class Chisq
@@ -136,6 +135,7 @@ namespace Randist
 			bool lower_tail = true, bool give_log = false);
 		static double quantile(double p, double df,
 			bool lower_tail = true, bool give_log = false);
+		static double rand(const double df = 1.0);
 	};
 
 	class NonCentralChisq
@@ -147,6 +147,7 @@ namespace Randist
 			bool lower_tail = true, bool give_log = false);
 		static double quantile(double p, double df, double ncp,
 			bool lower_tail = true, bool give_log = false);
+		static double rand(const double df, const double lambda);
 
 	private:
 		static double poissonPdfRaw(double x, double lambda, bool give_log);
@@ -167,6 +168,8 @@ namespace Randist
 			bool lower_tail = true, bool give_log = false);
 		static double quantile(double x, double df1, double df2,
 			bool lower_tail = true, bool give_log = false);
+		static double rand(const double df1, const double df2);
+
 	private:
 		static double bd0(const double x, const double np);
 		static double stirlerr(const double x);
@@ -182,7 +185,7 @@ namespace Randist
 			bool lower_tail = true, bool log_p = false);
 		static double quantile(double p, double df,
 			bool lower_tail = true, bool log_p = false);
-		//double rt(double);
+		static double rand(const double df);
 		
 	private:
 		static double bd0(const double x, const double np);
@@ -199,6 +202,7 @@ namespace Randist
 			bool lower_tail = true, bool log_p = false);
 		static double quantile(double p, double size, double prob,
 			bool lower_tail = true, bool log_p = false);
+		static int rand(const int size, const double prob);
 
 	private:
 		static double bd0(const double x, const double np);
@@ -218,6 +222,7 @@ namespace Randist
 			bool lower_tail = true, bool log_p = false);
 		static double quantile(double p, double location = 0.0, double scale = 1.0,
 			bool lower_tail = true, bool log_p = false);
+		static double rand(const double location = 0.0, const double scale = 1.0);
 
 	private:
 		static double tanpi(double x);
@@ -231,6 +236,7 @@ namespace Randist
 			bool lower_tail = true, bool log_p = false);
 		static double quantile(double p, double rate = 1.0,
 			bool lower_tail = true, bool log_p = false);
+		static double rand(const double lambda = 1.0);
 	};
 
 	class Geom	// Geometric Distribution
@@ -241,6 +247,7 @@ namespace Randist
 			bool lower_tail = true, bool log_p = false);
 		static double quantile(double p, double prob,
 			bool lower_tail = true, bool log_p = false);
+		static int rand(const double prob = 0.5);
 
 	private:
 		static double bd0(const double x, const double np);
@@ -258,6 +265,7 @@ namespace Randist
 			double k, bool lower_tail = true, bool log_p = false);
 		static double quantile(double p, double m, double n,
 			double k, bool lower_tail = true, bool log_p = false);
+		static double rand(double m, double n, double k);
 
 	private:
 		static double bd0(const double x, const double np);
@@ -267,6 +275,7 @@ namespace Randist
 		static bool isNegOrNonInt(double x);	// negative or non integer
 		static double pdhyper(double x, double NR, double NB,
 			double n, bool log_p);
+		static double afc(int i);
 	};
 
 	class NegBinomial	// Negative Binomial Distribution
@@ -284,6 +293,7 @@ namespace Randist
 			bool lower_tail = true, bool log_p = false);
 		static double quantile_mu(double p, double size, double mu,
 			bool lower_tail = true, bool log_p = false);
+		static int rand(const int size = 1, const double prob = 0.5);
 
 	private:
 		static double poissonPdfRaw(double x, double lambda, bool give_log);
@@ -303,6 +313,7 @@ namespace Randist
 			bool lower_tail = true, bool give_log = false);
 		static double quantile(double p, double lambda,
 			bool lower_tail = true, bool give_log = false);
+		static int rand(const double lambda);
 
 	private:
 		static double pdfRaw(double x, double lambda, bool give_log);
@@ -321,6 +332,7 @@ namespace Randist
 			bool lower_tail = true, bool give_log = false);
 		static double quantile(double p, double shape, double scale = 1.0,
 			bool lower_tail = true, bool give_log = false);
+		static double rand(const double shape = 1.0, const double scale = 1.0);
 	};
 
 	class Logistic

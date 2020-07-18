@@ -474,3 +474,20 @@ double NonCentralChisq::quantile(double p, double df, double ncp,
     }
     return 0.5 * (ux + lx);
 }
+
+double NonCentralChisq::rand(double df, double lambda)
+{
+    if (std::isnan(df) || !std::isfinite(lambda) || df < 0.0 || lambda < 0.0) {
+        return InfNaN::nan();
+    }
+
+    if(lambda == 0.0) {
+        return (df == 0.0) ? 0.0 : Gamma::rand(df / 2.0, 2.0);
+    }
+    else {
+        double r = Poisson::rand(lambda / 2.0);
+        if (r > 0.0)  r = Chisq::rand(2.0 * r);
+        if (df > 0.0) r += Gamma::rand(df / 2.0, 2.0);
+        return r;
+    }
+}

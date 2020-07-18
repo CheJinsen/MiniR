@@ -263,3 +263,18 @@ double Binomial::quantile(double p, double n, double pr,
 		return y;
 	}
 }
+
+int Binomial::rand(const int size, const double prob)
+{
+	if (!std::isfinite(size)) {
+		return InfNaN::nan();
+	}
+	if (!std::isfinite(prob) || size < 0 || prob < 0.0 || prob > 1.0) {
+		return InfNaN::nan();
+	}
+
+	std::random_device d;	// non-deterministic random number
+	std::mt19937_64 e(d());	// random engine
+	std::binomial_distribution<int> u(size, prob);
+	return u(e);
+}

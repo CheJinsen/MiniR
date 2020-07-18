@@ -70,3 +70,15 @@ double Lognormal::quantile(double p, double meanlog, double sdlog,
 
     return exp(Normal::quantile(p, meanlog, sdlog, lower_tail, log_p));
 }
+
+double Lognormal::rand(const double meanlog, const double sdlog)
+{
+    if(std::isnan(meanlog) || !std::isfinite(sdlog) || sdlog < 0.0) {
+        return InfNaN::nan();
+    }
+
+    std::random_device d;   // non-deterministic random number
+    std::mt19937_64 e(d()); // random engine
+    std::lognormal_distribution<double> u(meanlog, sdlog);
+    return u(e);
+}

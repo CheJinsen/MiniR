@@ -203,3 +203,15 @@ double Geom::quantile(double p, double prob, bool lower_tail, bool log_p)
 	double t5 = ceil(t4 / log1p(-prob) - 1.0 - 1e-12);
 	return std::max(0.0, t5);
 }
+
+int Geom::rand(const double p)
+{
+    if (!std::isfinite(p) || p <= 0.0 || p > 1.0) {
+    	return InfNaN::nan();
+    }
+
+    std::random_device d;	// non-deterministic random number
+	std::mt19937_64 e(d());	// random engine
+	std::geometric_distribution<int> u(p);
+	return u(e);
+}

@@ -307,13 +307,6 @@ double Normal::quantile(double p, double mu, double sigma,
 	return mu + sigma * val;
 }
 
-unsigned long int Normal::seed = time(0);
-
-void Normal::setSeed(const unsigned long int s)
-{
-	seed = s;
-}
-
 double Normal::rand(const double mu, const double sigma)
 {
 	if (std::isnan(mu) || !std::isfinite(sigma) || sigma < 0.0)  {

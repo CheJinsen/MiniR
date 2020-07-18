@@ -98,3 +98,18 @@ double Cauchy::tanpi(double x)
     if (x <= -0.5) x++; else if (x > 0.5) x--;
     return (x == 0.) ? 0. : ((x == 0.5) ? InfNaN::nan() : tan(M_PI * x));
 }
+
+double Cauchy::rand(const double location, const double scale)
+{
+    if (std::isnan(location) || !std::isfinite(scale) || scale < 0.0) {
+        return InfNaN::nan();
+    }
+    if (scale == 0.0 || !std::isfinite(location)) {
+        return location;
+    }
+    
+    std::random_device d;   // non-deterministic random number
+    std::mt19937_64 e(d()); // random engine
+    std::cauchy_distribution<double> u(location, scale);
+    return u(e);
+}

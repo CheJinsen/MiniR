@@ -363,3 +363,16 @@ double NegBinomial::quantile_mu(double p, double size, double mu,
 		return(Poisson::quantile(p, mu, lower_tail, log_p));
 	return quantile(p, size, size / (size + mu), lower_tail, log_p);
 }
+
+int NegBinomial::rand(const int size, const double prob)
+{
+    if(!std::isfinite(prob) || std::isnan(size) ||
+    	size <= 0 || prob <= 0 || prob > 1) {
+    	return InfNaN::nan();
+    }
+
+    std::random_device d;	// non-deterministic random number
+	std::mt19937_64 e(d());	// random engine
+	std::negative_binomial_distribution<int> u(size, prob);
+	return u(e);
+}

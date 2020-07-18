@@ -1,4 +1,5 @@
 #include "randist.h"
+#include <climits>
 using namespace Randist;
 
 double Hyper::BinomialPdfRaw(const double x, const double n, const double p,
@@ -182,10 +183,6 @@ double Hyper::pdhyper(double x, double NR, double NB, double n, bool log_p)
 	return log_p ? log1p(ss) : 1 + ss;
 }
 
-
-/* FIXME: The old phyper() code was basically used in ./qhyper.c as well
- * -----  We need to sync this again!
-*/
 double Hyper::cdf(double x, double NR, double NB, double n,
 	bool lower_tail, bool log_p)
 {
@@ -300,4 +297,311 @@ double Hyper::quantile(double p, double NR, double NB, double n,
 		NR--;
 	}
 	return xr;
+}
+
+double Hyper::afc(int i)
+{
+    // If (i > 7), use Stirling's approximation, otherwise use table lookup.
+    const double al[8] = {
+		0.0,/*ln(0!)=ln(1)*/
+		0.0,/*ln(1!)=ln(1)*/
+		0.69314718055994530941723212145817,/*ln(2) */
+		1.79175946922805500081247735838070,/*ln(6) */
+		3.17805383034794561964694160129705,/*ln(24)*/
+		4.78749174278204599424770093452324,
+		6.57925121201010099506017829290394,
+		8.52516136106541430016553103634712
+    };
+
+    if (i < 0) {
+		std::cout << "Warning: Hyper::rand(): afc(i), i = " << i
+			<< " < 0 -- SHOULD NOT HAPPEN!" << std::endl;
+		return -1;
+    }
+    if (i <= 7){
+		return al[i];
+    }
+    
+    double di = i, i2 = di*di;
+    return (di + 0.5) * log(di) - di + M_LN_SQRT_2PI +
+		(0.0833333333333333 - 0.00277777777777778 / i2) / di;
+}
+
+//     rhyper(NR, NB, n) -- NR 'red', NB 'blue', n drawn, how many are 'red'
+double Hyper::rand(double nn1in, double nn2in, double kkin)
+{
+    int ks = -1, n1s = -1, n2s = -1;
+    int k = 0, n1 = 0, n2 = 0;
+
+    // II :
+    double w = 0.0;
+    // III:
+    double a = 0.0, d = 0.0, s = 0.0, xl = 0.0, xr = 0.0;
+    double kl = 0.0, kr = 0.0, lamdl = 0.0, lamdr = 0.0;
+    double p1 = 0.0, p2 = 0.0, p3 = 0.0;
+
+    if(!std::isfinite(nn1in) || !std::isfinite(nn2in) || !std::isfinite(kkin)) {
+		return InfNaN::nan();
+    }
+
+    nn1in = nearbyint(nn1in);
+    nn2in = nearbyint(nn2in);
+    kkin  = nearbyint(kkin);
+
+    if (nn1in < 0 || nn2in < 0 || kkin < 0 || kkin > nn1in + nn2in) {
+    	return InfNaN::nan();
+    }
+    if (nn1in >= INT_MAX || nn2in >= INT_MAX || kkin >= INT_MAX) {
+		if(kkin == 1.) {
+		    return Binomial::rand(kkin, nn1in / (nn1in + nn2in));
+		}
+		return quantile(Uniform::rand(), nn1in, nn2in, kkin, false, false);
+    }
+
+    int nn1 = (int)nn1in;
+    int nn2 = (int)nn2in;
+    int kk  = (int)kkin;
+    bool setup1 = false, setup2 = false;
+
+    if (nn1 != n1s || nn2 != n2s) { // n1 | n2 is changed: setup all
+		setup1 = true;	setup2 = true;
+    }
+    else if (kk != ks) { // n1 & n2 are unchanged: setup 'k' only
+		setup1 = false;	setup2 = true;
+    }
+    else { // all three unchanged ==> no setup
+		setup1 = false;	setup2 = false;
+    }
+
+    double N = 0.0;
+    if (setup1) { // n1 & n2
+		n1s = nn1; n2s = nn2; // save
+		N = nn1 + (double)nn2; // avoid int overflow
+		if (nn1 <= nn2) {
+		    n1 = nn1; n2 = nn2;
+		}
+		else { // nn2 < nn1
+		    n1 = nn2; n2 = nn1;
+		}
+    }
+
+    if (setup2) { // k
+		ks = kk; // save
+		if ((double)kk + kk >= N) { // this could overflow
+		    k = (int)(N - kk);
+		}
+		else {
+		    k = kk;
+		}
+    }
+
+	int m = 0, minjx = 0, maxjx = 0;
+    if (setup1 || setup2) {
+		m = (int) ((k + 1.) * (n1 + 1.) / (N + 2.)); // m := floor(adjusted mean E[.])
+		minjx = std::max(0.0, 1.0 * k - n2);
+		maxjx = std::min(1.0 * n1, 1.0 * k);
+    }
+
+    int ix = 0;
+    if (minjx == maxjx) {
+		ix = maxjx;
+		goto L_finis; // return appropriate variate
+
+    }
+    else if (m - minjx < 10) { // II: (Scaled) algorithm HIN (inverse transformation) ----
+		constexpr double scale = 1e25; // scaling factor against (early) underflow
+		constexpr double con = 57.5646273248511421;
+
+		if (setup1 || setup2) {
+		    double lw = 0.0; // log(w);  w = exp(lw) * scale = exp(lw + log(scale)) = exp(lw + con)
+		    if (k < n2) {
+				lw = afc(n2) + afc(n1 + n2 - k) - afc(n2 - k) - afc(n1 + n2);
+		    }
+		    else {
+				lw = afc(n1) + afc(     k     ) - afc(k - n2) - afc(n1 + n2);
+		    }
+		    w = exp(lw + con);
+		}
+		double p = 0.0, u = 0.0;
+
+	    L10:
+		p = w;
+		ix = minjx;
+		u = Uniform::rand() * scale;
+
+		while (u > p) {
+		    u -= p;
+		    p *= ((double) n1 - ix) * (k - ix);
+		    ix++;
+		    p = p / ix / (n2 - k + ix);
+
+		    if (ix > maxjx)
+				goto L10;
+		}
+    }
+    else {
+
+		double u = 0.0, v = 0.0;
+
+		if (setup1 || setup2) {
+		    s = sqrt((N - k) * k * n1 * n2 / (N - 1) / N / N);
+
+		    /* remark: d is defined in reference without int. */
+		    /* the truncation centers the cell boundaries at 0.5 */
+
+		    d = (int) (1.5 * s) + .5;
+		    xl = m - d + .5;
+		    xr = m + d + .5;
+		    a = afc(m) + afc(n1 - m) + afc(k - m) + afc(n2 - k + m);
+		    kl = exp(a - afc((int)(xl)) - afc((int)(n1 - xl))
+			     - afc((int)(k - xl))
+			     - afc((int)(n2 - k + xl)));
+		    kr = exp(a - afc((int) (xr - 1))
+			     - afc((int)(n1 - xr + 1))
+			     - afc((int)(k - xr + 1))
+			     - afc((int)(n2 - k + xr - 1)));
+		    lamdl = -log(xl * (n2 - k + xl) / (n1 - xl + 1) / (k - xl + 1));
+		    lamdr = -log((n1 - xr + 1) * (k - xr + 1) / xr / (n2 - k + xr));
+		    p1 = d + d;
+		    p2 = p1 + kl / lamdl;
+		    p3 = p2 + kr / lamdr;
+		}
+
+		int n_uv = 0;
+	    
+	    L30:
+		u = Uniform::rand() * p3;
+		v = Uniform::rand();
+		n_uv++;
+
+		if(n_uv >= 10000) {
+		    // REprintf("rhyper(*, n1=%d, n2=%d, k=%d): branch III: giving up after %d rejections\n",
+			   //   nn1, nn2, kk, n_uv);
+		    return InfNaN::nan();
+	    }
+
+		if (u < p1) {		/* rectangular region */
+		    ix = (int) (xl + u);
+		}
+		else if (u <= p2) {	/* left tail */
+		    ix = (int) (xl + log(v) / lamdl);
+		    if (ix < minjx)
+			goto L30;
+		    v = v * (u - p1) * lamdl;
+		}
+		else {		/* right tail */
+		    ix = (int) (xr - log(v) / lamdr);
+		    if (ix > maxjx)
+			goto L30;
+		    v = v * (u - p2) * lamdr;
+		}
+
+		/* acceptance/rejection test */
+		bool reject = true;
+
+		if (m < 100 || ix <= 50) {
+		    double f = 1.0;
+		    if (m < ix) {
+				for (int i = m + 1; i <= ix; i++)
+				    f = f * (n1 - i + 1) * (k - i + 1) / (n2 - k + i) / i;
+		    }
+		    else if (m > ix) {
+				for (int i = ix + 1; i <= m; i++)
+				    f = f * i * (n2 - k + i) / (n1 - i + 1) / (k - i + 1);
+			}
+		    if (v <= f) {
+				reject = false;
+		    }
+		}
+		else {
+
+		    constexpr double deltal = 0.0078;
+		    constexpr double deltau = 0.0034;
+
+		    double de = 0.0, dr = 0.0, ds = 0.0, dt = 0.0;
+
+		    /* squeeze using upper and lower bounds */
+		    double y = ix;
+		    double y1 = y + 1.0;
+		    double ym = y - m;
+		    double yn = n1 - y + 1.0;
+		    double yk = k - y + 1.0;
+		    double nk = n2 - k + y1;
+		    double r = -ym / y1;
+		    s = ym / yn;
+		    double t = ym / yk;
+		    double e = -ym / nk;
+		    double g = yn * yk / (y1 * nk) - 1.0;
+		    double dg = 1.0;
+
+		    if (g < 0.0)
+				dg = 1.0 + g;
+
+		    double gu = g * (1.0 + g * (-0.5 + g / 3.0));
+		    double gl = gu - .25 * (g * g * g * g) / dg;
+		    double xm = m + 0.5;
+		    double xn = n1 - m + 0.5;
+		    double xk = k - m + 0.5;
+		    double nm = n2 - k + xm;
+		    double ub = y * gu - m * gl + deltau
+				+ xm * r * (1. + r * (-0.5 + r / 3.0))
+				+ xn * s * (1. + s * (-0.5 + s / 3.0))
+				+ xk * t * (1. + t * (-0.5 + t / 3.0))
+				+ nm * e * (1. + e * (-0.5 + e / 3.0));
+		    /* test against upper bound */
+		    double alv = log(v);
+		    if (alv > ub) {
+				reject = true;
+		    }
+		    else {
+				dr = xm * (r * r * r * r);
+				if (r < 0.0)
+				    dr /= (1.0 + r);
+
+				ds = xn * (s * s * s * s);
+				if (s < 0.0)
+				    ds /= (1.0 + s);
+
+				dt = xk * (t * t * t * t);
+				if (t < 0.0)
+				    dt /= (1.0 + t);
+
+				de = nm * (e * e * e * e);
+				if (e < 0.0)
+				    de /= (1.0 + e);
+				if (alv < ub - 0.25 * (dr + ds + dt + de)
+				    + (y + m) * (gl - gu) - deltal) {
+				    reject = false;
+				}
+				else {
+				    if (alv <= (a - afc(ix) - afc(n1 - ix)
+						- afc(k - ix) - afc(n2 - k + ix))) {
+						reject = false;
+				    }
+				    else {
+						reject = true;
+				    }
+				}
+		    }
+		} // else
+		if (reject)
+		    goto L30;
+
+    } // end{branch III}
+
+
+L_finis:  // return appropriate variate
+
+    if ((double)kk + kk >= N) {
+		if (nn1 > nn2) {
+		    ix = kk - nn2 + ix;
+		} else {
+		    ix = nn1 - ix;
+		}
+    }
+    else if (nn1 > nn2) {
+		ix = kk - ix;
+    }
+
+    return ix;
 }

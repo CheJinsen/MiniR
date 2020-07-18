@@ -222,3 +222,15 @@ double Poisson::quantile(double p, double lambda,
 		return y;
 	}
 }
+
+int Poisson::rand(const double mu)
+{
+	if (!std::isfinite(mu) || mu < 0.0) {
+		return InfNaN::nan();
+	}
+
+	std::random_device d;	// non-deterministic random number
+	std::mt19937_64 e(d());	// random engine
+	std::poisson_distribution<int> u(mu);
+	return u(e);
+}

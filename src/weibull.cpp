@@ -72,3 +72,18 @@ double Weibull::quantile(double p, double shape, double scale,
 
     return scale * pow(-tmp4, 1.0 / shape);
 }
+
+double Weibull::rand(const double shape, const double scale)
+{
+    if (!std::isfinite(shape) || !std::isfinite(scale) ||
+        shape <= 0.0 || scale <= 0.0) {
+        if(scale == 0.0)
+            return 0.0;
+        return InfNaN::nan();
+    }
+
+    std::random_device d;   // non-deterministic random number
+    std::mt19937_64 e(d()); // random engine
+    std::weibull_distribution<double> u(shape, scale);
+    return u(e);
+}

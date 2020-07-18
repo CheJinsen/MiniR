@@ -16,7 +16,7 @@ int main(int argc, char* argv[])
 	const int n = 1000;
 	std::vector<double> vec;
 	for (int i = 0; i < n; ++i) {
-		double rand = Beta::rand();
+		double rand = NegBinomial::rand(20, 0.75);
 		std::cout << rand << std::endl;
 		vec.push_back(rand);
 	}

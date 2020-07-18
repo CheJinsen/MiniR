@@ -56,3 +56,17 @@ double Exp::quantile(double p, double scale, bool lower_tail, bool log_p)
     double temp3 = log_p ? temp2 : log1p(-p);
     return -scale * (lower_tail ? temp3 : temp1);
 }
+
+double Exp::rand(const double lambda)
+{
+    if (!std::isfinite(lambda) || lambda <= 0.0) {
+        if(lambda == 0.0)
+            return 0.0;
+        return InfNaN::nan();
+    }
+
+    std::random_device d;   // non-deterministic random number
+    std::mt19937_64 e(d()); // random engine
+    std::exponential_distribution<double> u(lambda);
+    return u(e);
+}
