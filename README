@@ -1,6 +1,6 @@
 MiniR
 
-This program is the Minimial/subset of R. It just include random distribution functions(density/probability/quantile functions exclude random number making function) currently. It passed test on Ubuntu-20.04/FreeBSD-12.1.
+This program is the Minimial/subset of R(The R Project for Statistical Computing) or GSL(GNU Scientific Library). It just include random distribution functions(density/probability/quantile/random) currently. It passed test on Ubuntu-20.04/FreeBSD-12.1.
 
 build:
 	cd ../build
@@ -10,6 +10,3 @@ build:
 run:
 	../bin/main
 
-
-Notes: 
-	In file ./src/chisq.cpp wilcox.cpp choose.cpp signrank.cpp, I close the stack\userinterupt check function, that may be has bugs.
