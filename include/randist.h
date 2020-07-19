@@ -1,3 +1,21 @@
+/*
+ * This file is part of MiniR.
+ * Copyright (C) 2020 Jinsen Che
+ *
+ * MiniR is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * MiniR is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Foobar. If not, see <https://www.gnu.org/licenses/>.
+ */
+
 #pragma once
 
 #include <cmath>
@@ -17,14 +35,12 @@ namespace Randist
 {
 	constexpr double M_LN_SQRT_2PI	= 0.918938533204672741780329736406;	// log(sqrt(2*pi))
 	constexpr double M_LN_2PI		= 1.837877066409345483560659472811;	// log(2*pi)
-	// constexpr double M_PI			= 3.141592653589793238462643383280;
 	constexpr double M_1_SQRT_2PI	= 0.398942280401432677939946059934;	// 1/sqrt(2pi)
-	// constexpr double M_LN2			= 0.693147180559945309417232121458;	// ln(2)
 	constexpr double M_SQRT_32		= 5.656854249492380195206754896838;	// sqrt(32)
 	constexpr double M_2PI			= 6.283185307179586476925286766559;
-	// constexpr double M_LN10			= 2.302585092994045684017991454684; // ln(10)
-	// constexpr double M_1_PI			= 0.318309886183790671537767526745;	// 1/pi
-	// constexpr double M_PI_2			= 1.570796326794896619231321691640; // pi/2
+	constexpr double M_SQRT_2dPI 	= 0.797884560802865355879892119869;	// sqrt(2/pi)
+	constexpr double M_LN_SQRT_PI 	= 0.572364942924700087071713675677;	// log(sqrt(pi))
+
 
 
 	class Normal
@@ -97,9 +113,7 @@ namespace Randist
 			bool lower_tail = true, bool log_p = false);
 		static double quantile(double p, double a, double b,
 			bool lower_tail = true, bool log_p = false);
-		static double rand(const double shape1 = 1.0, const double scale = 1.0);
-		// static double rand(const double shape1 = 1.0,
-		// 	const double scale = 1.0, const double ncp = 0.0);	// todo
+		static double rand(const double shape1, const double shape2);
 
 	private:
 		static double bd0(const double x, const double np);
@@ -344,6 +358,7 @@ namespace Randist
 			bool lower_tail = true, bool log_p = false);
 		static double quantile(double p, double location = 0.0, double scale = 1.0,
 			bool lower_tail = true, bool log_p = false);
+		static double rand(const double location = 0.0, const double scale = 1.0);
 
 	private:
 		static double log1pexp(const double x);
@@ -358,6 +373,7 @@ namespace Randist
 			bool lower_tail = true, bool give_log = false);
 		static double quantile(double p, double a, double b, double ncp,
 			bool lower_tail = true, bool give_log = false);
+		static double rand(const double shape1, const double shape2, const double ncp = 0.0);
 
 	private:
 		static double poissonPdfRaw(double x, double lambda, bool give_log);
@@ -378,12 +394,29 @@ namespace Randist
 			double ncp, bool lower_tail = true, bool give_log = false);
 		static double quantile(double x, double df1, double df2,
 			double ncp, bool lower_tail = true, bool give_log = false);
+		static double rand(const double df1, const double df2, const double ncp);
 
 	private:
 		static long double NonCentralBetaCdfRaw(double x, double o_x, double a,
 			double b, double ncp);
 		static double NonCentralBetaCdf2(double x, double o_x, double a, double b, double ncp,
 			bool lower_tail, bool log_p);
+	};
+
+	class NonCentralTdist	// Non-Central Student t Distribution
+	{
+	public:
+		static double pdf(double x, double df, double ncp, bool log_p = false);
+		static double cdf(double q, double df, double ncp,
+			bool lower_tail = true, bool log_p = false);
+		static double quantile(double p, double df, double ncp,
+			bool lower_tail = true, bool log_p = false);
+		static double rand(const double df, const double ncp);
+		
+	private:
+		static double bd0(const double x, const double np);
+		static double stirlerr(const double x);
+		static double tanpi(double x);
 	};
 
 	class Tukey	// Studentized Range Distribution
@@ -407,11 +440,9 @@ namespace Randist
 		static double pdf(double x, double m, double n, bool log_p = false);
 		static double cdf(double q, double m, double n,
 			bool lower_tail = true, bool log_p = false);
-
-		// may be have bugs, when n is two big, it's two slow
-		// example: quantile(0.912, 13, 2000); ==> 15840
 		static double quantile(double p, double m, double n,
 			bool lower_tail = true, bool log_p = false);
+		static double rand(double m, double n);
 
 	private:
 		static int allocated_m;
@@ -420,8 +451,9 @@ namespace Randist
 
 		static void wInitMaybe(int m, int n);
 		static double cwilcox(int k, int m, int n);
-		static double dtvalue(const double x,
-			const bool lower_tail, const bool log_p);
+		static double dtvalue(const double x, const bool lower_tail, const bool log_p);
+		static double rbits(const int bits);
+		static double uniformIndex(const double dn);
 	};
 
 	class Signrank	// Wilcoxon Signed Rank Distribution
@@ -432,7 +464,7 @@ namespace Randist
 			bool lower_tail = true, bool log_p = false);
 		static double quantile(double p, double n,
 			bool lower_tail = true, bool log_p = false);
-		// double rsignrank(double);
+		static double rand(double n);
 
 	private:
 		static std::vector<double> w;

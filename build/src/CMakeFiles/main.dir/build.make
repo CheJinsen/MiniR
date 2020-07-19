@@ -350,9 +350,22 @@ src/CMakeFiles/main.dir/non_central_fdist.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/non_central_fdist.cpp.s"
 	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/c++/MiniR/src/non_central_fdist.cpp -o CMakeFiles/main.dir/non_central_fdist.cpp.s
 
+src/CMakeFiles/main.dir/non_central_tdist.cpp.obj: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/non_central_tdist.cpp.obj: ../src/non_central_tdist.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object src/CMakeFiles/main.dir/non_central_tdist.cpp.obj"
+	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/non_central_tdist.cpp.obj -c /d/coding/c++/MiniR/src/non_central_tdist.cpp
+
+src/CMakeFiles/main.dir/non_central_tdist.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/non_central_tdist.cpp.i"
+	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/c++/MiniR/src/non_central_tdist.cpp > CMakeFiles/main.dir/non_central_tdist.cpp.i
+
+src/CMakeFiles/main.dir/non_central_tdist.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/non_central_tdist.cpp.s"
+	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/c++/MiniR/src/non_central_tdist.cpp -o CMakeFiles/main.dir/non_central_tdist.cpp.s
+
 src/CMakeFiles/main.dir/normal.cpp.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/normal.cpp.obj: ../src/normal.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object src/CMakeFiles/main.dir/normal.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object src/CMakeFiles/main.dir/normal.cpp.obj"
 	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/normal.cpp.obj -c /d/coding/c++/MiniR/src/normal.cpp
 
 src/CMakeFiles/main.dir/normal.cpp.i: cmake_force
@@ -365,7 +378,7 @@ src/CMakeFiles/main.dir/normal.cpp.s: cmake_force
 
 src/CMakeFiles/main.dir/poisson.cpp.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/poisson.cpp.obj: ../src/poisson.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object src/CMakeFiles/main.dir/poisson.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object src/CMakeFiles/main.dir/poisson.cpp.obj"
 	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/poisson.cpp.obj -c /d/coding/c++/MiniR/src/poisson.cpp
 
 src/CMakeFiles/main.dir/poisson.cpp.i: cmake_force
@@ -378,7 +391,7 @@ src/CMakeFiles/main.dir/poisson.cpp.s: cmake_force
 
 src/CMakeFiles/main.dir/signrank.cpp.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/signrank.cpp.obj: ../src/signrank.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object src/CMakeFiles/main.dir/signrank.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object src/CMakeFiles/main.dir/signrank.cpp.obj"
 	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/signrank.cpp.obj -c /d/coding/c++/MiniR/src/signrank.cpp
 
 src/CMakeFiles/main.dir/signrank.cpp.i: cmake_force
@@ -391,7 +404,7 @@ src/CMakeFiles/main.dir/signrank.cpp.s: cmake_force
 
 src/CMakeFiles/main.dir/tdist.cpp.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/tdist.cpp.obj: ../src/tdist.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object src/CMakeFiles/main.dir/tdist.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object src/CMakeFiles/main.dir/tdist.cpp.obj"
 	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/tdist.cpp.obj -c /d/coding/c++/MiniR/src/tdist.cpp
 
 src/CMakeFiles/main.dir/tdist.cpp.i: cmake_force
@@ -404,7 +417,7 @@ src/CMakeFiles/main.dir/tdist.cpp.s: cmake_force
 
 src/CMakeFiles/main.dir/tukey.cpp.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/tukey.cpp.obj: ../src/tukey.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object src/CMakeFiles/main.dir/tukey.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object src/CMakeFiles/main.dir/tukey.cpp.obj"
 	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/tukey.cpp.obj -c /d/coding/c++/MiniR/src/tukey.cpp
 
 src/CMakeFiles/main.dir/tukey.cpp.i: cmake_force
@@ -417,7 +430,7 @@ src/CMakeFiles/main.dir/tukey.cpp.s: cmake_force
 
 src/CMakeFiles/main.dir/uniform.cpp.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/uniform.cpp.obj: ../src/uniform.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object src/CMakeFiles/main.dir/uniform.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object src/CMakeFiles/main.dir/uniform.cpp.obj"
 	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/uniform.cpp.obj -c /d/coding/c++/MiniR/src/uniform.cpp
 
 src/CMakeFiles/main.dir/uniform.cpp.i: cmake_force
@@ -430,7 +443,7 @@ src/CMakeFiles/main.dir/uniform.cpp.s: cmake_force
 
 src/CMakeFiles/main.dir/weibull.cpp.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/weibull.cpp.obj: ../src/weibull.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object src/CMakeFiles/main.dir/weibull.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object src/CMakeFiles/main.dir/weibull.cpp.obj"
 	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/weibull.cpp.obj -c /d/coding/c++/MiniR/src/weibull.cpp
 
 src/CMakeFiles/main.dir/weibull.cpp.i: cmake_force
@@ -443,7 +456,7 @@ src/CMakeFiles/main.dir/weibull.cpp.s: cmake_force
 
 src/CMakeFiles/main.dir/wilcoxon.cpp.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/wilcoxon.cpp.obj: ../src/wilcoxon.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object src/CMakeFiles/main.dir/wilcoxon.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object src/CMakeFiles/main.dir/wilcoxon.cpp.obj"
 	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/wilcoxon.cpp.obj -c /d/coding/c++/MiniR/src/wilcoxon.cpp
 
 src/CMakeFiles/main.dir/wilcoxon.cpp.i: cmake_force
@@ -477,6 +490,7 @@ main_OBJECTS = \
 "CMakeFiles/main.dir/non_central_beta.cpp.obj" \
 "CMakeFiles/main.dir/non_central_chisq.cpp.obj" \
 "CMakeFiles/main.dir/non_central_fdist.cpp.obj" \
+"CMakeFiles/main.dir/non_central_tdist.cpp.obj" \
 "CMakeFiles/main.dir/normal.cpp.obj" \
 "CMakeFiles/main.dir/poisson.cpp.obj" \
 "CMakeFiles/main.dir/signrank.cpp.obj" \
@@ -510,6 +524,7 @@ main_EXTERNAL_OBJECTS =
 ../bin/main: src/CMakeFiles/main.dir/non_central_beta.cpp.obj
 ../bin/main: src/CMakeFiles/main.dir/non_central_chisq.cpp.obj
 ../bin/main: src/CMakeFiles/main.dir/non_central_fdist.cpp.obj
+../bin/main: src/CMakeFiles/main.dir/non_central_tdist.cpp.obj
 ../bin/main: src/CMakeFiles/main.dir/normal.cpp.obj
 ../bin/main: src/CMakeFiles/main.dir/poisson.cpp.obj
 ../bin/main: src/CMakeFiles/main.dir/signrank.cpp.obj
@@ -520,7 +535,7 @@ main_EXTERNAL_OBJECTS =
 ../bin/main: src/CMakeFiles/main.dir/wilcoxon.cpp.obj
 ../bin/main: src/CMakeFiles/main.dir/build.make
 ../bin/main: src/CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Linking CXX executable ../../bin/main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Linking CXX executable ../../bin/main"
 	cd /d/coding/c++/MiniR/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

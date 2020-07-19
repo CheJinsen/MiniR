@@ -1,3 +1,29 @@
+/*
+ * This file is part of MiniR.
+ *
+ * Based on C translation of ACM TOMS 708
+ * Please do not change this, e.g. to use R's versions of the
+ * ancillary routines, without investigating the error analysis as we
+ * do need very high relative accuracy.  This version has about
+ * 14 digits accuracy.
+ *
+ * translate in to C++:
+ * Copyright (C) 2020 Jinsen Che
+ *
+ * MiniR is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * MiniR is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with MiniR. If not, see <https://www.gnu.org/licenses/>.
+ */
+
 #include "acmtoms.h"
 
 using namespace SpecialFunctions;

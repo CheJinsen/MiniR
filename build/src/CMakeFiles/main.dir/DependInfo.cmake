@@ -25,6 +25,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/d/coding/c++/MiniR/src/non_central_beta.cpp" "/d/coding/c++/MiniR/build/src/CMakeFiles/main.dir/non_central_beta.cpp.obj"
   "/d/coding/c++/MiniR/src/non_central_chisq.cpp" "/d/coding/c++/MiniR/build/src/CMakeFiles/main.dir/non_central_chisq.cpp.obj"
   "/d/coding/c++/MiniR/src/non_central_fdist.cpp" "/d/coding/c++/MiniR/build/src/CMakeFiles/main.dir/non_central_fdist.cpp.obj"
+  "/d/coding/c++/MiniR/src/non_central_tdist.cpp" "/d/coding/c++/MiniR/build/src/CMakeFiles/main.dir/non_central_tdist.cpp.obj"
   "/d/coding/c++/MiniR/src/normal.cpp" "/d/coding/c++/MiniR/build/src/CMakeFiles/main.dir/normal.cpp.obj"
   "/d/coding/c++/MiniR/src/poisson.cpp" "/d/coding/c++/MiniR/build/src/CMakeFiles/main.dir/poisson.cpp.obj"
   "/d/coding/c++/MiniR/src/signrank.cpp" "/d/coding/c++/MiniR/build/src/CMakeFiles/main.dir/signrank.cpp.obj"

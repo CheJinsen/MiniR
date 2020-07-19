@@ -1,38 +1,20 @@
 /*
- *  Mathlib : A C Library of Special Functions
- *  Copyright (C) 1999-2014  The R Core Team
+ * This file is part of MiniR.
+ * Copyright (C) 1999-2014  The R Core Team
+ * Copyright (C) 2020 Jinsen Che
  *
- *  This program is free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2 of the License, or
- *  (at your option) any later version.
+ * MiniR is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
  *
- *  This program is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
+ * MiniR is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
  *
- *  You should have received a copy of the GNU General Public License
- *  along with this program; if not, a copy is available at
- *  https://www.R-project.org/Licenses/
- *
- *  SYNOPSIS
- *
- *    #include <Rmath.h>
- *    double dsignrank(double x, double n, int give_log)
- *    double psignrank(double x, double n, int lower_tail, int log_p)
- *    double qsignrank(double x, double n, int lower_tail, int log_p)
- *    double rsignrank(double n)
- *
- *  DESCRIPTION
- *
- *    dsignrank	   The density of the Wilcoxon Signed Rank distribution.
- *    psignrank	   The distribution function of the Wilcoxon Signed Rank
- *		   distribution.
- *    qsignrank	   The quantile function of the Wilcoxon Signed Rank
- *		   distribution.
- *    rsignrank	   Random variates from the Wilcoxon Signed Rank
- *		   distribution.
+ * You should have received a copy of the GNU General Public License
+ * along with MiniR. If not, see <https://www.gnu.org/licenses/>.
  */
 
 #include "randist.h"
@@ -49,7 +31,6 @@ void Signrank::wInitMaybe(int n)
     w.clear();
 
     if(w.empty()) {
-	   // w = (double *) calloc((size_t) c + 1, sizeof(double));
         w.resize(c + 1);
 	    allocated_n = n;
     }
@@ -216,4 +197,24 @@ double Signrank::quantile(double x, double n, bool lower_tail, bool log_p)
     }
 
     return q;
+}
+
+double Signrank::rand(double n)
+{
+    if (std::isnan(n))
+        return n;
+
+    n = nearbyint(n);
+    if (n < 0)
+        return InfNaN::nan();
+
+    if (n == 0)
+        return 0;
+    
+    double r = 0.0;
+    int k = (int)n;
+    for (int i = 0; i < k; ) {
+        r += (++i) * floor(Uniform::rand() + 0.5);
+    }
+    return r;
 }

@@ -1,3 +1,27 @@
+/*
+ * This file is part of MiniR.
+ * AUTHOR
+ *    Peter Ruckdeschel, peter.ruckdeschel@uni-bayreuth.de.
+ *    April 13, 2006.
+ *
+ * Copyright (C) 1998	Ross Ihaka
+ * Copyright (C) 2006-2008 The R Core Team
+ * Copyright (C) 2020 Jinsen Che
+ *
+ * MiniR is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * MiniR is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with MiniR. If not, see <https://www.gnu.org/licenses/>.
+ */
+
 #include "randist.h"
 using namespace Randist;
 
@@ -174,4 +198,10 @@ double NonCentralFdist::quantile(double p, double df1, double df2, double ncp,
 
 	double y = NonCentralBeta::quantile(p, df1 / 2.0, df2 / 2.0, ncp, lower_tail, log_p);
 	return y / (1 - y) * (df2 / df1);
+}
+
+double NonCentralFdist::rand(const double df1, const double df2, const double ncp)
+{
+    return (NonCentralChisq::rand(df1, ncp) / df1) /
+		(Chisq::rand(df2) / df2);
 }

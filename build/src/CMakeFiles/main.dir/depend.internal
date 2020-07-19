@@ -120,6 +120,12 @@ src/CMakeFiles/main.dir/non_central_fdist.cpp.obj
  ../include/randist.h
  ../include/specfun.h
  /d/coding/c++/MiniR/src/non_central_fdist.cpp
+src/CMakeFiles/main.dir/non_central_tdist.cpp.obj
+ ../include/acmtoms.h
+ ../include/infnan.h
+ ../include/randist.h
+ ../include/specfun.h
+ /d/coding/c++/MiniR/src/non_central_tdist.cpp
 src/CMakeFiles/main.dir/normal.cpp.obj
  ../include/acmtoms.h
  ../include/infnan.h

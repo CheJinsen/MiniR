@@ -120,6 +120,12 @@ src/CMakeFiles/main.dir/non_central_fdist.cpp.obj: ../include/randist.h
 src/CMakeFiles/main.dir/non_central_fdist.cpp.obj: ../include/specfun.h
 src/CMakeFiles/main.dir/non_central_fdist.cpp.obj: ../src/non_central_fdist.cpp
 
+src/CMakeFiles/main.dir/non_central_tdist.cpp.obj: ../include/acmtoms.h
+src/CMakeFiles/main.dir/non_central_tdist.cpp.obj: ../include/infnan.h
+src/CMakeFiles/main.dir/non_central_tdist.cpp.obj: ../include/randist.h
+src/CMakeFiles/main.dir/non_central_tdist.cpp.obj: ../include/specfun.h
+src/CMakeFiles/main.dir/non_central_tdist.cpp.obj: ../src/non_central_tdist.cpp
+
 src/CMakeFiles/main.dir/normal.cpp.obj: ../include/acmtoms.h
 src/CMakeFiles/main.dir/normal.cpp.obj: ../include/infnan.h
 src/CMakeFiles/main.dir/normal.cpp.obj: ../include/randist.h

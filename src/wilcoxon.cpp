@@ -1,3 +1,21 @@
+/*
+ * This file is part of MiniR.
+ * Copyright (C) 1999-2014  The R Core Team
+ * Copyright (C) 2020 Jinsen Che
+ *
+ * MiniR is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * MiniR is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with MiniR. If not, see <https://www.gnu.org/licenses/>.
+ */
 
 #include "randist.h"
 using namespace Randist;
@@ -18,11 +36,9 @@ void Wilcox::wInitMaybe(int m, int n)
     if (w.empty()) {
         m = std::max(m, 50);
         n = std::max(n, 50);
-        // w = (double***)calloc((size_t)m + 1, sizeof(double**));
         w.resize(m + 1);
 
         for (int i = 0; i <= m; i++) {
-            // w[i] = (double**)calloc((size_t)n + 1, sizeof(double*));
             w[i].resize(n + 1);
         }
         allocated_m = m; allocated_n = n;
@@ -59,7 +75,6 @@ double Wilcox::cwilcox(int k, int m, int n)
 
 
     if (w[i][j].size() == 0) {
-        // w[i][j] = (double*)calloc((size_t)c + 1, sizeof(double));
         w[i][j].resize(c + 1);
 
         for (int l = 0; l <= c; l++)
@@ -207,4 +222,60 @@ double Wilcox::quantile(double x, double m, double n,
         }
     }
     return q;
+}
+
+//generate a random non-negative integer < 2 ^ bits in 16 bit chunks
+double Wilcox::rbits(const int bits)
+{
+    long long v = 0;
+    for (int n = 0; n <= bits; n += 16) {
+        int v1 = (int)floor(Uniform::rand() * 65536);
+        v = 65536 * v + v1;
+    }
+    const long long one64 = 1L;
+    // mask out the bits in the result that are not needed
+    return (double)(v & ((one64 << bits) - 1));
+}
+
+double Wilcox::uniformIndex(const double dn)
+{
+    // rejection sampling from integers below the next larger power of two
+    if (dn <= 0) {
+        return 0.0;
+    }
+    int bits = (int)ceil(log2(dn));
+    double dv = 0.0;
+    do { dv = rbits(bits); } while (dn <= dv);
+    return dv;
+}
+
+double Wilcox::rand(double m, double n)
+{
+    if (std::isnan(m) || std::isnan(n))
+        return m + n;
+
+    m = nearbyint(m);
+    n = nearbyint(n);
+    if ((m < 0) || (n < 0))
+        return InfNaN::nan();
+
+    if ((m == 0) || (n == 0))
+        return 0;
+
+    double r = 0.0;
+    int k = (int) (m + n);
+    std::vector<int> x;
+
+    for (int i = 0; i < k; i++) {
+        x.push_back(i);
+    }
+
+    int j = 0;
+    for (int i = 0; i < n; i++) {
+        j = (int)uniformIndex(k);
+        r += x[j];
+        x[j] = x[--k];
+    }
+    
+    return r - n * (n - 1) / 2;
 }

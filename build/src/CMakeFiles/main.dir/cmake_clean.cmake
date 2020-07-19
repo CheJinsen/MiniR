@@ -22,6 +22,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/non_central_beta.cpp.obj"
   "CMakeFiles/main.dir/non_central_chisq.cpp.obj"
   "CMakeFiles/main.dir/non_central_fdist.cpp.obj"
+  "CMakeFiles/main.dir/non_central_tdist.cpp.obj"
   "CMakeFiles/main.dir/normal.cpp.obj"
   "CMakeFiles/main.dir/poisson.cpp.obj"
   "CMakeFiles/main.dir/signrank.cpp.obj"

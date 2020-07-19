@@ -1,3 +1,24 @@
+/*
+ * This file is part of MiniR.
+ * Copyright (C) 1995, 1996  Robert Gentleman and Ross Ihaka
+ * Copyright (C) 1998 Ross Ihaka
+ * Copyright (C) 2000-2008 The R Core Team
+ * Copyright (C) 2020 Jinsen Che
+ *
+ * MiniR is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * MiniR is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with MiniR. If not, see <https://www.gnu.org/licenses/>.
+ */
+
 #include "randist.h"
 using namespace Randist;
 
@@ -15,9 +36,8 @@ double Logistic::pdf(double x, double location, double scale, bool give_log)
 }
 
 double Logistic::log1pexp(const double x) {
-    if (x <= 18.0) return log1p(exp(x));
-    if (x > 33.3) return x;
-    // else: 18.0 < x <= 33.3 :
+    if (x <= 18.0)  return log1p(exp(x));
+    if (x > 33.3)   return x;
     return x + exp(-x);
 }
 
@@ -90,4 +110,19 @@ double Logistic::quantile(double p, double location, double scale,
     }
 
     return location + scale * p;
+}
+
+double Logistic::rand(const double location, const double scale)
+{
+    if (std::isnan(location) || !std::isfinite(scale)) {
+        return InfNaN::nan();
+    }
+
+    if (scale == 0.0 || !std::isfinite(location)) {
+        return location;
+    }
+    else {
+        double u = Uniform::rand();
+        return location + scale * log(u / (1. - u));
+    }
 }

@@ -712,6 +712,33 @@ non_central_fdist.cpp.s:
 	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_fdist.cpp.s
 .PHONY : non_central_fdist.cpp.s
 
+non_central_tdist.obj: non_central_tdist.cpp.obj
+
+.PHONY : non_central_tdist.obj
+
+# target to build an object file
+non_central_tdist.cpp.obj:
+	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_tdist.cpp.obj
+.PHONY : non_central_tdist.cpp.obj
+
+non_central_tdist.i: non_central_tdist.cpp.i
+
+.PHONY : non_central_tdist.i
+
+# target to preprocess a source file
+non_central_tdist.cpp.i:
+	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_tdist.cpp.i
+.PHONY : non_central_tdist.cpp.i
+
+non_central_tdist.s: non_central_tdist.cpp.s
+
+.PHONY : non_central_tdist.s
+
+# target to generate assembly for a file
+non_central_tdist.cpp.s:
+	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_tdist.cpp.s
+.PHONY : non_central_tdist.cpp.s
+
 normal.obj: normal.cpp.obj
 
 .PHONY : normal.obj
@@ -1000,6 +1027,9 @@ help:
 	@echo "... non_central_fdist.obj"
 	@echo "... non_central_fdist.i"
 	@echo "... non_central_fdist.s"
+	@echo "... non_central_tdist.obj"
+	@echo "... non_central_tdist.i"
+	@echo "... non_central_tdist.s"
 	@echo "... normal.obj"
 	@echo "... normal.i"
 	@echo "... normal.s"
