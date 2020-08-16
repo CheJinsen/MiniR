@@ -144,7 +144,7 @@ double Gamma::gammafn(const double x)
 			for (int i = 2; i < y; i++) value *= i;
 		}
 		else { /* normal case */
-			value = exp((y - 0.5) * log(y) - y + M_LN_SQRT_2PI +
+			value = exp((y - 0.5) * log(y) - y + log(sqrt(2 * M_PI)) +
 				((2 * y == (int)(2 * y)) ? stirlerr(y) : lgammacor(y)));
 		}
 		if (x > 0)
@@ -201,9 +201,9 @@ double Gamma::lgammafnSign(double x, int* sgn)
 		if (x > 1e17)
 			return(x * (log(x) - 1.0));
 		else if (x > 4934720.0)
-			return(M_LN_SQRT_2PI + (x - 0.5) * log(x) - x);
+			return log(sqrt(2 * M_PI)) + (x - 0.5) * log(x) - x;
 		else
-			return M_LN_SQRT_2PI + (x - 0.5) * log(x) - x + lgammacor(x);
+			return log(sqrt(2 * M_PI)) + (x - 0.5) * log(x) - x + lgammacor(x);
 	}
 	/* else: x < -10; y = -x */
 	double sinpiy = fabs(sinpi(y));
@@ -214,7 +214,7 @@ double Gamma::lgammafnSign(double x, int* sgn)
 		return InfNaN::nan();
 	}
 
-	double ans = M_LN_SQRT_PId2 + (x - 0.5) * log(y) -
+	double ans = log(sqrt(M_PI / 2.0)) + (x - 0.5) * log(y) -
 		x - log(sinpiy) - lgammacor(y);
 
 	if (fabs((x - trunc(x - 0.5)) * ans / x) < dxrel) {
@@ -379,7 +379,7 @@ double Gamma::stirlerr(const double n)
 	if (n <= 15.0) {
 		nn = n + n;
 		if (nn == (int)nn) return(sferr_halves[(int)nn]);
-		return(Gamma::lgammafn(n + 1.) - (n + 0.5) * log(n) + n - M_LN_SQRT_2PI);
+		return(Gamma::lgammafn(n + 1.0) - (n + 0.5) * log(n) + n - log(sqrt(2 * M_PI)));
 	}
 
 	nn = n * n;

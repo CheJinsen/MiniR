@@ -99,7 +99,7 @@ double Tdist::stirlerr(const double n)
 	if (n <= 15.0) {
 		nn = n + n;
 		if (nn == (int)nn) return(sferr_halves[(int)nn]);
-		return(SpecialFunctions::Gamma::lgammafn(n + 1.) - (n + 0.5) * log(n) + n - M_LN_SQRT_2PI);
+		return SpecialFunctions::Gamma::lgammafn(n + 1.) - (n + 0.5) * log(n) + n - log(sqrt(2 * M_PI));
 	}
 
 	nn = n * n;
@@ -144,10 +144,10 @@ double Tdist::pdf(double x, double n, bool give_log)
 	}
 
 	if (give_log)
-		return t - u - (M_LN_SQRT_2PI + l_x2n);
+		return t - u - (log(sqrt(2 * M_PI)) + l_x2n);
 
 	double I_sqrt_ = (lrg_x2n ? sqrt(n) / ax : exp(-l_x2n));
-	return exp(t - u) * M_1_SQRT_2PI * I_sqrt_;
+	return exp(t - u) * 1.0 / sqrt(2 * M_PI) * I_sqrt_;
 }
 
 double Tdist::cdf(double x, double n, bool lower_tail, bool log_p)

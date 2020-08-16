@@ -114,10 +114,6 @@ randist.h
 climits
 -
 
-/d/coding/c++/MiniR/src/infnan.cpp
-infnan.h
-/d/coding/c++/MiniR/src/infnan.h
-
 /d/coding/c++/MiniR/src/logistic.cpp
 randist.h
 /d/coding/c++/MiniR/src/randist.h

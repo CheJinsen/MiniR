@@ -50,7 +50,7 @@ double NonCentralTdist::pdf(double x, double df, double ncp, bool give_log)
     else {
 		u = SpecialFunctions::Gamma::lgammafn((df + 1) / 2) -
 			SpecialFunctions::Gamma::lgammafn(df / 2) -
-			(M_LN_SQRT_PI + 0.5 * (log(df) + ncp * ncp));
+			(log(sqrt(M_PI)) + 0.5 * (log(df) + ncp * ncp));
     }
 
     return give_log ? u : exp(u);
@@ -107,7 +107,7 @@ double NonCentralTdist::cdf(double t, double df, double ncp, bool lower_tail, bo
 		    return R_DT_0;
 		}
 	
-		q = M_SQRT_2dPI * p * del;
+		q = sqrt(2.0 / M_PI) * p * del;
 		s = 0.5 - p;
 		
 		if (s < 1e-7)
@@ -116,7 +116,7 @@ double NonCentralTdist::cdf(double t, double df, double ncp, bool lower_tail, bo
 		b = 0.5 * df;
 
 		rxb = pow(rxb, b);
-		albeta = M_LN_SQRT_PI + SpecialFunctions::Gamma::lgammafn(b) -
+		albeta = log(sqrt(M_PI)) + SpecialFunctions::Gamma::lgammafn(b) -
 			SpecialFunctions::Gamma::lgammafn(0.5 + b);
 		xodd = Beta::cdf(x, a, b, true, false);
 		godd = 2.0 * rxb * exp(a * log(x) - albeta);

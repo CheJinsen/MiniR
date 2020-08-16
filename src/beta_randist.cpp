@@ -97,7 +97,7 @@ double Beta::binomialPdfRaw(const double x, const double n, const double p,
 
 	lc = stirlerr(n) - stirlerr(x) - stirlerr(n - x) - bd0(x, n * p) - bd0(n - x, n * q);
 
-	lf = M_LN_2PI + log(x) + log1p(-x / n);
+	lf = log(2 * M_PI) + log(x) + log1p(-x / n);
 
 	return log_p ? (lc - 0.5 * lf) : exp(lc - 0.5 * lf);
 }
@@ -175,7 +175,7 @@ double Beta::stirlerr(const double n)
 	if (n <= 15.0) {
 		nn = n + n;
 		if (nn == (int)nn) return(sferr_halves[(int)nn]);
-		return(SpecialFunctions::Gamma::lgammafn(n + 1.) - (n + 0.5) * log(n) + n - M_LN_SQRT_2PI);
+		return(SpecialFunctions::Gamma::lgammafn(n + 1.) - (n + 0.5) * log(n) + n - log(sqrt(2 * M_PI)));
 	}
 
 	nn = n * n;

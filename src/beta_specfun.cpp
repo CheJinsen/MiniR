@@ -50,7 +50,7 @@ double Beta::lbeta(const double a, const double b)
 	if (p >= 10) {
 		/* p and q are big. */
 		corr = Gamma::lgammacor(p) + Gamma::lgammacor(q) - Gamma::lgammacor(p + q);
-		return log(q) * -0.5 + M_LN_SQRT_2PI + corr +
+		return log(q) * -0.5 + log(sqrt(2 * M_PI)) + corr +
 			(p - 0.5) * log(p / (p + q)) + q * log1p(-p / (p + q));
 	}
 	else if (q >= 10) {

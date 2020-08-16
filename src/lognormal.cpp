@@ -40,8 +40,8 @@ double Lognormal::pdf(double x, double meanlog, double sdlog, bool give_log)
 
     y = (log(x) - meanlog) / sdlog;
     return give_log ?
-        -(M_LN_SQRT_2PI + 0.5 * y * y + log(x * sdlog)) :
-        M_1_SQRT_2PI * exp(-0.5 * y * y) / (x * sdlog);
+        -(log(sqrt(2 * M_PI)) + 0.5 * y * y + log(x * sdlog)) :
+        1.0 / sqrt(2 * M_PI) * exp(-0.5 * y * y) / (x * sdlog);
 }
 
 double Lognormal::cdf(double x, double meanlog, double sdlog,

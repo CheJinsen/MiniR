@@ -108,7 +108,7 @@ double Tukey::wprob(double w, double rr, double cc)
 				elsum += rinsum;
 			}
 		}
-		elsum *= (((2.0 * b) * cc) * M_1_SQRT_2PI);
+		elsum *= ((2.0 * b) * cc) * 1.0 / sqrt(2 * M_PI);
 		einsum += elsum;
 		blb = bub;
 		bub += binc;

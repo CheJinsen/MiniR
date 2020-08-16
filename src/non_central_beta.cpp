@@ -98,7 +98,7 @@ double NonCentralBeta::stirlerr(const double n)
 	if (n <= 15.0) {
 		nn = n + n;
 		if (nn == (int)nn) return(sferr_halves[(int)nn]);
-		return(SpecialFunctions::Gamma::lgammafn(n + 1.) - (n + 0.5) * log(n) + n - M_LN_SQRT_2PI);
+		return SpecialFunctions::Gamma::lgammafn(n + 1.0) - (n + 0.5) * log(n) + n - log(sqrt(2 * M_PI));
 	}
 
 	nn = n * n;
@@ -123,7 +123,7 @@ double NonCentralBeta::poissonPdfRaw(double x, double lambda, bool give_log)
 		double temp = -lambda + x * log(lambda) - SpecialFunctions::Gamma::lgammafn(x + 1);
 		return give_log ? temp : exp(temp);
 	}
-	double f = M_2PI * x;
+	double f = 2.0 * M_PI * x;
 	x = -stirlerr(x) - bd0(x, lambda);
 	return give_log ? -0.5 * log(f) + (x) : exp(x) / sqrt(f);
 }

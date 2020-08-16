@@ -1056,7 +1056,7 @@ double Toms::grat_r(double a, double x, double log_r, double eps)
 		}
 		else { // 2013-02-27: improvement for "large" x: direct computation of q/r:
 			double sx = sqrt(x);
-			double q_r = erfc1(1, sx) / sx * M_SQRT_PI;
+			double q_r = erfc1(1, sx) / sx * sqrt(M_PI);
 			return q_r;
 		}
 	}
@@ -1072,7 +1072,7 @@ double Toms::grat_r(double a, double x, double log_r, double eps)
 			sum += t;
 		} while (fabs(t) > tol);
 
-		double j = a * x * ((sum / 6. - 0.5 / (a + 2.)) * x + 1. / (a + 1.)),
+		double j = a * x * ((sum / 6.0 - 0.5 / (a + 2.0)) * x + 1.0 / (a + 1.0)),
 			z = a * log(x),
 			h = gam1(a),
 			g = h + 1.;
@@ -1458,7 +1458,7 @@ double Toms::brcomp(double a, double b, double x, double y, bool log_p)
 		z = log_p ? -(a * u + b * v) : exp(-(a * u + b * v));
 
 		return log_p
-			? -M_LN_SQRT_2PI + .5 * log(b * x0) + z - bcorr(a, b)
+			? -log(sqrt(2 * M_PI)) + 0.5 * log(b * x0) + z - bcorr(a, b)
 			: const__ * sqrt(b * x0) * z * exp(-bcorr(a, b));
 	}
 } /* brcomp */

@@ -42,9 +42,9 @@ double Normal::pdf(double x, double mu, double sigma, bool give_log)
     x = fabs(x);
     if (x >= 2 * sqrt(DBL_MAX)) return R_D__0;
     if (give_log)
-        return -(M_LN_SQRT_2PI + 0.5 * x * x + log(sigma));
+        return -(log(sqrt(2 * M_PI)) + 0.5 * x * x + log(sigma));
 
-    if (x < 5)    return M_1_SQRT_2PI * exp(-0.5 * x * x) / sigma;
+    if (x < 5)    return 1.0 / sqrt(2 * M_PI) * exp(-0.5 * x * x) / sigma;
 
 	double temp = 1.0 * DBL_MIN_EXP + 1.0 - 1.0 * DBL_MANT_DIG;
     if (x > sqrt(-2.0 * M_LN2 * temp))
@@ -52,7 +52,7 @@ double Normal::pdf(double x, double mu, double sigma, bool give_log)
 
     double x1 = ldexp(nearbyint(ldexp(x, 16)), -16);
     double x2 = x - x1;
-    return M_1_SQRT_2PI / sigma *
+    return 1.0 / sqrt(2 * M_PI) / sigma *
         (exp(-0.5 * x1 * x1) * exp((-0.5 * x2 - x1) * x2));
 }
 
@@ -168,7 +168,7 @@ void Normal::cdfBoth(double x, double& cum, double& ccum,
 			if (upper) ccum = log(ccum);
 		}
 	}
-	else if (y <= M_SQRT_32) {
+	else if (y <= sqrt(32.0)) {
 
 		/* Evaluate pnorm for 0.674.. = qnorm(3/4) < |x| <= sqrt(32) ~= 5.657 */
 
@@ -214,7 +214,7 @@ void Normal::cdfBoth(double x, double& cum, double& ccum,
 			xden = (xden + q[i]) * xsq;
 		}
 		temp = xsq * (xnum + p[4]) / (xden + q[4]);
-		temp = (M_1_SQRT_2PI - temp) / y;
+		temp = (1.0 / sqrt(2 * M_PI) - temp) / y;
 
 		do_del(x);
 		swap_tail;
