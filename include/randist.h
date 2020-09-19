@@ -106,8 +106,7 @@ namespace Randist
 		static double cdfRaw(double x, double a, double b,
 			bool lower_tail = true, bool log_p = false);
 		static void quantileRaw(double alpha, double p, double q,
-			bool lower_tail, bool log_p, int swap_01, double log_q_cut,
-			int n_N, double* qb);
+			bool lower_tail, bool log_p, int swap_01, double log_q_cut, int n_N, double* qb);
 		static double powDi(double x, int i);
 		static void showBet(double aa, double beta, double u1, double& v, double& w);
 	};

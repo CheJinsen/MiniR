@@ -108,11 +108,8 @@ src/CMakeFiles/main.dir/lognormal.cpp.obj
  ../include/specfun.h
  /d/coding/MiniR/src/lognormal.cpp
 src/CMakeFiles/main.dir/main.cpp.obj
- ../include/acmtoms.h
- ../include/basedist.h
- ../include/infnan.h
- ../include/randist.h
- ../include/specfun.h
+ ../include/regression.h
+ ../include/statistics.h
  /d/coding/MiniR/src/main.cpp
 src/CMakeFiles/main.dir/negative_binomial.cpp.obj
  ../include/acmtoms.h
@@ -163,6 +160,10 @@ src/CMakeFiles/main.dir/poisson.cpp.obj
  ../include/randist.h
  ../include/specfun.h
  /d/coding/MiniR/src/poisson.cpp
+src/CMakeFiles/main.dir/regression.cpp.obj
+ ../include/regression.h
+ ../include/statistics.h
+ /d/coding/MiniR/src/regression.cpp
 src/CMakeFiles/main.dir/signrank.cpp.obj
  ../include/acmtoms.h
  ../include/basedist.h
@@ -170,6 +171,9 @@ src/CMakeFiles/main.dir/signrank.cpp.obj
  ../include/randist.h
  ../include/specfun.h
  /d/coding/MiniR/src/signrank.cpp
+src/CMakeFiles/main.dir/statistics.cpp.obj
+ ../include/statistics.h
+ /d/coding/MiniR/src/statistics.cpp
 src/CMakeFiles/main.dir/tdist.cpp.obj
  ../include/acmtoms.h
  ../include/basedist.h

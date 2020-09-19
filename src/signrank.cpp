@@ -30,7 +30,7 @@ void Signrank::wInitMaybe(int n)
 
     w.clear();
 
-    if(w.empty()) {
+    if (w.empty()) {
         w.resize(c + 1);
 	    allocated_n = n;
     }

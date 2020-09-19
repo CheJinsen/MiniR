@@ -820,6 +820,33 @@ poisson.cpp.s:
 	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/poisson.cpp.s
 .PHONY : poisson.cpp.s
 
+regression.obj: regression.cpp.obj
+
+.PHONY : regression.obj
+
+# target to build an object file
+regression.cpp.obj:
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/regression.cpp.obj
+.PHONY : regression.cpp.obj
+
+regression.i: regression.cpp.i
+
+.PHONY : regression.i
+
+# target to preprocess a source file
+regression.cpp.i:
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/regression.cpp.i
+.PHONY : regression.cpp.i
+
+regression.s: regression.cpp.s
+
+.PHONY : regression.s
+
+# target to generate assembly for a file
+regression.cpp.s:
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/regression.cpp.s
+.PHONY : regression.cpp.s
+
 signrank.obj: signrank.cpp.obj
 
 .PHONY : signrank.obj
@@ -846,6 +873,33 @@ signrank.s: signrank.cpp.s
 signrank.cpp.s:
 	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/signrank.cpp.s
 .PHONY : signrank.cpp.s
+
+statistics.obj: statistics.cpp.obj
+
+.PHONY : statistics.obj
+
+# target to build an object file
+statistics.cpp.obj:
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/statistics.cpp.obj
+.PHONY : statistics.cpp.obj
+
+statistics.i: statistics.cpp.i
+
+.PHONY : statistics.i
+
+# target to preprocess a source file
+statistics.cpp.i:
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/statistics.cpp.i
+.PHONY : statistics.cpp.i
+
+statistics.s: statistics.cpp.s
+
+.PHONY : statistics.s
+
+# target to generate assembly for a file
+statistics.cpp.s:
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/statistics.cpp.s
+.PHONY : statistics.cpp.s
 
 tdist.obj: tdist.cpp.obj
 
@@ -1066,9 +1120,15 @@ help:
 	@echo "... poisson.obj"
 	@echo "... poisson.i"
 	@echo "... poisson.s"
+	@echo "... regression.obj"
+	@echo "... regression.i"
+	@echo "... regression.s"
 	@echo "... signrank.obj"
 	@echo "... signrank.i"
 	@echo "... signrank.s"
+	@echo "... statistics.obj"
+	@echo "... statistics.i"
+	@echo "... statistics.s"
 	@echo "... tdist.obj"
 	@echo "... tdist.i"
 	@echo "... tdist.s"

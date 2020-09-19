@@ -107,11 +107,8 @@ src/CMakeFiles/main.dir/lognormal.cpp.obj: ../include/randist.h
 src/CMakeFiles/main.dir/lognormal.cpp.obj: ../include/specfun.h
 src/CMakeFiles/main.dir/lognormal.cpp.obj: ../src/lognormal.cpp
 
-src/CMakeFiles/main.dir/main.cpp.obj: ../include/acmtoms.h
-src/CMakeFiles/main.dir/main.cpp.obj: ../include/basedist.h
-src/CMakeFiles/main.dir/main.cpp.obj: ../include/infnan.h
-src/CMakeFiles/main.dir/main.cpp.obj: ../include/randist.h
-src/CMakeFiles/main.dir/main.cpp.obj: ../include/specfun.h
+src/CMakeFiles/main.dir/main.cpp.obj: ../include/regression.h
+src/CMakeFiles/main.dir/main.cpp.obj: ../include/statistics.h
 src/CMakeFiles/main.dir/main.cpp.obj: ../src/main.cpp
 
 src/CMakeFiles/main.dir/negative_binomial.cpp.obj: ../include/acmtoms.h
@@ -163,12 +160,19 @@ src/CMakeFiles/main.dir/poisson.cpp.obj: ../include/randist.h
 src/CMakeFiles/main.dir/poisson.cpp.obj: ../include/specfun.h
 src/CMakeFiles/main.dir/poisson.cpp.obj: ../src/poisson.cpp
 
+src/CMakeFiles/main.dir/regression.cpp.obj: ../include/regression.h
+src/CMakeFiles/main.dir/regression.cpp.obj: ../include/statistics.h
+src/CMakeFiles/main.dir/regression.cpp.obj: ../src/regression.cpp
+
 src/CMakeFiles/main.dir/signrank.cpp.obj: ../include/acmtoms.h
 src/CMakeFiles/main.dir/signrank.cpp.obj: ../include/basedist.h
 src/CMakeFiles/main.dir/signrank.cpp.obj: ../include/infnan.h
 src/CMakeFiles/main.dir/signrank.cpp.obj: ../include/randist.h
 src/CMakeFiles/main.dir/signrank.cpp.obj: ../include/specfun.h
 src/CMakeFiles/main.dir/signrank.cpp.obj: ../src/signrank.cpp
+
+src/CMakeFiles/main.dir/statistics.cpp.obj: ../include/statistics.h
+src/CMakeFiles/main.dir/statistics.cpp.obj: ../src/statistics.cpp
 
 src/CMakeFiles/main.dir/tdist.cpp.obj: ../include/acmtoms.h
 src/CMakeFiles/main.dir/tdist.cpp.obj: ../include/basedist.h

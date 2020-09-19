@@ -402,9 +402,22 @@ src/CMakeFiles/main.dir/poisson.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/poisson.cpp.s"
 	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/MiniR/src/poisson.cpp -o CMakeFiles/main.dir/poisson.cpp.s
 
+src/CMakeFiles/main.dir/regression.cpp.obj: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/regression.cpp.obj: ../src/regression.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object src/CMakeFiles/main.dir/regression.cpp.obj"
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/regression.cpp.obj -c /d/coding/MiniR/src/regression.cpp
+
+src/CMakeFiles/main.dir/regression.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/regression.cpp.i"
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/MiniR/src/regression.cpp > CMakeFiles/main.dir/regression.cpp.i
+
+src/CMakeFiles/main.dir/regression.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/regression.cpp.s"
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/MiniR/src/regression.cpp -o CMakeFiles/main.dir/regression.cpp.s
+
 src/CMakeFiles/main.dir/signrank.cpp.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/signrank.cpp.obj: ../src/signrank.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object src/CMakeFiles/main.dir/signrank.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object src/CMakeFiles/main.dir/signrank.cpp.obj"
 	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/signrank.cpp.obj -c /d/coding/MiniR/src/signrank.cpp
 
 src/CMakeFiles/main.dir/signrank.cpp.i: cmake_force
@@ -415,9 +428,22 @@ src/CMakeFiles/main.dir/signrank.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/signrank.cpp.s"
 	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/MiniR/src/signrank.cpp -o CMakeFiles/main.dir/signrank.cpp.s
 
+src/CMakeFiles/main.dir/statistics.cpp.obj: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/statistics.cpp.obj: ../src/statistics.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object src/CMakeFiles/main.dir/statistics.cpp.obj"
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/statistics.cpp.obj -c /d/coding/MiniR/src/statistics.cpp
+
+src/CMakeFiles/main.dir/statistics.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/statistics.cpp.i"
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/MiniR/src/statistics.cpp > CMakeFiles/main.dir/statistics.cpp.i
+
+src/CMakeFiles/main.dir/statistics.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/statistics.cpp.s"
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/MiniR/src/statistics.cpp -o CMakeFiles/main.dir/statistics.cpp.s
+
 src/CMakeFiles/main.dir/tdist.cpp.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/tdist.cpp.obj: ../src/tdist.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object src/CMakeFiles/main.dir/tdist.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object src/CMakeFiles/main.dir/tdist.cpp.obj"
 	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/tdist.cpp.obj -c /d/coding/MiniR/src/tdist.cpp
 
 src/CMakeFiles/main.dir/tdist.cpp.i: cmake_force
@@ -430,7 +456,7 @@ src/CMakeFiles/main.dir/tdist.cpp.s: cmake_force
 
 src/CMakeFiles/main.dir/tukey.cpp.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/tukey.cpp.obj: ../src/tukey.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object src/CMakeFiles/main.dir/tukey.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object src/CMakeFiles/main.dir/tukey.cpp.obj"
 	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/tukey.cpp.obj -c /d/coding/MiniR/src/tukey.cpp
 
 src/CMakeFiles/main.dir/tukey.cpp.i: cmake_force
@@ -443,7 +469,7 @@ src/CMakeFiles/main.dir/tukey.cpp.s: cmake_force
 
 src/CMakeFiles/main.dir/uniform.cpp.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/uniform.cpp.obj: ../src/uniform.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object src/CMakeFiles/main.dir/uniform.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object src/CMakeFiles/main.dir/uniform.cpp.obj"
 	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/uniform.cpp.obj -c /d/coding/MiniR/src/uniform.cpp
 
 src/CMakeFiles/main.dir/uniform.cpp.i: cmake_force
@@ -456,7 +482,7 @@ src/CMakeFiles/main.dir/uniform.cpp.s: cmake_force
 
 src/CMakeFiles/main.dir/weibull.cpp.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/weibull.cpp.obj: ../src/weibull.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object src/CMakeFiles/main.dir/weibull.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object src/CMakeFiles/main.dir/weibull.cpp.obj"
 	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/weibull.cpp.obj -c /d/coding/MiniR/src/weibull.cpp
 
 src/CMakeFiles/main.dir/weibull.cpp.i: cmake_force
@@ -469,7 +495,7 @@ src/CMakeFiles/main.dir/weibull.cpp.s: cmake_force
 
 src/CMakeFiles/main.dir/wilcoxon.cpp.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/wilcoxon.cpp.obj: ../src/wilcoxon.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object src/CMakeFiles/main.dir/wilcoxon.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object src/CMakeFiles/main.dir/wilcoxon.cpp.obj"
 	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/wilcoxon.cpp.obj -c /d/coding/MiniR/src/wilcoxon.cpp
 
 src/CMakeFiles/main.dir/wilcoxon.cpp.i: cmake_force
@@ -507,7 +533,9 @@ main_OBJECTS = \
 "CMakeFiles/main.dir/non_central_tdist.cpp.obj" \
 "CMakeFiles/main.dir/normal.cpp.obj" \
 "CMakeFiles/main.dir/poisson.cpp.obj" \
+"CMakeFiles/main.dir/regression.cpp.obj" \
 "CMakeFiles/main.dir/signrank.cpp.obj" \
+"CMakeFiles/main.dir/statistics.cpp.obj" \
 "CMakeFiles/main.dir/tdist.cpp.obj" \
 "CMakeFiles/main.dir/tukey.cpp.obj" \
 "CMakeFiles/main.dir/uniform.cpp.obj" \
@@ -542,7 +570,9 @@ main_EXTERNAL_OBJECTS =
 ../bin/main: src/CMakeFiles/main.dir/non_central_tdist.cpp.obj
 ../bin/main: src/CMakeFiles/main.dir/normal.cpp.obj
 ../bin/main: src/CMakeFiles/main.dir/poisson.cpp.obj
+../bin/main: src/CMakeFiles/main.dir/regression.cpp.obj
 ../bin/main: src/CMakeFiles/main.dir/signrank.cpp.obj
+../bin/main: src/CMakeFiles/main.dir/statistics.cpp.obj
 ../bin/main: src/CMakeFiles/main.dir/tdist.cpp.obj
 ../bin/main: src/CMakeFiles/main.dir/tukey.cpp.obj
 ../bin/main: src/CMakeFiles/main.dir/uniform.cpp.obj
@@ -550,7 +580,7 @@ main_EXTERNAL_OBJECTS =
 ../bin/main: src/CMakeFiles/main.dir/wilcoxon.cpp.obj
 ../bin/main: src/CMakeFiles/main.dir/build.make
 ../bin/main: src/CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Linking CXX executable ../../bin/main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Linking CXX executable ../../bin/main"
 	cd /d/coding/MiniR/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -563,8 +563,7 @@ L_return:
 	return;
 }
 
-void Beta::showBet(double aa, double beta, double u1,
-	double& v, double& w)
+void Beta::showBet(double aa, double beta, double u1, double& v, double& w)
 {
 	constexpr double expmax = DBL_MAX_EXP * M_LN2;
 	v = beta * log(u1 / (1.0 - u1));
@@ -579,17 +578,25 @@ void Beta::showBet(double aa, double beta, double u1,
 
 double Beta::rand(const double aa, const double bb)
 {
-    if (std::isnan(aa) || std::isnan(bb) || aa < 0.0 || bb < 0.0)
+    if (std::isnan(aa) || std::isnan(bb) || aa < 0.0 || bb < 0.0) {
 		return InfNaN::nan();
-    if (!std::isfinite(aa) && !std::isfinite(bb))
+    }
+    
+    if (!std::isfinite(aa) && !std::isfinite(bb)) {
 		return 0.5;
-    if (aa == 0.0 && bb == 0.0)
+    }
+    
+    if (aa == 0.0 && bb == 0.0) {
 		return (Uniform::rand() < 0.5) ? 0.0 : 1.;
+    }
  
-    if (!std::isfinite(aa) || bb == 0.0)
+    if (!std::isfinite(aa) || bb == 0.0) {
     	return 1.0;
-    if (!std::isfinite(bb) || aa == 0.0)
+    }
+    
+    if (!std::isfinite(bb) || aa == 0.0) {
     	return 0.0;
+    }
 
     double u1 = 0.0, u2 = 0.0, v = 0.0;
     double w = 0.0, y = 0.0, z = 0.0;
@@ -661,8 +668,7 @@ double Beta::rand(const double aa, const double bb)
 		    t = log(z);
 		    if (s > t)
 				break;
-		}
-		while (r + alpha * log(alpha / (b + w)) < t);
+		} while (r + alpha * log(alpha / (b + w)) < t);
 
 		return (aa != a) ? b / (b + w) : w / (b + w);
     }

@@ -13,25 +13,20 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with MiniR. If not, see <https://www.gnu.org/licenses/>.
+ * along with Foobar. If not, see <https://www.gnu.org/licenses/>.
  */
 
-#include <vector>
-#include <iostream>
-#include <iomanip>
-#include "regression.h"
+#include "statistics.h"
 
-using namespace Regression;
+using namespace Statistics;
 
-int main(int argc, char* argv[])
+double Stats::mean(const std::vector<double>& v)
 {
-	std::cout << std::setprecision(15);
-
-	const std::vector<double> estriol = {7,9,9,12,14,16,16,14,16,16,17,19,21,24,15,16,17,25,27,15,
-		15,15,16,19,18,17,18,20,22,25,24};
-	const std::vector<double> birthweight = {25,25,25,27,27,27,24,30,30,31,30,31,30,28,32,32,32,32,34,
-		34,34,35,35,34,35,36,37,38,40,39,43};
-
-	Regs::lm(birthweight, estriol);
-	return 0;
+	if (v.empty()) {
+		std::cout << "vector is empty." << std::endl;
+		return 0.0;
+	}
+	
+	double sum = accumulate(v.cbegin(), v.cend(), 0.0);
+	return sum / v.size();
 }
