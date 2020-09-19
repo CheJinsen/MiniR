@@ -84,83 +84,8 @@ double NonCentralFdist::cdf(double x, double df1, double df2, double ncp,
         return NonCentralChisq::cdf(x * df1, df1, ncp, lower_tail, log_p);
 
     double y = (df1 / df2) * x;
-    return NonCentralBetaCdf2(y / (1. + y), 1. / (1. + y), df1 / 2., df2 / 2.,
+    return Base::nonCentralBetaCdf2(y / (1. + y), 1. / (1. + y), df1 / 2., df2 / 2.,
         ncp, lower_tail, log_p);
-}
-
-long double NonCentralFdist::NonCentralBetaCdfRaw(double x, double o_x, double a,
-	double b, double ncp)
-{
-	constexpr double errmax = 1.0e-9;
-	constexpr int itrmax = 10000;
-
-	if (ncp < 0.0 || a <= 0.0 || b <= 0.0)
-		return InfNaN::nan();
-	if (x < 0.0 || o_x > 1.0 || (x == 0.0 && o_x == 1.0))
-		return 0.0;
-	if (x > 1.0 || o_x < 0.0 || (x == 1.0 && o_x == 0.0))
-		return 1.0;
-
-	double c = ncp / 2.0;
-	double x0 = floor(std::max(c - 7.0 * sqrt(c), 0.0));
-	double a0 = a + x0;
-	double lbeta = SpecialFunctions::Gamma::lgammafn(a0) +
-		SpecialFunctions::Gamma::lgammafn(b) -
-		SpecialFunctions::Gamma::lgammafn(a0 + b);
-
-	int ierr = 0;
-	double temp = 0.0;
-	double tmp_c = 0.0;
-	Toms::bratio(a0, b, x, o_x, &temp, &tmp_c, &ierr, false);
-
-	long double q = 0.0;
-	long double gx = exp(a0 * log(x) + b * (x < .5 ? log1p(-x) : log(o_x))
-		- lbeta - log(a0));
-	if (a0 > a)
-		q = exp(-c + x0 * log(c) - SpecialFunctions::Gamma::lgammafn(x0 + 1.0));
-	else
-		q = exp(-c);
-
-	long double sumq = 1. - q;
-	long double ans = q * temp;
-	long double ax = q * temp;
-	double j = floor(x0);
-	double errbd = 0.0;
-	do {
-		j++;
-		temp -= (double)gx;
-		gx *= x * (a + b + j - 1.) / (a + j);
-		q *= c / j;
-		sumq -= q;
-		ax = temp * q;
-		ans += ax;
-		errbd = (double)((temp - gx) * sumq);
-	} while (errbd > errmax && j < itrmax + x0);
-
-	if (errbd > errmax)
-		std::cout << "Warning: Full precision may not have "
-		<< "been achieved in cdf." << std::endl;
-	if (j >= itrmax + x0)
-		std::cout << "Warning: Convergence failed in cdf." << std::endl;
-
-	return ans;
-}
-
-double NonCentralFdist::NonCentralBetaCdf2(double x, double o_x, double a, double b, double ncp,
-	bool lower_tail, bool log_p)
-{
-	long double ans = NonCentralBetaCdfRaw(x, o_x, a, b, ncp);
-
-	if (lower_tail) {
-		return (double)(log_p ? logl(ans) : ans);
-	}
-	else {
-		if (ans > 1. - 1e-10)
-			std::cout << "Warning: Full precision may not have "
-			<< "been achieved in cdf." << std::endl;
-		if (ans > 1.0) ans = 1.0;
-		return (double)(log_p ? log1pl(-ans) : (1.0 - ans));
-	}
 }
 
 double NonCentralFdist::quantile(double p, double df1, double df2, double ncp,

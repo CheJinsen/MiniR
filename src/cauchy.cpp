@@ -107,17 +107,7 @@ double Cauchy::quantile(double p, double location, double scale,
 
     if (p == 0.5) return location; // avoid 1/Inf below
     if (p == 0.) return location + (lower_tail ? scale : -scale) * InfNaN::neginf(); // p = 1. is handled above
-    return location + (lower_tail ? -scale : scale) / tanpi(p);
-}
-
-double Cauchy::tanpi(double x)
-{
-    if (std::isnan(x)) return x;
-    if (!std::isfinite(x)) return InfNaN::nan();
-
-    x = fmod(x, 1.);
-    if (x <= -0.5) x++; else if (x > 0.5) x--;
-    return (x == 0.) ? 0. : ((x == 0.5) ? InfNaN::nan() : tan(M_PI * x));
+    return location + (lower_tail ? -scale : scale) / Base::tanpi(p);
 }
 
 double Cauchy::rand(const double location, const double scale)

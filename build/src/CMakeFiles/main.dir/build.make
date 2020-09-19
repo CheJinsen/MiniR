@@ -63,10 +63,10 @@ RM = /usr/bin/cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /d/coding/c++/MiniR
+CMAKE_SOURCE_DIR = /d/coding/MiniR
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /d/coding/c++/MiniR/build
+CMAKE_BINARY_DIR = /d/coding/MiniR/build
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/main.dir/depend.make
@@ -79,397 +79,411 @@ include src/CMakeFiles/main.dir/flags.make
 
 src/CMakeFiles/main.dir/acmtoms.cpp.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/acmtoms.cpp.obj: ../src/acmtoms.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/main.dir/acmtoms.cpp.obj"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/acmtoms.cpp.obj -c /d/coding/c++/MiniR/src/acmtoms.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/main.dir/acmtoms.cpp.obj"
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/acmtoms.cpp.obj -c /d/coding/MiniR/src/acmtoms.cpp
 
 src/CMakeFiles/main.dir/acmtoms.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/acmtoms.cpp.i"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/c++/MiniR/src/acmtoms.cpp > CMakeFiles/main.dir/acmtoms.cpp.i
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/MiniR/src/acmtoms.cpp > CMakeFiles/main.dir/acmtoms.cpp.i
 
 src/CMakeFiles/main.dir/acmtoms.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/acmtoms.cpp.s"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/c++/MiniR/src/acmtoms.cpp -o CMakeFiles/main.dir/acmtoms.cpp.s
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/MiniR/src/acmtoms.cpp -o CMakeFiles/main.dir/acmtoms.cpp.s
+
+src/CMakeFiles/main.dir/basedist.cpp.obj: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/basedist.cpp.obj: ../src/basedist.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/main.dir/basedist.cpp.obj"
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/basedist.cpp.obj -c /d/coding/MiniR/src/basedist.cpp
+
+src/CMakeFiles/main.dir/basedist.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/basedist.cpp.i"
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/MiniR/src/basedist.cpp > CMakeFiles/main.dir/basedist.cpp.i
+
+src/CMakeFiles/main.dir/basedist.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/basedist.cpp.s"
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/MiniR/src/basedist.cpp -o CMakeFiles/main.dir/basedist.cpp.s
 
 src/CMakeFiles/main.dir/beta_randist.cpp.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/beta_randist.cpp.obj: ../src/beta_randist.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/main.dir/beta_randist.cpp.obj"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/beta_randist.cpp.obj -c /d/coding/c++/MiniR/src/beta_randist.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/main.dir/beta_randist.cpp.obj"
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/beta_randist.cpp.obj -c /d/coding/MiniR/src/beta_randist.cpp
 
 src/CMakeFiles/main.dir/beta_randist.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/beta_randist.cpp.i"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/c++/MiniR/src/beta_randist.cpp > CMakeFiles/main.dir/beta_randist.cpp.i
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/MiniR/src/beta_randist.cpp > CMakeFiles/main.dir/beta_randist.cpp.i
 
 src/CMakeFiles/main.dir/beta_randist.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/beta_randist.cpp.s"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/c++/MiniR/src/beta_randist.cpp -o CMakeFiles/main.dir/beta_randist.cpp.s
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/MiniR/src/beta_randist.cpp -o CMakeFiles/main.dir/beta_randist.cpp.s
 
 src/CMakeFiles/main.dir/beta_specfun.cpp.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/beta_specfun.cpp.obj: ../src/beta_specfun.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/main.dir/beta_specfun.cpp.obj"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/beta_specfun.cpp.obj -c /d/coding/c++/MiniR/src/beta_specfun.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/main.dir/beta_specfun.cpp.obj"
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/beta_specfun.cpp.obj -c /d/coding/MiniR/src/beta_specfun.cpp
 
 src/CMakeFiles/main.dir/beta_specfun.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/beta_specfun.cpp.i"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/c++/MiniR/src/beta_specfun.cpp > CMakeFiles/main.dir/beta_specfun.cpp.i
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/MiniR/src/beta_specfun.cpp > CMakeFiles/main.dir/beta_specfun.cpp.i
 
 src/CMakeFiles/main.dir/beta_specfun.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/beta_specfun.cpp.s"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/c++/MiniR/src/beta_specfun.cpp -o CMakeFiles/main.dir/beta_specfun.cpp.s
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/MiniR/src/beta_specfun.cpp -o CMakeFiles/main.dir/beta_specfun.cpp.s
 
 src/CMakeFiles/main.dir/binomial.cpp.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/binomial.cpp.obj: ../src/binomial.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/main.dir/binomial.cpp.obj"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/binomial.cpp.obj -c /d/coding/c++/MiniR/src/binomial.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/main.dir/binomial.cpp.obj"
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/binomial.cpp.obj -c /d/coding/MiniR/src/binomial.cpp
 
 src/CMakeFiles/main.dir/binomial.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/binomial.cpp.i"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/c++/MiniR/src/binomial.cpp > CMakeFiles/main.dir/binomial.cpp.i
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/MiniR/src/binomial.cpp > CMakeFiles/main.dir/binomial.cpp.i
 
 src/CMakeFiles/main.dir/binomial.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/binomial.cpp.s"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/c++/MiniR/src/binomial.cpp -o CMakeFiles/main.dir/binomial.cpp.s
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/MiniR/src/binomial.cpp -o CMakeFiles/main.dir/binomial.cpp.s
 
 src/CMakeFiles/main.dir/cauchy.cpp.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/cauchy.cpp.obj: ../src/cauchy.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/main.dir/cauchy.cpp.obj"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/cauchy.cpp.obj -c /d/coding/c++/MiniR/src/cauchy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/main.dir/cauchy.cpp.obj"
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/cauchy.cpp.obj -c /d/coding/MiniR/src/cauchy.cpp
 
 src/CMakeFiles/main.dir/cauchy.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/cauchy.cpp.i"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/c++/MiniR/src/cauchy.cpp > CMakeFiles/main.dir/cauchy.cpp.i
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/MiniR/src/cauchy.cpp > CMakeFiles/main.dir/cauchy.cpp.i
 
 src/CMakeFiles/main.dir/cauchy.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/cauchy.cpp.s"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/c++/MiniR/src/cauchy.cpp -o CMakeFiles/main.dir/cauchy.cpp.s
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/MiniR/src/cauchy.cpp -o CMakeFiles/main.dir/cauchy.cpp.s
 
 src/CMakeFiles/main.dir/chisq.cpp.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/chisq.cpp.obj: ../src/chisq.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/main.dir/chisq.cpp.obj"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/chisq.cpp.obj -c /d/coding/c++/MiniR/src/chisq.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/main.dir/chisq.cpp.obj"
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/chisq.cpp.obj -c /d/coding/MiniR/src/chisq.cpp
 
 src/CMakeFiles/main.dir/chisq.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/chisq.cpp.i"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/c++/MiniR/src/chisq.cpp > CMakeFiles/main.dir/chisq.cpp.i
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/MiniR/src/chisq.cpp > CMakeFiles/main.dir/chisq.cpp.i
 
 src/CMakeFiles/main.dir/chisq.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/chisq.cpp.s"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/c++/MiniR/src/chisq.cpp -o CMakeFiles/main.dir/chisq.cpp.s
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/MiniR/src/chisq.cpp -o CMakeFiles/main.dir/chisq.cpp.s
 
 src/CMakeFiles/main.dir/choose.cpp.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/choose.cpp.obj: ../src/choose.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/main.dir/choose.cpp.obj"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/choose.cpp.obj -c /d/coding/c++/MiniR/src/choose.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/main.dir/choose.cpp.obj"
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/choose.cpp.obj -c /d/coding/MiniR/src/choose.cpp
 
 src/CMakeFiles/main.dir/choose.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/choose.cpp.i"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/c++/MiniR/src/choose.cpp > CMakeFiles/main.dir/choose.cpp.i
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/MiniR/src/choose.cpp > CMakeFiles/main.dir/choose.cpp.i
 
 src/CMakeFiles/main.dir/choose.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/choose.cpp.s"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/c++/MiniR/src/choose.cpp -o CMakeFiles/main.dir/choose.cpp.s
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/MiniR/src/choose.cpp -o CMakeFiles/main.dir/choose.cpp.s
 
 src/CMakeFiles/main.dir/exponential.cpp.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/exponential.cpp.obj: ../src/exponential.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/main.dir/exponential.cpp.obj"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/exponential.cpp.obj -c /d/coding/c++/MiniR/src/exponential.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/CMakeFiles/main.dir/exponential.cpp.obj"
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/exponential.cpp.obj -c /d/coding/MiniR/src/exponential.cpp
 
 src/CMakeFiles/main.dir/exponential.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/exponential.cpp.i"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/c++/MiniR/src/exponential.cpp > CMakeFiles/main.dir/exponential.cpp.i
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/MiniR/src/exponential.cpp > CMakeFiles/main.dir/exponential.cpp.i
 
 src/CMakeFiles/main.dir/exponential.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/exponential.cpp.s"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/c++/MiniR/src/exponential.cpp -o CMakeFiles/main.dir/exponential.cpp.s
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/MiniR/src/exponential.cpp -o CMakeFiles/main.dir/exponential.cpp.s
 
 src/CMakeFiles/main.dir/fdist.cpp.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/fdist.cpp.obj: ../src/fdist.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/CMakeFiles/main.dir/fdist.cpp.obj"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/fdist.cpp.obj -c /d/coding/c++/MiniR/src/fdist.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/CMakeFiles/main.dir/fdist.cpp.obj"
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/fdist.cpp.obj -c /d/coding/MiniR/src/fdist.cpp
 
 src/CMakeFiles/main.dir/fdist.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/fdist.cpp.i"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/c++/MiniR/src/fdist.cpp > CMakeFiles/main.dir/fdist.cpp.i
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/MiniR/src/fdist.cpp > CMakeFiles/main.dir/fdist.cpp.i
 
 src/CMakeFiles/main.dir/fdist.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/fdist.cpp.s"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/c++/MiniR/src/fdist.cpp -o CMakeFiles/main.dir/fdist.cpp.s
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/MiniR/src/fdist.cpp -o CMakeFiles/main.dir/fdist.cpp.s
 
 src/CMakeFiles/main.dir/gamma_randist.cpp.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/gamma_randist.cpp.obj: ../src/gamma_randist.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/CMakeFiles/main.dir/gamma_randist.cpp.obj"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/gamma_randist.cpp.obj -c /d/coding/c++/MiniR/src/gamma_randist.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object src/CMakeFiles/main.dir/gamma_randist.cpp.obj"
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/gamma_randist.cpp.obj -c /d/coding/MiniR/src/gamma_randist.cpp
 
 src/CMakeFiles/main.dir/gamma_randist.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/gamma_randist.cpp.i"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/c++/MiniR/src/gamma_randist.cpp > CMakeFiles/main.dir/gamma_randist.cpp.i
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/MiniR/src/gamma_randist.cpp > CMakeFiles/main.dir/gamma_randist.cpp.i
 
 src/CMakeFiles/main.dir/gamma_randist.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/gamma_randist.cpp.s"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/c++/MiniR/src/gamma_randist.cpp -o CMakeFiles/main.dir/gamma_randist.cpp.s
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/MiniR/src/gamma_randist.cpp -o CMakeFiles/main.dir/gamma_randist.cpp.s
 
 src/CMakeFiles/main.dir/gamma_specfun.cpp.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/gamma_specfun.cpp.obj: ../src/gamma_specfun.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object src/CMakeFiles/main.dir/gamma_specfun.cpp.obj"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/gamma_specfun.cpp.obj -c /d/coding/c++/MiniR/src/gamma_specfun.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object src/CMakeFiles/main.dir/gamma_specfun.cpp.obj"
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/gamma_specfun.cpp.obj -c /d/coding/MiniR/src/gamma_specfun.cpp
 
 src/CMakeFiles/main.dir/gamma_specfun.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/gamma_specfun.cpp.i"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/c++/MiniR/src/gamma_specfun.cpp > CMakeFiles/main.dir/gamma_specfun.cpp.i
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/MiniR/src/gamma_specfun.cpp > CMakeFiles/main.dir/gamma_specfun.cpp.i
 
 src/CMakeFiles/main.dir/gamma_specfun.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/gamma_specfun.cpp.s"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/c++/MiniR/src/gamma_specfun.cpp -o CMakeFiles/main.dir/gamma_specfun.cpp.s
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/MiniR/src/gamma_specfun.cpp -o CMakeFiles/main.dir/gamma_specfun.cpp.s
 
 src/CMakeFiles/main.dir/geometric.cpp.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/geometric.cpp.obj: ../src/geometric.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object src/CMakeFiles/main.dir/geometric.cpp.obj"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/geometric.cpp.obj -c /d/coding/c++/MiniR/src/geometric.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object src/CMakeFiles/main.dir/geometric.cpp.obj"
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/geometric.cpp.obj -c /d/coding/MiniR/src/geometric.cpp
 
 src/CMakeFiles/main.dir/geometric.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/geometric.cpp.i"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/c++/MiniR/src/geometric.cpp > CMakeFiles/main.dir/geometric.cpp.i
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/MiniR/src/geometric.cpp > CMakeFiles/main.dir/geometric.cpp.i
 
 src/CMakeFiles/main.dir/geometric.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/geometric.cpp.s"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/c++/MiniR/src/geometric.cpp -o CMakeFiles/main.dir/geometric.cpp.s
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/MiniR/src/geometric.cpp -o CMakeFiles/main.dir/geometric.cpp.s
 
 src/CMakeFiles/main.dir/hypergeometric.cpp.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/hypergeometric.cpp.obj: ../src/hypergeometric.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object src/CMakeFiles/main.dir/hypergeometric.cpp.obj"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/hypergeometric.cpp.obj -c /d/coding/c++/MiniR/src/hypergeometric.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object src/CMakeFiles/main.dir/hypergeometric.cpp.obj"
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/hypergeometric.cpp.obj -c /d/coding/MiniR/src/hypergeometric.cpp
 
 src/CMakeFiles/main.dir/hypergeometric.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/hypergeometric.cpp.i"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/c++/MiniR/src/hypergeometric.cpp > CMakeFiles/main.dir/hypergeometric.cpp.i
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/MiniR/src/hypergeometric.cpp > CMakeFiles/main.dir/hypergeometric.cpp.i
 
 src/CMakeFiles/main.dir/hypergeometric.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/hypergeometric.cpp.s"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/c++/MiniR/src/hypergeometric.cpp -o CMakeFiles/main.dir/hypergeometric.cpp.s
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/MiniR/src/hypergeometric.cpp -o CMakeFiles/main.dir/hypergeometric.cpp.s
 
 src/CMakeFiles/main.dir/infnan.cpp.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/infnan.cpp.obj: ../src/infnan.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object src/CMakeFiles/main.dir/infnan.cpp.obj"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/infnan.cpp.obj -c /d/coding/c++/MiniR/src/infnan.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object src/CMakeFiles/main.dir/infnan.cpp.obj"
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/infnan.cpp.obj -c /d/coding/MiniR/src/infnan.cpp
 
 src/CMakeFiles/main.dir/infnan.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/infnan.cpp.i"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/c++/MiniR/src/infnan.cpp > CMakeFiles/main.dir/infnan.cpp.i
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/MiniR/src/infnan.cpp > CMakeFiles/main.dir/infnan.cpp.i
 
 src/CMakeFiles/main.dir/infnan.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/infnan.cpp.s"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/c++/MiniR/src/infnan.cpp -o CMakeFiles/main.dir/infnan.cpp.s
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/MiniR/src/infnan.cpp -o CMakeFiles/main.dir/infnan.cpp.s
 
 src/CMakeFiles/main.dir/logistic.cpp.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/logistic.cpp.obj: ../src/logistic.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object src/CMakeFiles/main.dir/logistic.cpp.obj"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/logistic.cpp.obj -c /d/coding/c++/MiniR/src/logistic.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object src/CMakeFiles/main.dir/logistic.cpp.obj"
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/logistic.cpp.obj -c /d/coding/MiniR/src/logistic.cpp
 
 src/CMakeFiles/main.dir/logistic.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/logistic.cpp.i"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/c++/MiniR/src/logistic.cpp > CMakeFiles/main.dir/logistic.cpp.i
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/MiniR/src/logistic.cpp > CMakeFiles/main.dir/logistic.cpp.i
 
 src/CMakeFiles/main.dir/logistic.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/logistic.cpp.s"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/c++/MiniR/src/logistic.cpp -o CMakeFiles/main.dir/logistic.cpp.s
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/MiniR/src/logistic.cpp -o CMakeFiles/main.dir/logistic.cpp.s
 
 src/CMakeFiles/main.dir/lognormal.cpp.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/lognormal.cpp.obj: ../src/lognormal.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object src/CMakeFiles/main.dir/lognormal.cpp.obj"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/lognormal.cpp.obj -c /d/coding/c++/MiniR/src/lognormal.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object src/CMakeFiles/main.dir/lognormal.cpp.obj"
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/lognormal.cpp.obj -c /d/coding/MiniR/src/lognormal.cpp
 
 src/CMakeFiles/main.dir/lognormal.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/lognormal.cpp.i"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/c++/MiniR/src/lognormal.cpp > CMakeFiles/main.dir/lognormal.cpp.i
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/MiniR/src/lognormal.cpp > CMakeFiles/main.dir/lognormal.cpp.i
 
 src/CMakeFiles/main.dir/lognormal.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/lognormal.cpp.s"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/c++/MiniR/src/lognormal.cpp -o CMakeFiles/main.dir/lognormal.cpp.s
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/MiniR/src/lognormal.cpp -o CMakeFiles/main.dir/lognormal.cpp.s
 
 src/CMakeFiles/main.dir/main.cpp.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/main.cpp.obj: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object src/CMakeFiles/main.dir/main.cpp.obj"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/main.cpp.obj -c /d/coding/c++/MiniR/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object src/CMakeFiles/main.dir/main.cpp.obj"
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/main.cpp.obj -c /d/coding/MiniR/src/main.cpp
 
 src/CMakeFiles/main.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/main.cpp.i"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/c++/MiniR/src/main.cpp > CMakeFiles/main.dir/main.cpp.i
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/MiniR/src/main.cpp > CMakeFiles/main.dir/main.cpp.i
 
 src/CMakeFiles/main.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/main.cpp.s"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/c++/MiniR/src/main.cpp -o CMakeFiles/main.dir/main.cpp.s
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/MiniR/src/main.cpp -o CMakeFiles/main.dir/main.cpp.s
 
 src/CMakeFiles/main.dir/negative_binomial.cpp.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/negative_binomial.cpp.obj: ../src/negative_binomial.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object src/CMakeFiles/main.dir/negative_binomial.cpp.obj"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/negative_binomial.cpp.obj -c /d/coding/c++/MiniR/src/negative_binomial.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object src/CMakeFiles/main.dir/negative_binomial.cpp.obj"
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/negative_binomial.cpp.obj -c /d/coding/MiniR/src/negative_binomial.cpp
 
 src/CMakeFiles/main.dir/negative_binomial.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/negative_binomial.cpp.i"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/c++/MiniR/src/negative_binomial.cpp > CMakeFiles/main.dir/negative_binomial.cpp.i
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/MiniR/src/negative_binomial.cpp > CMakeFiles/main.dir/negative_binomial.cpp.i
 
 src/CMakeFiles/main.dir/negative_binomial.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/negative_binomial.cpp.s"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/c++/MiniR/src/negative_binomial.cpp -o CMakeFiles/main.dir/negative_binomial.cpp.s
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/MiniR/src/negative_binomial.cpp -o CMakeFiles/main.dir/negative_binomial.cpp.s
 
 src/CMakeFiles/main.dir/non_central_beta.cpp.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/non_central_beta.cpp.obj: ../src/non_central_beta.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object src/CMakeFiles/main.dir/non_central_beta.cpp.obj"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/non_central_beta.cpp.obj -c /d/coding/c++/MiniR/src/non_central_beta.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object src/CMakeFiles/main.dir/non_central_beta.cpp.obj"
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/non_central_beta.cpp.obj -c /d/coding/MiniR/src/non_central_beta.cpp
 
 src/CMakeFiles/main.dir/non_central_beta.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/non_central_beta.cpp.i"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/c++/MiniR/src/non_central_beta.cpp > CMakeFiles/main.dir/non_central_beta.cpp.i
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/MiniR/src/non_central_beta.cpp > CMakeFiles/main.dir/non_central_beta.cpp.i
 
 src/CMakeFiles/main.dir/non_central_beta.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/non_central_beta.cpp.s"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/c++/MiniR/src/non_central_beta.cpp -o CMakeFiles/main.dir/non_central_beta.cpp.s
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/MiniR/src/non_central_beta.cpp -o CMakeFiles/main.dir/non_central_beta.cpp.s
 
 src/CMakeFiles/main.dir/non_central_chisq.cpp.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/non_central_chisq.cpp.obj: ../src/non_central_chisq.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object src/CMakeFiles/main.dir/non_central_chisq.cpp.obj"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/non_central_chisq.cpp.obj -c /d/coding/c++/MiniR/src/non_central_chisq.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object src/CMakeFiles/main.dir/non_central_chisq.cpp.obj"
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/non_central_chisq.cpp.obj -c /d/coding/MiniR/src/non_central_chisq.cpp
 
 src/CMakeFiles/main.dir/non_central_chisq.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/non_central_chisq.cpp.i"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/c++/MiniR/src/non_central_chisq.cpp > CMakeFiles/main.dir/non_central_chisq.cpp.i
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/MiniR/src/non_central_chisq.cpp > CMakeFiles/main.dir/non_central_chisq.cpp.i
 
 src/CMakeFiles/main.dir/non_central_chisq.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/non_central_chisq.cpp.s"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/c++/MiniR/src/non_central_chisq.cpp -o CMakeFiles/main.dir/non_central_chisq.cpp.s
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/MiniR/src/non_central_chisq.cpp -o CMakeFiles/main.dir/non_central_chisq.cpp.s
 
 src/CMakeFiles/main.dir/non_central_fdist.cpp.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/non_central_fdist.cpp.obj: ../src/non_central_fdist.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object src/CMakeFiles/main.dir/non_central_fdist.cpp.obj"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/non_central_fdist.cpp.obj -c /d/coding/c++/MiniR/src/non_central_fdist.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object src/CMakeFiles/main.dir/non_central_fdist.cpp.obj"
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/non_central_fdist.cpp.obj -c /d/coding/MiniR/src/non_central_fdist.cpp
 
 src/CMakeFiles/main.dir/non_central_fdist.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/non_central_fdist.cpp.i"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/c++/MiniR/src/non_central_fdist.cpp > CMakeFiles/main.dir/non_central_fdist.cpp.i
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/MiniR/src/non_central_fdist.cpp > CMakeFiles/main.dir/non_central_fdist.cpp.i
 
 src/CMakeFiles/main.dir/non_central_fdist.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/non_central_fdist.cpp.s"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/c++/MiniR/src/non_central_fdist.cpp -o CMakeFiles/main.dir/non_central_fdist.cpp.s
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/MiniR/src/non_central_fdist.cpp -o CMakeFiles/main.dir/non_central_fdist.cpp.s
 
 src/CMakeFiles/main.dir/non_central_tdist.cpp.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/non_central_tdist.cpp.obj: ../src/non_central_tdist.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object src/CMakeFiles/main.dir/non_central_tdist.cpp.obj"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/non_central_tdist.cpp.obj -c /d/coding/c++/MiniR/src/non_central_tdist.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object src/CMakeFiles/main.dir/non_central_tdist.cpp.obj"
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/non_central_tdist.cpp.obj -c /d/coding/MiniR/src/non_central_tdist.cpp
 
 src/CMakeFiles/main.dir/non_central_tdist.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/non_central_tdist.cpp.i"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/c++/MiniR/src/non_central_tdist.cpp > CMakeFiles/main.dir/non_central_tdist.cpp.i
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/MiniR/src/non_central_tdist.cpp > CMakeFiles/main.dir/non_central_tdist.cpp.i
 
 src/CMakeFiles/main.dir/non_central_tdist.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/non_central_tdist.cpp.s"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/c++/MiniR/src/non_central_tdist.cpp -o CMakeFiles/main.dir/non_central_tdist.cpp.s
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/MiniR/src/non_central_tdist.cpp -o CMakeFiles/main.dir/non_central_tdist.cpp.s
 
 src/CMakeFiles/main.dir/normal.cpp.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/normal.cpp.obj: ../src/normal.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object src/CMakeFiles/main.dir/normal.cpp.obj"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/normal.cpp.obj -c /d/coding/c++/MiniR/src/normal.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object src/CMakeFiles/main.dir/normal.cpp.obj"
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/normal.cpp.obj -c /d/coding/MiniR/src/normal.cpp
 
 src/CMakeFiles/main.dir/normal.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/normal.cpp.i"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/c++/MiniR/src/normal.cpp > CMakeFiles/main.dir/normal.cpp.i
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/MiniR/src/normal.cpp > CMakeFiles/main.dir/normal.cpp.i
 
 src/CMakeFiles/main.dir/normal.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/normal.cpp.s"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/c++/MiniR/src/normal.cpp -o CMakeFiles/main.dir/normal.cpp.s
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/MiniR/src/normal.cpp -o CMakeFiles/main.dir/normal.cpp.s
 
 src/CMakeFiles/main.dir/poisson.cpp.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/poisson.cpp.obj: ../src/poisson.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object src/CMakeFiles/main.dir/poisson.cpp.obj"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/poisson.cpp.obj -c /d/coding/c++/MiniR/src/poisson.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object src/CMakeFiles/main.dir/poisson.cpp.obj"
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/poisson.cpp.obj -c /d/coding/MiniR/src/poisson.cpp
 
 src/CMakeFiles/main.dir/poisson.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/poisson.cpp.i"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/c++/MiniR/src/poisson.cpp > CMakeFiles/main.dir/poisson.cpp.i
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/MiniR/src/poisson.cpp > CMakeFiles/main.dir/poisson.cpp.i
 
 src/CMakeFiles/main.dir/poisson.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/poisson.cpp.s"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/c++/MiniR/src/poisson.cpp -o CMakeFiles/main.dir/poisson.cpp.s
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/MiniR/src/poisson.cpp -o CMakeFiles/main.dir/poisson.cpp.s
 
 src/CMakeFiles/main.dir/signrank.cpp.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/signrank.cpp.obj: ../src/signrank.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object src/CMakeFiles/main.dir/signrank.cpp.obj"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/signrank.cpp.obj -c /d/coding/c++/MiniR/src/signrank.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object src/CMakeFiles/main.dir/signrank.cpp.obj"
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/signrank.cpp.obj -c /d/coding/MiniR/src/signrank.cpp
 
 src/CMakeFiles/main.dir/signrank.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/signrank.cpp.i"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/c++/MiniR/src/signrank.cpp > CMakeFiles/main.dir/signrank.cpp.i
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/MiniR/src/signrank.cpp > CMakeFiles/main.dir/signrank.cpp.i
 
 src/CMakeFiles/main.dir/signrank.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/signrank.cpp.s"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/c++/MiniR/src/signrank.cpp -o CMakeFiles/main.dir/signrank.cpp.s
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/MiniR/src/signrank.cpp -o CMakeFiles/main.dir/signrank.cpp.s
 
 src/CMakeFiles/main.dir/tdist.cpp.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/tdist.cpp.obj: ../src/tdist.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object src/CMakeFiles/main.dir/tdist.cpp.obj"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/tdist.cpp.obj -c /d/coding/c++/MiniR/src/tdist.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object src/CMakeFiles/main.dir/tdist.cpp.obj"
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/tdist.cpp.obj -c /d/coding/MiniR/src/tdist.cpp
 
 src/CMakeFiles/main.dir/tdist.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/tdist.cpp.i"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/c++/MiniR/src/tdist.cpp > CMakeFiles/main.dir/tdist.cpp.i
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/MiniR/src/tdist.cpp > CMakeFiles/main.dir/tdist.cpp.i
 
 src/CMakeFiles/main.dir/tdist.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/tdist.cpp.s"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/c++/MiniR/src/tdist.cpp -o CMakeFiles/main.dir/tdist.cpp.s
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/MiniR/src/tdist.cpp -o CMakeFiles/main.dir/tdist.cpp.s
 
 src/CMakeFiles/main.dir/tukey.cpp.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/tukey.cpp.obj: ../src/tukey.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object src/CMakeFiles/main.dir/tukey.cpp.obj"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/tukey.cpp.obj -c /d/coding/c++/MiniR/src/tukey.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object src/CMakeFiles/main.dir/tukey.cpp.obj"
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/tukey.cpp.obj -c /d/coding/MiniR/src/tukey.cpp
 
 src/CMakeFiles/main.dir/tukey.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/tukey.cpp.i"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/c++/MiniR/src/tukey.cpp > CMakeFiles/main.dir/tukey.cpp.i
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/MiniR/src/tukey.cpp > CMakeFiles/main.dir/tukey.cpp.i
 
 src/CMakeFiles/main.dir/tukey.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/tukey.cpp.s"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/c++/MiniR/src/tukey.cpp -o CMakeFiles/main.dir/tukey.cpp.s
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/MiniR/src/tukey.cpp -o CMakeFiles/main.dir/tukey.cpp.s
 
 src/CMakeFiles/main.dir/uniform.cpp.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/uniform.cpp.obj: ../src/uniform.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object src/CMakeFiles/main.dir/uniform.cpp.obj"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/uniform.cpp.obj -c /d/coding/c++/MiniR/src/uniform.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object src/CMakeFiles/main.dir/uniform.cpp.obj"
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/uniform.cpp.obj -c /d/coding/MiniR/src/uniform.cpp
 
 src/CMakeFiles/main.dir/uniform.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/uniform.cpp.i"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/c++/MiniR/src/uniform.cpp > CMakeFiles/main.dir/uniform.cpp.i
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/MiniR/src/uniform.cpp > CMakeFiles/main.dir/uniform.cpp.i
 
 src/CMakeFiles/main.dir/uniform.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/uniform.cpp.s"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/c++/MiniR/src/uniform.cpp -o CMakeFiles/main.dir/uniform.cpp.s
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/MiniR/src/uniform.cpp -o CMakeFiles/main.dir/uniform.cpp.s
 
 src/CMakeFiles/main.dir/weibull.cpp.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/weibull.cpp.obj: ../src/weibull.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object src/CMakeFiles/main.dir/weibull.cpp.obj"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/weibull.cpp.obj -c /d/coding/c++/MiniR/src/weibull.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object src/CMakeFiles/main.dir/weibull.cpp.obj"
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/weibull.cpp.obj -c /d/coding/MiniR/src/weibull.cpp
 
 src/CMakeFiles/main.dir/weibull.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/weibull.cpp.i"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/c++/MiniR/src/weibull.cpp > CMakeFiles/main.dir/weibull.cpp.i
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/MiniR/src/weibull.cpp > CMakeFiles/main.dir/weibull.cpp.i
 
 src/CMakeFiles/main.dir/weibull.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/weibull.cpp.s"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/c++/MiniR/src/weibull.cpp -o CMakeFiles/main.dir/weibull.cpp.s
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/MiniR/src/weibull.cpp -o CMakeFiles/main.dir/weibull.cpp.s
 
 src/CMakeFiles/main.dir/wilcoxon.cpp.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/wilcoxon.cpp.obj: ../src/wilcoxon.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object src/CMakeFiles/main.dir/wilcoxon.cpp.obj"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/wilcoxon.cpp.obj -c /d/coding/c++/MiniR/src/wilcoxon.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object src/CMakeFiles/main.dir/wilcoxon.cpp.obj"
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/wilcoxon.cpp.obj -c /d/coding/MiniR/src/wilcoxon.cpp
 
 src/CMakeFiles/main.dir/wilcoxon.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/wilcoxon.cpp.i"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/c++/MiniR/src/wilcoxon.cpp > CMakeFiles/main.dir/wilcoxon.cpp.i
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/coding/MiniR/src/wilcoxon.cpp > CMakeFiles/main.dir/wilcoxon.cpp.i
 
 src/CMakeFiles/main.dir/wilcoxon.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/wilcoxon.cpp.s"
-	cd /d/coding/c++/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/c++/MiniR/src/wilcoxon.cpp -o CMakeFiles/main.dir/wilcoxon.cpp.s
+	cd /d/coding/MiniR/build/src && /usr/bin/CC.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/coding/MiniR/src/wilcoxon.cpp -o CMakeFiles/main.dir/wilcoxon.cpp.s
 
 # Object files for target main
 main_OBJECTS = \
 "CMakeFiles/main.dir/acmtoms.cpp.obj" \
+"CMakeFiles/main.dir/basedist.cpp.obj" \
 "CMakeFiles/main.dir/beta_randist.cpp.obj" \
 "CMakeFiles/main.dir/beta_specfun.cpp.obj" \
 "CMakeFiles/main.dir/binomial.cpp.obj" \
@@ -504,6 +518,7 @@ main_OBJECTS = \
 main_EXTERNAL_OBJECTS =
 
 ../bin/main: src/CMakeFiles/main.dir/acmtoms.cpp.obj
+../bin/main: src/CMakeFiles/main.dir/basedist.cpp.obj
 ../bin/main: src/CMakeFiles/main.dir/beta_randist.cpp.obj
 ../bin/main: src/CMakeFiles/main.dir/beta_specfun.cpp.obj
 ../bin/main: src/CMakeFiles/main.dir/binomial.cpp.obj
@@ -535,8 +550,8 @@ main_EXTERNAL_OBJECTS =
 ../bin/main: src/CMakeFiles/main.dir/wilcoxon.cpp.obj
 ../bin/main: src/CMakeFiles/main.dir/build.make
 ../bin/main: src/CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/d/coding/c++/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Linking CXX executable ../../bin/main"
-	cd /d/coding/c++/MiniR/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/d/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Linking CXX executable ../../bin/main"
+	cd /d/coding/MiniR/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/main.dir/build: ../bin/main
@@ -544,10 +559,10 @@ src/CMakeFiles/main.dir/build: ../bin/main
 .PHONY : src/CMakeFiles/main.dir/build
 
 src/CMakeFiles/main.dir/clean:
-	cd /d/coding/c++/MiniR/build/src && $(CMAKE_COMMAND) -P CMakeFiles/main.dir/cmake_clean.cmake
+	cd /d/coding/MiniR/build/src && $(CMAKE_COMMAND) -P CMakeFiles/main.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/main.dir/clean
 
 src/CMakeFiles/main.dir/depend:
-	cd /d/coding/c++/MiniR/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /d/coding/c++/MiniR /d/coding/c++/MiniR/src /d/coding/c++/MiniR/build /d/coding/c++/MiniR/build/src /d/coding/c++/MiniR/build/src/CMakeFiles/main.dir/DependInfo.cmake --color=$(COLOR)
+	cd /d/coding/MiniR/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /d/coding/MiniR /d/coding/MiniR/src /d/coding/MiniR/build /d/coding/MiniR/build/src /d/coding/MiniR/build/src/CMakeFiles/main.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/main.dir/depend
 

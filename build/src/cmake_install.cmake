@@ -1,4 +1,4 @@
-# Install script for directory: /d/coding/c++/MiniR/src
+# Install script for directory: /d/coding/MiniR/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

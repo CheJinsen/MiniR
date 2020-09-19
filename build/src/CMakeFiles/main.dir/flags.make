@@ -6,5 +6,5 @@ CXX_FLAGS =   -Wall -O2
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/d/coding/c++/MiniR/src/../include 
+CXX_INCLUDES = -I/d/coding/MiniR/src/../include 
 

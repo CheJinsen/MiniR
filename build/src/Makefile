@@ -68,10 +68,10 @@ RM = /usr/bin/cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /d/coding/c++/MiniR
+CMAKE_SOURCE_DIR = /d/coding/MiniR
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /d/coding/c++/MiniR/build
+CMAKE_BINARY_DIR = /d/coding/MiniR/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,14 +100,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /d/coding/c++/MiniR/build && $(CMAKE_COMMAND) -E cmake_progress_start /d/coding/c++/MiniR/build/CMakeFiles /d/coding/c++/MiniR/build/src/CMakeFiles/progress.marks
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /d/coding/c++/MiniR/build/CMakeFiles 0
+	cd /d/coding/MiniR/build && $(CMAKE_COMMAND) -E cmake_progress_start /d/coding/MiniR/build/CMakeFiles /d/coding/MiniR/build/src/CMakeFiles/progress.marks
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /d/coding/MiniR/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -117,22 +117,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d/coding/c++/MiniR/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /d/coding/MiniR/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/main.dir/rule:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/main.dir/rule
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/main.dir/rule
 .PHONY : src/CMakeFiles/main.dir/rule
 
 # Convenience name for target.
@@ -142,7 +142,7 @@ main: src/CMakeFiles/main.dir/rule
 
 # fast build rule for target.
 main/fast:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
 .PHONY : main/fast
 
 acmtoms.obj: acmtoms.cpp.obj
@@ -151,7 +151,7 @@ acmtoms.obj: acmtoms.cpp.obj
 
 # target to build an object file
 acmtoms.cpp.obj:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/acmtoms.cpp.obj
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/acmtoms.cpp.obj
 .PHONY : acmtoms.cpp.obj
 
 acmtoms.i: acmtoms.cpp.i
@@ -160,7 +160,7 @@ acmtoms.i: acmtoms.cpp.i
 
 # target to preprocess a source file
 acmtoms.cpp.i:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/acmtoms.cpp.i
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/acmtoms.cpp.i
 .PHONY : acmtoms.cpp.i
 
 acmtoms.s: acmtoms.cpp.s
@@ -169,8 +169,35 @@ acmtoms.s: acmtoms.cpp.s
 
 # target to generate assembly for a file
 acmtoms.cpp.s:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/acmtoms.cpp.s
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/acmtoms.cpp.s
 .PHONY : acmtoms.cpp.s
+
+basedist.obj: basedist.cpp.obj
+
+.PHONY : basedist.obj
+
+# target to build an object file
+basedist.cpp.obj:
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/basedist.cpp.obj
+.PHONY : basedist.cpp.obj
+
+basedist.i: basedist.cpp.i
+
+.PHONY : basedist.i
+
+# target to preprocess a source file
+basedist.cpp.i:
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/basedist.cpp.i
+.PHONY : basedist.cpp.i
+
+basedist.s: basedist.cpp.s
+
+.PHONY : basedist.s
+
+# target to generate assembly for a file
+basedist.cpp.s:
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/basedist.cpp.s
+.PHONY : basedist.cpp.s
 
 beta_randist.obj: beta_randist.cpp.obj
 
@@ -178,7 +205,7 @@ beta_randist.obj: beta_randist.cpp.obj
 
 # target to build an object file
 beta_randist.cpp.obj:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/beta_randist.cpp.obj
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/beta_randist.cpp.obj
 .PHONY : beta_randist.cpp.obj
 
 beta_randist.i: beta_randist.cpp.i
@@ -187,7 +214,7 @@ beta_randist.i: beta_randist.cpp.i
 
 # target to preprocess a source file
 beta_randist.cpp.i:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/beta_randist.cpp.i
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/beta_randist.cpp.i
 .PHONY : beta_randist.cpp.i
 
 beta_randist.s: beta_randist.cpp.s
@@ -196,7 +223,7 @@ beta_randist.s: beta_randist.cpp.s
 
 # target to generate assembly for a file
 beta_randist.cpp.s:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/beta_randist.cpp.s
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/beta_randist.cpp.s
 .PHONY : beta_randist.cpp.s
 
 beta_specfun.obj: beta_specfun.cpp.obj
@@ -205,7 +232,7 @@ beta_specfun.obj: beta_specfun.cpp.obj
 
 # target to build an object file
 beta_specfun.cpp.obj:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/beta_specfun.cpp.obj
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/beta_specfun.cpp.obj
 .PHONY : beta_specfun.cpp.obj
 
 beta_specfun.i: beta_specfun.cpp.i
@@ -214,7 +241,7 @@ beta_specfun.i: beta_specfun.cpp.i
 
 # target to preprocess a source file
 beta_specfun.cpp.i:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/beta_specfun.cpp.i
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/beta_specfun.cpp.i
 .PHONY : beta_specfun.cpp.i
 
 beta_specfun.s: beta_specfun.cpp.s
@@ -223,7 +250,7 @@ beta_specfun.s: beta_specfun.cpp.s
 
 # target to generate assembly for a file
 beta_specfun.cpp.s:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/beta_specfun.cpp.s
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/beta_specfun.cpp.s
 .PHONY : beta_specfun.cpp.s
 
 binomial.obj: binomial.cpp.obj
@@ -232,7 +259,7 @@ binomial.obj: binomial.cpp.obj
 
 # target to build an object file
 binomial.cpp.obj:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/binomial.cpp.obj
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/binomial.cpp.obj
 .PHONY : binomial.cpp.obj
 
 binomial.i: binomial.cpp.i
@@ -241,7 +268,7 @@ binomial.i: binomial.cpp.i
 
 # target to preprocess a source file
 binomial.cpp.i:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/binomial.cpp.i
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/binomial.cpp.i
 .PHONY : binomial.cpp.i
 
 binomial.s: binomial.cpp.s
@@ -250,7 +277,7 @@ binomial.s: binomial.cpp.s
 
 # target to generate assembly for a file
 binomial.cpp.s:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/binomial.cpp.s
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/binomial.cpp.s
 .PHONY : binomial.cpp.s
 
 cauchy.obj: cauchy.cpp.obj
@@ -259,7 +286,7 @@ cauchy.obj: cauchy.cpp.obj
 
 # target to build an object file
 cauchy.cpp.obj:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/cauchy.cpp.obj
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/cauchy.cpp.obj
 .PHONY : cauchy.cpp.obj
 
 cauchy.i: cauchy.cpp.i
@@ -268,7 +295,7 @@ cauchy.i: cauchy.cpp.i
 
 # target to preprocess a source file
 cauchy.cpp.i:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/cauchy.cpp.i
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/cauchy.cpp.i
 .PHONY : cauchy.cpp.i
 
 cauchy.s: cauchy.cpp.s
@@ -277,7 +304,7 @@ cauchy.s: cauchy.cpp.s
 
 # target to generate assembly for a file
 cauchy.cpp.s:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/cauchy.cpp.s
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/cauchy.cpp.s
 .PHONY : cauchy.cpp.s
 
 chisq.obj: chisq.cpp.obj
@@ -286,7 +313,7 @@ chisq.obj: chisq.cpp.obj
 
 # target to build an object file
 chisq.cpp.obj:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/chisq.cpp.obj
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/chisq.cpp.obj
 .PHONY : chisq.cpp.obj
 
 chisq.i: chisq.cpp.i
@@ -295,7 +322,7 @@ chisq.i: chisq.cpp.i
 
 # target to preprocess a source file
 chisq.cpp.i:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/chisq.cpp.i
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/chisq.cpp.i
 .PHONY : chisq.cpp.i
 
 chisq.s: chisq.cpp.s
@@ -304,7 +331,7 @@ chisq.s: chisq.cpp.s
 
 # target to generate assembly for a file
 chisq.cpp.s:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/chisq.cpp.s
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/chisq.cpp.s
 .PHONY : chisq.cpp.s
 
 choose.obj: choose.cpp.obj
@@ -313,7 +340,7 @@ choose.obj: choose.cpp.obj
 
 # target to build an object file
 choose.cpp.obj:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/choose.cpp.obj
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/choose.cpp.obj
 .PHONY : choose.cpp.obj
 
 choose.i: choose.cpp.i
@@ -322,7 +349,7 @@ choose.i: choose.cpp.i
 
 # target to preprocess a source file
 choose.cpp.i:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/choose.cpp.i
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/choose.cpp.i
 .PHONY : choose.cpp.i
 
 choose.s: choose.cpp.s
@@ -331,7 +358,7 @@ choose.s: choose.cpp.s
 
 # target to generate assembly for a file
 choose.cpp.s:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/choose.cpp.s
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/choose.cpp.s
 .PHONY : choose.cpp.s
 
 exponential.obj: exponential.cpp.obj
@@ -340,7 +367,7 @@ exponential.obj: exponential.cpp.obj
 
 # target to build an object file
 exponential.cpp.obj:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/exponential.cpp.obj
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/exponential.cpp.obj
 .PHONY : exponential.cpp.obj
 
 exponential.i: exponential.cpp.i
@@ -349,7 +376,7 @@ exponential.i: exponential.cpp.i
 
 # target to preprocess a source file
 exponential.cpp.i:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/exponential.cpp.i
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/exponential.cpp.i
 .PHONY : exponential.cpp.i
 
 exponential.s: exponential.cpp.s
@@ -358,7 +385,7 @@ exponential.s: exponential.cpp.s
 
 # target to generate assembly for a file
 exponential.cpp.s:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/exponential.cpp.s
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/exponential.cpp.s
 .PHONY : exponential.cpp.s
 
 fdist.obj: fdist.cpp.obj
@@ -367,7 +394,7 @@ fdist.obj: fdist.cpp.obj
 
 # target to build an object file
 fdist.cpp.obj:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/fdist.cpp.obj
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/fdist.cpp.obj
 .PHONY : fdist.cpp.obj
 
 fdist.i: fdist.cpp.i
@@ -376,7 +403,7 @@ fdist.i: fdist.cpp.i
 
 # target to preprocess a source file
 fdist.cpp.i:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/fdist.cpp.i
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/fdist.cpp.i
 .PHONY : fdist.cpp.i
 
 fdist.s: fdist.cpp.s
@@ -385,7 +412,7 @@ fdist.s: fdist.cpp.s
 
 # target to generate assembly for a file
 fdist.cpp.s:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/fdist.cpp.s
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/fdist.cpp.s
 .PHONY : fdist.cpp.s
 
 gamma_randist.obj: gamma_randist.cpp.obj
@@ -394,7 +421,7 @@ gamma_randist.obj: gamma_randist.cpp.obj
 
 # target to build an object file
 gamma_randist.cpp.obj:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/gamma_randist.cpp.obj
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/gamma_randist.cpp.obj
 .PHONY : gamma_randist.cpp.obj
 
 gamma_randist.i: gamma_randist.cpp.i
@@ -403,7 +430,7 @@ gamma_randist.i: gamma_randist.cpp.i
 
 # target to preprocess a source file
 gamma_randist.cpp.i:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/gamma_randist.cpp.i
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/gamma_randist.cpp.i
 .PHONY : gamma_randist.cpp.i
 
 gamma_randist.s: gamma_randist.cpp.s
@@ -412,7 +439,7 @@ gamma_randist.s: gamma_randist.cpp.s
 
 # target to generate assembly for a file
 gamma_randist.cpp.s:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/gamma_randist.cpp.s
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/gamma_randist.cpp.s
 .PHONY : gamma_randist.cpp.s
 
 gamma_specfun.obj: gamma_specfun.cpp.obj
@@ -421,7 +448,7 @@ gamma_specfun.obj: gamma_specfun.cpp.obj
 
 # target to build an object file
 gamma_specfun.cpp.obj:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/gamma_specfun.cpp.obj
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/gamma_specfun.cpp.obj
 .PHONY : gamma_specfun.cpp.obj
 
 gamma_specfun.i: gamma_specfun.cpp.i
@@ -430,7 +457,7 @@ gamma_specfun.i: gamma_specfun.cpp.i
 
 # target to preprocess a source file
 gamma_specfun.cpp.i:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/gamma_specfun.cpp.i
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/gamma_specfun.cpp.i
 .PHONY : gamma_specfun.cpp.i
 
 gamma_specfun.s: gamma_specfun.cpp.s
@@ -439,7 +466,7 @@ gamma_specfun.s: gamma_specfun.cpp.s
 
 # target to generate assembly for a file
 gamma_specfun.cpp.s:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/gamma_specfun.cpp.s
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/gamma_specfun.cpp.s
 .PHONY : gamma_specfun.cpp.s
 
 geometric.obj: geometric.cpp.obj
@@ -448,7 +475,7 @@ geometric.obj: geometric.cpp.obj
 
 # target to build an object file
 geometric.cpp.obj:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/geometric.cpp.obj
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/geometric.cpp.obj
 .PHONY : geometric.cpp.obj
 
 geometric.i: geometric.cpp.i
@@ -457,7 +484,7 @@ geometric.i: geometric.cpp.i
 
 # target to preprocess a source file
 geometric.cpp.i:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/geometric.cpp.i
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/geometric.cpp.i
 .PHONY : geometric.cpp.i
 
 geometric.s: geometric.cpp.s
@@ -466,7 +493,7 @@ geometric.s: geometric.cpp.s
 
 # target to generate assembly for a file
 geometric.cpp.s:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/geometric.cpp.s
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/geometric.cpp.s
 .PHONY : geometric.cpp.s
 
 hypergeometric.obj: hypergeometric.cpp.obj
@@ -475,7 +502,7 @@ hypergeometric.obj: hypergeometric.cpp.obj
 
 # target to build an object file
 hypergeometric.cpp.obj:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/hypergeometric.cpp.obj
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/hypergeometric.cpp.obj
 .PHONY : hypergeometric.cpp.obj
 
 hypergeometric.i: hypergeometric.cpp.i
@@ -484,7 +511,7 @@ hypergeometric.i: hypergeometric.cpp.i
 
 # target to preprocess a source file
 hypergeometric.cpp.i:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/hypergeometric.cpp.i
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/hypergeometric.cpp.i
 .PHONY : hypergeometric.cpp.i
 
 hypergeometric.s: hypergeometric.cpp.s
@@ -493,7 +520,7 @@ hypergeometric.s: hypergeometric.cpp.s
 
 # target to generate assembly for a file
 hypergeometric.cpp.s:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/hypergeometric.cpp.s
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/hypergeometric.cpp.s
 .PHONY : hypergeometric.cpp.s
 
 infnan.obj: infnan.cpp.obj
@@ -502,7 +529,7 @@ infnan.obj: infnan.cpp.obj
 
 # target to build an object file
 infnan.cpp.obj:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/infnan.cpp.obj
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/infnan.cpp.obj
 .PHONY : infnan.cpp.obj
 
 infnan.i: infnan.cpp.i
@@ -511,7 +538,7 @@ infnan.i: infnan.cpp.i
 
 # target to preprocess a source file
 infnan.cpp.i:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/infnan.cpp.i
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/infnan.cpp.i
 .PHONY : infnan.cpp.i
 
 infnan.s: infnan.cpp.s
@@ -520,7 +547,7 @@ infnan.s: infnan.cpp.s
 
 # target to generate assembly for a file
 infnan.cpp.s:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/infnan.cpp.s
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/infnan.cpp.s
 .PHONY : infnan.cpp.s
 
 logistic.obj: logistic.cpp.obj
@@ -529,7 +556,7 @@ logistic.obj: logistic.cpp.obj
 
 # target to build an object file
 logistic.cpp.obj:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/logistic.cpp.obj
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/logistic.cpp.obj
 .PHONY : logistic.cpp.obj
 
 logistic.i: logistic.cpp.i
@@ -538,7 +565,7 @@ logistic.i: logistic.cpp.i
 
 # target to preprocess a source file
 logistic.cpp.i:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/logistic.cpp.i
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/logistic.cpp.i
 .PHONY : logistic.cpp.i
 
 logistic.s: logistic.cpp.s
@@ -547,7 +574,7 @@ logistic.s: logistic.cpp.s
 
 # target to generate assembly for a file
 logistic.cpp.s:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/logistic.cpp.s
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/logistic.cpp.s
 .PHONY : logistic.cpp.s
 
 lognormal.obj: lognormal.cpp.obj
@@ -556,7 +583,7 @@ lognormal.obj: lognormal.cpp.obj
 
 # target to build an object file
 lognormal.cpp.obj:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/lognormal.cpp.obj
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/lognormal.cpp.obj
 .PHONY : lognormal.cpp.obj
 
 lognormal.i: lognormal.cpp.i
@@ -565,7 +592,7 @@ lognormal.i: lognormal.cpp.i
 
 # target to preprocess a source file
 lognormal.cpp.i:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/lognormal.cpp.i
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/lognormal.cpp.i
 .PHONY : lognormal.cpp.i
 
 lognormal.s: lognormal.cpp.s
@@ -574,7 +601,7 @@ lognormal.s: lognormal.cpp.s
 
 # target to generate assembly for a file
 lognormal.cpp.s:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/lognormal.cpp.s
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/lognormal.cpp.s
 .PHONY : lognormal.cpp.s
 
 main.obj: main.cpp.obj
@@ -583,7 +610,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.cpp.obj
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -592,7 +619,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.cpp.i
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -601,7 +628,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.cpp.s
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 negative_binomial.obj: negative_binomial.cpp.obj
@@ -610,7 +637,7 @@ negative_binomial.obj: negative_binomial.cpp.obj
 
 # target to build an object file
 negative_binomial.cpp.obj:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/negative_binomial.cpp.obj
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/negative_binomial.cpp.obj
 .PHONY : negative_binomial.cpp.obj
 
 negative_binomial.i: negative_binomial.cpp.i
@@ -619,7 +646,7 @@ negative_binomial.i: negative_binomial.cpp.i
 
 # target to preprocess a source file
 negative_binomial.cpp.i:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/negative_binomial.cpp.i
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/negative_binomial.cpp.i
 .PHONY : negative_binomial.cpp.i
 
 negative_binomial.s: negative_binomial.cpp.s
@@ -628,7 +655,7 @@ negative_binomial.s: negative_binomial.cpp.s
 
 # target to generate assembly for a file
 negative_binomial.cpp.s:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/negative_binomial.cpp.s
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/negative_binomial.cpp.s
 .PHONY : negative_binomial.cpp.s
 
 non_central_beta.obj: non_central_beta.cpp.obj
@@ -637,7 +664,7 @@ non_central_beta.obj: non_central_beta.cpp.obj
 
 # target to build an object file
 non_central_beta.cpp.obj:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_beta.cpp.obj
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_beta.cpp.obj
 .PHONY : non_central_beta.cpp.obj
 
 non_central_beta.i: non_central_beta.cpp.i
@@ -646,7 +673,7 @@ non_central_beta.i: non_central_beta.cpp.i
 
 # target to preprocess a source file
 non_central_beta.cpp.i:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_beta.cpp.i
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_beta.cpp.i
 .PHONY : non_central_beta.cpp.i
 
 non_central_beta.s: non_central_beta.cpp.s
@@ -655,7 +682,7 @@ non_central_beta.s: non_central_beta.cpp.s
 
 # target to generate assembly for a file
 non_central_beta.cpp.s:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_beta.cpp.s
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_beta.cpp.s
 .PHONY : non_central_beta.cpp.s
 
 non_central_chisq.obj: non_central_chisq.cpp.obj
@@ -664,7 +691,7 @@ non_central_chisq.obj: non_central_chisq.cpp.obj
 
 # target to build an object file
 non_central_chisq.cpp.obj:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_chisq.cpp.obj
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_chisq.cpp.obj
 .PHONY : non_central_chisq.cpp.obj
 
 non_central_chisq.i: non_central_chisq.cpp.i
@@ -673,7 +700,7 @@ non_central_chisq.i: non_central_chisq.cpp.i
 
 # target to preprocess a source file
 non_central_chisq.cpp.i:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_chisq.cpp.i
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_chisq.cpp.i
 .PHONY : non_central_chisq.cpp.i
 
 non_central_chisq.s: non_central_chisq.cpp.s
@@ -682,7 +709,7 @@ non_central_chisq.s: non_central_chisq.cpp.s
 
 # target to generate assembly for a file
 non_central_chisq.cpp.s:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_chisq.cpp.s
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_chisq.cpp.s
 .PHONY : non_central_chisq.cpp.s
 
 non_central_fdist.obj: non_central_fdist.cpp.obj
@@ -691,7 +718,7 @@ non_central_fdist.obj: non_central_fdist.cpp.obj
 
 # target to build an object file
 non_central_fdist.cpp.obj:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_fdist.cpp.obj
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_fdist.cpp.obj
 .PHONY : non_central_fdist.cpp.obj
 
 non_central_fdist.i: non_central_fdist.cpp.i
@@ -700,7 +727,7 @@ non_central_fdist.i: non_central_fdist.cpp.i
 
 # target to preprocess a source file
 non_central_fdist.cpp.i:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_fdist.cpp.i
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_fdist.cpp.i
 .PHONY : non_central_fdist.cpp.i
 
 non_central_fdist.s: non_central_fdist.cpp.s
@@ -709,7 +736,7 @@ non_central_fdist.s: non_central_fdist.cpp.s
 
 # target to generate assembly for a file
 non_central_fdist.cpp.s:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_fdist.cpp.s
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_fdist.cpp.s
 .PHONY : non_central_fdist.cpp.s
 
 non_central_tdist.obj: non_central_tdist.cpp.obj
@@ -718,7 +745,7 @@ non_central_tdist.obj: non_central_tdist.cpp.obj
 
 # target to build an object file
 non_central_tdist.cpp.obj:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_tdist.cpp.obj
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_tdist.cpp.obj
 .PHONY : non_central_tdist.cpp.obj
 
 non_central_tdist.i: non_central_tdist.cpp.i
@@ -727,7 +754,7 @@ non_central_tdist.i: non_central_tdist.cpp.i
 
 # target to preprocess a source file
 non_central_tdist.cpp.i:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_tdist.cpp.i
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_tdist.cpp.i
 .PHONY : non_central_tdist.cpp.i
 
 non_central_tdist.s: non_central_tdist.cpp.s
@@ -736,7 +763,7 @@ non_central_tdist.s: non_central_tdist.cpp.s
 
 # target to generate assembly for a file
 non_central_tdist.cpp.s:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_tdist.cpp.s
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_tdist.cpp.s
 .PHONY : non_central_tdist.cpp.s
 
 normal.obj: normal.cpp.obj
@@ -745,7 +772,7 @@ normal.obj: normal.cpp.obj
 
 # target to build an object file
 normal.cpp.obj:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/normal.cpp.obj
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/normal.cpp.obj
 .PHONY : normal.cpp.obj
 
 normal.i: normal.cpp.i
@@ -754,7 +781,7 @@ normal.i: normal.cpp.i
 
 # target to preprocess a source file
 normal.cpp.i:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/normal.cpp.i
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/normal.cpp.i
 .PHONY : normal.cpp.i
 
 normal.s: normal.cpp.s
@@ -763,7 +790,7 @@ normal.s: normal.cpp.s
 
 # target to generate assembly for a file
 normal.cpp.s:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/normal.cpp.s
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/normal.cpp.s
 .PHONY : normal.cpp.s
 
 poisson.obj: poisson.cpp.obj
@@ -772,7 +799,7 @@ poisson.obj: poisson.cpp.obj
 
 # target to build an object file
 poisson.cpp.obj:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/poisson.cpp.obj
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/poisson.cpp.obj
 .PHONY : poisson.cpp.obj
 
 poisson.i: poisson.cpp.i
@@ -781,7 +808,7 @@ poisson.i: poisson.cpp.i
 
 # target to preprocess a source file
 poisson.cpp.i:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/poisson.cpp.i
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/poisson.cpp.i
 .PHONY : poisson.cpp.i
 
 poisson.s: poisson.cpp.s
@@ -790,7 +817,7 @@ poisson.s: poisson.cpp.s
 
 # target to generate assembly for a file
 poisson.cpp.s:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/poisson.cpp.s
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/poisson.cpp.s
 .PHONY : poisson.cpp.s
 
 signrank.obj: signrank.cpp.obj
@@ -799,7 +826,7 @@ signrank.obj: signrank.cpp.obj
 
 # target to build an object file
 signrank.cpp.obj:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/signrank.cpp.obj
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/signrank.cpp.obj
 .PHONY : signrank.cpp.obj
 
 signrank.i: signrank.cpp.i
@@ -808,7 +835,7 @@ signrank.i: signrank.cpp.i
 
 # target to preprocess a source file
 signrank.cpp.i:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/signrank.cpp.i
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/signrank.cpp.i
 .PHONY : signrank.cpp.i
 
 signrank.s: signrank.cpp.s
@@ -817,7 +844,7 @@ signrank.s: signrank.cpp.s
 
 # target to generate assembly for a file
 signrank.cpp.s:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/signrank.cpp.s
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/signrank.cpp.s
 .PHONY : signrank.cpp.s
 
 tdist.obj: tdist.cpp.obj
@@ -826,7 +853,7 @@ tdist.obj: tdist.cpp.obj
 
 # target to build an object file
 tdist.cpp.obj:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/tdist.cpp.obj
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/tdist.cpp.obj
 .PHONY : tdist.cpp.obj
 
 tdist.i: tdist.cpp.i
@@ -835,7 +862,7 @@ tdist.i: tdist.cpp.i
 
 # target to preprocess a source file
 tdist.cpp.i:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/tdist.cpp.i
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/tdist.cpp.i
 .PHONY : tdist.cpp.i
 
 tdist.s: tdist.cpp.s
@@ -844,7 +871,7 @@ tdist.s: tdist.cpp.s
 
 # target to generate assembly for a file
 tdist.cpp.s:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/tdist.cpp.s
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/tdist.cpp.s
 .PHONY : tdist.cpp.s
 
 tukey.obj: tukey.cpp.obj
@@ -853,7 +880,7 @@ tukey.obj: tukey.cpp.obj
 
 # target to build an object file
 tukey.cpp.obj:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/tukey.cpp.obj
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/tukey.cpp.obj
 .PHONY : tukey.cpp.obj
 
 tukey.i: tukey.cpp.i
@@ -862,7 +889,7 @@ tukey.i: tukey.cpp.i
 
 # target to preprocess a source file
 tukey.cpp.i:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/tukey.cpp.i
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/tukey.cpp.i
 .PHONY : tukey.cpp.i
 
 tukey.s: tukey.cpp.s
@@ -871,7 +898,7 @@ tukey.s: tukey.cpp.s
 
 # target to generate assembly for a file
 tukey.cpp.s:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/tukey.cpp.s
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/tukey.cpp.s
 .PHONY : tukey.cpp.s
 
 uniform.obj: uniform.cpp.obj
@@ -880,7 +907,7 @@ uniform.obj: uniform.cpp.obj
 
 # target to build an object file
 uniform.cpp.obj:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/uniform.cpp.obj
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/uniform.cpp.obj
 .PHONY : uniform.cpp.obj
 
 uniform.i: uniform.cpp.i
@@ -889,7 +916,7 @@ uniform.i: uniform.cpp.i
 
 # target to preprocess a source file
 uniform.cpp.i:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/uniform.cpp.i
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/uniform.cpp.i
 .PHONY : uniform.cpp.i
 
 uniform.s: uniform.cpp.s
@@ -898,7 +925,7 @@ uniform.s: uniform.cpp.s
 
 # target to generate assembly for a file
 uniform.cpp.s:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/uniform.cpp.s
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/uniform.cpp.s
 .PHONY : uniform.cpp.s
 
 weibull.obj: weibull.cpp.obj
@@ -907,7 +934,7 @@ weibull.obj: weibull.cpp.obj
 
 # target to build an object file
 weibull.cpp.obj:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/weibull.cpp.obj
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/weibull.cpp.obj
 .PHONY : weibull.cpp.obj
 
 weibull.i: weibull.cpp.i
@@ -916,7 +943,7 @@ weibull.i: weibull.cpp.i
 
 # target to preprocess a source file
 weibull.cpp.i:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/weibull.cpp.i
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/weibull.cpp.i
 .PHONY : weibull.cpp.i
 
 weibull.s: weibull.cpp.s
@@ -925,7 +952,7 @@ weibull.s: weibull.cpp.s
 
 # target to generate assembly for a file
 weibull.cpp.s:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/weibull.cpp.s
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/weibull.cpp.s
 .PHONY : weibull.cpp.s
 
 wilcoxon.obj: wilcoxon.cpp.obj
@@ -934,7 +961,7 @@ wilcoxon.obj: wilcoxon.cpp.obj
 
 # target to build an object file
 wilcoxon.cpp.obj:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/wilcoxon.cpp.obj
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/wilcoxon.cpp.obj
 .PHONY : wilcoxon.cpp.obj
 
 wilcoxon.i: wilcoxon.cpp.i
@@ -943,7 +970,7 @@ wilcoxon.i: wilcoxon.cpp.i
 
 # target to preprocess a source file
 wilcoxon.cpp.i:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/wilcoxon.cpp.i
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/wilcoxon.cpp.i
 .PHONY : wilcoxon.cpp.i
 
 wilcoxon.s: wilcoxon.cpp.s
@@ -952,7 +979,7 @@ wilcoxon.s: wilcoxon.cpp.s
 
 # target to generate assembly for a file
 wilcoxon.cpp.s:
-	cd /d/coding/c++/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/wilcoxon.cpp.s
+	cd /d/coding/MiniR/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/wilcoxon.cpp.s
 .PHONY : wilcoxon.cpp.s
 
 # Help Target
@@ -967,6 +994,9 @@ help:
 	@echo "... acmtoms.obj"
 	@echo "... acmtoms.i"
 	@echo "... acmtoms.s"
+	@echo "... basedist.obj"
+	@echo "... basedist.i"
+	@echo "... basedist.s"
 	@echo "... beta_randist.obj"
 	@echo "... beta_randist.i"
 	@echo "... beta_randist.s"
@@ -1065,6 +1095,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d/coding/c++/MiniR/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /d/coding/MiniR/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

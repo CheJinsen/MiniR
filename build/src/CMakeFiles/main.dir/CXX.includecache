@@ -22,6 +22,14 @@ infnan.h
 specfun.h
 ../include/specfun.h
 
+../include/basedist.h
+cmath
+-
+cfloat
+-
+specfun.h
+../include/specfun.h
+
 ../include/infnan.h
 
 ../include/randist.h
@@ -41,6 +49,8 @@ ctime
 -
 cstdlib
 -
+basedist.h
+../include/basedist.h
 infnan.h
 ../include/infnan.h
 acmtoms.h
@@ -60,129 +70,113 @@ infnan.h
 acmtoms.h
 ../include/acmtoms.h
 
-/d/coding/c++/MiniR/src/acmtoms.cpp
-acmtoms.h
-/d/coding/c++/MiniR/src/acmtoms.h
-
-/d/coding/c++/MiniR/src/beta_randist.cpp
+/d/coding/MiniR/src/beta_randist.cpp
 randist.h
-/d/coding/c++/MiniR/src/randist.h
+/d/coding/MiniR/src/randist.h
 
-/d/coding/c++/MiniR/src/beta_specfun.cpp
-specfun.h
-/d/coding/c++/MiniR/src/specfun.h
-
-/d/coding/c++/MiniR/src/binomial.cpp
+/d/coding/MiniR/src/binomial.cpp
 randist.h
-/d/coding/c++/MiniR/src/randist.h
+/d/coding/MiniR/src/randist.h
 
-/d/coding/c++/MiniR/src/cauchy.cpp
+/d/coding/MiniR/src/cauchy.cpp
 randist.h
-/d/coding/c++/MiniR/src/randist.h
+/d/coding/MiniR/src/randist.h
 
-/d/coding/c++/MiniR/src/chisq.cpp
+/d/coding/MiniR/src/chisq.cpp
 randist.h
-/d/coding/c++/MiniR/src/randist.h
+/d/coding/MiniR/src/randist.h
 
-/d/coding/c++/MiniR/src/choose.cpp
-specfun.h
-/d/coding/c++/MiniR/src/specfun.h
-
-/d/coding/c++/MiniR/src/exponential.cpp
+/d/coding/MiniR/src/exponential.cpp
 randist.h
-/d/coding/c++/MiniR/src/randist.h
+/d/coding/MiniR/src/randist.h
 
-/d/coding/c++/MiniR/src/fdist.cpp
+/d/coding/MiniR/src/fdist.cpp
 randist.h
-/d/coding/c++/MiniR/src/randist.h
+/d/coding/MiniR/src/randist.h
 
-/d/coding/c++/MiniR/src/gamma_randist.cpp
+/d/coding/MiniR/src/gamma_randist.cpp
 randist.h
-/d/coding/c++/MiniR/src/randist.h
+/d/coding/MiniR/src/randist.h
 
-/d/coding/c++/MiniR/src/gamma_specfun.cpp
-specfun.h
-/d/coding/c++/MiniR/src/specfun.h
-
-/d/coding/c++/MiniR/src/geometric.cpp
+/d/coding/MiniR/src/geometric.cpp
 randist.h
-/d/coding/c++/MiniR/src/randist.h
+/d/coding/MiniR/src/randist.h
 
-/d/coding/c++/MiniR/src/hypergeometric.cpp
+/d/coding/MiniR/src/hypergeometric.cpp
 randist.h
-/d/coding/c++/MiniR/src/randist.h
+/d/coding/MiniR/src/randist.h
 climits
 -
 
-/d/coding/c++/MiniR/src/logistic.cpp
+/d/coding/MiniR/src/logistic.cpp
 randist.h
-/d/coding/c++/MiniR/src/randist.h
+/d/coding/MiniR/src/randist.h
 
-/d/coding/c++/MiniR/src/lognormal.cpp
+/d/coding/MiniR/src/lognormal.cpp
 randist.h
-/d/coding/c++/MiniR/src/randist.h
+/d/coding/MiniR/src/randist.h
 
-/d/coding/c++/MiniR/src/main.cpp
+/d/coding/MiniR/src/main.cpp
 iostream
 -
 iomanip
 -
 randist.h
-/d/coding/c++/MiniR/src/randist.h
+/d/coding/MiniR/src/randist.h
 random
 -
 ctime
 -
 
-/d/coding/c++/MiniR/src/negative_binomial.cpp
+/d/coding/MiniR/src/negative_binomial.cpp
 randist.h
-/d/coding/c++/MiniR/src/randist.h
+/d/coding/MiniR/src/randist.h
 
-/d/coding/c++/MiniR/src/non_central_beta.cpp
+/d/coding/MiniR/src/non_central_beta.cpp
 randist.h
-/d/coding/c++/MiniR/src/randist.h
+/d/coding/MiniR/src/randist.h
 
-/d/coding/c++/MiniR/src/non_central_chisq.cpp
+/d/coding/MiniR/src/non_central_chisq.cpp
 randist.h
-/d/coding/c++/MiniR/src/randist.h
+/d/coding/MiniR/src/randist.h
 
-/d/coding/c++/MiniR/src/non_central_fdist.cpp
+/d/coding/MiniR/src/non_central_fdist.cpp
 randist.h
-/d/coding/c++/MiniR/src/randist.h
+/d/coding/MiniR/src/randist.h
 
-/d/coding/c++/MiniR/src/non_central_tdist.cpp
+/d/coding/MiniR/src/non_central_tdist.cpp
 randist.h
-/d/coding/c++/MiniR/src/randist.h
+/d/coding/MiniR/src/randist.h
 
-/d/coding/c++/MiniR/src/normal.cpp
+/d/coding/MiniR/src/normal.cpp
 randist.h
-/d/coding/c++/MiniR/src/randist.h
+/d/coding/MiniR/src/randist.h
 
-/d/coding/c++/MiniR/src/poisson.cpp
+/d/coding/MiniR/src/poisson.cpp
 randist.h
-/d/coding/c++/MiniR/src/randist.h
+/d/coding/MiniR/src/randist.h
 
-/d/coding/c++/MiniR/src/signrank.cpp
+/d/coding/MiniR/src/signrank.cpp
 randist.h
-/d/coding/c++/MiniR/src/randist.h
+/d/coding/MiniR/src/randist.h
 
-/d/coding/c++/MiniR/src/tdist.cpp
+/d/coding/MiniR/src/tdist.cpp
 randist.h
-/d/coding/c++/MiniR/src/randist.h
+/d/coding/MiniR/src/randist.h
 
-/d/coding/c++/MiniR/src/tukey.cpp
+/d/coding/MiniR/src/tukey.cpp
 randist.h
-/d/coding/c++/MiniR/src/randist.h
+/d/coding/MiniR/src/randist.h
 
-/d/coding/c++/MiniR/src/uniform.cpp
+/d/coding/MiniR/src/uniform.cpp
 randist.h
-/d/coding/c++/MiniR/src/randist.h
+/d/coding/MiniR/src/randist.h
 
-/d/coding/c++/MiniR/src/weibull.cpp
+/d/coding/MiniR/src/weibull.cpp
 randist.h
-/d/coding/c++/MiniR/src/randist.h
+/d/coding/MiniR/src/randist.h
 
-/d/coding/c++/MiniR/src/wilcoxon.cpp
+/d/coding/MiniR/src/wilcoxon.cpp
 randist.h
-/d/coding/c++/MiniR/src/randist.h
+/d/coding/MiniR/src/randist.h
 

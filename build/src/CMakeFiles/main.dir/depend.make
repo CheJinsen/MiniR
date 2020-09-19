@@ -6,7 +6,14 @@ src/CMakeFiles/main.dir/acmtoms.cpp.obj: ../include/infnan.h
 src/CMakeFiles/main.dir/acmtoms.cpp.obj: ../include/specfun.h
 src/CMakeFiles/main.dir/acmtoms.cpp.obj: ../src/acmtoms.cpp
 
+src/CMakeFiles/main.dir/basedist.cpp.obj: ../include/acmtoms.h
+src/CMakeFiles/main.dir/basedist.cpp.obj: ../include/basedist.h
+src/CMakeFiles/main.dir/basedist.cpp.obj: ../include/infnan.h
+src/CMakeFiles/main.dir/basedist.cpp.obj: ../include/specfun.h
+src/CMakeFiles/main.dir/basedist.cpp.obj: ../src/basedist.cpp
+
 src/CMakeFiles/main.dir/beta_randist.cpp.obj: ../include/acmtoms.h
+src/CMakeFiles/main.dir/beta_randist.cpp.obj: ../include/basedist.h
 src/CMakeFiles/main.dir/beta_randist.cpp.obj: ../include/infnan.h
 src/CMakeFiles/main.dir/beta_randist.cpp.obj: ../include/randist.h
 src/CMakeFiles/main.dir/beta_randist.cpp.obj: ../include/specfun.h
@@ -18,18 +25,21 @@ src/CMakeFiles/main.dir/beta_specfun.cpp.obj: ../include/specfun.h
 src/CMakeFiles/main.dir/beta_specfun.cpp.obj: ../src/beta_specfun.cpp
 
 src/CMakeFiles/main.dir/binomial.cpp.obj: ../include/acmtoms.h
+src/CMakeFiles/main.dir/binomial.cpp.obj: ../include/basedist.h
 src/CMakeFiles/main.dir/binomial.cpp.obj: ../include/infnan.h
 src/CMakeFiles/main.dir/binomial.cpp.obj: ../include/randist.h
 src/CMakeFiles/main.dir/binomial.cpp.obj: ../include/specfun.h
 src/CMakeFiles/main.dir/binomial.cpp.obj: ../src/binomial.cpp
 
 src/CMakeFiles/main.dir/cauchy.cpp.obj: ../include/acmtoms.h
+src/CMakeFiles/main.dir/cauchy.cpp.obj: ../include/basedist.h
 src/CMakeFiles/main.dir/cauchy.cpp.obj: ../include/infnan.h
 src/CMakeFiles/main.dir/cauchy.cpp.obj: ../include/randist.h
 src/CMakeFiles/main.dir/cauchy.cpp.obj: ../include/specfun.h
 src/CMakeFiles/main.dir/cauchy.cpp.obj: ../src/cauchy.cpp
 
 src/CMakeFiles/main.dir/chisq.cpp.obj: ../include/acmtoms.h
+src/CMakeFiles/main.dir/chisq.cpp.obj: ../include/basedist.h
 src/CMakeFiles/main.dir/chisq.cpp.obj: ../include/infnan.h
 src/CMakeFiles/main.dir/chisq.cpp.obj: ../include/randist.h
 src/CMakeFiles/main.dir/chisq.cpp.obj: ../include/specfun.h
@@ -41,18 +51,21 @@ src/CMakeFiles/main.dir/choose.cpp.obj: ../include/specfun.h
 src/CMakeFiles/main.dir/choose.cpp.obj: ../src/choose.cpp
 
 src/CMakeFiles/main.dir/exponential.cpp.obj: ../include/acmtoms.h
+src/CMakeFiles/main.dir/exponential.cpp.obj: ../include/basedist.h
 src/CMakeFiles/main.dir/exponential.cpp.obj: ../include/infnan.h
 src/CMakeFiles/main.dir/exponential.cpp.obj: ../include/randist.h
 src/CMakeFiles/main.dir/exponential.cpp.obj: ../include/specfun.h
 src/CMakeFiles/main.dir/exponential.cpp.obj: ../src/exponential.cpp
 
 src/CMakeFiles/main.dir/fdist.cpp.obj: ../include/acmtoms.h
+src/CMakeFiles/main.dir/fdist.cpp.obj: ../include/basedist.h
 src/CMakeFiles/main.dir/fdist.cpp.obj: ../include/infnan.h
 src/CMakeFiles/main.dir/fdist.cpp.obj: ../include/randist.h
 src/CMakeFiles/main.dir/fdist.cpp.obj: ../include/specfun.h
 src/CMakeFiles/main.dir/fdist.cpp.obj: ../src/fdist.cpp
 
 src/CMakeFiles/main.dir/gamma_randist.cpp.obj: ../include/acmtoms.h
+src/CMakeFiles/main.dir/gamma_randist.cpp.obj: ../include/basedist.h
 src/CMakeFiles/main.dir/gamma_randist.cpp.obj: ../include/infnan.h
 src/CMakeFiles/main.dir/gamma_randist.cpp.obj: ../include/randist.h
 src/CMakeFiles/main.dir/gamma_randist.cpp.obj: ../include/specfun.h
@@ -64,12 +77,14 @@ src/CMakeFiles/main.dir/gamma_specfun.cpp.obj: ../include/specfun.h
 src/CMakeFiles/main.dir/gamma_specfun.cpp.obj: ../src/gamma_specfun.cpp
 
 src/CMakeFiles/main.dir/geometric.cpp.obj: ../include/acmtoms.h
+src/CMakeFiles/main.dir/geometric.cpp.obj: ../include/basedist.h
 src/CMakeFiles/main.dir/geometric.cpp.obj: ../include/infnan.h
 src/CMakeFiles/main.dir/geometric.cpp.obj: ../include/randist.h
 src/CMakeFiles/main.dir/geometric.cpp.obj: ../include/specfun.h
 src/CMakeFiles/main.dir/geometric.cpp.obj: ../src/geometric.cpp
 
 src/CMakeFiles/main.dir/hypergeometric.cpp.obj: ../include/acmtoms.h
+src/CMakeFiles/main.dir/hypergeometric.cpp.obj: ../include/basedist.h
 src/CMakeFiles/main.dir/hypergeometric.cpp.obj: ../include/infnan.h
 src/CMakeFiles/main.dir/hypergeometric.cpp.obj: ../include/randist.h
 src/CMakeFiles/main.dir/hypergeometric.cpp.obj: ../include/specfun.h
@@ -79,96 +94,112 @@ src/CMakeFiles/main.dir/infnan.cpp.obj: ../include/infnan.h
 src/CMakeFiles/main.dir/infnan.cpp.obj: ../src/infnan.cpp
 
 src/CMakeFiles/main.dir/logistic.cpp.obj: ../include/acmtoms.h
+src/CMakeFiles/main.dir/logistic.cpp.obj: ../include/basedist.h
 src/CMakeFiles/main.dir/logistic.cpp.obj: ../include/infnan.h
 src/CMakeFiles/main.dir/logistic.cpp.obj: ../include/randist.h
 src/CMakeFiles/main.dir/logistic.cpp.obj: ../include/specfun.h
 src/CMakeFiles/main.dir/logistic.cpp.obj: ../src/logistic.cpp
 
 src/CMakeFiles/main.dir/lognormal.cpp.obj: ../include/acmtoms.h
+src/CMakeFiles/main.dir/lognormal.cpp.obj: ../include/basedist.h
 src/CMakeFiles/main.dir/lognormal.cpp.obj: ../include/infnan.h
 src/CMakeFiles/main.dir/lognormal.cpp.obj: ../include/randist.h
 src/CMakeFiles/main.dir/lognormal.cpp.obj: ../include/specfun.h
 src/CMakeFiles/main.dir/lognormal.cpp.obj: ../src/lognormal.cpp
 
 src/CMakeFiles/main.dir/main.cpp.obj: ../include/acmtoms.h
+src/CMakeFiles/main.dir/main.cpp.obj: ../include/basedist.h
 src/CMakeFiles/main.dir/main.cpp.obj: ../include/infnan.h
 src/CMakeFiles/main.dir/main.cpp.obj: ../include/randist.h
 src/CMakeFiles/main.dir/main.cpp.obj: ../include/specfun.h
 src/CMakeFiles/main.dir/main.cpp.obj: ../src/main.cpp
 
 src/CMakeFiles/main.dir/negative_binomial.cpp.obj: ../include/acmtoms.h
+src/CMakeFiles/main.dir/negative_binomial.cpp.obj: ../include/basedist.h
 src/CMakeFiles/main.dir/negative_binomial.cpp.obj: ../include/infnan.h
 src/CMakeFiles/main.dir/negative_binomial.cpp.obj: ../include/randist.h
 src/CMakeFiles/main.dir/negative_binomial.cpp.obj: ../include/specfun.h
 src/CMakeFiles/main.dir/negative_binomial.cpp.obj: ../src/negative_binomial.cpp
 
 src/CMakeFiles/main.dir/non_central_beta.cpp.obj: ../include/acmtoms.h
+src/CMakeFiles/main.dir/non_central_beta.cpp.obj: ../include/basedist.h
 src/CMakeFiles/main.dir/non_central_beta.cpp.obj: ../include/infnan.h
 src/CMakeFiles/main.dir/non_central_beta.cpp.obj: ../include/randist.h
 src/CMakeFiles/main.dir/non_central_beta.cpp.obj: ../include/specfun.h
 src/CMakeFiles/main.dir/non_central_beta.cpp.obj: ../src/non_central_beta.cpp
 
 src/CMakeFiles/main.dir/non_central_chisq.cpp.obj: ../include/acmtoms.h
+src/CMakeFiles/main.dir/non_central_chisq.cpp.obj: ../include/basedist.h
 src/CMakeFiles/main.dir/non_central_chisq.cpp.obj: ../include/infnan.h
 src/CMakeFiles/main.dir/non_central_chisq.cpp.obj: ../include/randist.h
 src/CMakeFiles/main.dir/non_central_chisq.cpp.obj: ../include/specfun.h
 src/CMakeFiles/main.dir/non_central_chisq.cpp.obj: ../src/non_central_chisq.cpp
 
 src/CMakeFiles/main.dir/non_central_fdist.cpp.obj: ../include/acmtoms.h
+src/CMakeFiles/main.dir/non_central_fdist.cpp.obj: ../include/basedist.h
 src/CMakeFiles/main.dir/non_central_fdist.cpp.obj: ../include/infnan.h
 src/CMakeFiles/main.dir/non_central_fdist.cpp.obj: ../include/randist.h
 src/CMakeFiles/main.dir/non_central_fdist.cpp.obj: ../include/specfun.h
 src/CMakeFiles/main.dir/non_central_fdist.cpp.obj: ../src/non_central_fdist.cpp
 
 src/CMakeFiles/main.dir/non_central_tdist.cpp.obj: ../include/acmtoms.h
+src/CMakeFiles/main.dir/non_central_tdist.cpp.obj: ../include/basedist.h
 src/CMakeFiles/main.dir/non_central_tdist.cpp.obj: ../include/infnan.h
 src/CMakeFiles/main.dir/non_central_tdist.cpp.obj: ../include/randist.h
 src/CMakeFiles/main.dir/non_central_tdist.cpp.obj: ../include/specfun.h
 src/CMakeFiles/main.dir/non_central_tdist.cpp.obj: ../src/non_central_tdist.cpp
 
 src/CMakeFiles/main.dir/normal.cpp.obj: ../include/acmtoms.h
+src/CMakeFiles/main.dir/normal.cpp.obj: ../include/basedist.h
 src/CMakeFiles/main.dir/normal.cpp.obj: ../include/infnan.h
 src/CMakeFiles/main.dir/normal.cpp.obj: ../include/randist.h
 src/CMakeFiles/main.dir/normal.cpp.obj: ../include/specfun.h
 src/CMakeFiles/main.dir/normal.cpp.obj: ../src/normal.cpp
 
 src/CMakeFiles/main.dir/poisson.cpp.obj: ../include/acmtoms.h
+src/CMakeFiles/main.dir/poisson.cpp.obj: ../include/basedist.h
 src/CMakeFiles/main.dir/poisson.cpp.obj: ../include/infnan.h
 src/CMakeFiles/main.dir/poisson.cpp.obj: ../include/randist.h
 src/CMakeFiles/main.dir/poisson.cpp.obj: ../include/specfun.h
 src/CMakeFiles/main.dir/poisson.cpp.obj: ../src/poisson.cpp
 
 src/CMakeFiles/main.dir/signrank.cpp.obj: ../include/acmtoms.h
+src/CMakeFiles/main.dir/signrank.cpp.obj: ../include/basedist.h
 src/CMakeFiles/main.dir/signrank.cpp.obj: ../include/infnan.h
 src/CMakeFiles/main.dir/signrank.cpp.obj: ../include/randist.h
 src/CMakeFiles/main.dir/signrank.cpp.obj: ../include/specfun.h
 src/CMakeFiles/main.dir/signrank.cpp.obj: ../src/signrank.cpp
 
 src/CMakeFiles/main.dir/tdist.cpp.obj: ../include/acmtoms.h
+src/CMakeFiles/main.dir/tdist.cpp.obj: ../include/basedist.h
 src/CMakeFiles/main.dir/tdist.cpp.obj: ../include/infnan.h
 src/CMakeFiles/main.dir/tdist.cpp.obj: ../include/randist.h
 src/CMakeFiles/main.dir/tdist.cpp.obj: ../include/specfun.h
 src/CMakeFiles/main.dir/tdist.cpp.obj: ../src/tdist.cpp
 
 src/CMakeFiles/main.dir/tukey.cpp.obj: ../include/acmtoms.h
+src/CMakeFiles/main.dir/tukey.cpp.obj: ../include/basedist.h
 src/CMakeFiles/main.dir/tukey.cpp.obj: ../include/infnan.h
 src/CMakeFiles/main.dir/tukey.cpp.obj: ../include/randist.h
 src/CMakeFiles/main.dir/tukey.cpp.obj: ../include/specfun.h
 src/CMakeFiles/main.dir/tukey.cpp.obj: ../src/tukey.cpp
 
 src/CMakeFiles/main.dir/uniform.cpp.obj: ../include/acmtoms.h
+src/CMakeFiles/main.dir/uniform.cpp.obj: ../include/basedist.h
 src/CMakeFiles/main.dir/uniform.cpp.obj: ../include/infnan.h
 src/CMakeFiles/main.dir/uniform.cpp.obj: ../include/randist.h
 src/CMakeFiles/main.dir/uniform.cpp.obj: ../include/specfun.h
 src/CMakeFiles/main.dir/uniform.cpp.obj: ../src/uniform.cpp
 
 src/CMakeFiles/main.dir/weibull.cpp.obj: ../include/acmtoms.h
+src/CMakeFiles/main.dir/weibull.cpp.obj: ../include/basedist.h
 src/CMakeFiles/main.dir/weibull.cpp.obj: ../include/infnan.h
 src/CMakeFiles/main.dir/weibull.cpp.obj: ../include/randist.h
 src/CMakeFiles/main.dir/weibull.cpp.obj: ../include/specfun.h
 src/CMakeFiles/main.dir/weibull.cpp.obj: ../src/weibull.cpp
 
 src/CMakeFiles/main.dir/wilcoxon.cpp.obj: ../include/acmtoms.h
+src/CMakeFiles/main.dir/wilcoxon.cpp.obj: ../include/basedist.h
 src/CMakeFiles/main.dir/wilcoxon.cpp.obj: ../include/infnan.h
 src/CMakeFiles/main.dir/wilcoxon.cpp.obj: ../include/randist.h
 src/CMakeFiles/main.dir/wilcoxon.cpp.obj: ../include/specfun.h

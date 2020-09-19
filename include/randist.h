@@ -27,13 +27,14 @@
 #include <ctime>
 #include <cstdlib>
 
+#include "basedist.h"
 #include "infnan.h"
 #include "acmtoms.h"
 #include "specfun.h"
 
 namespace Randist
 {
-	class Normal
+	class Normal	// Normal Distribution
 	{
 	public:
 		static double pdf(double x, double mean = 0.0,
@@ -48,7 +49,7 @@ namespace Randist
 		static void cdfBoth(double x, double& cum, double& ccum, bool i_tail, bool log_p);
 	};
 
-	class Uniform
+	class Uniform 	// Uniform Distribution
 	{
 	public:
 		static double pdf(double x, double min = 0.0,
@@ -60,7 +61,7 @@ namespace Randist
 		static double rand(const double min = 0.0, const double max = 1.0);
 	};
 
-	class Gamma
+	class Gamma : private Base 	// Gamma Distributon
 	{
 	public:
 		static double pdf(double x, double shape,
@@ -72,10 +73,6 @@ namespace Randist
 		static double rand(const double shape = 1.0, const double scale = 1.0);
 
 	private:
-		static double poissonPdfRaw(double x, double lambda, bool give_log);
-		static double bd0(const double x, const double np);
-		static double stirlerr(const double x);
-
 		static double logcf(double x, double i, double d, double eps);
 		static inline double sqr(double x) { return x * x; }
 		static double log1pmx(double x);
@@ -95,7 +92,7 @@ namespace Randist
 			bool lower_tail, bool log_p, double tol);
 	};
 
-	class Beta
+	class Beta : private Base 	// Beta Distribution
 	{
 	public:
 		static double pdf(double x, double a, double b, bool log_p = false);
@@ -106,12 +103,8 @@ namespace Randist
 		static double rand(const double shape1, const double shape2);
 
 	private:
-		static double bd0(const double x, const double np);
-		static double stirlerr(const double x);
 		static double cdfRaw(double x, double a, double b,
 			bool lower_tail = true, bool log_p = false);
-		static double binomialPdfRaw(const double x, const double n,
-			const double p, const double q, bool give_lop);
 		static void quantileRaw(double alpha, double p, double q,
 			bool lower_tail, bool log_p, int swap_01, double log_q_cut,
 			int n_N, double* qb);
@@ -119,7 +112,7 @@ namespace Randist
 		static void showBet(double aa, double beta, double u1, double& v, double& w);
 	};
 
-	class Lognormal
+	class Lognormal 	// Lognormal Distribution
 	{
 	public:
 		static double pdf(double x, double meanlog, double sdlog,
@@ -131,7 +124,7 @@ namespace Randist
 		static double rand(const double meanlog = 0.0, const double sdlog = 1.0);
 	};
 
-	class Chisq
+	class Chisq 	// Chi-squared Distribution
 	{
 	public:
 		static double pdf(double x, double df, bool give_log = false);
@@ -142,7 +135,7 @@ namespace Randist
 		static double rand(const double df = 1.0);
 	};
 
-	class NonCentralChisq
+	class NonCentralChisq : private Base 	// Non-central Chi-squared Distribution
 	{
 	public:
 		static double pdf(double x, double df, double ncp,
@@ -154,16 +147,13 @@ namespace Randist
 		static double rand(const double df, const double lambda);
 
 	private:
-		static double poissonPdfRaw(double x, double lambda, bool give_log);
-		static double bd0(const double x, const double np);
-		static double stirlerr(const double n);
 		static double cdfRaw(double x, double f, double theta,
 			double errmax, double reltol, int itrmax,
 			bool lower_tail, bool log_p);
 		static double logspaceAdd(double logx, double logy);
 	};
 
-	class Fdist	// F Distribution
+	class Fdist :private Base	// F Distribution
 	{
 	public:
 		static double pdf(double x, double df1, double df2,
@@ -173,15 +163,9 @@ namespace Randist
 		static double quantile(double x, double df1, double df2,
 			bool lower_tail = true, bool give_log = false);
 		static double rand(const double df1, const double df2);
-
-	private:
-		static double bd0(const double x, const double np);
-		static double stirlerr(const double x);
-		static double BinomialPdfRaw(const double x, const double n,
-			const double p, const double q, bool give_lop);
 	};
 
-	class Tdist	// Student t Distribution
+	class Tdist : private Base	// Student t Distribution
 	{
 	public:
 		static double pdf(double x, double df, bool log_p = false);
@@ -190,17 +174,11 @@ namespace Randist
 		static double quantile(double p, double df,
 			bool lower_tail = true, bool log_p = false);
 		static double rand(const double df);
-		
-	private:
-		static double bd0(const double x, const double np);
-		static double stirlerr(const double x);
-		static double tanpi(double x);
 	};
 
-	class Binomial
+	class Binomial : private Base 	// Binomial Distribution
 	{
 	public:
-
 		static double pdf(double x, double size, double prob, bool log_p = false);
 		static double cdf(double q, double size, double prob,
 			bool lower_tail = true, bool log_p = false);
@@ -209,15 +187,11 @@ namespace Randist
 		static int rand(const int size, const double prob);
 
 	private:
-		static double bd0(const double x, const double np);
-		static double stirlerr(const double x);
-		static double pdfRaw(const double x, const double n, const double p,
-			const double q, bool give_lop);
 		static double doSearch(double y, double* z, double p,
 			double n, double pr, double incr);
 	};
 
-	class Cauchy
+	class Cauchy : private Base 	// Cauchy Distribution
 	{
 	public:
 		static double pdf(double x, double location = 0.0,
@@ -227,9 +201,6 @@ namespace Randist
 		static double quantile(double p, double location = 0.0, double scale = 1.0,
 			bool lower_tail = true, bool log_p = false);
 		static double rand(const double location = 0.0, const double scale = 1.0);
-
-	private:
-		static double tanpi(double x);
 	};
 
 	class Exp	// Exponential Distribution
@@ -243,7 +214,7 @@ namespace Randist
 		static double rand(const double lambda = 1.0);
 	};
 
-	class Geom	// Geometric Distribution
+	class Geom : private Base	// Geometric Distribution
 	{
 	public:
 		static double pdf(double x, double prob, bool log_p = false);
@@ -252,15 +223,9 @@ namespace Randist
 		static double quantile(double p, double prob,
 			bool lower_tail = true, bool log_p = false);
 		static int rand(const double prob = 0.5);
-
-	private:
-		static double bd0(const double x, const double np);
-		static double stirlerr(const double x);
-		static double BinomialPdfRaw(const double x, const double n,
-			const double p, const double q, bool give_lop);
 	};
 
-	class Hyper	// Hypergeometric Distribution
+	class Hyper : private Base	// Hypergeometric Distribution
 	{
 	public:
 		static double pdf(double x, double m, double n,
@@ -272,17 +237,13 @@ namespace Randist
 		static double rand(double m, double n, double k);
 
 	private:
-		static double bd0(const double x, const double np);
-		static double stirlerr(const double x);
-		static double BinomialPdfRaw(const double x, const double n,
-			const double p, const double q, bool give_lop);
 		static bool isNegOrNonInt(double x);	// negative or non integer
 		static double pdhyper(double x, double NR, double NB,
 			double n, bool log_p);
 		static double afc(int i);
 	};
 
-	class NegBinomial	// Negative Binomial Distribution
+	class NegBinomial : private Base	// Negative Binomial Distribution
 	{
 	public:
 		static double pdf(double x, double size, double prob, bool log_p = false);
@@ -300,16 +261,11 @@ namespace Randist
 		static int rand(const int size = 1, const double prob = 0.5);
 
 	private:
-		static double poissonPdfRaw(double x, double lambda, bool give_log);
-		static double bd0(const double x, const double np);
-		static double stirlerr(const double x);
-		static double BinomialPdfRaw(const double x, const double n,
-			const double p, const double q, bool give_lop);
 		static double doSearch(double y, double* z, double p,
 			double n, double pr, double incr);
 	};
 
-	class Poisson
+	class Poisson : private Base 	// Poisson Distribution
 	{
 	public:
 		static double pdf(double x, double lambda, bool give_log = false);
@@ -320,14 +276,11 @@ namespace Randist
 		static int rand(const double lambda);
 
 	private:
-		static double pdfRaw(double x, double lambda, bool give_log);
-		static double bd0(const double x, const double np);
-		static double stirlerr(const double x);
 		static double doSearch(double y, double* z, double p,
 			double lambda, double incr);
 	};
 
-	class Weibull
+	class Weibull 	// Weibull Distribution
 	{
 	public:
 		static double pdf(double x, double shape, double scale = 1.0,
@@ -339,7 +292,7 @@ namespace Randist
 		static double rand(const double shape = 1.0, const double scale = 1.0);
 	};
 
-	class Logistic
+	class Logistic 	// Logistic Distribution
 	{
 	public:
 		static double pdf(double x, double location = 0.0, double scale = 1.0,
@@ -354,7 +307,7 @@ namespace Randist
 		static double log1pexp(const double x);
 	};
 
-	class NonCentralBeta
+	class NonCentralBeta : private Base 	// Non-central Beta Distribution
 	{
 	public:
 		static double pdf(double x, double a, double b, double ncp,
@@ -364,18 +317,9 @@ namespace Randist
 		static double quantile(double p, double a, double b, double ncp,
 			bool lower_tail = true, bool give_log = false);
 		static double rand(const double shape1, const double shape2, const double ncp = 0.0);
-
-	private:
-		static double poissonPdfRaw(double x, double lambda, bool give_log);
-		static double bd0(const double x, const double np);
-		static double stirlerr(const double x);
-		static long double cdfRaw(double x, double o_x, double a,
-			double b, double ncp);
-		static double cdf2(double x, double o_x, double a, double b, double ncp,
-			bool lower_tail, bool log_p);
 	};
 
-	class NonCentralFdist	// F Distribution
+	class NonCentralFdist : private Base	// Non-central F Distribution
 	{
 	public:
 		static double pdf(double x, double df1, double df2,
@@ -385,12 +329,6 @@ namespace Randist
 		static double quantile(double x, double df1, double df2,
 			double ncp, bool lower_tail = true, bool give_log = false);
 		static double rand(const double df1, const double df2, const double ncp);
-
-	private:
-		static long double NonCentralBetaCdfRaw(double x, double o_x, double a,
-			double b, double ncp);
-		static double NonCentralBetaCdf2(double x, double o_x, double a, double b, double ncp,
-			bool lower_tail, bool log_p);
 	};
 
 	class NonCentralTdist	// Non-Central Student t Distribution
@@ -402,11 +340,6 @@ namespace Randist
 		static double quantile(double p, double df, double ncp,
 			bool lower_tail = true, bool log_p = false);
 		static double rand(const double df, const double ncp);
-		
-	private:
-		static double bd0(const double x, const double np);
-		static double stirlerr(const double x);
-		static double tanpi(double x);
 	};
 
 	class Tukey	// Studentized Range Distribution

@@ -83,8 +83,7 @@ double Normal::cdf(double x, double mu, double sigma,
 	return(lower_tail ? p : cp);
 }
 
-void Normal::cdfBoth(double x, double& cum, double& ccum,
-	bool i_tail, bool log_p)
+void Normal::cdfBoth(double x, double& cum, double& ccum, bool i_tail, bool log_p)
 {
 	const double a[5] = {
 		2.2352520354606839287,

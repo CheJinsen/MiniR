@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "../../bin/main"
   "../../bin/main.pdb"
   "CMakeFiles/main.dir/acmtoms.cpp.obj"
+  "CMakeFiles/main.dir/basedist.cpp.obj"
   "CMakeFiles/main.dir/beta_randist.cpp.obj"
   "CMakeFiles/main.dir/beta_specfun.cpp.obj"
   "CMakeFiles/main.dir/binomial.cpp.obj"
