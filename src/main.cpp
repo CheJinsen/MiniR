@@ -20,6 +20,7 @@
 #include <iostream>
 #include <iomanip>
 #include "regression.h"
+#include <Eigen/Core>
 
 using namespace Regression;
 
@@ -33,5 +34,8 @@ int main(int argc, char* argv[])
 		34,34,35,35,34,35,36,37,38,40,39,43};
 
 	Regs::lm(birthweight, estriol);
+
+	Eigen::MatrixXcf a = Eigen::MatrixXcf::Random(3, 3);
+	std::cout << a << std::endl;
 	return 0;
 }

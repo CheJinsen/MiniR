@@ -183,8 +183,9 @@ double NonCentralTdist::quantile(double p, double df, double ncp, bool lower_tai
 
     if (df <= 0.0) return InfNaN::nan();
 
-    if(ncp == 0.0 && df >= 1.0)
+    if(ncp == 0.0 && df >= 1.0) {
     	return Tdist::quantile(p, df, lower_tail, log_p);
+	}
 
     // R_Q_P01_boundaries(p, ML_NEGINF, ML_POSINF);
 	if (log_p) {
@@ -194,8 +195,7 @@ double NonCentralTdist::quantile(double p, double df, double ncp, bool lower_tai
 			return lower_tail ? InfNaN::posinf() : InfNaN::neginf();
 		if (p == InfNaN::neginf())
 			return lower_tail ? InfNaN::neginf() : InfNaN::posinf();
-	}
-	else {
+	} else {
 		if (p < 0 || p > 1)
 			return InfNaN::nan();
 		if (p == 0)
