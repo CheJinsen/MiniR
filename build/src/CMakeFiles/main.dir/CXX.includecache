@@ -67,6 +67,8 @@ cassert
 -
 functional
 -
+sstream
+-
 iosfwd
 -
 cstring
@@ -109,8 +111,12 @@ src/Core/arch/Default/ConjHelper.h
 ../include/Eigen/src/Core/arch/Default/ConjHelper.h
 src/Core/arch/SSE/PacketMath.h
 ../include/Eigen/src/Core/arch/SSE/PacketMath.h
+src/Core/arch/SSE/MathFunctions.h
+../include/Eigen/src/Core/arch/SSE/MathFunctions.h
 src/Core/arch/AVX/PacketMath.h
 ../include/Eigen/src/Core/arch/AVX/PacketMath.h
+src/Core/arch/AVX/MathFunctions.h
+../include/Eigen/src/Core/arch/AVX/MathFunctions.h
 src/Core/arch/AVX512/PacketMath.h
 ../include/Eigen/src/Core/arch/AVX512/PacketMath.h
 src/Core/arch/AVX512/MathFunctions.h
@@ -529,6 +535,8 @@ src/Core/util/ReenableStupidWarnings.h
 ../include/Eigen/src/Core/arch/CUDA/Complex.h
 
 ../include/Eigen/src/Core/arch/CUDA/Half.h
+sstream
+-
 
 ../include/Eigen/src/Core/arch/CUDA/MathFunctions.h
 
@@ -647,6 +655,10 @@ math_constants.h
 -
 cstdint
 -
+cstdint
+-
+stdint.h
+-
 
 ../include/Eigen/src/Core/util/ReenableStupidWarnings.h
 
@@ -694,7 +706,7 @@ vector
 iostream
 -
 
-/home/a008/MiniR/src/main.cpp
+/home/a008/coding/MiniR/src/main.cpp
 vector
 -
 iostream
@@ -702,7 +714,7 @@ iostream
 iomanip
 -
 regression.h
-/home/a008/MiniR/src/regression.h
+/home/a008/coding/MiniR/src/regression.h
 Eigen/Core
 -
 

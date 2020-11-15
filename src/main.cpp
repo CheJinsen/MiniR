@@ -37,5 +37,10 @@ int main(int argc, char* argv[])
 
 	Eigen::MatrixXcf a = Eigen::MatrixXcf::Random(3, 3);
 	std::cout << a << std::endl;
+
+	Eigen::MatrixXcf m(3, 3);
+	m << 1, 2, 3, 4, 5, 6, 7, 8, 9;
+	std::cout << "m = \n";
+	std::cout << m << "\n";
 	return 0;
 }

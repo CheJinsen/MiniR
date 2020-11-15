@@ -1,5 +1,5 @@
-/home/a008/MiniR/build/CMakeFiles/rebuild_cache.dir
-/home/a008/MiniR/build/CMakeFiles/edit_cache.dir
-/home/a008/MiniR/build/src/CMakeFiles/rebuild_cache.dir
-/home/a008/MiniR/build/src/CMakeFiles/edit_cache.dir
-/home/a008/MiniR/build/src/CMakeFiles/main.dir
+/home/a008/coding/MiniR/build/CMakeFiles/rebuild_cache.dir
+/home/a008/coding/MiniR/build/CMakeFiles/edit_cache.dir
+/home/a008/coding/MiniR/build/src/CMakeFiles/rebuild_cache.dir
+/home/a008/coding/MiniR/build/src/CMakeFiles/edit_cache.dir
+/home/a008/coding/MiniR/build/src/CMakeFiles/main.dir
