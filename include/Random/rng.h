@@ -1,9 +1,5 @@
 /* 
-   A C++ program for MT19937, with initialization improved 2002/1/26.
-   Coded by Takuji Nishimura and Makoto Matsumoto.
-
-   Before using, initialize the state by using init_genrand(seed)  
-   or init_by_array(init_key, key_length).
+   Random generator for MT19937.
 
    Copyright (C) 1997 - 2002, Makoto Matsumoto and Takuji Nishimura,
    All rights reserved.
@@ -85,6 +81,7 @@ private:
 	const int N = 624;
 	const int M = 397;
 	const unsigned long MATRIX_A = 0x9908b0dfUL;
+	const unsigned long UPPER_MASK = 0x80000000UL;
 	const unsigned long LOWER_MASK = 0x7fffffffUL;
 
 	int mti = 625;

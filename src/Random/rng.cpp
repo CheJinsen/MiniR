@@ -1,9 +1,5 @@
 /* 
-   A C++ program for MT19937, with initialization improved 2002/1/26.
-   Coded by Takuji Nishimura and Makoto Matsumoto.
-
-   Before using, initialize the state by using init_genrand(seed)  
-   or init_by_array(init_key, key_length).
+   Random generator for MT19937.
 
    Copyright (C) 1997 - 2002, Makoto Matsumoto and Takuji Nishimura,
    All rights reserved.
@@ -72,7 +68,7 @@ void RNG::seed(unsigned long s)
 {
 	mt[0] = s & 0xffffffffUL;
     for (mti = 1; mti < N; mti++) {
-        mt[mti] = (1812433253UL * (mt[mti-1] ^ (mt[mti-1] >> 30)) + mti); 
+        mt[mti] = (1812433253UL * (mt[mti - 1] ^ (mt[mti-1] >> 30)) + mti); 
         mt[mti] &= 0xffffffffUL;
     }
 }
@@ -84,20 +80,29 @@ void RNG::seed(unsigned long init_key[], int key_length)
     int k = N > key_length ? N : key_length;
     
     for (; k; k--) {
-        mt[i] = (mt[i] ^ ((mt[i-1] ^ (mt[i-1] >> 30)) * 1664525UL)) + init_key[j] + j;
+        mt[i] = (mt[i] ^ ((mt[i - 1] ^ (mt[i - 1] >> 30)) * 1664525UL)) + init_key[j] + j;
         mt[i] &= 0xffffffffUL;
         i++; j++;
         
-        if (i >= N) { mt[0] = mt[N-1]; i=1; }
-        if (j >= key_length) j=0;
+        if (i >= N) {
+            mt[0] = mt[N-1];
+            i = 1;
+        }
+
+        if (j >= key_length) {
+            j = 0;
+        }
     }
 
-    for (k = N-1; k; k--) {
-        mt[i] = (mt[i] ^ ((mt[i-1] ^ (mt[i-1] >> 30)) * 1566083941UL)) - i;
+    for (k = N - 1; k; k--) {
+        mt[i] = (mt[i] ^ ((mt[i - 1] ^ (mt[i - 1] >> 30)) * 1566083941UL)) - i;
         mt[i] &= 0xffffffffUL;
         i++;
 
-        if (i>=N) { mt[0] = mt[N-1]; i=1; }
+        if (i>=N) {
+            mt[0] = mt[N - 1];
+            i = 1;
+        }
     }
 
     mt[0] = 0x80000000UL;
@@ -115,18 +120,18 @@ unsigned long RNG::randInt32()
             seed(5489UL);
     	}
 
-        for (kk=0;kk<N-M;kk++) {
-            y = (mt[kk]&UPPER_MASK)|(mt[kk+1]&LOWER_MASK);
-            mt[kk] = mt[kk+M] ^ (y >> 1) ^ mag01[y & 0x1UL];
+        for (kk = 0; kk < N - M; kk++) {
+            y = (mt[kk] & UPPER_MASK) | (mt[kk + 1] & LOWER_MASK);
+            mt[kk] = mt[kk + M] ^ (y >> 1) ^ mag01[y & 0x1UL];
         }
 
-        for (;kk<N-1;kk++) {
-            y = (mt[kk]&UPPER_MASK)|(mt[kk+1]&LOWER_MASK);
-            mt[kk] = mt[kk+(M-N)] ^ (y >> 1) ^ mag01[y & 0x1UL];
+        for (; kk < N - 1; kk++) {
+            y = (mt[kk] & UPPER_MASK) | (mt[kk + 1] & LOWER_MASK);
+            mt[kk] = mt[kk + (M - N)] ^ (y >> 1) ^ mag01[y & 0x1UL];
         }
 
-        y = (mt[N-1]&UPPER_MASK)|(mt[0]&LOWER_MASK);
-        mt[N-1] = mt[M-1] ^ (y >> 1) ^ mag01[y & 0x1UL];
+        y = (mt[N-1] & UPPER_MASK) | (mt[0] & LOWER_MASK);
+        mt[N - 1] = mt[M - 1] ^ (y >> 1) ^ mag01[y & 0x1UL];
 
         mti = 0;
     }
@@ -173,8 +178,3 @@ double RNG::randRes53()
 
 }	// end namespace random
 }	// end namespace minilab
-
-Demo::Demo()
-{
-	std::cout << "Hello, demo...\n";
-}
