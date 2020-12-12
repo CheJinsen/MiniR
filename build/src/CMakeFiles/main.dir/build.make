@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/a008/coding/MiniR
+CMAKE_SOURCE_DIR = /home/a008/coding/MiniLab
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/a008/coding/MiniR/build
+CMAKE_BINARY_DIR = /home/a008/coding/MiniLab/build
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/main.dir/depend.make
@@ -57,511 +57,1831 @@ include src/CMakeFiles/main.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/main.dir/flags.make
 
-src/CMakeFiles/main.dir/acmtoms.cpp.o: src/CMakeFiles/main.dir/flags.make
-src/CMakeFiles/main.dir/acmtoms.cpp.o: ../src/acmtoms.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/main.dir/acmtoms.cpp.o"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/acmtoms.cpp.o -c /home/a008/coding/MiniR/src/acmtoms.cpp
-
-src/CMakeFiles/main.dir/acmtoms.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/acmtoms.cpp.i"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a008/coding/MiniR/src/acmtoms.cpp > CMakeFiles/main.dir/acmtoms.cpp.i
-
-src/CMakeFiles/main.dir/acmtoms.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/acmtoms.cpp.s"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a008/coding/MiniR/src/acmtoms.cpp -o CMakeFiles/main.dir/acmtoms.cpp.s
-
-src/CMakeFiles/main.dir/basedist.cpp.o: src/CMakeFiles/main.dir/flags.make
-src/CMakeFiles/main.dir/basedist.cpp.o: ../src/basedist.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/main.dir/basedist.cpp.o"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/basedist.cpp.o -c /home/a008/coding/MiniR/src/basedist.cpp
-
-src/CMakeFiles/main.dir/basedist.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/basedist.cpp.i"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a008/coding/MiniR/src/basedist.cpp > CMakeFiles/main.dir/basedist.cpp.i
-
-src/CMakeFiles/main.dir/basedist.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/basedist.cpp.s"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a008/coding/MiniR/src/basedist.cpp -o CMakeFiles/main.dir/basedist.cpp.s
-
-src/CMakeFiles/main.dir/beta_randist.cpp.o: src/CMakeFiles/main.dir/flags.make
-src/CMakeFiles/main.dir/beta_randist.cpp.o: ../src/beta_randist.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/main.dir/beta_randist.cpp.o"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/beta_randist.cpp.o -c /home/a008/coding/MiniR/src/beta_randist.cpp
-
-src/CMakeFiles/main.dir/beta_randist.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/beta_randist.cpp.i"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a008/coding/MiniR/src/beta_randist.cpp > CMakeFiles/main.dir/beta_randist.cpp.i
-
-src/CMakeFiles/main.dir/beta_randist.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/beta_randist.cpp.s"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a008/coding/MiniR/src/beta_randist.cpp -o CMakeFiles/main.dir/beta_randist.cpp.s
-
-src/CMakeFiles/main.dir/beta_specfun.cpp.o: src/CMakeFiles/main.dir/flags.make
-src/CMakeFiles/main.dir/beta_specfun.cpp.o: ../src/beta_specfun.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/main.dir/beta_specfun.cpp.o"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/beta_specfun.cpp.o -c /home/a008/coding/MiniR/src/beta_specfun.cpp
-
-src/CMakeFiles/main.dir/beta_specfun.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/beta_specfun.cpp.i"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a008/coding/MiniR/src/beta_specfun.cpp > CMakeFiles/main.dir/beta_specfun.cpp.i
-
-src/CMakeFiles/main.dir/beta_specfun.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/beta_specfun.cpp.s"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a008/coding/MiniR/src/beta_specfun.cpp -o CMakeFiles/main.dir/beta_specfun.cpp.s
-
-src/CMakeFiles/main.dir/binomial.cpp.o: src/CMakeFiles/main.dir/flags.make
-src/CMakeFiles/main.dir/binomial.cpp.o: ../src/binomial.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/main.dir/binomial.cpp.o"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/binomial.cpp.o -c /home/a008/coding/MiniR/src/binomial.cpp
-
-src/CMakeFiles/main.dir/binomial.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/binomial.cpp.i"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a008/coding/MiniR/src/binomial.cpp > CMakeFiles/main.dir/binomial.cpp.i
-
-src/CMakeFiles/main.dir/binomial.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/binomial.cpp.s"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a008/coding/MiniR/src/binomial.cpp -o CMakeFiles/main.dir/binomial.cpp.s
-
-src/CMakeFiles/main.dir/cauchy.cpp.o: src/CMakeFiles/main.dir/flags.make
-src/CMakeFiles/main.dir/cauchy.cpp.o: ../src/cauchy.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/main.dir/cauchy.cpp.o"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/cauchy.cpp.o -c /home/a008/coding/MiniR/src/cauchy.cpp
-
-src/CMakeFiles/main.dir/cauchy.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/cauchy.cpp.i"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a008/coding/MiniR/src/cauchy.cpp > CMakeFiles/main.dir/cauchy.cpp.i
-
-src/CMakeFiles/main.dir/cauchy.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/cauchy.cpp.s"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a008/coding/MiniR/src/cauchy.cpp -o CMakeFiles/main.dir/cauchy.cpp.s
-
-src/CMakeFiles/main.dir/chisq.cpp.o: src/CMakeFiles/main.dir/flags.make
-src/CMakeFiles/main.dir/chisq.cpp.o: ../src/chisq.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/main.dir/chisq.cpp.o"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/chisq.cpp.o -c /home/a008/coding/MiniR/src/chisq.cpp
-
-src/CMakeFiles/main.dir/chisq.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/chisq.cpp.i"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a008/coding/MiniR/src/chisq.cpp > CMakeFiles/main.dir/chisq.cpp.i
-
-src/CMakeFiles/main.dir/chisq.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/chisq.cpp.s"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a008/coding/MiniR/src/chisq.cpp -o CMakeFiles/main.dir/chisq.cpp.s
-
-src/CMakeFiles/main.dir/choose.cpp.o: src/CMakeFiles/main.dir/flags.make
-src/CMakeFiles/main.dir/choose.cpp.o: ../src/choose.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/main.dir/choose.cpp.o"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/choose.cpp.o -c /home/a008/coding/MiniR/src/choose.cpp
-
-src/CMakeFiles/main.dir/choose.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/choose.cpp.i"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a008/coding/MiniR/src/choose.cpp > CMakeFiles/main.dir/choose.cpp.i
-
-src/CMakeFiles/main.dir/choose.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/choose.cpp.s"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a008/coding/MiniR/src/choose.cpp -o CMakeFiles/main.dir/choose.cpp.s
-
-src/CMakeFiles/main.dir/exponential.cpp.o: src/CMakeFiles/main.dir/flags.make
-src/CMakeFiles/main.dir/exponential.cpp.o: ../src/exponential.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/CMakeFiles/main.dir/exponential.cpp.o"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/exponential.cpp.o -c /home/a008/coding/MiniR/src/exponential.cpp
-
-src/CMakeFiles/main.dir/exponential.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/exponential.cpp.i"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a008/coding/MiniR/src/exponential.cpp > CMakeFiles/main.dir/exponential.cpp.i
-
-src/CMakeFiles/main.dir/exponential.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/exponential.cpp.s"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a008/coding/MiniR/src/exponential.cpp -o CMakeFiles/main.dir/exponential.cpp.s
-
-src/CMakeFiles/main.dir/fdist.cpp.o: src/CMakeFiles/main.dir/flags.make
-src/CMakeFiles/main.dir/fdist.cpp.o: ../src/fdist.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/CMakeFiles/main.dir/fdist.cpp.o"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/fdist.cpp.o -c /home/a008/coding/MiniR/src/fdist.cpp
-
-src/CMakeFiles/main.dir/fdist.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/fdist.cpp.i"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a008/coding/MiniR/src/fdist.cpp > CMakeFiles/main.dir/fdist.cpp.i
-
-src/CMakeFiles/main.dir/fdist.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/fdist.cpp.s"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a008/coding/MiniR/src/fdist.cpp -o CMakeFiles/main.dir/fdist.cpp.s
-
-src/CMakeFiles/main.dir/gamma_randist.cpp.o: src/CMakeFiles/main.dir/flags.make
-src/CMakeFiles/main.dir/gamma_randist.cpp.o: ../src/gamma_randist.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object src/CMakeFiles/main.dir/gamma_randist.cpp.o"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/gamma_randist.cpp.o -c /home/a008/coding/MiniR/src/gamma_randist.cpp
-
-src/CMakeFiles/main.dir/gamma_randist.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/gamma_randist.cpp.i"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a008/coding/MiniR/src/gamma_randist.cpp > CMakeFiles/main.dir/gamma_randist.cpp.i
-
-src/CMakeFiles/main.dir/gamma_randist.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/gamma_randist.cpp.s"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a008/coding/MiniR/src/gamma_randist.cpp -o CMakeFiles/main.dir/gamma_randist.cpp.s
-
-src/CMakeFiles/main.dir/gamma_specfun.cpp.o: src/CMakeFiles/main.dir/flags.make
-src/CMakeFiles/main.dir/gamma_specfun.cpp.o: ../src/gamma_specfun.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object src/CMakeFiles/main.dir/gamma_specfun.cpp.o"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/gamma_specfun.cpp.o -c /home/a008/coding/MiniR/src/gamma_specfun.cpp
-
-src/CMakeFiles/main.dir/gamma_specfun.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/gamma_specfun.cpp.i"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a008/coding/MiniR/src/gamma_specfun.cpp > CMakeFiles/main.dir/gamma_specfun.cpp.i
-
-src/CMakeFiles/main.dir/gamma_specfun.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/gamma_specfun.cpp.s"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a008/coding/MiniR/src/gamma_specfun.cpp -o CMakeFiles/main.dir/gamma_specfun.cpp.s
-
-src/CMakeFiles/main.dir/geometric.cpp.o: src/CMakeFiles/main.dir/flags.make
-src/CMakeFiles/main.dir/geometric.cpp.o: ../src/geometric.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object src/CMakeFiles/main.dir/geometric.cpp.o"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/geometric.cpp.o -c /home/a008/coding/MiniR/src/geometric.cpp
-
-src/CMakeFiles/main.dir/geometric.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/geometric.cpp.i"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a008/coding/MiniR/src/geometric.cpp > CMakeFiles/main.dir/geometric.cpp.i
-
-src/CMakeFiles/main.dir/geometric.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/geometric.cpp.s"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a008/coding/MiniR/src/geometric.cpp -o CMakeFiles/main.dir/geometric.cpp.s
-
-src/CMakeFiles/main.dir/hypergeometric.cpp.o: src/CMakeFiles/main.dir/flags.make
-src/CMakeFiles/main.dir/hypergeometric.cpp.o: ../src/hypergeometric.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object src/CMakeFiles/main.dir/hypergeometric.cpp.o"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/hypergeometric.cpp.o -c /home/a008/coding/MiniR/src/hypergeometric.cpp
-
-src/CMakeFiles/main.dir/hypergeometric.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/hypergeometric.cpp.i"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a008/coding/MiniR/src/hypergeometric.cpp > CMakeFiles/main.dir/hypergeometric.cpp.i
-
-src/CMakeFiles/main.dir/hypergeometric.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/hypergeometric.cpp.s"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a008/coding/MiniR/src/hypergeometric.cpp -o CMakeFiles/main.dir/hypergeometric.cpp.s
-
-src/CMakeFiles/main.dir/infnan.cpp.o: src/CMakeFiles/main.dir/flags.make
-src/CMakeFiles/main.dir/infnan.cpp.o: ../src/infnan.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object src/CMakeFiles/main.dir/infnan.cpp.o"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/infnan.cpp.o -c /home/a008/coding/MiniR/src/infnan.cpp
-
-src/CMakeFiles/main.dir/infnan.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/infnan.cpp.i"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a008/coding/MiniR/src/infnan.cpp > CMakeFiles/main.dir/infnan.cpp.i
-
-src/CMakeFiles/main.dir/infnan.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/infnan.cpp.s"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a008/coding/MiniR/src/infnan.cpp -o CMakeFiles/main.dir/infnan.cpp.s
-
-src/CMakeFiles/main.dir/logistic.cpp.o: src/CMakeFiles/main.dir/flags.make
-src/CMakeFiles/main.dir/logistic.cpp.o: ../src/logistic.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object src/CMakeFiles/main.dir/logistic.cpp.o"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/logistic.cpp.o -c /home/a008/coding/MiniR/src/logistic.cpp
-
-src/CMakeFiles/main.dir/logistic.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/logistic.cpp.i"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a008/coding/MiniR/src/logistic.cpp > CMakeFiles/main.dir/logistic.cpp.i
-
-src/CMakeFiles/main.dir/logistic.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/logistic.cpp.s"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a008/coding/MiniR/src/logistic.cpp -o CMakeFiles/main.dir/logistic.cpp.s
-
-src/CMakeFiles/main.dir/lognormal.cpp.o: src/CMakeFiles/main.dir/flags.make
-src/CMakeFiles/main.dir/lognormal.cpp.o: ../src/lognormal.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object src/CMakeFiles/main.dir/lognormal.cpp.o"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/lognormal.cpp.o -c /home/a008/coding/MiniR/src/lognormal.cpp
-
-src/CMakeFiles/main.dir/lognormal.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/lognormal.cpp.i"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a008/coding/MiniR/src/lognormal.cpp > CMakeFiles/main.dir/lognormal.cpp.i
-
-src/CMakeFiles/main.dir/lognormal.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/lognormal.cpp.s"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a008/coding/MiniR/src/lognormal.cpp -o CMakeFiles/main.dir/lognormal.cpp.s
-
 src/CMakeFiles/main.dir/main.cpp.o: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object src/CMakeFiles/main.dir/main.cpp.o"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/main.cpp.o -c /home/a008/coding/MiniR/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/main.dir/main.cpp.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/main.cpp.o -c /home/a008/coding/MiniLab/src/main.cpp
 
 src/CMakeFiles/main.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/main.cpp.i"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a008/coding/MiniR/src/main.cpp > CMakeFiles/main.dir/main.cpp.i
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a008/coding/MiniLab/src/main.cpp > CMakeFiles/main.dir/main.cpp.i
 
 src/CMakeFiles/main.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/main.cpp.s"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a008/coding/MiniR/src/main.cpp -o CMakeFiles/main.dir/main.cpp.s
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a008/coding/MiniLab/src/main.cpp -o CMakeFiles/main.dir/main.cpp.s
 
-src/CMakeFiles/main.dir/negative_binomial.cpp.o: src/CMakeFiles/main.dir/flags.make
-src/CMakeFiles/main.dir/negative_binomial.cpp.o: ../src/negative_binomial.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object src/CMakeFiles/main.dir/negative_binomial.cpp.o"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/negative_binomial.cpp.o -c /home/a008/coding/MiniR/src/negative_binomial.cpp
+src/CMakeFiles/main.dir/Rmath/bd0.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/bd0.c.o: ../src/Rmath/bd0.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/CMakeFiles/main.dir/Rmath/bd0.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/bd0.c.o   -c /home/a008/coding/MiniLab/src/Rmath/bd0.c
 
-src/CMakeFiles/main.dir/negative_binomial.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/negative_binomial.cpp.i"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a008/coding/MiniR/src/negative_binomial.cpp > CMakeFiles/main.dir/negative_binomial.cpp.i
+src/CMakeFiles/main.dir/Rmath/bd0.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/bd0.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/bd0.c > CMakeFiles/main.dir/Rmath/bd0.c.i
 
-src/CMakeFiles/main.dir/negative_binomial.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/negative_binomial.cpp.s"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a008/coding/MiniR/src/negative_binomial.cpp -o CMakeFiles/main.dir/negative_binomial.cpp.s
+src/CMakeFiles/main.dir/Rmath/bd0.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/bd0.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/bd0.c -o CMakeFiles/main.dir/Rmath/bd0.c.s
 
-src/CMakeFiles/main.dir/non_central_beta.cpp.o: src/CMakeFiles/main.dir/flags.make
-src/CMakeFiles/main.dir/non_central_beta.cpp.o: ../src/non_central_beta.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object src/CMakeFiles/main.dir/non_central_beta.cpp.o"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/non_central_beta.cpp.o -c /home/a008/coding/MiniR/src/non_central_beta.cpp
+src/CMakeFiles/main.dir/Rmath/bessel_i.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/bessel_i.c.o: ../src/Rmath/bessel_i.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object src/CMakeFiles/main.dir/Rmath/bessel_i.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/bessel_i.c.o   -c /home/a008/coding/MiniLab/src/Rmath/bessel_i.c
 
-src/CMakeFiles/main.dir/non_central_beta.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/non_central_beta.cpp.i"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a008/coding/MiniR/src/non_central_beta.cpp > CMakeFiles/main.dir/non_central_beta.cpp.i
+src/CMakeFiles/main.dir/Rmath/bessel_i.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/bessel_i.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/bessel_i.c > CMakeFiles/main.dir/Rmath/bessel_i.c.i
 
-src/CMakeFiles/main.dir/non_central_beta.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/non_central_beta.cpp.s"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a008/coding/MiniR/src/non_central_beta.cpp -o CMakeFiles/main.dir/non_central_beta.cpp.s
+src/CMakeFiles/main.dir/Rmath/bessel_i.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/bessel_i.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/bessel_i.c -o CMakeFiles/main.dir/Rmath/bessel_i.c.s
 
-src/CMakeFiles/main.dir/non_central_chisq.cpp.o: src/CMakeFiles/main.dir/flags.make
-src/CMakeFiles/main.dir/non_central_chisq.cpp.o: ../src/non_central_chisq.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object src/CMakeFiles/main.dir/non_central_chisq.cpp.o"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/non_central_chisq.cpp.o -c /home/a008/coding/MiniR/src/non_central_chisq.cpp
+src/CMakeFiles/main.dir/Rmath/bessel_j.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/bessel_j.c.o: ../src/Rmath/bessel_j.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object src/CMakeFiles/main.dir/Rmath/bessel_j.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/bessel_j.c.o   -c /home/a008/coding/MiniLab/src/Rmath/bessel_j.c
 
-src/CMakeFiles/main.dir/non_central_chisq.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/non_central_chisq.cpp.i"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a008/coding/MiniR/src/non_central_chisq.cpp > CMakeFiles/main.dir/non_central_chisq.cpp.i
+src/CMakeFiles/main.dir/Rmath/bessel_j.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/bessel_j.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/bessel_j.c > CMakeFiles/main.dir/Rmath/bessel_j.c.i
 
-src/CMakeFiles/main.dir/non_central_chisq.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/non_central_chisq.cpp.s"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a008/coding/MiniR/src/non_central_chisq.cpp -o CMakeFiles/main.dir/non_central_chisq.cpp.s
+src/CMakeFiles/main.dir/Rmath/bessel_j.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/bessel_j.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/bessel_j.c -o CMakeFiles/main.dir/Rmath/bessel_j.c.s
 
-src/CMakeFiles/main.dir/non_central_fdist.cpp.o: src/CMakeFiles/main.dir/flags.make
-src/CMakeFiles/main.dir/non_central_fdist.cpp.o: ../src/non_central_fdist.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object src/CMakeFiles/main.dir/non_central_fdist.cpp.o"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/non_central_fdist.cpp.o -c /home/a008/coding/MiniR/src/non_central_fdist.cpp
+src/CMakeFiles/main.dir/Rmath/bessel_k.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/bessel_k.c.o: ../src/Rmath/bessel_k.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object src/CMakeFiles/main.dir/Rmath/bessel_k.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/bessel_k.c.o   -c /home/a008/coding/MiniLab/src/Rmath/bessel_k.c
 
-src/CMakeFiles/main.dir/non_central_fdist.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/non_central_fdist.cpp.i"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a008/coding/MiniR/src/non_central_fdist.cpp > CMakeFiles/main.dir/non_central_fdist.cpp.i
+src/CMakeFiles/main.dir/Rmath/bessel_k.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/bessel_k.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/bessel_k.c > CMakeFiles/main.dir/Rmath/bessel_k.c.i
 
-src/CMakeFiles/main.dir/non_central_fdist.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/non_central_fdist.cpp.s"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a008/coding/MiniR/src/non_central_fdist.cpp -o CMakeFiles/main.dir/non_central_fdist.cpp.s
+src/CMakeFiles/main.dir/Rmath/bessel_k.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/bessel_k.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/bessel_k.c -o CMakeFiles/main.dir/Rmath/bessel_k.c.s
 
-src/CMakeFiles/main.dir/non_central_tdist.cpp.o: src/CMakeFiles/main.dir/flags.make
-src/CMakeFiles/main.dir/non_central_tdist.cpp.o: ../src/non_central_tdist.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object src/CMakeFiles/main.dir/non_central_tdist.cpp.o"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/non_central_tdist.cpp.o -c /home/a008/coding/MiniR/src/non_central_tdist.cpp
+src/CMakeFiles/main.dir/Rmath/bessel_y.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/bessel_y.c.o: ../src/Rmath/bessel_y.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object src/CMakeFiles/main.dir/Rmath/bessel_y.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/bessel_y.c.o   -c /home/a008/coding/MiniLab/src/Rmath/bessel_y.c
 
-src/CMakeFiles/main.dir/non_central_tdist.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/non_central_tdist.cpp.i"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a008/coding/MiniR/src/non_central_tdist.cpp > CMakeFiles/main.dir/non_central_tdist.cpp.i
+src/CMakeFiles/main.dir/Rmath/bessel_y.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/bessel_y.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/bessel_y.c > CMakeFiles/main.dir/Rmath/bessel_y.c.i
 
-src/CMakeFiles/main.dir/non_central_tdist.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/non_central_tdist.cpp.s"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a008/coding/MiniR/src/non_central_tdist.cpp -o CMakeFiles/main.dir/non_central_tdist.cpp.s
+src/CMakeFiles/main.dir/Rmath/bessel_y.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/bessel_y.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/bessel_y.c -o CMakeFiles/main.dir/Rmath/bessel_y.c.s
 
-src/CMakeFiles/main.dir/normal.cpp.o: src/CMakeFiles/main.dir/flags.make
-src/CMakeFiles/main.dir/normal.cpp.o: ../src/normal.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object src/CMakeFiles/main.dir/normal.cpp.o"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/normal.cpp.o -c /home/a008/coding/MiniR/src/normal.cpp
+src/CMakeFiles/main.dir/Rmath/beta.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/beta.c.o: ../src/Rmath/beta.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object src/CMakeFiles/main.dir/Rmath/beta.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/beta.c.o   -c /home/a008/coding/MiniLab/src/Rmath/beta.c
 
-src/CMakeFiles/main.dir/normal.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/normal.cpp.i"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a008/coding/MiniR/src/normal.cpp > CMakeFiles/main.dir/normal.cpp.i
+src/CMakeFiles/main.dir/Rmath/beta.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/beta.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/beta.c > CMakeFiles/main.dir/Rmath/beta.c.i
 
-src/CMakeFiles/main.dir/normal.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/normal.cpp.s"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a008/coding/MiniR/src/normal.cpp -o CMakeFiles/main.dir/normal.cpp.s
+src/CMakeFiles/main.dir/Rmath/beta.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/beta.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/beta.c -o CMakeFiles/main.dir/Rmath/beta.c.s
 
-src/CMakeFiles/main.dir/poisson.cpp.o: src/CMakeFiles/main.dir/flags.make
-src/CMakeFiles/main.dir/poisson.cpp.o: ../src/poisson.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object src/CMakeFiles/main.dir/poisson.cpp.o"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/poisson.cpp.o -c /home/a008/coding/MiniR/src/poisson.cpp
+src/CMakeFiles/main.dir/Rmath/chebyshev.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/chebyshev.c.o: ../src/Rmath/chebyshev.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object src/CMakeFiles/main.dir/Rmath/chebyshev.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/chebyshev.c.o   -c /home/a008/coding/MiniLab/src/Rmath/chebyshev.c
 
-src/CMakeFiles/main.dir/poisson.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/poisson.cpp.i"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a008/coding/MiniR/src/poisson.cpp > CMakeFiles/main.dir/poisson.cpp.i
+src/CMakeFiles/main.dir/Rmath/chebyshev.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/chebyshev.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/chebyshev.c > CMakeFiles/main.dir/Rmath/chebyshev.c.i
 
-src/CMakeFiles/main.dir/poisson.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/poisson.cpp.s"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a008/coding/MiniR/src/poisson.cpp -o CMakeFiles/main.dir/poisson.cpp.s
+src/CMakeFiles/main.dir/Rmath/chebyshev.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/chebyshev.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/chebyshev.c -o CMakeFiles/main.dir/Rmath/chebyshev.c.s
 
-src/CMakeFiles/main.dir/regression.cpp.o: src/CMakeFiles/main.dir/flags.make
-src/CMakeFiles/main.dir/regression.cpp.o: ../src/regression.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object src/CMakeFiles/main.dir/regression.cpp.o"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/regression.cpp.o -c /home/a008/coding/MiniR/src/regression.cpp
+src/CMakeFiles/main.dir/Rmath/choose.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/choose.c.o: ../src/Rmath/choose.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object src/CMakeFiles/main.dir/Rmath/choose.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/choose.c.o   -c /home/a008/coding/MiniLab/src/Rmath/choose.c
 
-src/CMakeFiles/main.dir/regression.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/regression.cpp.i"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a008/coding/MiniR/src/regression.cpp > CMakeFiles/main.dir/regression.cpp.i
+src/CMakeFiles/main.dir/Rmath/choose.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/choose.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/choose.c > CMakeFiles/main.dir/Rmath/choose.c.i
 
-src/CMakeFiles/main.dir/regression.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/regression.cpp.s"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a008/coding/MiniR/src/regression.cpp -o CMakeFiles/main.dir/regression.cpp.s
+src/CMakeFiles/main.dir/Rmath/choose.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/choose.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/choose.c -o CMakeFiles/main.dir/Rmath/choose.c.s
 
-src/CMakeFiles/main.dir/signrank.cpp.o: src/CMakeFiles/main.dir/flags.make
-src/CMakeFiles/main.dir/signrank.cpp.o: ../src/signrank.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object src/CMakeFiles/main.dir/signrank.cpp.o"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/signrank.cpp.o -c /home/a008/coding/MiniR/src/signrank.cpp
+src/CMakeFiles/main.dir/Rmath/cospi.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/cospi.c.o: ../src/Rmath/cospi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object src/CMakeFiles/main.dir/Rmath/cospi.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/cospi.c.o   -c /home/a008/coding/MiniLab/src/Rmath/cospi.c
 
-src/CMakeFiles/main.dir/signrank.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/signrank.cpp.i"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a008/coding/MiniR/src/signrank.cpp > CMakeFiles/main.dir/signrank.cpp.i
+src/CMakeFiles/main.dir/Rmath/cospi.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/cospi.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/cospi.c > CMakeFiles/main.dir/Rmath/cospi.c.i
 
-src/CMakeFiles/main.dir/signrank.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/signrank.cpp.s"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a008/coding/MiniR/src/signrank.cpp -o CMakeFiles/main.dir/signrank.cpp.s
+src/CMakeFiles/main.dir/Rmath/cospi.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/cospi.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/cospi.c -o CMakeFiles/main.dir/Rmath/cospi.c.s
 
-src/CMakeFiles/main.dir/statistics.cpp.o: src/CMakeFiles/main.dir/flags.make
-src/CMakeFiles/main.dir/statistics.cpp.o: ../src/statistics.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object src/CMakeFiles/main.dir/statistics.cpp.o"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/statistics.cpp.o -c /home/a008/coding/MiniR/src/statistics.cpp
+src/CMakeFiles/main.dir/Rmath/d1mach.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/d1mach.c.o: ../src/Rmath/d1mach.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object src/CMakeFiles/main.dir/Rmath/d1mach.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/d1mach.c.o   -c /home/a008/coding/MiniLab/src/Rmath/d1mach.c
 
-src/CMakeFiles/main.dir/statistics.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/statistics.cpp.i"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a008/coding/MiniR/src/statistics.cpp > CMakeFiles/main.dir/statistics.cpp.i
+src/CMakeFiles/main.dir/Rmath/d1mach.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/d1mach.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/d1mach.c > CMakeFiles/main.dir/Rmath/d1mach.c.i
 
-src/CMakeFiles/main.dir/statistics.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/statistics.cpp.s"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a008/coding/MiniR/src/statistics.cpp -o CMakeFiles/main.dir/statistics.cpp.s
+src/CMakeFiles/main.dir/Rmath/d1mach.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/d1mach.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/d1mach.c -o CMakeFiles/main.dir/Rmath/d1mach.c.s
 
-src/CMakeFiles/main.dir/tdist.cpp.o: src/CMakeFiles/main.dir/flags.make
-src/CMakeFiles/main.dir/tdist.cpp.o: ../src/tdist.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object src/CMakeFiles/main.dir/tdist.cpp.o"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/tdist.cpp.o -c /home/a008/coding/MiniR/src/tdist.cpp
+src/CMakeFiles/main.dir/Rmath/dbeta.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/dbeta.c.o: ../src/Rmath/dbeta.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object src/CMakeFiles/main.dir/Rmath/dbeta.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/dbeta.c.o   -c /home/a008/coding/MiniLab/src/Rmath/dbeta.c
 
-src/CMakeFiles/main.dir/tdist.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/tdist.cpp.i"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a008/coding/MiniR/src/tdist.cpp > CMakeFiles/main.dir/tdist.cpp.i
+src/CMakeFiles/main.dir/Rmath/dbeta.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/dbeta.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/dbeta.c > CMakeFiles/main.dir/Rmath/dbeta.c.i
 
-src/CMakeFiles/main.dir/tdist.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/tdist.cpp.s"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a008/coding/MiniR/src/tdist.cpp -o CMakeFiles/main.dir/tdist.cpp.s
+src/CMakeFiles/main.dir/Rmath/dbeta.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/dbeta.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/dbeta.c -o CMakeFiles/main.dir/Rmath/dbeta.c.s
 
-src/CMakeFiles/main.dir/tukey.cpp.o: src/CMakeFiles/main.dir/flags.make
-src/CMakeFiles/main.dir/tukey.cpp.o: ../src/tukey.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object src/CMakeFiles/main.dir/tukey.cpp.o"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/tukey.cpp.o -c /home/a008/coding/MiniR/src/tukey.cpp
+src/CMakeFiles/main.dir/Rmath/dbinom.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/dbinom.c.o: ../src/Rmath/dbinom.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object src/CMakeFiles/main.dir/Rmath/dbinom.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/dbinom.c.o   -c /home/a008/coding/MiniLab/src/Rmath/dbinom.c
 
-src/CMakeFiles/main.dir/tukey.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/tukey.cpp.i"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a008/coding/MiniR/src/tukey.cpp > CMakeFiles/main.dir/tukey.cpp.i
+src/CMakeFiles/main.dir/Rmath/dbinom.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/dbinom.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/dbinom.c > CMakeFiles/main.dir/Rmath/dbinom.c.i
 
-src/CMakeFiles/main.dir/tukey.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/tukey.cpp.s"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a008/coding/MiniR/src/tukey.cpp -o CMakeFiles/main.dir/tukey.cpp.s
+src/CMakeFiles/main.dir/Rmath/dbinom.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/dbinom.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/dbinom.c -o CMakeFiles/main.dir/Rmath/dbinom.c.s
 
-src/CMakeFiles/main.dir/uniform.cpp.o: src/CMakeFiles/main.dir/flags.make
-src/CMakeFiles/main.dir/uniform.cpp.o: ../src/uniform.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object src/CMakeFiles/main.dir/uniform.cpp.o"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/uniform.cpp.o -c /home/a008/coding/MiniR/src/uniform.cpp
+src/CMakeFiles/main.dir/Rmath/dcauchy.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/dcauchy.c.o: ../src/Rmath/dcauchy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object src/CMakeFiles/main.dir/Rmath/dcauchy.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/dcauchy.c.o   -c /home/a008/coding/MiniLab/src/Rmath/dcauchy.c
 
-src/CMakeFiles/main.dir/uniform.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/uniform.cpp.i"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a008/coding/MiniR/src/uniform.cpp > CMakeFiles/main.dir/uniform.cpp.i
+src/CMakeFiles/main.dir/Rmath/dcauchy.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/dcauchy.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/dcauchy.c > CMakeFiles/main.dir/Rmath/dcauchy.c.i
 
-src/CMakeFiles/main.dir/uniform.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/uniform.cpp.s"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a008/coding/MiniR/src/uniform.cpp -o CMakeFiles/main.dir/uniform.cpp.s
+src/CMakeFiles/main.dir/Rmath/dcauchy.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/dcauchy.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/dcauchy.c -o CMakeFiles/main.dir/Rmath/dcauchy.c.s
 
-src/CMakeFiles/main.dir/weibull.cpp.o: src/CMakeFiles/main.dir/flags.make
-src/CMakeFiles/main.dir/weibull.cpp.o: ../src/weibull.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object src/CMakeFiles/main.dir/weibull.cpp.o"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/weibull.cpp.o -c /home/a008/coding/MiniR/src/weibull.cpp
+src/CMakeFiles/main.dir/Rmath/dchisq.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/dchisq.c.o: ../src/Rmath/dchisq.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object src/CMakeFiles/main.dir/Rmath/dchisq.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/dchisq.c.o   -c /home/a008/coding/MiniLab/src/Rmath/dchisq.c
 
-src/CMakeFiles/main.dir/weibull.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/weibull.cpp.i"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a008/coding/MiniR/src/weibull.cpp > CMakeFiles/main.dir/weibull.cpp.i
+src/CMakeFiles/main.dir/Rmath/dchisq.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/dchisq.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/dchisq.c > CMakeFiles/main.dir/Rmath/dchisq.c.i
 
-src/CMakeFiles/main.dir/weibull.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/weibull.cpp.s"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a008/coding/MiniR/src/weibull.cpp -o CMakeFiles/main.dir/weibull.cpp.s
+src/CMakeFiles/main.dir/Rmath/dchisq.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/dchisq.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/dchisq.c -o CMakeFiles/main.dir/Rmath/dchisq.c.s
 
-src/CMakeFiles/main.dir/wilcoxon.cpp.o: src/CMakeFiles/main.dir/flags.make
-src/CMakeFiles/main.dir/wilcoxon.cpp.o: ../src/wilcoxon.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object src/CMakeFiles/main.dir/wilcoxon.cpp.o"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/wilcoxon.cpp.o -c /home/a008/coding/MiniR/src/wilcoxon.cpp
+src/CMakeFiles/main.dir/Rmath/dexp.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/dexp.c.o: ../src/Rmath/dexp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object src/CMakeFiles/main.dir/Rmath/dexp.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/dexp.c.o   -c /home/a008/coding/MiniLab/src/Rmath/dexp.c
 
-src/CMakeFiles/main.dir/wilcoxon.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/wilcoxon.cpp.i"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a008/coding/MiniR/src/wilcoxon.cpp > CMakeFiles/main.dir/wilcoxon.cpp.i
+src/CMakeFiles/main.dir/Rmath/dexp.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/dexp.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/dexp.c > CMakeFiles/main.dir/Rmath/dexp.c.i
 
-src/CMakeFiles/main.dir/wilcoxon.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/wilcoxon.cpp.s"
-	cd /home/a008/coding/MiniR/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a008/coding/MiniR/src/wilcoxon.cpp -o CMakeFiles/main.dir/wilcoxon.cpp.s
+src/CMakeFiles/main.dir/Rmath/dexp.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/dexp.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/dexp.c -o CMakeFiles/main.dir/Rmath/dexp.c.s
+
+src/CMakeFiles/main.dir/Rmath/df.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/df.c.o: ../src/Rmath/df.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object src/CMakeFiles/main.dir/Rmath/df.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/df.c.o   -c /home/a008/coding/MiniLab/src/Rmath/df.c
+
+src/CMakeFiles/main.dir/Rmath/df.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/df.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/df.c > CMakeFiles/main.dir/Rmath/df.c.i
+
+src/CMakeFiles/main.dir/Rmath/df.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/df.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/df.c -o CMakeFiles/main.dir/Rmath/df.c.s
+
+src/CMakeFiles/main.dir/Rmath/dgamma.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/dgamma.c.o: ../src/Rmath/dgamma.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object src/CMakeFiles/main.dir/Rmath/dgamma.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/dgamma.c.o   -c /home/a008/coding/MiniLab/src/Rmath/dgamma.c
+
+src/CMakeFiles/main.dir/Rmath/dgamma.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/dgamma.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/dgamma.c > CMakeFiles/main.dir/Rmath/dgamma.c.i
+
+src/CMakeFiles/main.dir/Rmath/dgamma.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/dgamma.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/dgamma.c -o CMakeFiles/main.dir/Rmath/dgamma.c.s
+
+src/CMakeFiles/main.dir/Rmath/dgeom.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/dgeom.c.o: ../src/Rmath/dgeom.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object src/CMakeFiles/main.dir/Rmath/dgeom.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/dgeom.c.o   -c /home/a008/coding/MiniLab/src/Rmath/dgeom.c
+
+src/CMakeFiles/main.dir/Rmath/dgeom.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/dgeom.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/dgeom.c > CMakeFiles/main.dir/Rmath/dgeom.c.i
+
+src/CMakeFiles/main.dir/Rmath/dgeom.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/dgeom.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/dgeom.c -o CMakeFiles/main.dir/Rmath/dgeom.c.s
+
+src/CMakeFiles/main.dir/Rmath/dhyper.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/dhyper.c.o: ../src/Rmath/dhyper.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object src/CMakeFiles/main.dir/Rmath/dhyper.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/dhyper.c.o   -c /home/a008/coding/MiniLab/src/Rmath/dhyper.c
+
+src/CMakeFiles/main.dir/Rmath/dhyper.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/dhyper.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/dhyper.c > CMakeFiles/main.dir/Rmath/dhyper.c.i
+
+src/CMakeFiles/main.dir/Rmath/dhyper.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/dhyper.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/dhyper.c -o CMakeFiles/main.dir/Rmath/dhyper.c.s
+
+src/CMakeFiles/main.dir/Rmath/dlnorm.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/dlnorm.c.o: ../src/Rmath/dlnorm.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object src/CMakeFiles/main.dir/Rmath/dlnorm.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/dlnorm.c.o   -c /home/a008/coding/MiniLab/src/Rmath/dlnorm.c
+
+src/CMakeFiles/main.dir/Rmath/dlnorm.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/dlnorm.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/dlnorm.c > CMakeFiles/main.dir/Rmath/dlnorm.c.i
+
+src/CMakeFiles/main.dir/Rmath/dlnorm.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/dlnorm.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/dlnorm.c -o CMakeFiles/main.dir/Rmath/dlnorm.c.s
+
+src/CMakeFiles/main.dir/Rmath/dlogis.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/dlogis.c.o: ../src/Rmath/dlogis.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object src/CMakeFiles/main.dir/Rmath/dlogis.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/dlogis.c.o   -c /home/a008/coding/MiniLab/src/Rmath/dlogis.c
+
+src/CMakeFiles/main.dir/Rmath/dlogis.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/dlogis.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/dlogis.c > CMakeFiles/main.dir/Rmath/dlogis.c.i
+
+src/CMakeFiles/main.dir/Rmath/dlogis.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/dlogis.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/dlogis.c -o CMakeFiles/main.dir/Rmath/dlogis.c.s
+
+src/CMakeFiles/main.dir/Rmath/dnbeta.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/dnbeta.c.o: ../src/Rmath/dnbeta.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object src/CMakeFiles/main.dir/Rmath/dnbeta.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/dnbeta.c.o   -c /home/a008/coding/MiniLab/src/Rmath/dnbeta.c
+
+src/CMakeFiles/main.dir/Rmath/dnbeta.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/dnbeta.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/dnbeta.c > CMakeFiles/main.dir/Rmath/dnbeta.c.i
+
+src/CMakeFiles/main.dir/Rmath/dnbeta.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/dnbeta.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/dnbeta.c -o CMakeFiles/main.dir/Rmath/dnbeta.c.s
+
+src/CMakeFiles/main.dir/Rmath/dnbinom.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/dnbinom.c.o: ../src/Rmath/dnbinom.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object src/CMakeFiles/main.dir/Rmath/dnbinom.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/dnbinom.c.o   -c /home/a008/coding/MiniLab/src/Rmath/dnbinom.c
+
+src/CMakeFiles/main.dir/Rmath/dnbinom.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/dnbinom.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/dnbinom.c > CMakeFiles/main.dir/Rmath/dnbinom.c.i
+
+src/CMakeFiles/main.dir/Rmath/dnbinom.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/dnbinom.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/dnbinom.c -o CMakeFiles/main.dir/Rmath/dnbinom.c.s
+
+src/CMakeFiles/main.dir/Rmath/dnchisq.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/dnchisq.c.o: ../src/Rmath/dnchisq.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object src/CMakeFiles/main.dir/Rmath/dnchisq.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/dnchisq.c.o   -c /home/a008/coding/MiniLab/src/Rmath/dnchisq.c
+
+src/CMakeFiles/main.dir/Rmath/dnchisq.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/dnchisq.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/dnchisq.c > CMakeFiles/main.dir/Rmath/dnchisq.c.i
+
+src/CMakeFiles/main.dir/Rmath/dnchisq.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/dnchisq.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/dnchisq.c -o CMakeFiles/main.dir/Rmath/dnchisq.c.s
+
+src/CMakeFiles/main.dir/Rmath/dnf.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/dnf.c.o: ../src/Rmath/dnf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object src/CMakeFiles/main.dir/Rmath/dnf.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/dnf.c.o   -c /home/a008/coding/MiniLab/src/Rmath/dnf.c
+
+src/CMakeFiles/main.dir/Rmath/dnf.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/dnf.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/dnf.c > CMakeFiles/main.dir/Rmath/dnf.c.i
+
+src/CMakeFiles/main.dir/Rmath/dnf.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/dnf.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/dnf.c -o CMakeFiles/main.dir/Rmath/dnf.c.s
+
+src/CMakeFiles/main.dir/Rmath/dnorm.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/dnorm.c.o: ../src/Rmath/dnorm.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object src/CMakeFiles/main.dir/Rmath/dnorm.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/dnorm.c.o   -c /home/a008/coding/MiniLab/src/Rmath/dnorm.c
+
+src/CMakeFiles/main.dir/Rmath/dnorm.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/dnorm.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/dnorm.c > CMakeFiles/main.dir/Rmath/dnorm.c.i
+
+src/CMakeFiles/main.dir/Rmath/dnorm.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/dnorm.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/dnorm.c -o CMakeFiles/main.dir/Rmath/dnorm.c.s
+
+src/CMakeFiles/main.dir/Rmath/dnt.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/dnt.c.o: ../src/Rmath/dnt.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object src/CMakeFiles/main.dir/Rmath/dnt.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/dnt.c.o   -c /home/a008/coding/MiniLab/src/Rmath/dnt.c
+
+src/CMakeFiles/main.dir/Rmath/dnt.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/dnt.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/dnt.c > CMakeFiles/main.dir/Rmath/dnt.c.i
+
+src/CMakeFiles/main.dir/Rmath/dnt.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/dnt.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/dnt.c -o CMakeFiles/main.dir/Rmath/dnt.c.s
+
+src/CMakeFiles/main.dir/Rmath/dpois.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/dpois.c.o: ../src/Rmath/dpois.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object src/CMakeFiles/main.dir/Rmath/dpois.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/dpois.c.o   -c /home/a008/coding/MiniLab/src/Rmath/dpois.c
+
+src/CMakeFiles/main.dir/Rmath/dpois.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/dpois.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/dpois.c > CMakeFiles/main.dir/Rmath/dpois.c.i
+
+src/CMakeFiles/main.dir/Rmath/dpois.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/dpois.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/dpois.c -o CMakeFiles/main.dir/Rmath/dpois.c.s
+
+src/CMakeFiles/main.dir/Rmath/dt.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/dt.c.o: ../src/Rmath/dt.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object src/CMakeFiles/main.dir/Rmath/dt.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/dt.c.o   -c /home/a008/coding/MiniLab/src/Rmath/dt.c
+
+src/CMakeFiles/main.dir/Rmath/dt.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/dt.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/dt.c > CMakeFiles/main.dir/Rmath/dt.c.i
+
+src/CMakeFiles/main.dir/Rmath/dt.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/dt.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/dt.c -o CMakeFiles/main.dir/Rmath/dt.c.s
+
+src/CMakeFiles/main.dir/Rmath/dunif.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/dunif.c.o: ../src/Rmath/dunif.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object src/CMakeFiles/main.dir/Rmath/dunif.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/dunif.c.o   -c /home/a008/coding/MiniLab/src/Rmath/dunif.c
+
+src/CMakeFiles/main.dir/Rmath/dunif.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/dunif.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/dunif.c > CMakeFiles/main.dir/Rmath/dunif.c.i
+
+src/CMakeFiles/main.dir/Rmath/dunif.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/dunif.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/dunif.c -o CMakeFiles/main.dir/Rmath/dunif.c.s
+
+src/CMakeFiles/main.dir/Rmath/dweibull.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/dweibull.c.o: ../src/Rmath/dweibull.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object src/CMakeFiles/main.dir/Rmath/dweibull.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/dweibull.c.o   -c /home/a008/coding/MiniLab/src/Rmath/dweibull.c
+
+src/CMakeFiles/main.dir/Rmath/dweibull.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/dweibull.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/dweibull.c > CMakeFiles/main.dir/Rmath/dweibull.c.i
+
+src/CMakeFiles/main.dir/Rmath/dweibull.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/dweibull.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/dweibull.c -o CMakeFiles/main.dir/Rmath/dweibull.c.s
+
+src/CMakeFiles/main.dir/Rmath/fmax2.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/fmax2.c.o: ../src/Rmath/fmax2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object src/CMakeFiles/main.dir/Rmath/fmax2.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/fmax2.c.o   -c /home/a008/coding/MiniLab/src/Rmath/fmax2.c
+
+src/CMakeFiles/main.dir/Rmath/fmax2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/fmax2.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/fmax2.c > CMakeFiles/main.dir/Rmath/fmax2.c.i
+
+src/CMakeFiles/main.dir/Rmath/fmax2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/fmax2.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/fmax2.c -o CMakeFiles/main.dir/Rmath/fmax2.c.s
+
+src/CMakeFiles/main.dir/Rmath/fmin2.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/fmin2.c.o: ../src/Rmath/fmin2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object src/CMakeFiles/main.dir/Rmath/fmin2.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/fmin2.c.o   -c /home/a008/coding/MiniLab/src/Rmath/fmin2.c
+
+src/CMakeFiles/main.dir/Rmath/fmin2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/fmin2.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/fmin2.c > CMakeFiles/main.dir/Rmath/fmin2.c.i
+
+src/CMakeFiles/main.dir/Rmath/fmin2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/fmin2.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/fmin2.c -o CMakeFiles/main.dir/Rmath/fmin2.c.s
+
+src/CMakeFiles/main.dir/Rmath/fprec.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/fprec.c.o: ../src/Rmath/fprec.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object src/CMakeFiles/main.dir/Rmath/fprec.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/fprec.c.o   -c /home/a008/coding/MiniLab/src/Rmath/fprec.c
+
+src/CMakeFiles/main.dir/Rmath/fprec.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/fprec.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/fprec.c > CMakeFiles/main.dir/Rmath/fprec.c.i
+
+src/CMakeFiles/main.dir/Rmath/fprec.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/fprec.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/fprec.c -o CMakeFiles/main.dir/Rmath/fprec.c.s
+
+src/CMakeFiles/main.dir/Rmath/fround.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/fround.c.o: ../src/Rmath/fround.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object src/CMakeFiles/main.dir/Rmath/fround.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/fround.c.o   -c /home/a008/coding/MiniLab/src/Rmath/fround.c
+
+src/CMakeFiles/main.dir/Rmath/fround.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/fround.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/fround.c > CMakeFiles/main.dir/Rmath/fround.c.i
+
+src/CMakeFiles/main.dir/Rmath/fround.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/fround.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/fround.c -o CMakeFiles/main.dir/Rmath/fround.c.s
+
+src/CMakeFiles/main.dir/Rmath/fsign.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/fsign.c.o: ../src/Rmath/fsign.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object src/CMakeFiles/main.dir/Rmath/fsign.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/fsign.c.o   -c /home/a008/coding/MiniLab/src/Rmath/fsign.c
+
+src/CMakeFiles/main.dir/Rmath/fsign.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/fsign.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/fsign.c > CMakeFiles/main.dir/Rmath/fsign.c.i
+
+src/CMakeFiles/main.dir/Rmath/fsign.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/fsign.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/fsign.c -o CMakeFiles/main.dir/Rmath/fsign.c.s
+
+src/CMakeFiles/main.dir/Rmath/ftrunc.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/ftrunc.c.o: ../src/Rmath/ftrunc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object src/CMakeFiles/main.dir/Rmath/ftrunc.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/ftrunc.c.o   -c /home/a008/coding/MiniLab/src/Rmath/ftrunc.c
+
+src/CMakeFiles/main.dir/Rmath/ftrunc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/ftrunc.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/ftrunc.c > CMakeFiles/main.dir/Rmath/ftrunc.c.i
+
+src/CMakeFiles/main.dir/Rmath/ftrunc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/ftrunc.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/ftrunc.c -o CMakeFiles/main.dir/Rmath/ftrunc.c.s
+
+src/CMakeFiles/main.dir/Rmath/gamma.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/gamma.c.o: ../src/Rmath/gamma.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object src/CMakeFiles/main.dir/Rmath/gamma.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/gamma.c.o   -c /home/a008/coding/MiniLab/src/Rmath/gamma.c
+
+src/CMakeFiles/main.dir/Rmath/gamma.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/gamma.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/gamma.c > CMakeFiles/main.dir/Rmath/gamma.c.i
+
+src/CMakeFiles/main.dir/Rmath/gamma.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/gamma.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/gamma.c -o CMakeFiles/main.dir/Rmath/gamma.c.s
+
+src/CMakeFiles/main.dir/Rmath/gamma_cody.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/gamma_cody.c.o: ../src/Rmath/gamma_cody.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object src/CMakeFiles/main.dir/Rmath/gamma_cody.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/gamma_cody.c.o   -c /home/a008/coding/MiniLab/src/Rmath/gamma_cody.c
+
+src/CMakeFiles/main.dir/Rmath/gamma_cody.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/gamma_cody.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/gamma_cody.c > CMakeFiles/main.dir/Rmath/gamma_cody.c.i
+
+src/CMakeFiles/main.dir/Rmath/gamma_cody.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/gamma_cody.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/gamma_cody.c -o CMakeFiles/main.dir/Rmath/gamma_cody.c.s
+
+src/CMakeFiles/main.dir/Rmath/gammalims.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/gammalims.c.o: ../src/Rmath/gammalims.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object src/CMakeFiles/main.dir/Rmath/gammalims.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/gammalims.c.o   -c /home/a008/coding/MiniLab/src/Rmath/gammalims.c
+
+src/CMakeFiles/main.dir/Rmath/gammalims.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/gammalims.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/gammalims.c > CMakeFiles/main.dir/Rmath/gammalims.c.i
+
+src/CMakeFiles/main.dir/Rmath/gammalims.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/gammalims.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/gammalims.c -o CMakeFiles/main.dir/Rmath/gammalims.c.s
+
+src/CMakeFiles/main.dir/Rmath/i1mach.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/i1mach.c.o: ../src/Rmath/i1mach.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object src/CMakeFiles/main.dir/Rmath/i1mach.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/i1mach.c.o   -c /home/a008/coding/MiniLab/src/Rmath/i1mach.c
+
+src/CMakeFiles/main.dir/Rmath/i1mach.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/i1mach.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/i1mach.c > CMakeFiles/main.dir/Rmath/i1mach.c.i
+
+src/CMakeFiles/main.dir/Rmath/i1mach.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/i1mach.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/i1mach.c -o CMakeFiles/main.dir/Rmath/i1mach.c.s
+
+src/CMakeFiles/main.dir/Rmath/imax2.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/imax2.c.o: ../src/Rmath/imax2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object src/CMakeFiles/main.dir/Rmath/imax2.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/imax2.c.o   -c /home/a008/coding/MiniLab/src/Rmath/imax2.c
+
+src/CMakeFiles/main.dir/Rmath/imax2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/imax2.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/imax2.c > CMakeFiles/main.dir/Rmath/imax2.c.i
+
+src/CMakeFiles/main.dir/Rmath/imax2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/imax2.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/imax2.c -o CMakeFiles/main.dir/Rmath/imax2.c.s
+
+src/CMakeFiles/main.dir/Rmath/imin2.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/imin2.c.o: ../src/Rmath/imin2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object src/CMakeFiles/main.dir/Rmath/imin2.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/imin2.c.o   -c /home/a008/coding/MiniLab/src/Rmath/imin2.c
+
+src/CMakeFiles/main.dir/Rmath/imin2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/imin2.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/imin2.c > CMakeFiles/main.dir/Rmath/imin2.c.i
+
+src/CMakeFiles/main.dir/Rmath/imin2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/imin2.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/imin2.c -o CMakeFiles/main.dir/Rmath/imin2.c.s
+
+src/CMakeFiles/main.dir/Rmath/lbeta.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/lbeta.c.o: ../src/Rmath/lbeta.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object src/CMakeFiles/main.dir/Rmath/lbeta.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/lbeta.c.o   -c /home/a008/coding/MiniLab/src/Rmath/lbeta.c
+
+src/CMakeFiles/main.dir/Rmath/lbeta.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/lbeta.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/lbeta.c > CMakeFiles/main.dir/Rmath/lbeta.c.i
+
+src/CMakeFiles/main.dir/Rmath/lbeta.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/lbeta.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/lbeta.c -o CMakeFiles/main.dir/Rmath/lbeta.c.s
+
+src/CMakeFiles/main.dir/Rmath/lgamma.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/lgamma.c.o: ../src/Rmath/lgamma.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object src/CMakeFiles/main.dir/Rmath/lgamma.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/lgamma.c.o   -c /home/a008/coding/MiniLab/src/Rmath/lgamma.c
+
+src/CMakeFiles/main.dir/Rmath/lgamma.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/lgamma.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/lgamma.c > CMakeFiles/main.dir/Rmath/lgamma.c.i
+
+src/CMakeFiles/main.dir/Rmath/lgamma.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/lgamma.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/lgamma.c -o CMakeFiles/main.dir/Rmath/lgamma.c.s
+
+src/CMakeFiles/main.dir/Rmath/lgammacor.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/lgammacor.c.o: ../src/Rmath/lgammacor.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object src/CMakeFiles/main.dir/Rmath/lgammacor.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/lgammacor.c.o   -c /home/a008/coding/MiniLab/src/Rmath/lgammacor.c
+
+src/CMakeFiles/main.dir/Rmath/lgammacor.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/lgammacor.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/lgammacor.c > CMakeFiles/main.dir/Rmath/lgammacor.c.i
+
+src/CMakeFiles/main.dir/Rmath/lgammacor.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/lgammacor.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/lgammacor.c -o CMakeFiles/main.dir/Rmath/lgammacor.c.s
+
+src/CMakeFiles/main.dir/Rmath/log1p.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/log1p.c.o: ../src/Rmath/log1p.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object src/CMakeFiles/main.dir/Rmath/log1p.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/log1p.c.o   -c /home/a008/coding/MiniLab/src/Rmath/log1p.c
+
+src/CMakeFiles/main.dir/Rmath/log1p.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/log1p.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/log1p.c > CMakeFiles/main.dir/Rmath/log1p.c.i
+
+src/CMakeFiles/main.dir/Rmath/log1p.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/log1p.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/log1p.c -o CMakeFiles/main.dir/Rmath/log1p.c.s
+
+src/CMakeFiles/main.dir/Rmath/mlutils.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/mlutils.c.o: ../src/Rmath/mlutils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object src/CMakeFiles/main.dir/Rmath/mlutils.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/mlutils.c.o   -c /home/a008/coding/MiniLab/src/Rmath/mlutils.c
+
+src/CMakeFiles/main.dir/Rmath/mlutils.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/mlutils.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/mlutils.c > CMakeFiles/main.dir/Rmath/mlutils.c.i
+
+src/CMakeFiles/main.dir/Rmath/mlutils.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/mlutils.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/mlutils.c -o CMakeFiles/main.dir/Rmath/mlutils.c.s
+
+src/CMakeFiles/main.dir/Rmath/pbeta.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/pbeta.c.o: ../src/Rmath/pbeta.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object src/CMakeFiles/main.dir/Rmath/pbeta.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/pbeta.c.o   -c /home/a008/coding/MiniLab/src/Rmath/pbeta.c
+
+src/CMakeFiles/main.dir/Rmath/pbeta.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/pbeta.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/pbeta.c > CMakeFiles/main.dir/Rmath/pbeta.c.i
+
+src/CMakeFiles/main.dir/Rmath/pbeta.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/pbeta.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/pbeta.c -o CMakeFiles/main.dir/Rmath/pbeta.c.s
+
+src/CMakeFiles/main.dir/Rmath/pbinom.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/pbinom.c.o: ../src/Rmath/pbinom.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object src/CMakeFiles/main.dir/Rmath/pbinom.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/pbinom.c.o   -c /home/a008/coding/MiniLab/src/Rmath/pbinom.c
+
+src/CMakeFiles/main.dir/Rmath/pbinom.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/pbinom.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/pbinom.c > CMakeFiles/main.dir/Rmath/pbinom.c.i
+
+src/CMakeFiles/main.dir/Rmath/pbinom.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/pbinom.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/pbinom.c -o CMakeFiles/main.dir/Rmath/pbinom.c.s
+
+src/CMakeFiles/main.dir/Rmath/pcauchy.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/pcauchy.c.o: ../src/Rmath/pcauchy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object src/CMakeFiles/main.dir/Rmath/pcauchy.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/pcauchy.c.o   -c /home/a008/coding/MiniLab/src/Rmath/pcauchy.c
+
+src/CMakeFiles/main.dir/Rmath/pcauchy.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/pcauchy.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/pcauchy.c > CMakeFiles/main.dir/Rmath/pcauchy.c.i
+
+src/CMakeFiles/main.dir/Rmath/pcauchy.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/pcauchy.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/pcauchy.c -o CMakeFiles/main.dir/Rmath/pcauchy.c.s
+
+src/CMakeFiles/main.dir/Rmath/pchisq.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/pchisq.c.o: ../src/Rmath/pchisq.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object src/CMakeFiles/main.dir/Rmath/pchisq.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/pchisq.c.o   -c /home/a008/coding/MiniLab/src/Rmath/pchisq.c
+
+src/CMakeFiles/main.dir/Rmath/pchisq.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/pchisq.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/pchisq.c > CMakeFiles/main.dir/Rmath/pchisq.c.i
+
+src/CMakeFiles/main.dir/Rmath/pchisq.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/pchisq.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/pchisq.c -o CMakeFiles/main.dir/Rmath/pchisq.c.s
+
+src/CMakeFiles/main.dir/Rmath/pexp.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/pexp.c.o: ../src/Rmath/pexp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object src/CMakeFiles/main.dir/Rmath/pexp.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/pexp.c.o   -c /home/a008/coding/MiniLab/src/Rmath/pexp.c
+
+src/CMakeFiles/main.dir/Rmath/pexp.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/pexp.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/pexp.c > CMakeFiles/main.dir/Rmath/pexp.c.i
+
+src/CMakeFiles/main.dir/Rmath/pexp.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/pexp.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/pexp.c -o CMakeFiles/main.dir/Rmath/pexp.c.s
+
+src/CMakeFiles/main.dir/Rmath/pf.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/pf.c.o: ../src/Rmath/pf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object src/CMakeFiles/main.dir/Rmath/pf.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/pf.c.o   -c /home/a008/coding/MiniLab/src/Rmath/pf.c
+
+src/CMakeFiles/main.dir/Rmath/pf.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/pf.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/pf.c > CMakeFiles/main.dir/Rmath/pf.c.i
+
+src/CMakeFiles/main.dir/Rmath/pf.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/pf.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/pf.c -o CMakeFiles/main.dir/Rmath/pf.c.s
+
+src/CMakeFiles/main.dir/Rmath/pgamma.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/pgamma.c.o: ../src/Rmath/pgamma.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object src/CMakeFiles/main.dir/Rmath/pgamma.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/pgamma.c.o   -c /home/a008/coding/MiniLab/src/Rmath/pgamma.c
+
+src/CMakeFiles/main.dir/Rmath/pgamma.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/pgamma.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/pgamma.c > CMakeFiles/main.dir/Rmath/pgamma.c.i
+
+src/CMakeFiles/main.dir/Rmath/pgamma.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/pgamma.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/pgamma.c -o CMakeFiles/main.dir/Rmath/pgamma.c.s
+
+src/CMakeFiles/main.dir/Rmath/pgeom.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/pgeom.c.o: ../src/Rmath/pgeom.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object src/CMakeFiles/main.dir/Rmath/pgeom.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/pgeom.c.o   -c /home/a008/coding/MiniLab/src/Rmath/pgeom.c
+
+src/CMakeFiles/main.dir/Rmath/pgeom.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/pgeom.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/pgeom.c > CMakeFiles/main.dir/Rmath/pgeom.c.i
+
+src/CMakeFiles/main.dir/Rmath/pgeom.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/pgeom.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/pgeom.c -o CMakeFiles/main.dir/Rmath/pgeom.c.s
+
+src/CMakeFiles/main.dir/Rmath/phyper.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/phyper.c.o: ../src/Rmath/phyper.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object src/CMakeFiles/main.dir/Rmath/phyper.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/phyper.c.o   -c /home/a008/coding/MiniLab/src/Rmath/phyper.c
+
+src/CMakeFiles/main.dir/Rmath/phyper.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/phyper.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/phyper.c > CMakeFiles/main.dir/Rmath/phyper.c.i
+
+src/CMakeFiles/main.dir/Rmath/phyper.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/phyper.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/phyper.c -o CMakeFiles/main.dir/Rmath/phyper.c.s
+
+src/CMakeFiles/main.dir/Rmath/plnorm.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/plnorm.c.o: ../src/Rmath/plnorm.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object src/CMakeFiles/main.dir/Rmath/plnorm.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/plnorm.c.o   -c /home/a008/coding/MiniLab/src/Rmath/plnorm.c
+
+src/CMakeFiles/main.dir/Rmath/plnorm.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/plnorm.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/plnorm.c > CMakeFiles/main.dir/Rmath/plnorm.c.i
+
+src/CMakeFiles/main.dir/Rmath/plnorm.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/plnorm.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/plnorm.c -o CMakeFiles/main.dir/Rmath/plnorm.c.s
+
+src/CMakeFiles/main.dir/Rmath/plogis.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/plogis.c.o: ../src/Rmath/plogis.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object src/CMakeFiles/main.dir/Rmath/plogis.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/plogis.c.o   -c /home/a008/coding/MiniLab/src/Rmath/plogis.c
+
+src/CMakeFiles/main.dir/Rmath/plogis.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/plogis.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/plogis.c > CMakeFiles/main.dir/Rmath/plogis.c.i
+
+src/CMakeFiles/main.dir/Rmath/plogis.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/plogis.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/plogis.c -o CMakeFiles/main.dir/Rmath/plogis.c.s
+
+src/CMakeFiles/main.dir/Rmath/pnbeta.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/pnbeta.c.o: ../src/Rmath/pnbeta.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object src/CMakeFiles/main.dir/Rmath/pnbeta.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/pnbeta.c.o   -c /home/a008/coding/MiniLab/src/Rmath/pnbeta.c
+
+src/CMakeFiles/main.dir/Rmath/pnbeta.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/pnbeta.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/pnbeta.c > CMakeFiles/main.dir/Rmath/pnbeta.c.i
+
+src/CMakeFiles/main.dir/Rmath/pnbeta.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/pnbeta.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/pnbeta.c -o CMakeFiles/main.dir/Rmath/pnbeta.c.s
+
+src/CMakeFiles/main.dir/Rmath/pnbinom.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/pnbinom.c.o: ../src/Rmath/pnbinom.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object src/CMakeFiles/main.dir/Rmath/pnbinom.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/pnbinom.c.o   -c /home/a008/coding/MiniLab/src/Rmath/pnbinom.c
+
+src/CMakeFiles/main.dir/Rmath/pnbinom.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/pnbinom.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/pnbinom.c > CMakeFiles/main.dir/Rmath/pnbinom.c.i
+
+src/CMakeFiles/main.dir/Rmath/pnbinom.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/pnbinom.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/pnbinom.c -o CMakeFiles/main.dir/Rmath/pnbinom.c.s
+
+src/CMakeFiles/main.dir/Rmath/pnchisq.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/pnchisq.c.o: ../src/Rmath/pnchisq.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object src/CMakeFiles/main.dir/Rmath/pnchisq.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/pnchisq.c.o   -c /home/a008/coding/MiniLab/src/Rmath/pnchisq.c
+
+src/CMakeFiles/main.dir/Rmath/pnchisq.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/pnchisq.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/pnchisq.c > CMakeFiles/main.dir/Rmath/pnchisq.c.i
+
+src/CMakeFiles/main.dir/Rmath/pnchisq.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/pnchisq.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/pnchisq.c -o CMakeFiles/main.dir/Rmath/pnchisq.c.s
+
+src/CMakeFiles/main.dir/Rmath/pnf.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/pnf.c.o: ../src/Rmath/pnf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object src/CMakeFiles/main.dir/Rmath/pnf.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/pnf.c.o   -c /home/a008/coding/MiniLab/src/Rmath/pnf.c
+
+src/CMakeFiles/main.dir/Rmath/pnf.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/pnf.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/pnf.c > CMakeFiles/main.dir/Rmath/pnf.c.i
+
+src/CMakeFiles/main.dir/Rmath/pnf.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/pnf.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/pnf.c -o CMakeFiles/main.dir/Rmath/pnf.c.s
+
+src/CMakeFiles/main.dir/Rmath/pnorm.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/pnorm.c.o: ../src/Rmath/pnorm.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object src/CMakeFiles/main.dir/Rmath/pnorm.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/pnorm.c.o   -c /home/a008/coding/MiniLab/src/Rmath/pnorm.c
+
+src/CMakeFiles/main.dir/Rmath/pnorm.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/pnorm.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/pnorm.c > CMakeFiles/main.dir/Rmath/pnorm.c.i
+
+src/CMakeFiles/main.dir/Rmath/pnorm.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/pnorm.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/pnorm.c -o CMakeFiles/main.dir/Rmath/pnorm.c.s
+
+src/CMakeFiles/main.dir/Rmath/pnt.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/pnt.c.o: ../src/Rmath/pnt.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object src/CMakeFiles/main.dir/Rmath/pnt.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/pnt.c.o   -c /home/a008/coding/MiniLab/src/Rmath/pnt.c
+
+src/CMakeFiles/main.dir/Rmath/pnt.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/pnt.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/pnt.c > CMakeFiles/main.dir/Rmath/pnt.c.i
+
+src/CMakeFiles/main.dir/Rmath/pnt.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/pnt.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/pnt.c -o CMakeFiles/main.dir/Rmath/pnt.c.s
+
+src/CMakeFiles/main.dir/Rmath/polygamma.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/polygamma.c.o: ../src/Rmath/polygamma.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object src/CMakeFiles/main.dir/Rmath/polygamma.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/polygamma.c.o   -c /home/a008/coding/MiniLab/src/Rmath/polygamma.c
+
+src/CMakeFiles/main.dir/Rmath/polygamma.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/polygamma.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/polygamma.c > CMakeFiles/main.dir/Rmath/polygamma.c.i
+
+src/CMakeFiles/main.dir/Rmath/polygamma.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/polygamma.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/polygamma.c -o CMakeFiles/main.dir/Rmath/polygamma.c.s
+
+src/CMakeFiles/main.dir/Rmath/ppois.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/ppois.c.o: ../src/Rmath/ppois.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object src/CMakeFiles/main.dir/Rmath/ppois.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/ppois.c.o   -c /home/a008/coding/MiniLab/src/Rmath/ppois.c
+
+src/CMakeFiles/main.dir/Rmath/ppois.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/ppois.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/ppois.c > CMakeFiles/main.dir/Rmath/ppois.c.i
+
+src/CMakeFiles/main.dir/Rmath/ppois.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/ppois.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/ppois.c -o CMakeFiles/main.dir/Rmath/ppois.c.s
+
+src/CMakeFiles/main.dir/Rmath/pt.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/pt.c.o: ../src/Rmath/pt.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object src/CMakeFiles/main.dir/Rmath/pt.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/pt.c.o   -c /home/a008/coding/MiniLab/src/Rmath/pt.c
+
+src/CMakeFiles/main.dir/Rmath/pt.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/pt.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/pt.c > CMakeFiles/main.dir/Rmath/pt.c.i
+
+src/CMakeFiles/main.dir/Rmath/pt.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/pt.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/pt.c -o CMakeFiles/main.dir/Rmath/pt.c.s
+
+src/CMakeFiles/main.dir/Rmath/ptukey.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/ptukey.c.o: ../src/Rmath/ptukey.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object src/CMakeFiles/main.dir/Rmath/ptukey.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/ptukey.c.o   -c /home/a008/coding/MiniLab/src/Rmath/ptukey.c
+
+src/CMakeFiles/main.dir/Rmath/ptukey.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/ptukey.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/ptukey.c > CMakeFiles/main.dir/Rmath/ptukey.c.i
+
+src/CMakeFiles/main.dir/Rmath/ptukey.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/ptukey.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/ptukey.c -o CMakeFiles/main.dir/Rmath/ptukey.c.s
+
+src/CMakeFiles/main.dir/Rmath/punif.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/punif.c.o: ../src/Rmath/punif.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object src/CMakeFiles/main.dir/Rmath/punif.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/punif.c.o   -c /home/a008/coding/MiniLab/src/Rmath/punif.c
+
+src/CMakeFiles/main.dir/Rmath/punif.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/punif.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/punif.c > CMakeFiles/main.dir/Rmath/punif.c.i
+
+src/CMakeFiles/main.dir/Rmath/punif.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/punif.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/punif.c -o CMakeFiles/main.dir/Rmath/punif.c.s
+
+src/CMakeFiles/main.dir/Rmath/pweibull.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/pweibull.c.o: ../src/Rmath/pweibull.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object src/CMakeFiles/main.dir/Rmath/pweibull.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/pweibull.c.o   -c /home/a008/coding/MiniLab/src/Rmath/pweibull.c
+
+src/CMakeFiles/main.dir/Rmath/pweibull.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/pweibull.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/pweibull.c > CMakeFiles/main.dir/Rmath/pweibull.c.i
+
+src/CMakeFiles/main.dir/Rmath/pweibull.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/pweibull.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/pweibull.c -o CMakeFiles/main.dir/Rmath/pweibull.c.s
+
+src/CMakeFiles/main.dir/Rmath/qbeta.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/qbeta.c.o: ../src/Rmath/qbeta.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object src/CMakeFiles/main.dir/Rmath/qbeta.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/qbeta.c.o   -c /home/a008/coding/MiniLab/src/Rmath/qbeta.c
+
+src/CMakeFiles/main.dir/Rmath/qbeta.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/qbeta.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/qbeta.c > CMakeFiles/main.dir/Rmath/qbeta.c.i
+
+src/CMakeFiles/main.dir/Rmath/qbeta.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/qbeta.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/qbeta.c -o CMakeFiles/main.dir/Rmath/qbeta.c.s
+
+src/CMakeFiles/main.dir/Rmath/qbinom.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/qbinom.c.o: ../src/Rmath/qbinom.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object src/CMakeFiles/main.dir/Rmath/qbinom.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/qbinom.c.o   -c /home/a008/coding/MiniLab/src/Rmath/qbinom.c
+
+src/CMakeFiles/main.dir/Rmath/qbinom.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/qbinom.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/qbinom.c > CMakeFiles/main.dir/Rmath/qbinom.c.i
+
+src/CMakeFiles/main.dir/Rmath/qbinom.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/qbinom.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/qbinom.c -o CMakeFiles/main.dir/Rmath/qbinom.c.s
+
+src/CMakeFiles/main.dir/Rmath/qcauchy.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/qcauchy.c.o: ../src/Rmath/qcauchy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object src/CMakeFiles/main.dir/Rmath/qcauchy.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/qcauchy.c.o   -c /home/a008/coding/MiniLab/src/Rmath/qcauchy.c
+
+src/CMakeFiles/main.dir/Rmath/qcauchy.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/qcauchy.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/qcauchy.c > CMakeFiles/main.dir/Rmath/qcauchy.c.i
+
+src/CMakeFiles/main.dir/Rmath/qcauchy.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/qcauchy.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/qcauchy.c -o CMakeFiles/main.dir/Rmath/qcauchy.c.s
+
+src/CMakeFiles/main.dir/Rmath/qchisq.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/qchisq.c.o: ../src/Rmath/qchisq.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object src/CMakeFiles/main.dir/Rmath/qchisq.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/qchisq.c.o   -c /home/a008/coding/MiniLab/src/Rmath/qchisq.c
+
+src/CMakeFiles/main.dir/Rmath/qchisq.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/qchisq.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/qchisq.c > CMakeFiles/main.dir/Rmath/qchisq.c.i
+
+src/CMakeFiles/main.dir/Rmath/qchisq.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/qchisq.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/qchisq.c -o CMakeFiles/main.dir/Rmath/qchisq.c.s
+
+src/CMakeFiles/main.dir/Rmath/qexp.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/qexp.c.o: ../src/Rmath/qexp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object src/CMakeFiles/main.dir/Rmath/qexp.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/qexp.c.o   -c /home/a008/coding/MiniLab/src/Rmath/qexp.c
+
+src/CMakeFiles/main.dir/Rmath/qexp.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/qexp.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/qexp.c > CMakeFiles/main.dir/Rmath/qexp.c.i
+
+src/CMakeFiles/main.dir/Rmath/qexp.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/qexp.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/qexp.c -o CMakeFiles/main.dir/Rmath/qexp.c.s
+
+src/CMakeFiles/main.dir/Rmath/qf.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/qf.c.o: ../src/Rmath/qf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object src/CMakeFiles/main.dir/Rmath/qf.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/qf.c.o   -c /home/a008/coding/MiniLab/src/Rmath/qf.c
+
+src/CMakeFiles/main.dir/Rmath/qf.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/qf.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/qf.c > CMakeFiles/main.dir/Rmath/qf.c.i
+
+src/CMakeFiles/main.dir/Rmath/qf.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/qf.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/qf.c -o CMakeFiles/main.dir/Rmath/qf.c.s
+
+src/CMakeFiles/main.dir/Rmath/qgamma.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/qgamma.c.o: ../src/Rmath/qgamma.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object src/CMakeFiles/main.dir/Rmath/qgamma.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/qgamma.c.o   -c /home/a008/coding/MiniLab/src/Rmath/qgamma.c
+
+src/CMakeFiles/main.dir/Rmath/qgamma.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/qgamma.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/qgamma.c > CMakeFiles/main.dir/Rmath/qgamma.c.i
+
+src/CMakeFiles/main.dir/Rmath/qgamma.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/qgamma.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/qgamma.c -o CMakeFiles/main.dir/Rmath/qgamma.c.s
+
+src/CMakeFiles/main.dir/Rmath/qgeom.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/qgeom.c.o: ../src/Rmath/qgeom.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object src/CMakeFiles/main.dir/Rmath/qgeom.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/qgeom.c.o   -c /home/a008/coding/MiniLab/src/Rmath/qgeom.c
+
+src/CMakeFiles/main.dir/Rmath/qgeom.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/qgeom.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/qgeom.c > CMakeFiles/main.dir/Rmath/qgeom.c.i
+
+src/CMakeFiles/main.dir/Rmath/qgeom.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/qgeom.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/qgeom.c -o CMakeFiles/main.dir/Rmath/qgeom.c.s
+
+src/CMakeFiles/main.dir/Rmath/qhyper.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/qhyper.c.o: ../src/Rmath/qhyper.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object src/CMakeFiles/main.dir/Rmath/qhyper.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/qhyper.c.o   -c /home/a008/coding/MiniLab/src/Rmath/qhyper.c
+
+src/CMakeFiles/main.dir/Rmath/qhyper.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/qhyper.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/qhyper.c > CMakeFiles/main.dir/Rmath/qhyper.c.i
+
+src/CMakeFiles/main.dir/Rmath/qhyper.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/qhyper.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/qhyper.c -o CMakeFiles/main.dir/Rmath/qhyper.c.s
+
+src/CMakeFiles/main.dir/Rmath/qlnorm.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/qlnorm.c.o: ../src/Rmath/qlnorm.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object src/CMakeFiles/main.dir/Rmath/qlnorm.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/qlnorm.c.o   -c /home/a008/coding/MiniLab/src/Rmath/qlnorm.c
+
+src/CMakeFiles/main.dir/Rmath/qlnorm.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/qlnorm.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/qlnorm.c > CMakeFiles/main.dir/Rmath/qlnorm.c.i
+
+src/CMakeFiles/main.dir/Rmath/qlnorm.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/qlnorm.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/qlnorm.c -o CMakeFiles/main.dir/Rmath/qlnorm.c.s
+
+src/CMakeFiles/main.dir/Rmath/qlogis.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/qlogis.c.o: ../src/Rmath/qlogis.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object src/CMakeFiles/main.dir/Rmath/qlogis.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/qlogis.c.o   -c /home/a008/coding/MiniLab/src/Rmath/qlogis.c
+
+src/CMakeFiles/main.dir/Rmath/qlogis.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/qlogis.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/qlogis.c > CMakeFiles/main.dir/Rmath/qlogis.c.i
+
+src/CMakeFiles/main.dir/Rmath/qlogis.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/qlogis.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/qlogis.c -o CMakeFiles/main.dir/Rmath/qlogis.c.s
+
+src/CMakeFiles/main.dir/Rmath/qnbeta.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/qnbeta.c.o: ../src/Rmath/qnbeta.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object src/CMakeFiles/main.dir/Rmath/qnbeta.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/qnbeta.c.o   -c /home/a008/coding/MiniLab/src/Rmath/qnbeta.c
+
+src/CMakeFiles/main.dir/Rmath/qnbeta.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/qnbeta.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/qnbeta.c > CMakeFiles/main.dir/Rmath/qnbeta.c.i
+
+src/CMakeFiles/main.dir/Rmath/qnbeta.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/qnbeta.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/qnbeta.c -o CMakeFiles/main.dir/Rmath/qnbeta.c.s
+
+src/CMakeFiles/main.dir/Rmath/qnbinom.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/qnbinom.c.o: ../src/Rmath/qnbinom.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object src/CMakeFiles/main.dir/Rmath/qnbinom.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/qnbinom.c.o   -c /home/a008/coding/MiniLab/src/Rmath/qnbinom.c
+
+src/CMakeFiles/main.dir/Rmath/qnbinom.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/qnbinom.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/qnbinom.c > CMakeFiles/main.dir/Rmath/qnbinom.c.i
+
+src/CMakeFiles/main.dir/Rmath/qnbinom.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/qnbinom.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/qnbinom.c -o CMakeFiles/main.dir/Rmath/qnbinom.c.s
+
+src/CMakeFiles/main.dir/Rmath/qnchisq.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/qnchisq.c.o: ../src/Rmath/qnchisq.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object src/CMakeFiles/main.dir/Rmath/qnchisq.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/qnchisq.c.o   -c /home/a008/coding/MiniLab/src/Rmath/qnchisq.c
+
+src/CMakeFiles/main.dir/Rmath/qnchisq.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/qnchisq.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/qnchisq.c > CMakeFiles/main.dir/Rmath/qnchisq.c.i
+
+src/CMakeFiles/main.dir/Rmath/qnchisq.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/qnchisq.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/qnchisq.c -o CMakeFiles/main.dir/Rmath/qnchisq.c.s
+
+src/CMakeFiles/main.dir/Rmath/qnf.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/qnf.c.o: ../src/Rmath/qnf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object src/CMakeFiles/main.dir/Rmath/qnf.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/qnf.c.o   -c /home/a008/coding/MiniLab/src/Rmath/qnf.c
+
+src/CMakeFiles/main.dir/Rmath/qnf.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/qnf.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/qnf.c > CMakeFiles/main.dir/Rmath/qnf.c.i
+
+src/CMakeFiles/main.dir/Rmath/qnf.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/qnf.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/qnf.c -o CMakeFiles/main.dir/Rmath/qnf.c.s
+
+src/CMakeFiles/main.dir/Rmath/qnorm.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/qnorm.c.o: ../src/Rmath/qnorm.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object src/CMakeFiles/main.dir/Rmath/qnorm.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/qnorm.c.o   -c /home/a008/coding/MiniLab/src/Rmath/qnorm.c
+
+src/CMakeFiles/main.dir/Rmath/qnorm.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/qnorm.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/qnorm.c > CMakeFiles/main.dir/Rmath/qnorm.c.i
+
+src/CMakeFiles/main.dir/Rmath/qnorm.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/qnorm.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/qnorm.c -o CMakeFiles/main.dir/Rmath/qnorm.c.s
+
+src/CMakeFiles/main.dir/Rmath/qnt.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/qnt.c.o: ../src/Rmath/qnt.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object src/CMakeFiles/main.dir/Rmath/qnt.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/qnt.c.o   -c /home/a008/coding/MiniLab/src/Rmath/qnt.c
+
+src/CMakeFiles/main.dir/Rmath/qnt.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/qnt.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/qnt.c > CMakeFiles/main.dir/Rmath/qnt.c.i
+
+src/CMakeFiles/main.dir/Rmath/qnt.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/qnt.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/qnt.c -o CMakeFiles/main.dir/Rmath/qnt.c.s
+
+src/CMakeFiles/main.dir/Rmath/qpois.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/qpois.c.o: ../src/Rmath/qpois.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object src/CMakeFiles/main.dir/Rmath/qpois.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/qpois.c.o   -c /home/a008/coding/MiniLab/src/Rmath/qpois.c
+
+src/CMakeFiles/main.dir/Rmath/qpois.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/qpois.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/qpois.c > CMakeFiles/main.dir/Rmath/qpois.c.i
+
+src/CMakeFiles/main.dir/Rmath/qpois.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/qpois.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/qpois.c -o CMakeFiles/main.dir/Rmath/qpois.c.s
+
+src/CMakeFiles/main.dir/Rmath/qt.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/qt.c.o: ../src/Rmath/qt.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object src/CMakeFiles/main.dir/Rmath/qt.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/qt.c.o   -c /home/a008/coding/MiniLab/src/Rmath/qt.c
+
+src/CMakeFiles/main.dir/Rmath/qt.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/qt.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/qt.c > CMakeFiles/main.dir/Rmath/qt.c.i
+
+src/CMakeFiles/main.dir/Rmath/qt.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/qt.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/qt.c -o CMakeFiles/main.dir/Rmath/qt.c.s
+
+src/CMakeFiles/main.dir/Rmath/qtukey.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/qtukey.c.o: ../src/Rmath/qtukey.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object src/CMakeFiles/main.dir/Rmath/qtukey.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/qtukey.c.o   -c /home/a008/coding/MiniLab/src/Rmath/qtukey.c
+
+src/CMakeFiles/main.dir/Rmath/qtukey.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/qtukey.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/qtukey.c > CMakeFiles/main.dir/Rmath/qtukey.c.i
+
+src/CMakeFiles/main.dir/Rmath/qtukey.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/qtukey.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/qtukey.c -o CMakeFiles/main.dir/Rmath/qtukey.c.s
+
+src/CMakeFiles/main.dir/Rmath/qunif.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/qunif.c.o: ../src/Rmath/qunif.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object src/CMakeFiles/main.dir/Rmath/qunif.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/qunif.c.o   -c /home/a008/coding/MiniLab/src/Rmath/qunif.c
+
+src/CMakeFiles/main.dir/Rmath/qunif.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/qunif.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/qunif.c > CMakeFiles/main.dir/Rmath/qunif.c.i
+
+src/CMakeFiles/main.dir/Rmath/qunif.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/qunif.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/qunif.c -o CMakeFiles/main.dir/Rmath/qunif.c.s
+
+src/CMakeFiles/main.dir/Rmath/qweibull.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/qweibull.c.o: ../src/Rmath/qweibull.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object src/CMakeFiles/main.dir/Rmath/qweibull.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/qweibull.c.o   -c /home/a008/coding/MiniLab/src/Rmath/qweibull.c
+
+src/CMakeFiles/main.dir/Rmath/qweibull.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/qweibull.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/qweibull.c > CMakeFiles/main.dir/Rmath/qweibull.c.i
+
+src/CMakeFiles/main.dir/Rmath/qweibull.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/qweibull.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/qweibull.c -o CMakeFiles/main.dir/Rmath/qweibull.c.s
+
+src/CMakeFiles/main.dir/Rmath/rbeta.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/rbeta.c.o: ../src/Rmath/rbeta.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object src/CMakeFiles/main.dir/Rmath/rbeta.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/rbeta.c.o   -c /home/a008/coding/MiniLab/src/Rmath/rbeta.c
+
+src/CMakeFiles/main.dir/Rmath/rbeta.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/rbeta.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/rbeta.c > CMakeFiles/main.dir/Rmath/rbeta.c.i
+
+src/CMakeFiles/main.dir/Rmath/rbeta.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/rbeta.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/rbeta.c -o CMakeFiles/main.dir/Rmath/rbeta.c.s
+
+src/CMakeFiles/main.dir/Rmath/rbinom.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/rbinom.c.o: ../src/Rmath/rbinom.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object src/CMakeFiles/main.dir/Rmath/rbinom.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/rbinom.c.o   -c /home/a008/coding/MiniLab/src/Rmath/rbinom.c
+
+src/CMakeFiles/main.dir/Rmath/rbinom.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/rbinom.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/rbinom.c > CMakeFiles/main.dir/Rmath/rbinom.c.i
+
+src/CMakeFiles/main.dir/Rmath/rbinom.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/rbinom.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/rbinom.c -o CMakeFiles/main.dir/Rmath/rbinom.c.s
+
+src/CMakeFiles/main.dir/Rmath/rcauchy.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/rcauchy.c.o: ../src/Rmath/rcauchy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object src/CMakeFiles/main.dir/Rmath/rcauchy.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/rcauchy.c.o   -c /home/a008/coding/MiniLab/src/Rmath/rcauchy.c
+
+src/CMakeFiles/main.dir/Rmath/rcauchy.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/rcauchy.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/rcauchy.c > CMakeFiles/main.dir/Rmath/rcauchy.c.i
+
+src/CMakeFiles/main.dir/Rmath/rcauchy.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/rcauchy.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/rcauchy.c -o CMakeFiles/main.dir/Rmath/rcauchy.c.s
+
+src/CMakeFiles/main.dir/Rmath/rchisq.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/rchisq.c.o: ../src/Rmath/rchisq.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object src/CMakeFiles/main.dir/Rmath/rchisq.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/rchisq.c.o   -c /home/a008/coding/MiniLab/src/Rmath/rchisq.c
+
+src/CMakeFiles/main.dir/Rmath/rchisq.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/rchisq.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/rchisq.c > CMakeFiles/main.dir/Rmath/rchisq.c.i
+
+src/CMakeFiles/main.dir/Rmath/rchisq.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/rchisq.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/rchisq.c -o CMakeFiles/main.dir/Rmath/rchisq.c.s
+
+src/CMakeFiles/main.dir/Rmath/rexp.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/rexp.c.o: ../src/Rmath/rexp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object src/CMakeFiles/main.dir/Rmath/rexp.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/rexp.c.o   -c /home/a008/coding/MiniLab/src/Rmath/rexp.c
+
+src/CMakeFiles/main.dir/Rmath/rexp.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/rexp.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/rexp.c > CMakeFiles/main.dir/Rmath/rexp.c.i
+
+src/CMakeFiles/main.dir/Rmath/rexp.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/rexp.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/rexp.c -o CMakeFiles/main.dir/Rmath/rexp.c.s
+
+src/CMakeFiles/main.dir/Rmath/rf.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/rf.c.o: ../src/Rmath/rf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object src/CMakeFiles/main.dir/Rmath/rf.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/rf.c.o   -c /home/a008/coding/MiniLab/src/Rmath/rf.c
+
+src/CMakeFiles/main.dir/Rmath/rf.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/rf.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/rf.c > CMakeFiles/main.dir/Rmath/rf.c.i
+
+src/CMakeFiles/main.dir/Rmath/rf.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/rf.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/rf.c -o CMakeFiles/main.dir/Rmath/rf.c.s
+
+src/CMakeFiles/main.dir/Rmath/rgamma.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/rgamma.c.o: ../src/Rmath/rgamma.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building C object src/CMakeFiles/main.dir/Rmath/rgamma.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/rgamma.c.o   -c /home/a008/coding/MiniLab/src/Rmath/rgamma.c
+
+src/CMakeFiles/main.dir/Rmath/rgamma.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/rgamma.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/rgamma.c > CMakeFiles/main.dir/Rmath/rgamma.c.i
+
+src/CMakeFiles/main.dir/Rmath/rgamma.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/rgamma.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/rgamma.c -o CMakeFiles/main.dir/Rmath/rgamma.c.s
+
+src/CMakeFiles/main.dir/Rmath/rgeom.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/rgeom.c.o: ../src/Rmath/rgeom.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building C object src/CMakeFiles/main.dir/Rmath/rgeom.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/rgeom.c.o   -c /home/a008/coding/MiniLab/src/Rmath/rgeom.c
+
+src/CMakeFiles/main.dir/Rmath/rgeom.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/rgeom.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/rgeom.c > CMakeFiles/main.dir/Rmath/rgeom.c.i
+
+src/CMakeFiles/main.dir/Rmath/rgeom.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/rgeom.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/rgeom.c -o CMakeFiles/main.dir/Rmath/rgeom.c.s
+
+src/CMakeFiles/main.dir/Rmath/rhyper.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/rhyper.c.o: ../src/Rmath/rhyper.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building C object src/CMakeFiles/main.dir/Rmath/rhyper.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/rhyper.c.o   -c /home/a008/coding/MiniLab/src/Rmath/rhyper.c
+
+src/CMakeFiles/main.dir/Rmath/rhyper.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/rhyper.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/rhyper.c > CMakeFiles/main.dir/Rmath/rhyper.c.i
+
+src/CMakeFiles/main.dir/Rmath/rhyper.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/rhyper.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/rhyper.c -o CMakeFiles/main.dir/Rmath/rhyper.c.s
+
+src/CMakeFiles/main.dir/Rmath/rlnorm.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/rlnorm.c.o: ../src/Rmath/rlnorm.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building C object src/CMakeFiles/main.dir/Rmath/rlnorm.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/rlnorm.c.o   -c /home/a008/coding/MiniLab/src/Rmath/rlnorm.c
+
+src/CMakeFiles/main.dir/Rmath/rlnorm.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/rlnorm.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/rlnorm.c > CMakeFiles/main.dir/Rmath/rlnorm.c.i
+
+src/CMakeFiles/main.dir/Rmath/rlnorm.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/rlnorm.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/rlnorm.c -o CMakeFiles/main.dir/Rmath/rlnorm.c.s
+
+src/CMakeFiles/main.dir/Rmath/rlogis.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/rlogis.c.o: ../src/Rmath/rlogis.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building C object src/CMakeFiles/main.dir/Rmath/rlogis.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/rlogis.c.o   -c /home/a008/coding/MiniLab/src/Rmath/rlogis.c
+
+src/CMakeFiles/main.dir/Rmath/rlogis.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/rlogis.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/rlogis.c > CMakeFiles/main.dir/Rmath/rlogis.c.i
+
+src/CMakeFiles/main.dir/Rmath/rlogis.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/rlogis.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/rlogis.c -o CMakeFiles/main.dir/Rmath/rlogis.c.s
+
+src/CMakeFiles/main.dir/Rmath/rmultinom.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/rmultinom.c.o: ../src/Rmath/rmultinom.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building C object src/CMakeFiles/main.dir/Rmath/rmultinom.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/rmultinom.c.o   -c /home/a008/coding/MiniLab/src/Rmath/rmultinom.c
+
+src/CMakeFiles/main.dir/Rmath/rmultinom.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/rmultinom.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/rmultinom.c > CMakeFiles/main.dir/Rmath/rmultinom.c.i
+
+src/CMakeFiles/main.dir/Rmath/rmultinom.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/rmultinom.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/rmultinom.c -o CMakeFiles/main.dir/Rmath/rmultinom.c.s
+
+src/CMakeFiles/main.dir/Rmath/rnbinom.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/rnbinom.c.o: ../src/Rmath/rnbinom.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building C object src/CMakeFiles/main.dir/Rmath/rnbinom.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/rnbinom.c.o   -c /home/a008/coding/MiniLab/src/Rmath/rnbinom.c
+
+src/CMakeFiles/main.dir/Rmath/rnbinom.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/rnbinom.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/rnbinom.c > CMakeFiles/main.dir/Rmath/rnbinom.c.i
+
+src/CMakeFiles/main.dir/Rmath/rnbinom.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/rnbinom.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/rnbinom.c -o CMakeFiles/main.dir/Rmath/rnbinom.c.s
+
+src/CMakeFiles/main.dir/Rmath/rnchisq.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/rnchisq.c.o: ../src/Rmath/rnchisq.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building C object src/CMakeFiles/main.dir/Rmath/rnchisq.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/rnchisq.c.o   -c /home/a008/coding/MiniLab/src/Rmath/rnchisq.c
+
+src/CMakeFiles/main.dir/Rmath/rnchisq.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/rnchisq.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/rnchisq.c > CMakeFiles/main.dir/Rmath/rnchisq.c.i
+
+src/CMakeFiles/main.dir/Rmath/rnchisq.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/rnchisq.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/rnchisq.c -o CMakeFiles/main.dir/Rmath/rnchisq.c.s
+
+src/CMakeFiles/main.dir/Rmath/rnorm.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/rnorm.c.o: ../src/Rmath/rnorm.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building C object src/CMakeFiles/main.dir/Rmath/rnorm.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/rnorm.c.o   -c /home/a008/coding/MiniLab/src/Rmath/rnorm.c
+
+src/CMakeFiles/main.dir/Rmath/rnorm.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/rnorm.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/rnorm.c > CMakeFiles/main.dir/Rmath/rnorm.c.i
+
+src/CMakeFiles/main.dir/Rmath/rnorm.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/rnorm.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/rnorm.c -o CMakeFiles/main.dir/Rmath/rnorm.c.s
+
+src/CMakeFiles/main.dir/Rmath/rpois.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/rpois.c.o: ../src/Rmath/rpois.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Building C object src/CMakeFiles/main.dir/Rmath/rpois.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/rpois.c.o   -c /home/a008/coding/MiniLab/src/Rmath/rpois.c
+
+src/CMakeFiles/main.dir/Rmath/rpois.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/rpois.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/rpois.c > CMakeFiles/main.dir/Rmath/rpois.c.i
+
+src/CMakeFiles/main.dir/Rmath/rpois.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/rpois.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/rpois.c -o CMakeFiles/main.dir/Rmath/rpois.c.s
+
+src/CMakeFiles/main.dir/Rmath/rt.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/rt.c.o: ../src/Rmath/rt.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Building C object src/CMakeFiles/main.dir/Rmath/rt.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/rt.c.o   -c /home/a008/coding/MiniLab/src/Rmath/rt.c
+
+src/CMakeFiles/main.dir/Rmath/rt.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/rt.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/rt.c > CMakeFiles/main.dir/Rmath/rt.c.i
+
+src/CMakeFiles/main.dir/Rmath/rt.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/rt.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/rt.c -o CMakeFiles/main.dir/Rmath/rt.c.s
+
+src/CMakeFiles/main.dir/Rmath/runif.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/runif.c.o: ../src/Rmath/runif.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_112) "Building C object src/CMakeFiles/main.dir/Rmath/runif.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/runif.c.o   -c /home/a008/coding/MiniLab/src/Rmath/runif.c
+
+src/CMakeFiles/main.dir/Rmath/runif.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/runif.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/runif.c > CMakeFiles/main.dir/Rmath/runif.c.i
+
+src/CMakeFiles/main.dir/Rmath/runif.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/runif.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/runif.c -o CMakeFiles/main.dir/Rmath/runif.c.s
+
+src/CMakeFiles/main.dir/Rmath/rweibull.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/rweibull.c.o: ../src/Rmath/rweibull.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_113) "Building C object src/CMakeFiles/main.dir/Rmath/rweibull.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/rweibull.c.o   -c /home/a008/coding/MiniLab/src/Rmath/rweibull.c
+
+src/CMakeFiles/main.dir/Rmath/rweibull.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/rweibull.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/rweibull.c > CMakeFiles/main.dir/Rmath/rweibull.c.i
+
+src/CMakeFiles/main.dir/Rmath/rweibull.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/rweibull.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/rweibull.c -o CMakeFiles/main.dir/Rmath/rweibull.c.s
+
+src/CMakeFiles/main.dir/Rmath/sexp.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/sexp.c.o: ../src/Rmath/sexp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Building C object src/CMakeFiles/main.dir/Rmath/sexp.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/sexp.c.o   -c /home/a008/coding/MiniLab/src/Rmath/sexp.c
+
+src/CMakeFiles/main.dir/Rmath/sexp.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/sexp.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/sexp.c > CMakeFiles/main.dir/Rmath/sexp.c.i
+
+src/CMakeFiles/main.dir/Rmath/sexp.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/sexp.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/sexp.c -o CMakeFiles/main.dir/Rmath/sexp.c.s
+
+src/CMakeFiles/main.dir/Rmath/sign.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/sign.c.o: ../src/Rmath/sign.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_115) "Building C object src/CMakeFiles/main.dir/Rmath/sign.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/sign.c.o   -c /home/a008/coding/MiniLab/src/Rmath/sign.c
+
+src/CMakeFiles/main.dir/Rmath/sign.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/sign.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/sign.c > CMakeFiles/main.dir/Rmath/sign.c.i
+
+src/CMakeFiles/main.dir/Rmath/sign.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/sign.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/sign.c -o CMakeFiles/main.dir/Rmath/sign.c.s
+
+src/CMakeFiles/main.dir/Rmath/signrank.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/signrank.c.o: ../src/Rmath/signrank.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_116) "Building C object src/CMakeFiles/main.dir/Rmath/signrank.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/signrank.c.o   -c /home/a008/coding/MiniLab/src/Rmath/signrank.c
+
+src/CMakeFiles/main.dir/Rmath/signrank.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/signrank.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/signrank.c > CMakeFiles/main.dir/Rmath/signrank.c.i
+
+src/CMakeFiles/main.dir/Rmath/signrank.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/signrank.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/signrank.c -o CMakeFiles/main.dir/Rmath/signrank.c.s
+
+src/CMakeFiles/main.dir/Rmath/snorm.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/snorm.c.o: ../src/Rmath/snorm.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_117) "Building C object src/CMakeFiles/main.dir/Rmath/snorm.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/snorm.c.o   -c /home/a008/coding/MiniLab/src/Rmath/snorm.c
+
+src/CMakeFiles/main.dir/Rmath/snorm.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/snorm.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/snorm.c > CMakeFiles/main.dir/Rmath/snorm.c.i
+
+src/CMakeFiles/main.dir/Rmath/snorm.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/snorm.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/snorm.c -o CMakeFiles/main.dir/Rmath/snorm.c.s
+
+src/CMakeFiles/main.dir/Rmath/stirlerr.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/stirlerr.c.o: ../src/Rmath/stirlerr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_118) "Building C object src/CMakeFiles/main.dir/Rmath/stirlerr.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/stirlerr.c.o   -c /home/a008/coding/MiniLab/src/Rmath/stirlerr.c
+
+src/CMakeFiles/main.dir/Rmath/stirlerr.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/stirlerr.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/stirlerr.c > CMakeFiles/main.dir/Rmath/stirlerr.c.i
+
+src/CMakeFiles/main.dir/Rmath/stirlerr.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/stirlerr.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/stirlerr.c -o CMakeFiles/main.dir/Rmath/stirlerr.c.s
+
+src/CMakeFiles/main.dir/Rmath/sunif.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/sunif.c.o: ../src/Rmath/sunif.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_119) "Building C object src/CMakeFiles/main.dir/Rmath/sunif.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/sunif.c.o   -c /home/a008/coding/MiniLab/src/Rmath/sunif.c
+
+src/CMakeFiles/main.dir/Rmath/sunif.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/sunif.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/sunif.c > CMakeFiles/main.dir/Rmath/sunif.c.i
+
+src/CMakeFiles/main.dir/Rmath/sunif.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/sunif.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/sunif.c -o CMakeFiles/main.dir/Rmath/sunif.c.s
+
+src/CMakeFiles/main.dir/Rmath/toms708.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/toms708.c.o: ../src/Rmath/toms708.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_120) "Building C object src/CMakeFiles/main.dir/Rmath/toms708.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/toms708.c.o   -c /home/a008/coding/MiniLab/src/Rmath/toms708.c
+
+src/CMakeFiles/main.dir/Rmath/toms708.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/toms708.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/toms708.c > CMakeFiles/main.dir/Rmath/toms708.c.i
+
+src/CMakeFiles/main.dir/Rmath/toms708.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/toms708.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/toms708.c -o CMakeFiles/main.dir/Rmath/toms708.c.s
+
+src/CMakeFiles/main.dir/Rmath/wilcox.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/Rmath/wilcox.c.o: ../src/Rmath/wilcox.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_121) "Building C object src/CMakeFiles/main.dir/Rmath/wilcox.c.o"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/Rmath/wilcox.c.o   -c /home/a008/coding/MiniLab/src/Rmath/wilcox.c
+
+src/CMakeFiles/main.dir/Rmath/wilcox.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Rmath/wilcox.c.i"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a008/coding/MiniLab/src/Rmath/wilcox.c > CMakeFiles/main.dir/Rmath/wilcox.c.i
+
+src/CMakeFiles/main.dir/Rmath/wilcox.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Rmath/wilcox.c.s"
+	cd /home/a008/coding/MiniLab/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a008/coding/MiniLab/src/Rmath/wilcox.c -o CMakeFiles/main.dir/Rmath/wilcox.c.s
 
 # Object files for target main
 main_OBJECTS = \
-"CMakeFiles/main.dir/acmtoms.cpp.o" \
-"CMakeFiles/main.dir/basedist.cpp.o" \
-"CMakeFiles/main.dir/beta_randist.cpp.o" \
-"CMakeFiles/main.dir/beta_specfun.cpp.o" \
-"CMakeFiles/main.dir/binomial.cpp.o" \
-"CMakeFiles/main.dir/cauchy.cpp.o" \
-"CMakeFiles/main.dir/chisq.cpp.o" \
-"CMakeFiles/main.dir/choose.cpp.o" \
-"CMakeFiles/main.dir/exponential.cpp.o" \
-"CMakeFiles/main.dir/fdist.cpp.o" \
-"CMakeFiles/main.dir/gamma_randist.cpp.o" \
-"CMakeFiles/main.dir/gamma_specfun.cpp.o" \
-"CMakeFiles/main.dir/geometric.cpp.o" \
-"CMakeFiles/main.dir/hypergeometric.cpp.o" \
-"CMakeFiles/main.dir/infnan.cpp.o" \
-"CMakeFiles/main.dir/logistic.cpp.o" \
-"CMakeFiles/main.dir/lognormal.cpp.o" \
 "CMakeFiles/main.dir/main.cpp.o" \
-"CMakeFiles/main.dir/negative_binomial.cpp.o" \
-"CMakeFiles/main.dir/non_central_beta.cpp.o" \
-"CMakeFiles/main.dir/non_central_chisq.cpp.o" \
-"CMakeFiles/main.dir/non_central_fdist.cpp.o" \
-"CMakeFiles/main.dir/non_central_tdist.cpp.o" \
-"CMakeFiles/main.dir/normal.cpp.o" \
-"CMakeFiles/main.dir/poisson.cpp.o" \
-"CMakeFiles/main.dir/regression.cpp.o" \
-"CMakeFiles/main.dir/signrank.cpp.o" \
-"CMakeFiles/main.dir/statistics.cpp.o" \
-"CMakeFiles/main.dir/tdist.cpp.o" \
-"CMakeFiles/main.dir/tukey.cpp.o" \
-"CMakeFiles/main.dir/uniform.cpp.o" \
-"CMakeFiles/main.dir/weibull.cpp.o" \
-"CMakeFiles/main.dir/wilcoxon.cpp.o"
+"CMakeFiles/main.dir/Rmath/bd0.c.o" \
+"CMakeFiles/main.dir/Rmath/bessel_i.c.o" \
+"CMakeFiles/main.dir/Rmath/bessel_j.c.o" \
+"CMakeFiles/main.dir/Rmath/bessel_k.c.o" \
+"CMakeFiles/main.dir/Rmath/bessel_y.c.o" \
+"CMakeFiles/main.dir/Rmath/beta.c.o" \
+"CMakeFiles/main.dir/Rmath/chebyshev.c.o" \
+"CMakeFiles/main.dir/Rmath/choose.c.o" \
+"CMakeFiles/main.dir/Rmath/cospi.c.o" \
+"CMakeFiles/main.dir/Rmath/d1mach.c.o" \
+"CMakeFiles/main.dir/Rmath/dbeta.c.o" \
+"CMakeFiles/main.dir/Rmath/dbinom.c.o" \
+"CMakeFiles/main.dir/Rmath/dcauchy.c.o" \
+"CMakeFiles/main.dir/Rmath/dchisq.c.o" \
+"CMakeFiles/main.dir/Rmath/dexp.c.o" \
+"CMakeFiles/main.dir/Rmath/df.c.o" \
+"CMakeFiles/main.dir/Rmath/dgamma.c.o" \
+"CMakeFiles/main.dir/Rmath/dgeom.c.o" \
+"CMakeFiles/main.dir/Rmath/dhyper.c.o" \
+"CMakeFiles/main.dir/Rmath/dlnorm.c.o" \
+"CMakeFiles/main.dir/Rmath/dlogis.c.o" \
+"CMakeFiles/main.dir/Rmath/dnbeta.c.o" \
+"CMakeFiles/main.dir/Rmath/dnbinom.c.o" \
+"CMakeFiles/main.dir/Rmath/dnchisq.c.o" \
+"CMakeFiles/main.dir/Rmath/dnf.c.o" \
+"CMakeFiles/main.dir/Rmath/dnorm.c.o" \
+"CMakeFiles/main.dir/Rmath/dnt.c.o" \
+"CMakeFiles/main.dir/Rmath/dpois.c.o" \
+"CMakeFiles/main.dir/Rmath/dt.c.o" \
+"CMakeFiles/main.dir/Rmath/dunif.c.o" \
+"CMakeFiles/main.dir/Rmath/dweibull.c.o" \
+"CMakeFiles/main.dir/Rmath/fmax2.c.o" \
+"CMakeFiles/main.dir/Rmath/fmin2.c.o" \
+"CMakeFiles/main.dir/Rmath/fprec.c.o" \
+"CMakeFiles/main.dir/Rmath/fround.c.o" \
+"CMakeFiles/main.dir/Rmath/fsign.c.o" \
+"CMakeFiles/main.dir/Rmath/ftrunc.c.o" \
+"CMakeFiles/main.dir/Rmath/gamma.c.o" \
+"CMakeFiles/main.dir/Rmath/gamma_cody.c.o" \
+"CMakeFiles/main.dir/Rmath/gammalims.c.o" \
+"CMakeFiles/main.dir/Rmath/i1mach.c.o" \
+"CMakeFiles/main.dir/Rmath/imax2.c.o" \
+"CMakeFiles/main.dir/Rmath/imin2.c.o" \
+"CMakeFiles/main.dir/Rmath/lbeta.c.o" \
+"CMakeFiles/main.dir/Rmath/lgamma.c.o" \
+"CMakeFiles/main.dir/Rmath/lgammacor.c.o" \
+"CMakeFiles/main.dir/Rmath/log1p.c.o" \
+"CMakeFiles/main.dir/Rmath/mlutils.c.o" \
+"CMakeFiles/main.dir/Rmath/pbeta.c.o" \
+"CMakeFiles/main.dir/Rmath/pbinom.c.o" \
+"CMakeFiles/main.dir/Rmath/pcauchy.c.o" \
+"CMakeFiles/main.dir/Rmath/pchisq.c.o" \
+"CMakeFiles/main.dir/Rmath/pexp.c.o" \
+"CMakeFiles/main.dir/Rmath/pf.c.o" \
+"CMakeFiles/main.dir/Rmath/pgamma.c.o" \
+"CMakeFiles/main.dir/Rmath/pgeom.c.o" \
+"CMakeFiles/main.dir/Rmath/phyper.c.o" \
+"CMakeFiles/main.dir/Rmath/plnorm.c.o" \
+"CMakeFiles/main.dir/Rmath/plogis.c.o" \
+"CMakeFiles/main.dir/Rmath/pnbeta.c.o" \
+"CMakeFiles/main.dir/Rmath/pnbinom.c.o" \
+"CMakeFiles/main.dir/Rmath/pnchisq.c.o" \
+"CMakeFiles/main.dir/Rmath/pnf.c.o" \
+"CMakeFiles/main.dir/Rmath/pnorm.c.o" \
+"CMakeFiles/main.dir/Rmath/pnt.c.o" \
+"CMakeFiles/main.dir/Rmath/polygamma.c.o" \
+"CMakeFiles/main.dir/Rmath/ppois.c.o" \
+"CMakeFiles/main.dir/Rmath/pt.c.o" \
+"CMakeFiles/main.dir/Rmath/ptukey.c.o" \
+"CMakeFiles/main.dir/Rmath/punif.c.o" \
+"CMakeFiles/main.dir/Rmath/pweibull.c.o" \
+"CMakeFiles/main.dir/Rmath/qbeta.c.o" \
+"CMakeFiles/main.dir/Rmath/qbinom.c.o" \
+"CMakeFiles/main.dir/Rmath/qcauchy.c.o" \
+"CMakeFiles/main.dir/Rmath/qchisq.c.o" \
+"CMakeFiles/main.dir/Rmath/qexp.c.o" \
+"CMakeFiles/main.dir/Rmath/qf.c.o" \
+"CMakeFiles/main.dir/Rmath/qgamma.c.o" \
+"CMakeFiles/main.dir/Rmath/qgeom.c.o" \
+"CMakeFiles/main.dir/Rmath/qhyper.c.o" \
+"CMakeFiles/main.dir/Rmath/qlnorm.c.o" \
+"CMakeFiles/main.dir/Rmath/qlogis.c.o" \
+"CMakeFiles/main.dir/Rmath/qnbeta.c.o" \
+"CMakeFiles/main.dir/Rmath/qnbinom.c.o" \
+"CMakeFiles/main.dir/Rmath/qnchisq.c.o" \
+"CMakeFiles/main.dir/Rmath/qnf.c.o" \
+"CMakeFiles/main.dir/Rmath/qnorm.c.o" \
+"CMakeFiles/main.dir/Rmath/qnt.c.o" \
+"CMakeFiles/main.dir/Rmath/qpois.c.o" \
+"CMakeFiles/main.dir/Rmath/qt.c.o" \
+"CMakeFiles/main.dir/Rmath/qtukey.c.o" \
+"CMakeFiles/main.dir/Rmath/qunif.c.o" \
+"CMakeFiles/main.dir/Rmath/qweibull.c.o" \
+"CMakeFiles/main.dir/Rmath/rbeta.c.o" \
+"CMakeFiles/main.dir/Rmath/rbinom.c.o" \
+"CMakeFiles/main.dir/Rmath/rcauchy.c.o" \
+"CMakeFiles/main.dir/Rmath/rchisq.c.o" \
+"CMakeFiles/main.dir/Rmath/rexp.c.o" \
+"CMakeFiles/main.dir/Rmath/rf.c.o" \
+"CMakeFiles/main.dir/Rmath/rgamma.c.o" \
+"CMakeFiles/main.dir/Rmath/rgeom.c.o" \
+"CMakeFiles/main.dir/Rmath/rhyper.c.o" \
+"CMakeFiles/main.dir/Rmath/rlnorm.c.o" \
+"CMakeFiles/main.dir/Rmath/rlogis.c.o" \
+"CMakeFiles/main.dir/Rmath/rmultinom.c.o" \
+"CMakeFiles/main.dir/Rmath/rnbinom.c.o" \
+"CMakeFiles/main.dir/Rmath/rnchisq.c.o" \
+"CMakeFiles/main.dir/Rmath/rnorm.c.o" \
+"CMakeFiles/main.dir/Rmath/rpois.c.o" \
+"CMakeFiles/main.dir/Rmath/rt.c.o" \
+"CMakeFiles/main.dir/Rmath/runif.c.o" \
+"CMakeFiles/main.dir/Rmath/rweibull.c.o" \
+"CMakeFiles/main.dir/Rmath/sexp.c.o" \
+"CMakeFiles/main.dir/Rmath/sign.c.o" \
+"CMakeFiles/main.dir/Rmath/signrank.c.o" \
+"CMakeFiles/main.dir/Rmath/snorm.c.o" \
+"CMakeFiles/main.dir/Rmath/stirlerr.c.o" \
+"CMakeFiles/main.dir/Rmath/sunif.c.o" \
+"CMakeFiles/main.dir/Rmath/toms708.c.o" \
+"CMakeFiles/main.dir/Rmath/wilcox.c.o"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
-../bin/main: src/CMakeFiles/main.dir/acmtoms.cpp.o
-../bin/main: src/CMakeFiles/main.dir/basedist.cpp.o
-../bin/main: src/CMakeFiles/main.dir/beta_randist.cpp.o
-../bin/main: src/CMakeFiles/main.dir/beta_specfun.cpp.o
-../bin/main: src/CMakeFiles/main.dir/binomial.cpp.o
-../bin/main: src/CMakeFiles/main.dir/cauchy.cpp.o
-../bin/main: src/CMakeFiles/main.dir/chisq.cpp.o
-../bin/main: src/CMakeFiles/main.dir/choose.cpp.o
-../bin/main: src/CMakeFiles/main.dir/exponential.cpp.o
-../bin/main: src/CMakeFiles/main.dir/fdist.cpp.o
-../bin/main: src/CMakeFiles/main.dir/gamma_randist.cpp.o
-../bin/main: src/CMakeFiles/main.dir/gamma_specfun.cpp.o
-../bin/main: src/CMakeFiles/main.dir/geometric.cpp.o
-../bin/main: src/CMakeFiles/main.dir/hypergeometric.cpp.o
-../bin/main: src/CMakeFiles/main.dir/infnan.cpp.o
-../bin/main: src/CMakeFiles/main.dir/logistic.cpp.o
-../bin/main: src/CMakeFiles/main.dir/lognormal.cpp.o
 ../bin/main: src/CMakeFiles/main.dir/main.cpp.o
-../bin/main: src/CMakeFiles/main.dir/negative_binomial.cpp.o
-../bin/main: src/CMakeFiles/main.dir/non_central_beta.cpp.o
-../bin/main: src/CMakeFiles/main.dir/non_central_chisq.cpp.o
-../bin/main: src/CMakeFiles/main.dir/non_central_fdist.cpp.o
-../bin/main: src/CMakeFiles/main.dir/non_central_tdist.cpp.o
-../bin/main: src/CMakeFiles/main.dir/normal.cpp.o
-../bin/main: src/CMakeFiles/main.dir/poisson.cpp.o
-../bin/main: src/CMakeFiles/main.dir/regression.cpp.o
-../bin/main: src/CMakeFiles/main.dir/signrank.cpp.o
-../bin/main: src/CMakeFiles/main.dir/statistics.cpp.o
-../bin/main: src/CMakeFiles/main.dir/tdist.cpp.o
-../bin/main: src/CMakeFiles/main.dir/tukey.cpp.o
-../bin/main: src/CMakeFiles/main.dir/uniform.cpp.o
-../bin/main: src/CMakeFiles/main.dir/weibull.cpp.o
-../bin/main: src/CMakeFiles/main.dir/wilcoxon.cpp.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/bd0.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/bessel_i.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/bessel_j.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/bessel_k.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/bessel_y.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/beta.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/chebyshev.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/choose.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/cospi.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/d1mach.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/dbeta.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/dbinom.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/dcauchy.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/dchisq.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/dexp.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/df.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/dgamma.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/dgeom.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/dhyper.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/dlnorm.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/dlogis.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/dnbeta.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/dnbinom.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/dnchisq.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/dnf.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/dnorm.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/dnt.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/dpois.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/dt.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/dunif.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/dweibull.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/fmax2.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/fmin2.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/fprec.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/fround.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/fsign.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/ftrunc.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/gamma.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/gamma_cody.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/gammalims.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/i1mach.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/imax2.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/imin2.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/lbeta.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/lgamma.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/lgammacor.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/log1p.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/mlutils.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/pbeta.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/pbinom.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/pcauchy.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/pchisq.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/pexp.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/pf.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/pgamma.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/pgeom.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/phyper.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/plnorm.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/plogis.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/pnbeta.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/pnbinom.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/pnchisq.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/pnf.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/pnorm.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/pnt.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/polygamma.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/ppois.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/pt.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/ptukey.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/punif.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/pweibull.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/qbeta.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/qbinom.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/qcauchy.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/qchisq.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/qexp.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/qf.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/qgamma.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/qgeom.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/qhyper.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/qlnorm.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/qlogis.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/qnbeta.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/qnbinom.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/qnchisq.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/qnf.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/qnorm.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/qnt.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/qpois.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/qt.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/qtukey.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/qunif.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/qweibull.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/rbeta.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/rbinom.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/rcauchy.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/rchisq.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/rexp.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/rf.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/rgamma.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/rgeom.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/rhyper.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/rlnorm.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/rlogis.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/rmultinom.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/rnbinom.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/rnchisq.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/rnorm.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/rpois.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/rt.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/runif.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/rweibull.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/sexp.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/sign.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/signrank.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/snorm.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/stirlerr.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/sunif.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/toms708.c.o
+../bin/main: src/CMakeFiles/main.dir/Rmath/wilcox.c.o
 ../bin/main: src/CMakeFiles/main.dir/build.make
 ../bin/main: src/CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/a008/coding/MiniR/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Linking CXX executable ../../bin/main"
-	cd /home/a008/coding/MiniR/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/a008/coding/MiniLab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_122) "Linking CXX executable ../../bin/main"
+	cd /home/a008/coding/MiniLab/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/main.dir/build: ../bin/main
@@ -569,10 +1889,10 @@ src/CMakeFiles/main.dir/build: ../bin/main
 .PHONY : src/CMakeFiles/main.dir/build
 
 src/CMakeFiles/main.dir/clean:
-	cd /home/a008/coding/MiniR/build/src && $(CMAKE_COMMAND) -P CMakeFiles/main.dir/cmake_clean.cmake
+	cd /home/a008/coding/MiniLab/build/src && $(CMAKE_COMMAND) -P CMakeFiles/main.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/main.dir/clean
 
 src/CMakeFiles/main.dir/depend:
-	cd /home/a008/coding/MiniR/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/a008/coding/MiniR /home/a008/coding/MiniR/src /home/a008/coding/MiniR/build /home/a008/coding/MiniR/build/src /home/a008/coding/MiniR/build/src/CMakeFiles/main.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/a008/coding/MiniLab/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/a008/coding/MiniLab /home/a008/coding/MiniLab/src /home/a008/coding/MiniLab/build /home/a008/coding/MiniLab/build/src /home/a008/coding/MiniLab/build/src/CMakeFiles/main.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/main.dir/depend
 

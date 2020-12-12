@@ -1,4 +1,4 @@
-# Install script for directory: /home/a008/coding/MiniR
+# Install script for directory: /home/a008/coding/MiniLab
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,12 +34,13 @@ endif()
 
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
-  set(CMAKE_CROSSCOMPILING "FALSE")
+  set(CMAKE_CROSSCOMPILING "false")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/home/a008/coding/MiniR/build/src/cmake_install.cmake")
+  # Include the install script for each subdirectory.
+  include("/home/a008/coding/MiniLab/build/src/cmake_install.cmake")
+
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -50,5 +51,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/a008/coding/MiniR/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/a008/coding/MiniLab/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

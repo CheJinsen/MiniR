@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/a008/coding/MiniR
+CMAKE_SOURCE_DIR = /home/a008/coding/MiniLab
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/a008/coding/MiniR/build
+CMAKE_BINARY_DIR = /home/a008/coding/MiniLab/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/a008/coding/MiniR/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/a008/coding/MiniR/build/CMakeFiles /home/a008/coding/MiniR/build/src/CMakeFiles/progress.marks
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/a008/coding/MiniR/build/CMakeFiles 0
+	cd /home/a008/coding/MiniLab/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/a008/coding/MiniLab/build/CMakeFiles /home/a008/coding/MiniLab/build/src/CMakeFiles/progress.marks
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/a008/coding/MiniLab/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/a008/coding/MiniR/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/a008/coding/MiniLab/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/main.dir/rule:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/main.dir/rule
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/main.dir/rule
 .PHONY : src/CMakeFiles/main.dir/rule
 
 # Convenience name for target.
@@ -122,467 +122,3248 @@ main: src/CMakeFiles/main.dir/rule
 
 # fast build rule for target.
 main/fast:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
 .PHONY : main/fast
 
-acmtoms.o: acmtoms.cpp.o
+Rmath/bd0.o: Rmath/bd0.c.o
 
-.PHONY : acmtoms.o
-
-# target to build an object file
-acmtoms.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/acmtoms.cpp.o
-.PHONY : acmtoms.cpp.o
-
-acmtoms.i: acmtoms.cpp.i
-
-.PHONY : acmtoms.i
-
-# target to preprocess a source file
-acmtoms.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/acmtoms.cpp.i
-.PHONY : acmtoms.cpp.i
-
-acmtoms.s: acmtoms.cpp.s
-
-.PHONY : acmtoms.s
-
-# target to generate assembly for a file
-acmtoms.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/acmtoms.cpp.s
-.PHONY : acmtoms.cpp.s
-
-basedist.o: basedist.cpp.o
-
-.PHONY : basedist.o
+.PHONY : Rmath/bd0.o
 
 # target to build an object file
-basedist.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/basedist.cpp.o
-.PHONY : basedist.cpp.o
+Rmath/bd0.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/bd0.c.o
+.PHONY : Rmath/bd0.c.o
 
-basedist.i: basedist.cpp.i
+Rmath/bd0.i: Rmath/bd0.c.i
 
-.PHONY : basedist.i
+.PHONY : Rmath/bd0.i
 
 # target to preprocess a source file
-basedist.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/basedist.cpp.i
-.PHONY : basedist.cpp.i
+Rmath/bd0.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/bd0.c.i
+.PHONY : Rmath/bd0.c.i
 
-basedist.s: basedist.cpp.s
+Rmath/bd0.s: Rmath/bd0.c.s
 
-.PHONY : basedist.s
+.PHONY : Rmath/bd0.s
 
 # target to generate assembly for a file
-basedist.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/basedist.cpp.s
-.PHONY : basedist.cpp.s
+Rmath/bd0.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/bd0.c.s
+.PHONY : Rmath/bd0.c.s
 
-beta_randist.o: beta_randist.cpp.o
+Rmath/bessel_i.o: Rmath/bessel_i.c.o
 
-.PHONY : beta_randist.o
+.PHONY : Rmath/bessel_i.o
 
 # target to build an object file
-beta_randist.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/beta_randist.cpp.o
-.PHONY : beta_randist.cpp.o
+Rmath/bessel_i.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/bessel_i.c.o
+.PHONY : Rmath/bessel_i.c.o
 
-beta_randist.i: beta_randist.cpp.i
+Rmath/bessel_i.i: Rmath/bessel_i.c.i
 
-.PHONY : beta_randist.i
+.PHONY : Rmath/bessel_i.i
 
 # target to preprocess a source file
-beta_randist.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/beta_randist.cpp.i
-.PHONY : beta_randist.cpp.i
+Rmath/bessel_i.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/bessel_i.c.i
+.PHONY : Rmath/bessel_i.c.i
 
-beta_randist.s: beta_randist.cpp.s
+Rmath/bessel_i.s: Rmath/bessel_i.c.s
 
-.PHONY : beta_randist.s
+.PHONY : Rmath/bessel_i.s
 
 # target to generate assembly for a file
-beta_randist.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/beta_randist.cpp.s
-.PHONY : beta_randist.cpp.s
+Rmath/bessel_i.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/bessel_i.c.s
+.PHONY : Rmath/bessel_i.c.s
 
-beta_specfun.o: beta_specfun.cpp.o
+Rmath/bessel_j.o: Rmath/bessel_j.c.o
 
-.PHONY : beta_specfun.o
+.PHONY : Rmath/bessel_j.o
 
 # target to build an object file
-beta_specfun.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/beta_specfun.cpp.o
-.PHONY : beta_specfun.cpp.o
+Rmath/bessel_j.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/bessel_j.c.o
+.PHONY : Rmath/bessel_j.c.o
 
-beta_specfun.i: beta_specfun.cpp.i
+Rmath/bessel_j.i: Rmath/bessel_j.c.i
 
-.PHONY : beta_specfun.i
+.PHONY : Rmath/bessel_j.i
 
 # target to preprocess a source file
-beta_specfun.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/beta_specfun.cpp.i
-.PHONY : beta_specfun.cpp.i
+Rmath/bessel_j.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/bessel_j.c.i
+.PHONY : Rmath/bessel_j.c.i
 
-beta_specfun.s: beta_specfun.cpp.s
+Rmath/bessel_j.s: Rmath/bessel_j.c.s
 
-.PHONY : beta_specfun.s
+.PHONY : Rmath/bessel_j.s
 
 # target to generate assembly for a file
-beta_specfun.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/beta_specfun.cpp.s
-.PHONY : beta_specfun.cpp.s
+Rmath/bessel_j.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/bessel_j.c.s
+.PHONY : Rmath/bessel_j.c.s
 
-binomial.o: binomial.cpp.o
+Rmath/bessel_k.o: Rmath/bessel_k.c.o
 
-.PHONY : binomial.o
+.PHONY : Rmath/bessel_k.o
 
 # target to build an object file
-binomial.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/binomial.cpp.o
-.PHONY : binomial.cpp.o
+Rmath/bessel_k.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/bessel_k.c.o
+.PHONY : Rmath/bessel_k.c.o
 
-binomial.i: binomial.cpp.i
+Rmath/bessel_k.i: Rmath/bessel_k.c.i
 
-.PHONY : binomial.i
+.PHONY : Rmath/bessel_k.i
 
 # target to preprocess a source file
-binomial.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/binomial.cpp.i
-.PHONY : binomial.cpp.i
+Rmath/bessel_k.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/bessel_k.c.i
+.PHONY : Rmath/bessel_k.c.i
 
-binomial.s: binomial.cpp.s
+Rmath/bessel_k.s: Rmath/bessel_k.c.s
 
-.PHONY : binomial.s
+.PHONY : Rmath/bessel_k.s
 
 # target to generate assembly for a file
-binomial.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/binomial.cpp.s
-.PHONY : binomial.cpp.s
+Rmath/bessel_k.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/bessel_k.c.s
+.PHONY : Rmath/bessel_k.c.s
 
-cauchy.o: cauchy.cpp.o
+Rmath/bessel_y.o: Rmath/bessel_y.c.o
 
-.PHONY : cauchy.o
+.PHONY : Rmath/bessel_y.o
 
 # target to build an object file
-cauchy.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/cauchy.cpp.o
-.PHONY : cauchy.cpp.o
+Rmath/bessel_y.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/bessel_y.c.o
+.PHONY : Rmath/bessel_y.c.o
 
-cauchy.i: cauchy.cpp.i
+Rmath/bessel_y.i: Rmath/bessel_y.c.i
 
-.PHONY : cauchy.i
+.PHONY : Rmath/bessel_y.i
 
 # target to preprocess a source file
-cauchy.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/cauchy.cpp.i
-.PHONY : cauchy.cpp.i
+Rmath/bessel_y.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/bessel_y.c.i
+.PHONY : Rmath/bessel_y.c.i
 
-cauchy.s: cauchy.cpp.s
+Rmath/bessel_y.s: Rmath/bessel_y.c.s
 
-.PHONY : cauchy.s
+.PHONY : Rmath/bessel_y.s
 
 # target to generate assembly for a file
-cauchy.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/cauchy.cpp.s
-.PHONY : cauchy.cpp.s
+Rmath/bessel_y.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/bessel_y.c.s
+.PHONY : Rmath/bessel_y.c.s
 
-chisq.o: chisq.cpp.o
+Rmath/beta.o: Rmath/beta.c.o
 
-.PHONY : chisq.o
+.PHONY : Rmath/beta.o
 
 # target to build an object file
-chisq.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/chisq.cpp.o
-.PHONY : chisq.cpp.o
+Rmath/beta.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/beta.c.o
+.PHONY : Rmath/beta.c.o
 
-chisq.i: chisq.cpp.i
+Rmath/beta.i: Rmath/beta.c.i
 
-.PHONY : chisq.i
+.PHONY : Rmath/beta.i
 
 # target to preprocess a source file
-chisq.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/chisq.cpp.i
-.PHONY : chisq.cpp.i
+Rmath/beta.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/beta.c.i
+.PHONY : Rmath/beta.c.i
 
-chisq.s: chisq.cpp.s
+Rmath/beta.s: Rmath/beta.c.s
 
-.PHONY : chisq.s
+.PHONY : Rmath/beta.s
 
 # target to generate assembly for a file
-chisq.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/chisq.cpp.s
-.PHONY : chisq.cpp.s
+Rmath/beta.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/beta.c.s
+.PHONY : Rmath/beta.c.s
 
-choose.o: choose.cpp.o
+Rmath/chebyshev.o: Rmath/chebyshev.c.o
 
-.PHONY : choose.o
+.PHONY : Rmath/chebyshev.o
 
 # target to build an object file
-choose.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/choose.cpp.o
-.PHONY : choose.cpp.o
+Rmath/chebyshev.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/chebyshev.c.o
+.PHONY : Rmath/chebyshev.c.o
 
-choose.i: choose.cpp.i
+Rmath/chebyshev.i: Rmath/chebyshev.c.i
 
-.PHONY : choose.i
+.PHONY : Rmath/chebyshev.i
 
 # target to preprocess a source file
-choose.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/choose.cpp.i
-.PHONY : choose.cpp.i
+Rmath/chebyshev.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/chebyshev.c.i
+.PHONY : Rmath/chebyshev.c.i
 
-choose.s: choose.cpp.s
+Rmath/chebyshev.s: Rmath/chebyshev.c.s
 
-.PHONY : choose.s
+.PHONY : Rmath/chebyshev.s
 
 # target to generate assembly for a file
-choose.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/choose.cpp.s
-.PHONY : choose.cpp.s
+Rmath/chebyshev.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/chebyshev.c.s
+.PHONY : Rmath/chebyshev.c.s
 
-exponential.o: exponential.cpp.o
+Rmath/choose.o: Rmath/choose.c.o
 
-.PHONY : exponential.o
+.PHONY : Rmath/choose.o
 
 # target to build an object file
-exponential.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/exponential.cpp.o
-.PHONY : exponential.cpp.o
+Rmath/choose.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/choose.c.o
+.PHONY : Rmath/choose.c.o
 
-exponential.i: exponential.cpp.i
+Rmath/choose.i: Rmath/choose.c.i
 
-.PHONY : exponential.i
+.PHONY : Rmath/choose.i
 
 # target to preprocess a source file
-exponential.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/exponential.cpp.i
-.PHONY : exponential.cpp.i
+Rmath/choose.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/choose.c.i
+.PHONY : Rmath/choose.c.i
 
-exponential.s: exponential.cpp.s
+Rmath/choose.s: Rmath/choose.c.s
 
-.PHONY : exponential.s
+.PHONY : Rmath/choose.s
 
 # target to generate assembly for a file
-exponential.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/exponential.cpp.s
-.PHONY : exponential.cpp.s
+Rmath/choose.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/choose.c.s
+.PHONY : Rmath/choose.c.s
 
-fdist.o: fdist.cpp.o
+Rmath/cospi.o: Rmath/cospi.c.o
 
-.PHONY : fdist.o
+.PHONY : Rmath/cospi.o
 
 # target to build an object file
-fdist.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/fdist.cpp.o
-.PHONY : fdist.cpp.o
+Rmath/cospi.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/cospi.c.o
+.PHONY : Rmath/cospi.c.o
 
-fdist.i: fdist.cpp.i
+Rmath/cospi.i: Rmath/cospi.c.i
 
-.PHONY : fdist.i
+.PHONY : Rmath/cospi.i
 
 # target to preprocess a source file
-fdist.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/fdist.cpp.i
-.PHONY : fdist.cpp.i
+Rmath/cospi.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/cospi.c.i
+.PHONY : Rmath/cospi.c.i
 
-fdist.s: fdist.cpp.s
+Rmath/cospi.s: Rmath/cospi.c.s
 
-.PHONY : fdist.s
+.PHONY : Rmath/cospi.s
 
 # target to generate assembly for a file
-fdist.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/fdist.cpp.s
-.PHONY : fdist.cpp.s
+Rmath/cospi.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/cospi.c.s
+.PHONY : Rmath/cospi.c.s
 
-gamma_randist.o: gamma_randist.cpp.o
+Rmath/d1mach.o: Rmath/d1mach.c.o
 
-.PHONY : gamma_randist.o
+.PHONY : Rmath/d1mach.o
 
 # target to build an object file
-gamma_randist.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/gamma_randist.cpp.o
-.PHONY : gamma_randist.cpp.o
+Rmath/d1mach.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/d1mach.c.o
+.PHONY : Rmath/d1mach.c.o
 
-gamma_randist.i: gamma_randist.cpp.i
+Rmath/d1mach.i: Rmath/d1mach.c.i
 
-.PHONY : gamma_randist.i
+.PHONY : Rmath/d1mach.i
 
 # target to preprocess a source file
-gamma_randist.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/gamma_randist.cpp.i
-.PHONY : gamma_randist.cpp.i
+Rmath/d1mach.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/d1mach.c.i
+.PHONY : Rmath/d1mach.c.i
 
-gamma_randist.s: gamma_randist.cpp.s
+Rmath/d1mach.s: Rmath/d1mach.c.s
 
-.PHONY : gamma_randist.s
+.PHONY : Rmath/d1mach.s
 
 # target to generate assembly for a file
-gamma_randist.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/gamma_randist.cpp.s
-.PHONY : gamma_randist.cpp.s
+Rmath/d1mach.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/d1mach.c.s
+.PHONY : Rmath/d1mach.c.s
 
-gamma_specfun.o: gamma_specfun.cpp.o
+Rmath/dbeta.o: Rmath/dbeta.c.o
 
-.PHONY : gamma_specfun.o
+.PHONY : Rmath/dbeta.o
 
 # target to build an object file
-gamma_specfun.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/gamma_specfun.cpp.o
-.PHONY : gamma_specfun.cpp.o
+Rmath/dbeta.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dbeta.c.o
+.PHONY : Rmath/dbeta.c.o
 
-gamma_specfun.i: gamma_specfun.cpp.i
+Rmath/dbeta.i: Rmath/dbeta.c.i
 
-.PHONY : gamma_specfun.i
+.PHONY : Rmath/dbeta.i
 
 # target to preprocess a source file
-gamma_specfun.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/gamma_specfun.cpp.i
-.PHONY : gamma_specfun.cpp.i
+Rmath/dbeta.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dbeta.c.i
+.PHONY : Rmath/dbeta.c.i
 
-gamma_specfun.s: gamma_specfun.cpp.s
+Rmath/dbeta.s: Rmath/dbeta.c.s
 
-.PHONY : gamma_specfun.s
+.PHONY : Rmath/dbeta.s
 
 # target to generate assembly for a file
-gamma_specfun.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/gamma_specfun.cpp.s
-.PHONY : gamma_specfun.cpp.s
+Rmath/dbeta.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dbeta.c.s
+.PHONY : Rmath/dbeta.c.s
 
-geometric.o: geometric.cpp.o
+Rmath/dbinom.o: Rmath/dbinom.c.o
 
-.PHONY : geometric.o
+.PHONY : Rmath/dbinom.o
 
 # target to build an object file
-geometric.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/geometric.cpp.o
-.PHONY : geometric.cpp.o
+Rmath/dbinom.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dbinom.c.o
+.PHONY : Rmath/dbinom.c.o
 
-geometric.i: geometric.cpp.i
+Rmath/dbinom.i: Rmath/dbinom.c.i
 
-.PHONY : geometric.i
+.PHONY : Rmath/dbinom.i
 
 # target to preprocess a source file
-geometric.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/geometric.cpp.i
-.PHONY : geometric.cpp.i
+Rmath/dbinom.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dbinom.c.i
+.PHONY : Rmath/dbinom.c.i
 
-geometric.s: geometric.cpp.s
+Rmath/dbinom.s: Rmath/dbinom.c.s
 
-.PHONY : geometric.s
+.PHONY : Rmath/dbinom.s
 
 # target to generate assembly for a file
-geometric.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/geometric.cpp.s
-.PHONY : geometric.cpp.s
+Rmath/dbinom.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dbinom.c.s
+.PHONY : Rmath/dbinom.c.s
 
-hypergeometric.o: hypergeometric.cpp.o
+Rmath/dcauchy.o: Rmath/dcauchy.c.o
 
-.PHONY : hypergeometric.o
+.PHONY : Rmath/dcauchy.o
 
 # target to build an object file
-hypergeometric.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/hypergeometric.cpp.o
-.PHONY : hypergeometric.cpp.o
+Rmath/dcauchy.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dcauchy.c.o
+.PHONY : Rmath/dcauchy.c.o
 
-hypergeometric.i: hypergeometric.cpp.i
+Rmath/dcauchy.i: Rmath/dcauchy.c.i
 
-.PHONY : hypergeometric.i
+.PHONY : Rmath/dcauchy.i
 
 # target to preprocess a source file
-hypergeometric.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/hypergeometric.cpp.i
-.PHONY : hypergeometric.cpp.i
+Rmath/dcauchy.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dcauchy.c.i
+.PHONY : Rmath/dcauchy.c.i
 
-hypergeometric.s: hypergeometric.cpp.s
+Rmath/dcauchy.s: Rmath/dcauchy.c.s
 
-.PHONY : hypergeometric.s
+.PHONY : Rmath/dcauchy.s
 
 # target to generate assembly for a file
-hypergeometric.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/hypergeometric.cpp.s
-.PHONY : hypergeometric.cpp.s
+Rmath/dcauchy.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dcauchy.c.s
+.PHONY : Rmath/dcauchy.c.s
 
-infnan.o: infnan.cpp.o
+Rmath/dchisq.o: Rmath/dchisq.c.o
 
-.PHONY : infnan.o
+.PHONY : Rmath/dchisq.o
 
 # target to build an object file
-infnan.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/infnan.cpp.o
-.PHONY : infnan.cpp.o
+Rmath/dchisq.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dchisq.c.o
+.PHONY : Rmath/dchisq.c.o
 
-infnan.i: infnan.cpp.i
+Rmath/dchisq.i: Rmath/dchisq.c.i
 
-.PHONY : infnan.i
+.PHONY : Rmath/dchisq.i
 
 # target to preprocess a source file
-infnan.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/infnan.cpp.i
-.PHONY : infnan.cpp.i
+Rmath/dchisq.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dchisq.c.i
+.PHONY : Rmath/dchisq.c.i
 
-infnan.s: infnan.cpp.s
+Rmath/dchisq.s: Rmath/dchisq.c.s
 
-.PHONY : infnan.s
+.PHONY : Rmath/dchisq.s
 
 # target to generate assembly for a file
-infnan.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/infnan.cpp.s
-.PHONY : infnan.cpp.s
+Rmath/dchisq.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dchisq.c.s
+.PHONY : Rmath/dchisq.c.s
 
-logistic.o: logistic.cpp.o
+Rmath/dexp.o: Rmath/dexp.c.o
 
-.PHONY : logistic.o
+.PHONY : Rmath/dexp.o
 
 # target to build an object file
-logistic.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/logistic.cpp.o
-.PHONY : logistic.cpp.o
+Rmath/dexp.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dexp.c.o
+.PHONY : Rmath/dexp.c.o
 
-logistic.i: logistic.cpp.i
+Rmath/dexp.i: Rmath/dexp.c.i
 
-.PHONY : logistic.i
+.PHONY : Rmath/dexp.i
 
 # target to preprocess a source file
-logistic.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/logistic.cpp.i
-.PHONY : logistic.cpp.i
+Rmath/dexp.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dexp.c.i
+.PHONY : Rmath/dexp.c.i
 
-logistic.s: logistic.cpp.s
+Rmath/dexp.s: Rmath/dexp.c.s
 
-.PHONY : logistic.s
+.PHONY : Rmath/dexp.s
 
 # target to generate assembly for a file
-logistic.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/logistic.cpp.s
-.PHONY : logistic.cpp.s
+Rmath/dexp.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dexp.c.s
+.PHONY : Rmath/dexp.c.s
 
-lognormal.o: lognormal.cpp.o
+Rmath/df.o: Rmath/df.c.o
 
-.PHONY : lognormal.o
+.PHONY : Rmath/df.o
 
 # target to build an object file
-lognormal.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/lognormal.cpp.o
-.PHONY : lognormal.cpp.o
+Rmath/df.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/df.c.o
+.PHONY : Rmath/df.c.o
 
-lognormal.i: lognormal.cpp.i
+Rmath/df.i: Rmath/df.c.i
 
-.PHONY : lognormal.i
+.PHONY : Rmath/df.i
 
 # target to preprocess a source file
-lognormal.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/lognormal.cpp.i
-.PHONY : lognormal.cpp.i
+Rmath/df.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/df.c.i
+.PHONY : Rmath/df.c.i
 
-lognormal.s: lognormal.cpp.s
+Rmath/df.s: Rmath/df.c.s
 
-.PHONY : lognormal.s
+.PHONY : Rmath/df.s
 
 # target to generate assembly for a file
-lognormal.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/lognormal.cpp.s
-.PHONY : lognormal.cpp.s
+Rmath/df.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/df.c.s
+.PHONY : Rmath/df.c.s
+
+Rmath/dgamma.o: Rmath/dgamma.c.o
+
+.PHONY : Rmath/dgamma.o
+
+# target to build an object file
+Rmath/dgamma.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dgamma.c.o
+.PHONY : Rmath/dgamma.c.o
+
+Rmath/dgamma.i: Rmath/dgamma.c.i
+
+.PHONY : Rmath/dgamma.i
+
+# target to preprocess a source file
+Rmath/dgamma.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dgamma.c.i
+.PHONY : Rmath/dgamma.c.i
+
+Rmath/dgamma.s: Rmath/dgamma.c.s
+
+.PHONY : Rmath/dgamma.s
+
+# target to generate assembly for a file
+Rmath/dgamma.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dgamma.c.s
+.PHONY : Rmath/dgamma.c.s
+
+Rmath/dgeom.o: Rmath/dgeom.c.o
+
+.PHONY : Rmath/dgeom.o
+
+# target to build an object file
+Rmath/dgeom.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dgeom.c.o
+.PHONY : Rmath/dgeom.c.o
+
+Rmath/dgeom.i: Rmath/dgeom.c.i
+
+.PHONY : Rmath/dgeom.i
+
+# target to preprocess a source file
+Rmath/dgeom.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dgeom.c.i
+.PHONY : Rmath/dgeom.c.i
+
+Rmath/dgeom.s: Rmath/dgeom.c.s
+
+.PHONY : Rmath/dgeom.s
+
+# target to generate assembly for a file
+Rmath/dgeom.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dgeom.c.s
+.PHONY : Rmath/dgeom.c.s
+
+Rmath/dhyper.o: Rmath/dhyper.c.o
+
+.PHONY : Rmath/dhyper.o
+
+# target to build an object file
+Rmath/dhyper.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dhyper.c.o
+.PHONY : Rmath/dhyper.c.o
+
+Rmath/dhyper.i: Rmath/dhyper.c.i
+
+.PHONY : Rmath/dhyper.i
+
+# target to preprocess a source file
+Rmath/dhyper.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dhyper.c.i
+.PHONY : Rmath/dhyper.c.i
+
+Rmath/dhyper.s: Rmath/dhyper.c.s
+
+.PHONY : Rmath/dhyper.s
+
+# target to generate assembly for a file
+Rmath/dhyper.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dhyper.c.s
+.PHONY : Rmath/dhyper.c.s
+
+Rmath/dlnorm.o: Rmath/dlnorm.c.o
+
+.PHONY : Rmath/dlnorm.o
+
+# target to build an object file
+Rmath/dlnorm.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dlnorm.c.o
+.PHONY : Rmath/dlnorm.c.o
+
+Rmath/dlnorm.i: Rmath/dlnorm.c.i
+
+.PHONY : Rmath/dlnorm.i
+
+# target to preprocess a source file
+Rmath/dlnorm.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dlnorm.c.i
+.PHONY : Rmath/dlnorm.c.i
+
+Rmath/dlnorm.s: Rmath/dlnorm.c.s
+
+.PHONY : Rmath/dlnorm.s
+
+# target to generate assembly for a file
+Rmath/dlnorm.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dlnorm.c.s
+.PHONY : Rmath/dlnorm.c.s
+
+Rmath/dlogis.o: Rmath/dlogis.c.o
+
+.PHONY : Rmath/dlogis.o
+
+# target to build an object file
+Rmath/dlogis.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dlogis.c.o
+.PHONY : Rmath/dlogis.c.o
+
+Rmath/dlogis.i: Rmath/dlogis.c.i
+
+.PHONY : Rmath/dlogis.i
+
+# target to preprocess a source file
+Rmath/dlogis.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dlogis.c.i
+.PHONY : Rmath/dlogis.c.i
+
+Rmath/dlogis.s: Rmath/dlogis.c.s
+
+.PHONY : Rmath/dlogis.s
+
+# target to generate assembly for a file
+Rmath/dlogis.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dlogis.c.s
+.PHONY : Rmath/dlogis.c.s
+
+Rmath/dnbeta.o: Rmath/dnbeta.c.o
+
+.PHONY : Rmath/dnbeta.o
+
+# target to build an object file
+Rmath/dnbeta.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dnbeta.c.o
+.PHONY : Rmath/dnbeta.c.o
+
+Rmath/dnbeta.i: Rmath/dnbeta.c.i
+
+.PHONY : Rmath/dnbeta.i
+
+# target to preprocess a source file
+Rmath/dnbeta.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dnbeta.c.i
+.PHONY : Rmath/dnbeta.c.i
+
+Rmath/dnbeta.s: Rmath/dnbeta.c.s
+
+.PHONY : Rmath/dnbeta.s
+
+# target to generate assembly for a file
+Rmath/dnbeta.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dnbeta.c.s
+.PHONY : Rmath/dnbeta.c.s
+
+Rmath/dnbinom.o: Rmath/dnbinom.c.o
+
+.PHONY : Rmath/dnbinom.o
+
+# target to build an object file
+Rmath/dnbinom.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dnbinom.c.o
+.PHONY : Rmath/dnbinom.c.o
+
+Rmath/dnbinom.i: Rmath/dnbinom.c.i
+
+.PHONY : Rmath/dnbinom.i
+
+# target to preprocess a source file
+Rmath/dnbinom.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dnbinom.c.i
+.PHONY : Rmath/dnbinom.c.i
+
+Rmath/dnbinom.s: Rmath/dnbinom.c.s
+
+.PHONY : Rmath/dnbinom.s
+
+# target to generate assembly for a file
+Rmath/dnbinom.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dnbinom.c.s
+.PHONY : Rmath/dnbinom.c.s
+
+Rmath/dnchisq.o: Rmath/dnchisq.c.o
+
+.PHONY : Rmath/dnchisq.o
+
+# target to build an object file
+Rmath/dnchisq.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dnchisq.c.o
+.PHONY : Rmath/dnchisq.c.o
+
+Rmath/dnchisq.i: Rmath/dnchisq.c.i
+
+.PHONY : Rmath/dnchisq.i
+
+# target to preprocess a source file
+Rmath/dnchisq.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dnchisq.c.i
+.PHONY : Rmath/dnchisq.c.i
+
+Rmath/dnchisq.s: Rmath/dnchisq.c.s
+
+.PHONY : Rmath/dnchisq.s
+
+# target to generate assembly for a file
+Rmath/dnchisq.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dnchisq.c.s
+.PHONY : Rmath/dnchisq.c.s
+
+Rmath/dnf.o: Rmath/dnf.c.o
+
+.PHONY : Rmath/dnf.o
+
+# target to build an object file
+Rmath/dnf.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dnf.c.o
+.PHONY : Rmath/dnf.c.o
+
+Rmath/dnf.i: Rmath/dnf.c.i
+
+.PHONY : Rmath/dnf.i
+
+# target to preprocess a source file
+Rmath/dnf.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dnf.c.i
+.PHONY : Rmath/dnf.c.i
+
+Rmath/dnf.s: Rmath/dnf.c.s
+
+.PHONY : Rmath/dnf.s
+
+# target to generate assembly for a file
+Rmath/dnf.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dnf.c.s
+.PHONY : Rmath/dnf.c.s
+
+Rmath/dnorm.o: Rmath/dnorm.c.o
+
+.PHONY : Rmath/dnorm.o
+
+# target to build an object file
+Rmath/dnorm.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dnorm.c.o
+.PHONY : Rmath/dnorm.c.o
+
+Rmath/dnorm.i: Rmath/dnorm.c.i
+
+.PHONY : Rmath/dnorm.i
+
+# target to preprocess a source file
+Rmath/dnorm.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dnorm.c.i
+.PHONY : Rmath/dnorm.c.i
+
+Rmath/dnorm.s: Rmath/dnorm.c.s
+
+.PHONY : Rmath/dnorm.s
+
+# target to generate assembly for a file
+Rmath/dnorm.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dnorm.c.s
+.PHONY : Rmath/dnorm.c.s
+
+Rmath/dnt.o: Rmath/dnt.c.o
+
+.PHONY : Rmath/dnt.o
+
+# target to build an object file
+Rmath/dnt.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dnt.c.o
+.PHONY : Rmath/dnt.c.o
+
+Rmath/dnt.i: Rmath/dnt.c.i
+
+.PHONY : Rmath/dnt.i
+
+# target to preprocess a source file
+Rmath/dnt.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dnt.c.i
+.PHONY : Rmath/dnt.c.i
+
+Rmath/dnt.s: Rmath/dnt.c.s
+
+.PHONY : Rmath/dnt.s
+
+# target to generate assembly for a file
+Rmath/dnt.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dnt.c.s
+.PHONY : Rmath/dnt.c.s
+
+Rmath/dpois.o: Rmath/dpois.c.o
+
+.PHONY : Rmath/dpois.o
+
+# target to build an object file
+Rmath/dpois.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dpois.c.o
+.PHONY : Rmath/dpois.c.o
+
+Rmath/dpois.i: Rmath/dpois.c.i
+
+.PHONY : Rmath/dpois.i
+
+# target to preprocess a source file
+Rmath/dpois.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dpois.c.i
+.PHONY : Rmath/dpois.c.i
+
+Rmath/dpois.s: Rmath/dpois.c.s
+
+.PHONY : Rmath/dpois.s
+
+# target to generate assembly for a file
+Rmath/dpois.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dpois.c.s
+.PHONY : Rmath/dpois.c.s
+
+Rmath/dt.o: Rmath/dt.c.o
+
+.PHONY : Rmath/dt.o
+
+# target to build an object file
+Rmath/dt.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dt.c.o
+.PHONY : Rmath/dt.c.o
+
+Rmath/dt.i: Rmath/dt.c.i
+
+.PHONY : Rmath/dt.i
+
+# target to preprocess a source file
+Rmath/dt.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dt.c.i
+.PHONY : Rmath/dt.c.i
+
+Rmath/dt.s: Rmath/dt.c.s
+
+.PHONY : Rmath/dt.s
+
+# target to generate assembly for a file
+Rmath/dt.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dt.c.s
+.PHONY : Rmath/dt.c.s
+
+Rmath/dunif.o: Rmath/dunif.c.o
+
+.PHONY : Rmath/dunif.o
+
+# target to build an object file
+Rmath/dunif.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dunif.c.o
+.PHONY : Rmath/dunif.c.o
+
+Rmath/dunif.i: Rmath/dunif.c.i
+
+.PHONY : Rmath/dunif.i
+
+# target to preprocess a source file
+Rmath/dunif.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dunif.c.i
+.PHONY : Rmath/dunif.c.i
+
+Rmath/dunif.s: Rmath/dunif.c.s
+
+.PHONY : Rmath/dunif.s
+
+# target to generate assembly for a file
+Rmath/dunif.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dunif.c.s
+.PHONY : Rmath/dunif.c.s
+
+Rmath/dweibull.o: Rmath/dweibull.c.o
+
+.PHONY : Rmath/dweibull.o
+
+# target to build an object file
+Rmath/dweibull.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dweibull.c.o
+.PHONY : Rmath/dweibull.c.o
+
+Rmath/dweibull.i: Rmath/dweibull.c.i
+
+.PHONY : Rmath/dweibull.i
+
+# target to preprocess a source file
+Rmath/dweibull.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dweibull.c.i
+.PHONY : Rmath/dweibull.c.i
+
+Rmath/dweibull.s: Rmath/dweibull.c.s
+
+.PHONY : Rmath/dweibull.s
+
+# target to generate assembly for a file
+Rmath/dweibull.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/dweibull.c.s
+.PHONY : Rmath/dweibull.c.s
+
+Rmath/fmax2.o: Rmath/fmax2.c.o
+
+.PHONY : Rmath/fmax2.o
+
+# target to build an object file
+Rmath/fmax2.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/fmax2.c.o
+.PHONY : Rmath/fmax2.c.o
+
+Rmath/fmax2.i: Rmath/fmax2.c.i
+
+.PHONY : Rmath/fmax2.i
+
+# target to preprocess a source file
+Rmath/fmax2.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/fmax2.c.i
+.PHONY : Rmath/fmax2.c.i
+
+Rmath/fmax2.s: Rmath/fmax2.c.s
+
+.PHONY : Rmath/fmax2.s
+
+# target to generate assembly for a file
+Rmath/fmax2.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/fmax2.c.s
+.PHONY : Rmath/fmax2.c.s
+
+Rmath/fmin2.o: Rmath/fmin2.c.o
+
+.PHONY : Rmath/fmin2.o
+
+# target to build an object file
+Rmath/fmin2.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/fmin2.c.o
+.PHONY : Rmath/fmin2.c.o
+
+Rmath/fmin2.i: Rmath/fmin2.c.i
+
+.PHONY : Rmath/fmin2.i
+
+# target to preprocess a source file
+Rmath/fmin2.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/fmin2.c.i
+.PHONY : Rmath/fmin2.c.i
+
+Rmath/fmin2.s: Rmath/fmin2.c.s
+
+.PHONY : Rmath/fmin2.s
+
+# target to generate assembly for a file
+Rmath/fmin2.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/fmin2.c.s
+.PHONY : Rmath/fmin2.c.s
+
+Rmath/fprec.o: Rmath/fprec.c.o
+
+.PHONY : Rmath/fprec.o
+
+# target to build an object file
+Rmath/fprec.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/fprec.c.o
+.PHONY : Rmath/fprec.c.o
+
+Rmath/fprec.i: Rmath/fprec.c.i
+
+.PHONY : Rmath/fprec.i
+
+# target to preprocess a source file
+Rmath/fprec.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/fprec.c.i
+.PHONY : Rmath/fprec.c.i
+
+Rmath/fprec.s: Rmath/fprec.c.s
+
+.PHONY : Rmath/fprec.s
+
+# target to generate assembly for a file
+Rmath/fprec.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/fprec.c.s
+.PHONY : Rmath/fprec.c.s
+
+Rmath/fround.o: Rmath/fround.c.o
+
+.PHONY : Rmath/fround.o
+
+# target to build an object file
+Rmath/fround.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/fround.c.o
+.PHONY : Rmath/fround.c.o
+
+Rmath/fround.i: Rmath/fround.c.i
+
+.PHONY : Rmath/fround.i
+
+# target to preprocess a source file
+Rmath/fround.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/fround.c.i
+.PHONY : Rmath/fround.c.i
+
+Rmath/fround.s: Rmath/fround.c.s
+
+.PHONY : Rmath/fround.s
+
+# target to generate assembly for a file
+Rmath/fround.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/fround.c.s
+.PHONY : Rmath/fround.c.s
+
+Rmath/fsign.o: Rmath/fsign.c.o
+
+.PHONY : Rmath/fsign.o
+
+# target to build an object file
+Rmath/fsign.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/fsign.c.o
+.PHONY : Rmath/fsign.c.o
+
+Rmath/fsign.i: Rmath/fsign.c.i
+
+.PHONY : Rmath/fsign.i
+
+# target to preprocess a source file
+Rmath/fsign.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/fsign.c.i
+.PHONY : Rmath/fsign.c.i
+
+Rmath/fsign.s: Rmath/fsign.c.s
+
+.PHONY : Rmath/fsign.s
+
+# target to generate assembly for a file
+Rmath/fsign.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/fsign.c.s
+.PHONY : Rmath/fsign.c.s
+
+Rmath/ftrunc.o: Rmath/ftrunc.c.o
+
+.PHONY : Rmath/ftrunc.o
+
+# target to build an object file
+Rmath/ftrunc.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/ftrunc.c.o
+.PHONY : Rmath/ftrunc.c.o
+
+Rmath/ftrunc.i: Rmath/ftrunc.c.i
+
+.PHONY : Rmath/ftrunc.i
+
+# target to preprocess a source file
+Rmath/ftrunc.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/ftrunc.c.i
+.PHONY : Rmath/ftrunc.c.i
+
+Rmath/ftrunc.s: Rmath/ftrunc.c.s
+
+.PHONY : Rmath/ftrunc.s
+
+# target to generate assembly for a file
+Rmath/ftrunc.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/ftrunc.c.s
+.PHONY : Rmath/ftrunc.c.s
+
+Rmath/gamma.o: Rmath/gamma.c.o
+
+.PHONY : Rmath/gamma.o
+
+# target to build an object file
+Rmath/gamma.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/gamma.c.o
+.PHONY : Rmath/gamma.c.o
+
+Rmath/gamma.i: Rmath/gamma.c.i
+
+.PHONY : Rmath/gamma.i
+
+# target to preprocess a source file
+Rmath/gamma.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/gamma.c.i
+.PHONY : Rmath/gamma.c.i
+
+Rmath/gamma.s: Rmath/gamma.c.s
+
+.PHONY : Rmath/gamma.s
+
+# target to generate assembly for a file
+Rmath/gamma.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/gamma.c.s
+.PHONY : Rmath/gamma.c.s
+
+Rmath/gamma_cody.o: Rmath/gamma_cody.c.o
+
+.PHONY : Rmath/gamma_cody.o
+
+# target to build an object file
+Rmath/gamma_cody.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/gamma_cody.c.o
+.PHONY : Rmath/gamma_cody.c.o
+
+Rmath/gamma_cody.i: Rmath/gamma_cody.c.i
+
+.PHONY : Rmath/gamma_cody.i
+
+# target to preprocess a source file
+Rmath/gamma_cody.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/gamma_cody.c.i
+.PHONY : Rmath/gamma_cody.c.i
+
+Rmath/gamma_cody.s: Rmath/gamma_cody.c.s
+
+.PHONY : Rmath/gamma_cody.s
+
+# target to generate assembly for a file
+Rmath/gamma_cody.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/gamma_cody.c.s
+.PHONY : Rmath/gamma_cody.c.s
+
+Rmath/gammalims.o: Rmath/gammalims.c.o
+
+.PHONY : Rmath/gammalims.o
+
+# target to build an object file
+Rmath/gammalims.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/gammalims.c.o
+.PHONY : Rmath/gammalims.c.o
+
+Rmath/gammalims.i: Rmath/gammalims.c.i
+
+.PHONY : Rmath/gammalims.i
+
+# target to preprocess a source file
+Rmath/gammalims.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/gammalims.c.i
+.PHONY : Rmath/gammalims.c.i
+
+Rmath/gammalims.s: Rmath/gammalims.c.s
+
+.PHONY : Rmath/gammalims.s
+
+# target to generate assembly for a file
+Rmath/gammalims.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/gammalims.c.s
+.PHONY : Rmath/gammalims.c.s
+
+Rmath/i1mach.o: Rmath/i1mach.c.o
+
+.PHONY : Rmath/i1mach.o
+
+# target to build an object file
+Rmath/i1mach.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/i1mach.c.o
+.PHONY : Rmath/i1mach.c.o
+
+Rmath/i1mach.i: Rmath/i1mach.c.i
+
+.PHONY : Rmath/i1mach.i
+
+# target to preprocess a source file
+Rmath/i1mach.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/i1mach.c.i
+.PHONY : Rmath/i1mach.c.i
+
+Rmath/i1mach.s: Rmath/i1mach.c.s
+
+.PHONY : Rmath/i1mach.s
+
+# target to generate assembly for a file
+Rmath/i1mach.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/i1mach.c.s
+.PHONY : Rmath/i1mach.c.s
+
+Rmath/imax2.o: Rmath/imax2.c.o
+
+.PHONY : Rmath/imax2.o
+
+# target to build an object file
+Rmath/imax2.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/imax2.c.o
+.PHONY : Rmath/imax2.c.o
+
+Rmath/imax2.i: Rmath/imax2.c.i
+
+.PHONY : Rmath/imax2.i
+
+# target to preprocess a source file
+Rmath/imax2.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/imax2.c.i
+.PHONY : Rmath/imax2.c.i
+
+Rmath/imax2.s: Rmath/imax2.c.s
+
+.PHONY : Rmath/imax2.s
+
+# target to generate assembly for a file
+Rmath/imax2.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/imax2.c.s
+.PHONY : Rmath/imax2.c.s
+
+Rmath/imin2.o: Rmath/imin2.c.o
+
+.PHONY : Rmath/imin2.o
+
+# target to build an object file
+Rmath/imin2.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/imin2.c.o
+.PHONY : Rmath/imin2.c.o
+
+Rmath/imin2.i: Rmath/imin2.c.i
+
+.PHONY : Rmath/imin2.i
+
+# target to preprocess a source file
+Rmath/imin2.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/imin2.c.i
+.PHONY : Rmath/imin2.c.i
+
+Rmath/imin2.s: Rmath/imin2.c.s
+
+.PHONY : Rmath/imin2.s
+
+# target to generate assembly for a file
+Rmath/imin2.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/imin2.c.s
+.PHONY : Rmath/imin2.c.s
+
+Rmath/lbeta.o: Rmath/lbeta.c.o
+
+.PHONY : Rmath/lbeta.o
+
+# target to build an object file
+Rmath/lbeta.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/lbeta.c.o
+.PHONY : Rmath/lbeta.c.o
+
+Rmath/lbeta.i: Rmath/lbeta.c.i
+
+.PHONY : Rmath/lbeta.i
+
+# target to preprocess a source file
+Rmath/lbeta.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/lbeta.c.i
+.PHONY : Rmath/lbeta.c.i
+
+Rmath/lbeta.s: Rmath/lbeta.c.s
+
+.PHONY : Rmath/lbeta.s
+
+# target to generate assembly for a file
+Rmath/lbeta.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/lbeta.c.s
+.PHONY : Rmath/lbeta.c.s
+
+Rmath/lgamma.o: Rmath/lgamma.c.o
+
+.PHONY : Rmath/lgamma.o
+
+# target to build an object file
+Rmath/lgamma.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/lgamma.c.o
+.PHONY : Rmath/lgamma.c.o
+
+Rmath/lgamma.i: Rmath/lgamma.c.i
+
+.PHONY : Rmath/lgamma.i
+
+# target to preprocess a source file
+Rmath/lgamma.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/lgamma.c.i
+.PHONY : Rmath/lgamma.c.i
+
+Rmath/lgamma.s: Rmath/lgamma.c.s
+
+.PHONY : Rmath/lgamma.s
+
+# target to generate assembly for a file
+Rmath/lgamma.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/lgamma.c.s
+.PHONY : Rmath/lgamma.c.s
+
+Rmath/lgammacor.o: Rmath/lgammacor.c.o
+
+.PHONY : Rmath/lgammacor.o
+
+# target to build an object file
+Rmath/lgammacor.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/lgammacor.c.o
+.PHONY : Rmath/lgammacor.c.o
+
+Rmath/lgammacor.i: Rmath/lgammacor.c.i
+
+.PHONY : Rmath/lgammacor.i
+
+# target to preprocess a source file
+Rmath/lgammacor.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/lgammacor.c.i
+.PHONY : Rmath/lgammacor.c.i
+
+Rmath/lgammacor.s: Rmath/lgammacor.c.s
+
+.PHONY : Rmath/lgammacor.s
+
+# target to generate assembly for a file
+Rmath/lgammacor.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/lgammacor.c.s
+.PHONY : Rmath/lgammacor.c.s
+
+Rmath/log1p.o: Rmath/log1p.c.o
+
+.PHONY : Rmath/log1p.o
+
+# target to build an object file
+Rmath/log1p.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/log1p.c.o
+.PHONY : Rmath/log1p.c.o
+
+Rmath/log1p.i: Rmath/log1p.c.i
+
+.PHONY : Rmath/log1p.i
+
+# target to preprocess a source file
+Rmath/log1p.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/log1p.c.i
+.PHONY : Rmath/log1p.c.i
+
+Rmath/log1p.s: Rmath/log1p.c.s
+
+.PHONY : Rmath/log1p.s
+
+# target to generate assembly for a file
+Rmath/log1p.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/log1p.c.s
+.PHONY : Rmath/log1p.c.s
+
+Rmath/mlutils.o: Rmath/mlutils.c.o
+
+.PHONY : Rmath/mlutils.o
+
+# target to build an object file
+Rmath/mlutils.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/mlutils.c.o
+.PHONY : Rmath/mlutils.c.o
+
+Rmath/mlutils.i: Rmath/mlutils.c.i
+
+.PHONY : Rmath/mlutils.i
+
+# target to preprocess a source file
+Rmath/mlutils.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/mlutils.c.i
+.PHONY : Rmath/mlutils.c.i
+
+Rmath/mlutils.s: Rmath/mlutils.c.s
+
+.PHONY : Rmath/mlutils.s
+
+# target to generate assembly for a file
+Rmath/mlutils.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/mlutils.c.s
+.PHONY : Rmath/mlutils.c.s
+
+Rmath/pbeta.o: Rmath/pbeta.c.o
+
+.PHONY : Rmath/pbeta.o
+
+# target to build an object file
+Rmath/pbeta.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pbeta.c.o
+.PHONY : Rmath/pbeta.c.o
+
+Rmath/pbeta.i: Rmath/pbeta.c.i
+
+.PHONY : Rmath/pbeta.i
+
+# target to preprocess a source file
+Rmath/pbeta.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pbeta.c.i
+.PHONY : Rmath/pbeta.c.i
+
+Rmath/pbeta.s: Rmath/pbeta.c.s
+
+.PHONY : Rmath/pbeta.s
+
+# target to generate assembly for a file
+Rmath/pbeta.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pbeta.c.s
+.PHONY : Rmath/pbeta.c.s
+
+Rmath/pbinom.o: Rmath/pbinom.c.o
+
+.PHONY : Rmath/pbinom.o
+
+# target to build an object file
+Rmath/pbinom.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pbinom.c.o
+.PHONY : Rmath/pbinom.c.o
+
+Rmath/pbinom.i: Rmath/pbinom.c.i
+
+.PHONY : Rmath/pbinom.i
+
+# target to preprocess a source file
+Rmath/pbinom.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pbinom.c.i
+.PHONY : Rmath/pbinom.c.i
+
+Rmath/pbinom.s: Rmath/pbinom.c.s
+
+.PHONY : Rmath/pbinom.s
+
+# target to generate assembly for a file
+Rmath/pbinom.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pbinom.c.s
+.PHONY : Rmath/pbinom.c.s
+
+Rmath/pcauchy.o: Rmath/pcauchy.c.o
+
+.PHONY : Rmath/pcauchy.o
+
+# target to build an object file
+Rmath/pcauchy.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pcauchy.c.o
+.PHONY : Rmath/pcauchy.c.o
+
+Rmath/pcauchy.i: Rmath/pcauchy.c.i
+
+.PHONY : Rmath/pcauchy.i
+
+# target to preprocess a source file
+Rmath/pcauchy.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pcauchy.c.i
+.PHONY : Rmath/pcauchy.c.i
+
+Rmath/pcauchy.s: Rmath/pcauchy.c.s
+
+.PHONY : Rmath/pcauchy.s
+
+# target to generate assembly for a file
+Rmath/pcauchy.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pcauchy.c.s
+.PHONY : Rmath/pcauchy.c.s
+
+Rmath/pchisq.o: Rmath/pchisq.c.o
+
+.PHONY : Rmath/pchisq.o
+
+# target to build an object file
+Rmath/pchisq.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pchisq.c.o
+.PHONY : Rmath/pchisq.c.o
+
+Rmath/pchisq.i: Rmath/pchisq.c.i
+
+.PHONY : Rmath/pchisq.i
+
+# target to preprocess a source file
+Rmath/pchisq.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pchisq.c.i
+.PHONY : Rmath/pchisq.c.i
+
+Rmath/pchisq.s: Rmath/pchisq.c.s
+
+.PHONY : Rmath/pchisq.s
+
+# target to generate assembly for a file
+Rmath/pchisq.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pchisq.c.s
+.PHONY : Rmath/pchisq.c.s
+
+Rmath/pexp.o: Rmath/pexp.c.o
+
+.PHONY : Rmath/pexp.o
+
+# target to build an object file
+Rmath/pexp.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pexp.c.o
+.PHONY : Rmath/pexp.c.o
+
+Rmath/pexp.i: Rmath/pexp.c.i
+
+.PHONY : Rmath/pexp.i
+
+# target to preprocess a source file
+Rmath/pexp.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pexp.c.i
+.PHONY : Rmath/pexp.c.i
+
+Rmath/pexp.s: Rmath/pexp.c.s
+
+.PHONY : Rmath/pexp.s
+
+# target to generate assembly for a file
+Rmath/pexp.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pexp.c.s
+.PHONY : Rmath/pexp.c.s
+
+Rmath/pf.o: Rmath/pf.c.o
+
+.PHONY : Rmath/pf.o
+
+# target to build an object file
+Rmath/pf.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pf.c.o
+.PHONY : Rmath/pf.c.o
+
+Rmath/pf.i: Rmath/pf.c.i
+
+.PHONY : Rmath/pf.i
+
+# target to preprocess a source file
+Rmath/pf.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pf.c.i
+.PHONY : Rmath/pf.c.i
+
+Rmath/pf.s: Rmath/pf.c.s
+
+.PHONY : Rmath/pf.s
+
+# target to generate assembly for a file
+Rmath/pf.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pf.c.s
+.PHONY : Rmath/pf.c.s
+
+Rmath/pgamma.o: Rmath/pgamma.c.o
+
+.PHONY : Rmath/pgamma.o
+
+# target to build an object file
+Rmath/pgamma.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pgamma.c.o
+.PHONY : Rmath/pgamma.c.o
+
+Rmath/pgamma.i: Rmath/pgamma.c.i
+
+.PHONY : Rmath/pgamma.i
+
+# target to preprocess a source file
+Rmath/pgamma.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pgamma.c.i
+.PHONY : Rmath/pgamma.c.i
+
+Rmath/pgamma.s: Rmath/pgamma.c.s
+
+.PHONY : Rmath/pgamma.s
+
+# target to generate assembly for a file
+Rmath/pgamma.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pgamma.c.s
+.PHONY : Rmath/pgamma.c.s
+
+Rmath/pgeom.o: Rmath/pgeom.c.o
+
+.PHONY : Rmath/pgeom.o
+
+# target to build an object file
+Rmath/pgeom.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pgeom.c.o
+.PHONY : Rmath/pgeom.c.o
+
+Rmath/pgeom.i: Rmath/pgeom.c.i
+
+.PHONY : Rmath/pgeom.i
+
+# target to preprocess a source file
+Rmath/pgeom.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pgeom.c.i
+.PHONY : Rmath/pgeom.c.i
+
+Rmath/pgeom.s: Rmath/pgeom.c.s
+
+.PHONY : Rmath/pgeom.s
+
+# target to generate assembly for a file
+Rmath/pgeom.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pgeom.c.s
+.PHONY : Rmath/pgeom.c.s
+
+Rmath/phyper.o: Rmath/phyper.c.o
+
+.PHONY : Rmath/phyper.o
+
+# target to build an object file
+Rmath/phyper.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/phyper.c.o
+.PHONY : Rmath/phyper.c.o
+
+Rmath/phyper.i: Rmath/phyper.c.i
+
+.PHONY : Rmath/phyper.i
+
+# target to preprocess a source file
+Rmath/phyper.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/phyper.c.i
+.PHONY : Rmath/phyper.c.i
+
+Rmath/phyper.s: Rmath/phyper.c.s
+
+.PHONY : Rmath/phyper.s
+
+# target to generate assembly for a file
+Rmath/phyper.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/phyper.c.s
+.PHONY : Rmath/phyper.c.s
+
+Rmath/plnorm.o: Rmath/plnorm.c.o
+
+.PHONY : Rmath/plnorm.o
+
+# target to build an object file
+Rmath/plnorm.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/plnorm.c.o
+.PHONY : Rmath/plnorm.c.o
+
+Rmath/plnorm.i: Rmath/plnorm.c.i
+
+.PHONY : Rmath/plnorm.i
+
+# target to preprocess a source file
+Rmath/plnorm.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/plnorm.c.i
+.PHONY : Rmath/plnorm.c.i
+
+Rmath/plnorm.s: Rmath/plnorm.c.s
+
+.PHONY : Rmath/plnorm.s
+
+# target to generate assembly for a file
+Rmath/plnorm.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/plnorm.c.s
+.PHONY : Rmath/plnorm.c.s
+
+Rmath/plogis.o: Rmath/plogis.c.o
+
+.PHONY : Rmath/plogis.o
+
+# target to build an object file
+Rmath/plogis.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/plogis.c.o
+.PHONY : Rmath/plogis.c.o
+
+Rmath/plogis.i: Rmath/plogis.c.i
+
+.PHONY : Rmath/plogis.i
+
+# target to preprocess a source file
+Rmath/plogis.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/plogis.c.i
+.PHONY : Rmath/plogis.c.i
+
+Rmath/plogis.s: Rmath/plogis.c.s
+
+.PHONY : Rmath/plogis.s
+
+# target to generate assembly for a file
+Rmath/plogis.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/plogis.c.s
+.PHONY : Rmath/plogis.c.s
+
+Rmath/pnbeta.o: Rmath/pnbeta.c.o
+
+.PHONY : Rmath/pnbeta.o
+
+# target to build an object file
+Rmath/pnbeta.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pnbeta.c.o
+.PHONY : Rmath/pnbeta.c.o
+
+Rmath/pnbeta.i: Rmath/pnbeta.c.i
+
+.PHONY : Rmath/pnbeta.i
+
+# target to preprocess a source file
+Rmath/pnbeta.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pnbeta.c.i
+.PHONY : Rmath/pnbeta.c.i
+
+Rmath/pnbeta.s: Rmath/pnbeta.c.s
+
+.PHONY : Rmath/pnbeta.s
+
+# target to generate assembly for a file
+Rmath/pnbeta.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pnbeta.c.s
+.PHONY : Rmath/pnbeta.c.s
+
+Rmath/pnbinom.o: Rmath/pnbinom.c.o
+
+.PHONY : Rmath/pnbinom.o
+
+# target to build an object file
+Rmath/pnbinom.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pnbinom.c.o
+.PHONY : Rmath/pnbinom.c.o
+
+Rmath/pnbinom.i: Rmath/pnbinom.c.i
+
+.PHONY : Rmath/pnbinom.i
+
+# target to preprocess a source file
+Rmath/pnbinom.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pnbinom.c.i
+.PHONY : Rmath/pnbinom.c.i
+
+Rmath/pnbinom.s: Rmath/pnbinom.c.s
+
+.PHONY : Rmath/pnbinom.s
+
+# target to generate assembly for a file
+Rmath/pnbinom.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pnbinom.c.s
+.PHONY : Rmath/pnbinom.c.s
+
+Rmath/pnchisq.o: Rmath/pnchisq.c.o
+
+.PHONY : Rmath/pnchisq.o
+
+# target to build an object file
+Rmath/pnchisq.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pnchisq.c.o
+.PHONY : Rmath/pnchisq.c.o
+
+Rmath/pnchisq.i: Rmath/pnchisq.c.i
+
+.PHONY : Rmath/pnchisq.i
+
+# target to preprocess a source file
+Rmath/pnchisq.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pnchisq.c.i
+.PHONY : Rmath/pnchisq.c.i
+
+Rmath/pnchisq.s: Rmath/pnchisq.c.s
+
+.PHONY : Rmath/pnchisq.s
+
+# target to generate assembly for a file
+Rmath/pnchisq.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pnchisq.c.s
+.PHONY : Rmath/pnchisq.c.s
+
+Rmath/pnf.o: Rmath/pnf.c.o
+
+.PHONY : Rmath/pnf.o
+
+# target to build an object file
+Rmath/pnf.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pnf.c.o
+.PHONY : Rmath/pnf.c.o
+
+Rmath/pnf.i: Rmath/pnf.c.i
+
+.PHONY : Rmath/pnf.i
+
+# target to preprocess a source file
+Rmath/pnf.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pnf.c.i
+.PHONY : Rmath/pnf.c.i
+
+Rmath/pnf.s: Rmath/pnf.c.s
+
+.PHONY : Rmath/pnf.s
+
+# target to generate assembly for a file
+Rmath/pnf.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pnf.c.s
+.PHONY : Rmath/pnf.c.s
+
+Rmath/pnorm.o: Rmath/pnorm.c.o
+
+.PHONY : Rmath/pnorm.o
+
+# target to build an object file
+Rmath/pnorm.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pnorm.c.o
+.PHONY : Rmath/pnorm.c.o
+
+Rmath/pnorm.i: Rmath/pnorm.c.i
+
+.PHONY : Rmath/pnorm.i
+
+# target to preprocess a source file
+Rmath/pnorm.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pnorm.c.i
+.PHONY : Rmath/pnorm.c.i
+
+Rmath/pnorm.s: Rmath/pnorm.c.s
+
+.PHONY : Rmath/pnorm.s
+
+# target to generate assembly for a file
+Rmath/pnorm.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pnorm.c.s
+.PHONY : Rmath/pnorm.c.s
+
+Rmath/pnt.o: Rmath/pnt.c.o
+
+.PHONY : Rmath/pnt.o
+
+# target to build an object file
+Rmath/pnt.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pnt.c.o
+.PHONY : Rmath/pnt.c.o
+
+Rmath/pnt.i: Rmath/pnt.c.i
+
+.PHONY : Rmath/pnt.i
+
+# target to preprocess a source file
+Rmath/pnt.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pnt.c.i
+.PHONY : Rmath/pnt.c.i
+
+Rmath/pnt.s: Rmath/pnt.c.s
+
+.PHONY : Rmath/pnt.s
+
+# target to generate assembly for a file
+Rmath/pnt.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pnt.c.s
+.PHONY : Rmath/pnt.c.s
+
+Rmath/polygamma.o: Rmath/polygamma.c.o
+
+.PHONY : Rmath/polygamma.o
+
+# target to build an object file
+Rmath/polygamma.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/polygamma.c.o
+.PHONY : Rmath/polygamma.c.o
+
+Rmath/polygamma.i: Rmath/polygamma.c.i
+
+.PHONY : Rmath/polygamma.i
+
+# target to preprocess a source file
+Rmath/polygamma.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/polygamma.c.i
+.PHONY : Rmath/polygamma.c.i
+
+Rmath/polygamma.s: Rmath/polygamma.c.s
+
+.PHONY : Rmath/polygamma.s
+
+# target to generate assembly for a file
+Rmath/polygamma.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/polygamma.c.s
+.PHONY : Rmath/polygamma.c.s
+
+Rmath/ppois.o: Rmath/ppois.c.o
+
+.PHONY : Rmath/ppois.o
+
+# target to build an object file
+Rmath/ppois.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/ppois.c.o
+.PHONY : Rmath/ppois.c.o
+
+Rmath/ppois.i: Rmath/ppois.c.i
+
+.PHONY : Rmath/ppois.i
+
+# target to preprocess a source file
+Rmath/ppois.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/ppois.c.i
+.PHONY : Rmath/ppois.c.i
+
+Rmath/ppois.s: Rmath/ppois.c.s
+
+.PHONY : Rmath/ppois.s
+
+# target to generate assembly for a file
+Rmath/ppois.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/ppois.c.s
+.PHONY : Rmath/ppois.c.s
+
+Rmath/pt.o: Rmath/pt.c.o
+
+.PHONY : Rmath/pt.o
+
+# target to build an object file
+Rmath/pt.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pt.c.o
+.PHONY : Rmath/pt.c.o
+
+Rmath/pt.i: Rmath/pt.c.i
+
+.PHONY : Rmath/pt.i
+
+# target to preprocess a source file
+Rmath/pt.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pt.c.i
+.PHONY : Rmath/pt.c.i
+
+Rmath/pt.s: Rmath/pt.c.s
+
+.PHONY : Rmath/pt.s
+
+# target to generate assembly for a file
+Rmath/pt.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pt.c.s
+.PHONY : Rmath/pt.c.s
+
+Rmath/ptukey.o: Rmath/ptukey.c.o
+
+.PHONY : Rmath/ptukey.o
+
+# target to build an object file
+Rmath/ptukey.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/ptukey.c.o
+.PHONY : Rmath/ptukey.c.o
+
+Rmath/ptukey.i: Rmath/ptukey.c.i
+
+.PHONY : Rmath/ptukey.i
+
+# target to preprocess a source file
+Rmath/ptukey.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/ptukey.c.i
+.PHONY : Rmath/ptukey.c.i
+
+Rmath/ptukey.s: Rmath/ptukey.c.s
+
+.PHONY : Rmath/ptukey.s
+
+# target to generate assembly for a file
+Rmath/ptukey.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/ptukey.c.s
+.PHONY : Rmath/ptukey.c.s
+
+Rmath/punif.o: Rmath/punif.c.o
+
+.PHONY : Rmath/punif.o
+
+# target to build an object file
+Rmath/punif.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/punif.c.o
+.PHONY : Rmath/punif.c.o
+
+Rmath/punif.i: Rmath/punif.c.i
+
+.PHONY : Rmath/punif.i
+
+# target to preprocess a source file
+Rmath/punif.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/punif.c.i
+.PHONY : Rmath/punif.c.i
+
+Rmath/punif.s: Rmath/punif.c.s
+
+.PHONY : Rmath/punif.s
+
+# target to generate assembly for a file
+Rmath/punif.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/punif.c.s
+.PHONY : Rmath/punif.c.s
+
+Rmath/pweibull.o: Rmath/pweibull.c.o
+
+.PHONY : Rmath/pweibull.o
+
+# target to build an object file
+Rmath/pweibull.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pweibull.c.o
+.PHONY : Rmath/pweibull.c.o
+
+Rmath/pweibull.i: Rmath/pweibull.c.i
+
+.PHONY : Rmath/pweibull.i
+
+# target to preprocess a source file
+Rmath/pweibull.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pweibull.c.i
+.PHONY : Rmath/pweibull.c.i
+
+Rmath/pweibull.s: Rmath/pweibull.c.s
+
+.PHONY : Rmath/pweibull.s
+
+# target to generate assembly for a file
+Rmath/pweibull.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/pweibull.c.s
+.PHONY : Rmath/pweibull.c.s
+
+Rmath/qbeta.o: Rmath/qbeta.c.o
+
+.PHONY : Rmath/qbeta.o
+
+# target to build an object file
+Rmath/qbeta.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qbeta.c.o
+.PHONY : Rmath/qbeta.c.o
+
+Rmath/qbeta.i: Rmath/qbeta.c.i
+
+.PHONY : Rmath/qbeta.i
+
+# target to preprocess a source file
+Rmath/qbeta.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qbeta.c.i
+.PHONY : Rmath/qbeta.c.i
+
+Rmath/qbeta.s: Rmath/qbeta.c.s
+
+.PHONY : Rmath/qbeta.s
+
+# target to generate assembly for a file
+Rmath/qbeta.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qbeta.c.s
+.PHONY : Rmath/qbeta.c.s
+
+Rmath/qbinom.o: Rmath/qbinom.c.o
+
+.PHONY : Rmath/qbinom.o
+
+# target to build an object file
+Rmath/qbinom.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qbinom.c.o
+.PHONY : Rmath/qbinom.c.o
+
+Rmath/qbinom.i: Rmath/qbinom.c.i
+
+.PHONY : Rmath/qbinom.i
+
+# target to preprocess a source file
+Rmath/qbinom.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qbinom.c.i
+.PHONY : Rmath/qbinom.c.i
+
+Rmath/qbinom.s: Rmath/qbinom.c.s
+
+.PHONY : Rmath/qbinom.s
+
+# target to generate assembly for a file
+Rmath/qbinom.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qbinom.c.s
+.PHONY : Rmath/qbinom.c.s
+
+Rmath/qcauchy.o: Rmath/qcauchy.c.o
+
+.PHONY : Rmath/qcauchy.o
+
+# target to build an object file
+Rmath/qcauchy.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qcauchy.c.o
+.PHONY : Rmath/qcauchy.c.o
+
+Rmath/qcauchy.i: Rmath/qcauchy.c.i
+
+.PHONY : Rmath/qcauchy.i
+
+# target to preprocess a source file
+Rmath/qcauchy.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qcauchy.c.i
+.PHONY : Rmath/qcauchy.c.i
+
+Rmath/qcauchy.s: Rmath/qcauchy.c.s
+
+.PHONY : Rmath/qcauchy.s
+
+# target to generate assembly for a file
+Rmath/qcauchy.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qcauchy.c.s
+.PHONY : Rmath/qcauchy.c.s
+
+Rmath/qchisq.o: Rmath/qchisq.c.o
+
+.PHONY : Rmath/qchisq.o
+
+# target to build an object file
+Rmath/qchisq.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qchisq.c.o
+.PHONY : Rmath/qchisq.c.o
+
+Rmath/qchisq.i: Rmath/qchisq.c.i
+
+.PHONY : Rmath/qchisq.i
+
+# target to preprocess a source file
+Rmath/qchisq.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qchisq.c.i
+.PHONY : Rmath/qchisq.c.i
+
+Rmath/qchisq.s: Rmath/qchisq.c.s
+
+.PHONY : Rmath/qchisq.s
+
+# target to generate assembly for a file
+Rmath/qchisq.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qchisq.c.s
+.PHONY : Rmath/qchisq.c.s
+
+Rmath/qexp.o: Rmath/qexp.c.o
+
+.PHONY : Rmath/qexp.o
+
+# target to build an object file
+Rmath/qexp.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qexp.c.o
+.PHONY : Rmath/qexp.c.o
+
+Rmath/qexp.i: Rmath/qexp.c.i
+
+.PHONY : Rmath/qexp.i
+
+# target to preprocess a source file
+Rmath/qexp.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qexp.c.i
+.PHONY : Rmath/qexp.c.i
+
+Rmath/qexp.s: Rmath/qexp.c.s
+
+.PHONY : Rmath/qexp.s
+
+# target to generate assembly for a file
+Rmath/qexp.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qexp.c.s
+.PHONY : Rmath/qexp.c.s
+
+Rmath/qf.o: Rmath/qf.c.o
+
+.PHONY : Rmath/qf.o
+
+# target to build an object file
+Rmath/qf.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qf.c.o
+.PHONY : Rmath/qf.c.o
+
+Rmath/qf.i: Rmath/qf.c.i
+
+.PHONY : Rmath/qf.i
+
+# target to preprocess a source file
+Rmath/qf.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qf.c.i
+.PHONY : Rmath/qf.c.i
+
+Rmath/qf.s: Rmath/qf.c.s
+
+.PHONY : Rmath/qf.s
+
+# target to generate assembly for a file
+Rmath/qf.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qf.c.s
+.PHONY : Rmath/qf.c.s
+
+Rmath/qgamma.o: Rmath/qgamma.c.o
+
+.PHONY : Rmath/qgamma.o
+
+# target to build an object file
+Rmath/qgamma.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qgamma.c.o
+.PHONY : Rmath/qgamma.c.o
+
+Rmath/qgamma.i: Rmath/qgamma.c.i
+
+.PHONY : Rmath/qgamma.i
+
+# target to preprocess a source file
+Rmath/qgamma.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qgamma.c.i
+.PHONY : Rmath/qgamma.c.i
+
+Rmath/qgamma.s: Rmath/qgamma.c.s
+
+.PHONY : Rmath/qgamma.s
+
+# target to generate assembly for a file
+Rmath/qgamma.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qgamma.c.s
+.PHONY : Rmath/qgamma.c.s
+
+Rmath/qgeom.o: Rmath/qgeom.c.o
+
+.PHONY : Rmath/qgeom.o
+
+# target to build an object file
+Rmath/qgeom.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qgeom.c.o
+.PHONY : Rmath/qgeom.c.o
+
+Rmath/qgeom.i: Rmath/qgeom.c.i
+
+.PHONY : Rmath/qgeom.i
+
+# target to preprocess a source file
+Rmath/qgeom.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qgeom.c.i
+.PHONY : Rmath/qgeom.c.i
+
+Rmath/qgeom.s: Rmath/qgeom.c.s
+
+.PHONY : Rmath/qgeom.s
+
+# target to generate assembly for a file
+Rmath/qgeom.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qgeom.c.s
+.PHONY : Rmath/qgeom.c.s
+
+Rmath/qhyper.o: Rmath/qhyper.c.o
+
+.PHONY : Rmath/qhyper.o
+
+# target to build an object file
+Rmath/qhyper.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qhyper.c.o
+.PHONY : Rmath/qhyper.c.o
+
+Rmath/qhyper.i: Rmath/qhyper.c.i
+
+.PHONY : Rmath/qhyper.i
+
+# target to preprocess a source file
+Rmath/qhyper.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qhyper.c.i
+.PHONY : Rmath/qhyper.c.i
+
+Rmath/qhyper.s: Rmath/qhyper.c.s
+
+.PHONY : Rmath/qhyper.s
+
+# target to generate assembly for a file
+Rmath/qhyper.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qhyper.c.s
+.PHONY : Rmath/qhyper.c.s
+
+Rmath/qlnorm.o: Rmath/qlnorm.c.o
+
+.PHONY : Rmath/qlnorm.o
+
+# target to build an object file
+Rmath/qlnorm.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qlnorm.c.o
+.PHONY : Rmath/qlnorm.c.o
+
+Rmath/qlnorm.i: Rmath/qlnorm.c.i
+
+.PHONY : Rmath/qlnorm.i
+
+# target to preprocess a source file
+Rmath/qlnorm.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qlnorm.c.i
+.PHONY : Rmath/qlnorm.c.i
+
+Rmath/qlnorm.s: Rmath/qlnorm.c.s
+
+.PHONY : Rmath/qlnorm.s
+
+# target to generate assembly for a file
+Rmath/qlnorm.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qlnorm.c.s
+.PHONY : Rmath/qlnorm.c.s
+
+Rmath/qlogis.o: Rmath/qlogis.c.o
+
+.PHONY : Rmath/qlogis.o
+
+# target to build an object file
+Rmath/qlogis.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qlogis.c.o
+.PHONY : Rmath/qlogis.c.o
+
+Rmath/qlogis.i: Rmath/qlogis.c.i
+
+.PHONY : Rmath/qlogis.i
+
+# target to preprocess a source file
+Rmath/qlogis.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qlogis.c.i
+.PHONY : Rmath/qlogis.c.i
+
+Rmath/qlogis.s: Rmath/qlogis.c.s
+
+.PHONY : Rmath/qlogis.s
+
+# target to generate assembly for a file
+Rmath/qlogis.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qlogis.c.s
+.PHONY : Rmath/qlogis.c.s
+
+Rmath/qnbeta.o: Rmath/qnbeta.c.o
+
+.PHONY : Rmath/qnbeta.o
+
+# target to build an object file
+Rmath/qnbeta.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qnbeta.c.o
+.PHONY : Rmath/qnbeta.c.o
+
+Rmath/qnbeta.i: Rmath/qnbeta.c.i
+
+.PHONY : Rmath/qnbeta.i
+
+# target to preprocess a source file
+Rmath/qnbeta.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qnbeta.c.i
+.PHONY : Rmath/qnbeta.c.i
+
+Rmath/qnbeta.s: Rmath/qnbeta.c.s
+
+.PHONY : Rmath/qnbeta.s
+
+# target to generate assembly for a file
+Rmath/qnbeta.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qnbeta.c.s
+.PHONY : Rmath/qnbeta.c.s
+
+Rmath/qnbinom.o: Rmath/qnbinom.c.o
+
+.PHONY : Rmath/qnbinom.o
+
+# target to build an object file
+Rmath/qnbinom.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qnbinom.c.o
+.PHONY : Rmath/qnbinom.c.o
+
+Rmath/qnbinom.i: Rmath/qnbinom.c.i
+
+.PHONY : Rmath/qnbinom.i
+
+# target to preprocess a source file
+Rmath/qnbinom.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qnbinom.c.i
+.PHONY : Rmath/qnbinom.c.i
+
+Rmath/qnbinom.s: Rmath/qnbinom.c.s
+
+.PHONY : Rmath/qnbinom.s
+
+# target to generate assembly for a file
+Rmath/qnbinom.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qnbinom.c.s
+.PHONY : Rmath/qnbinom.c.s
+
+Rmath/qnchisq.o: Rmath/qnchisq.c.o
+
+.PHONY : Rmath/qnchisq.o
+
+# target to build an object file
+Rmath/qnchisq.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qnchisq.c.o
+.PHONY : Rmath/qnchisq.c.o
+
+Rmath/qnchisq.i: Rmath/qnchisq.c.i
+
+.PHONY : Rmath/qnchisq.i
+
+# target to preprocess a source file
+Rmath/qnchisq.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qnchisq.c.i
+.PHONY : Rmath/qnchisq.c.i
+
+Rmath/qnchisq.s: Rmath/qnchisq.c.s
+
+.PHONY : Rmath/qnchisq.s
+
+# target to generate assembly for a file
+Rmath/qnchisq.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qnchisq.c.s
+.PHONY : Rmath/qnchisq.c.s
+
+Rmath/qnf.o: Rmath/qnf.c.o
+
+.PHONY : Rmath/qnf.o
+
+# target to build an object file
+Rmath/qnf.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qnf.c.o
+.PHONY : Rmath/qnf.c.o
+
+Rmath/qnf.i: Rmath/qnf.c.i
+
+.PHONY : Rmath/qnf.i
+
+# target to preprocess a source file
+Rmath/qnf.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qnf.c.i
+.PHONY : Rmath/qnf.c.i
+
+Rmath/qnf.s: Rmath/qnf.c.s
+
+.PHONY : Rmath/qnf.s
+
+# target to generate assembly for a file
+Rmath/qnf.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qnf.c.s
+.PHONY : Rmath/qnf.c.s
+
+Rmath/qnorm.o: Rmath/qnorm.c.o
+
+.PHONY : Rmath/qnorm.o
+
+# target to build an object file
+Rmath/qnorm.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qnorm.c.o
+.PHONY : Rmath/qnorm.c.o
+
+Rmath/qnorm.i: Rmath/qnorm.c.i
+
+.PHONY : Rmath/qnorm.i
+
+# target to preprocess a source file
+Rmath/qnorm.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qnorm.c.i
+.PHONY : Rmath/qnorm.c.i
+
+Rmath/qnorm.s: Rmath/qnorm.c.s
+
+.PHONY : Rmath/qnorm.s
+
+# target to generate assembly for a file
+Rmath/qnorm.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qnorm.c.s
+.PHONY : Rmath/qnorm.c.s
+
+Rmath/qnt.o: Rmath/qnt.c.o
+
+.PHONY : Rmath/qnt.o
+
+# target to build an object file
+Rmath/qnt.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qnt.c.o
+.PHONY : Rmath/qnt.c.o
+
+Rmath/qnt.i: Rmath/qnt.c.i
+
+.PHONY : Rmath/qnt.i
+
+# target to preprocess a source file
+Rmath/qnt.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qnt.c.i
+.PHONY : Rmath/qnt.c.i
+
+Rmath/qnt.s: Rmath/qnt.c.s
+
+.PHONY : Rmath/qnt.s
+
+# target to generate assembly for a file
+Rmath/qnt.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qnt.c.s
+.PHONY : Rmath/qnt.c.s
+
+Rmath/qpois.o: Rmath/qpois.c.o
+
+.PHONY : Rmath/qpois.o
+
+# target to build an object file
+Rmath/qpois.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qpois.c.o
+.PHONY : Rmath/qpois.c.o
+
+Rmath/qpois.i: Rmath/qpois.c.i
+
+.PHONY : Rmath/qpois.i
+
+# target to preprocess a source file
+Rmath/qpois.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qpois.c.i
+.PHONY : Rmath/qpois.c.i
+
+Rmath/qpois.s: Rmath/qpois.c.s
+
+.PHONY : Rmath/qpois.s
+
+# target to generate assembly for a file
+Rmath/qpois.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qpois.c.s
+.PHONY : Rmath/qpois.c.s
+
+Rmath/qt.o: Rmath/qt.c.o
+
+.PHONY : Rmath/qt.o
+
+# target to build an object file
+Rmath/qt.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qt.c.o
+.PHONY : Rmath/qt.c.o
+
+Rmath/qt.i: Rmath/qt.c.i
+
+.PHONY : Rmath/qt.i
+
+# target to preprocess a source file
+Rmath/qt.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qt.c.i
+.PHONY : Rmath/qt.c.i
+
+Rmath/qt.s: Rmath/qt.c.s
+
+.PHONY : Rmath/qt.s
+
+# target to generate assembly for a file
+Rmath/qt.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qt.c.s
+.PHONY : Rmath/qt.c.s
+
+Rmath/qtukey.o: Rmath/qtukey.c.o
+
+.PHONY : Rmath/qtukey.o
+
+# target to build an object file
+Rmath/qtukey.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qtukey.c.o
+.PHONY : Rmath/qtukey.c.o
+
+Rmath/qtukey.i: Rmath/qtukey.c.i
+
+.PHONY : Rmath/qtukey.i
+
+# target to preprocess a source file
+Rmath/qtukey.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qtukey.c.i
+.PHONY : Rmath/qtukey.c.i
+
+Rmath/qtukey.s: Rmath/qtukey.c.s
+
+.PHONY : Rmath/qtukey.s
+
+# target to generate assembly for a file
+Rmath/qtukey.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qtukey.c.s
+.PHONY : Rmath/qtukey.c.s
+
+Rmath/qunif.o: Rmath/qunif.c.o
+
+.PHONY : Rmath/qunif.o
+
+# target to build an object file
+Rmath/qunif.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qunif.c.o
+.PHONY : Rmath/qunif.c.o
+
+Rmath/qunif.i: Rmath/qunif.c.i
+
+.PHONY : Rmath/qunif.i
+
+# target to preprocess a source file
+Rmath/qunif.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qunif.c.i
+.PHONY : Rmath/qunif.c.i
+
+Rmath/qunif.s: Rmath/qunif.c.s
+
+.PHONY : Rmath/qunif.s
+
+# target to generate assembly for a file
+Rmath/qunif.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qunif.c.s
+.PHONY : Rmath/qunif.c.s
+
+Rmath/qweibull.o: Rmath/qweibull.c.o
+
+.PHONY : Rmath/qweibull.o
+
+# target to build an object file
+Rmath/qweibull.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qweibull.c.o
+.PHONY : Rmath/qweibull.c.o
+
+Rmath/qweibull.i: Rmath/qweibull.c.i
+
+.PHONY : Rmath/qweibull.i
+
+# target to preprocess a source file
+Rmath/qweibull.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qweibull.c.i
+.PHONY : Rmath/qweibull.c.i
+
+Rmath/qweibull.s: Rmath/qweibull.c.s
+
+.PHONY : Rmath/qweibull.s
+
+# target to generate assembly for a file
+Rmath/qweibull.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/qweibull.c.s
+.PHONY : Rmath/qweibull.c.s
+
+Rmath/rbeta.o: Rmath/rbeta.c.o
+
+.PHONY : Rmath/rbeta.o
+
+# target to build an object file
+Rmath/rbeta.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rbeta.c.o
+.PHONY : Rmath/rbeta.c.o
+
+Rmath/rbeta.i: Rmath/rbeta.c.i
+
+.PHONY : Rmath/rbeta.i
+
+# target to preprocess a source file
+Rmath/rbeta.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rbeta.c.i
+.PHONY : Rmath/rbeta.c.i
+
+Rmath/rbeta.s: Rmath/rbeta.c.s
+
+.PHONY : Rmath/rbeta.s
+
+# target to generate assembly for a file
+Rmath/rbeta.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rbeta.c.s
+.PHONY : Rmath/rbeta.c.s
+
+Rmath/rbinom.o: Rmath/rbinom.c.o
+
+.PHONY : Rmath/rbinom.o
+
+# target to build an object file
+Rmath/rbinom.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rbinom.c.o
+.PHONY : Rmath/rbinom.c.o
+
+Rmath/rbinom.i: Rmath/rbinom.c.i
+
+.PHONY : Rmath/rbinom.i
+
+# target to preprocess a source file
+Rmath/rbinom.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rbinom.c.i
+.PHONY : Rmath/rbinom.c.i
+
+Rmath/rbinom.s: Rmath/rbinom.c.s
+
+.PHONY : Rmath/rbinom.s
+
+# target to generate assembly for a file
+Rmath/rbinom.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rbinom.c.s
+.PHONY : Rmath/rbinom.c.s
+
+Rmath/rcauchy.o: Rmath/rcauchy.c.o
+
+.PHONY : Rmath/rcauchy.o
+
+# target to build an object file
+Rmath/rcauchy.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rcauchy.c.o
+.PHONY : Rmath/rcauchy.c.o
+
+Rmath/rcauchy.i: Rmath/rcauchy.c.i
+
+.PHONY : Rmath/rcauchy.i
+
+# target to preprocess a source file
+Rmath/rcauchy.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rcauchy.c.i
+.PHONY : Rmath/rcauchy.c.i
+
+Rmath/rcauchy.s: Rmath/rcauchy.c.s
+
+.PHONY : Rmath/rcauchy.s
+
+# target to generate assembly for a file
+Rmath/rcauchy.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rcauchy.c.s
+.PHONY : Rmath/rcauchy.c.s
+
+Rmath/rchisq.o: Rmath/rchisq.c.o
+
+.PHONY : Rmath/rchisq.o
+
+# target to build an object file
+Rmath/rchisq.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rchisq.c.o
+.PHONY : Rmath/rchisq.c.o
+
+Rmath/rchisq.i: Rmath/rchisq.c.i
+
+.PHONY : Rmath/rchisq.i
+
+# target to preprocess a source file
+Rmath/rchisq.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rchisq.c.i
+.PHONY : Rmath/rchisq.c.i
+
+Rmath/rchisq.s: Rmath/rchisq.c.s
+
+.PHONY : Rmath/rchisq.s
+
+# target to generate assembly for a file
+Rmath/rchisq.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rchisq.c.s
+.PHONY : Rmath/rchisq.c.s
+
+Rmath/rexp.o: Rmath/rexp.c.o
+
+.PHONY : Rmath/rexp.o
+
+# target to build an object file
+Rmath/rexp.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rexp.c.o
+.PHONY : Rmath/rexp.c.o
+
+Rmath/rexp.i: Rmath/rexp.c.i
+
+.PHONY : Rmath/rexp.i
+
+# target to preprocess a source file
+Rmath/rexp.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rexp.c.i
+.PHONY : Rmath/rexp.c.i
+
+Rmath/rexp.s: Rmath/rexp.c.s
+
+.PHONY : Rmath/rexp.s
+
+# target to generate assembly for a file
+Rmath/rexp.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rexp.c.s
+.PHONY : Rmath/rexp.c.s
+
+Rmath/rf.o: Rmath/rf.c.o
+
+.PHONY : Rmath/rf.o
+
+# target to build an object file
+Rmath/rf.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rf.c.o
+.PHONY : Rmath/rf.c.o
+
+Rmath/rf.i: Rmath/rf.c.i
+
+.PHONY : Rmath/rf.i
+
+# target to preprocess a source file
+Rmath/rf.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rf.c.i
+.PHONY : Rmath/rf.c.i
+
+Rmath/rf.s: Rmath/rf.c.s
+
+.PHONY : Rmath/rf.s
+
+# target to generate assembly for a file
+Rmath/rf.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rf.c.s
+.PHONY : Rmath/rf.c.s
+
+Rmath/rgamma.o: Rmath/rgamma.c.o
+
+.PHONY : Rmath/rgamma.o
+
+# target to build an object file
+Rmath/rgamma.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rgamma.c.o
+.PHONY : Rmath/rgamma.c.o
+
+Rmath/rgamma.i: Rmath/rgamma.c.i
+
+.PHONY : Rmath/rgamma.i
+
+# target to preprocess a source file
+Rmath/rgamma.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rgamma.c.i
+.PHONY : Rmath/rgamma.c.i
+
+Rmath/rgamma.s: Rmath/rgamma.c.s
+
+.PHONY : Rmath/rgamma.s
+
+# target to generate assembly for a file
+Rmath/rgamma.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rgamma.c.s
+.PHONY : Rmath/rgamma.c.s
+
+Rmath/rgeom.o: Rmath/rgeom.c.o
+
+.PHONY : Rmath/rgeom.o
+
+# target to build an object file
+Rmath/rgeom.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rgeom.c.o
+.PHONY : Rmath/rgeom.c.o
+
+Rmath/rgeom.i: Rmath/rgeom.c.i
+
+.PHONY : Rmath/rgeom.i
+
+# target to preprocess a source file
+Rmath/rgeom.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rgeom.c.i
+.PHONY : Rmath/rgeom.c.i
+
+Rmath/rgeom.s: Rmath/rgeom.c.s
+
+.PHONY : Rmath/rgeom.s
+
+# target to generate assembly for a file
+Rmath/rgeom.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rgeom.c.s
+.PHONY : Rmath/rgeom.c.s
+
+Rmath/rhyper.o: Rmath/rhyper.c.o
+
+.PHONY : Rmath/rhyper.o
+
+# target to build an object file
+Rmath/rhyper.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rhyper.c.o
+.PHONY : Rmath/rhyper.c.o
+
+Rmath/rhyper.i: Rmath/rhyper.c.i
+
+.PHONY : Rmath/rhyper.i
+
+# target to preprocess a source file
+Rmath/rhyper.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rhyper.c.i
+.PHONY : Rmath/rhyper.c.i
+
+Rmath/rhyper.s: Rmath/rhyper.c.s
+
+.PHONY : Rmath/rhyper.s
+
+# target to generate assembly for a file
+Rmath/rhyper.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rhyper.c.s
+.PHONY : Rmath/rhyper.c.s
+
+Rmath/rlnorm.o: Rmath/rlnorm.c.o
+
+.PHONY : Rmath/rlnorm.o
+
+# target to build an object file
+Rmath/rlnorm.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rlnorm.c.o
+.PHONY : Rmath/rlnorm.c.o
+
+Rmath/rlnorm.i: Rmath/rlnorm.c.i
+
+.PHONY : Rmath/rlnorm.i
+
+# target to preprocess a source file
+Rmath/rlnorm.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rlnorm.c.i
+.PHONY : Rmath/rlnorm.c.i
+
+Rmath/rlnorm.s: Rmath/rlnorm.c.s
+
+.PHONY : Rmath/rlnorm.s
+
+# target to generate assembly for a file
+Rmath/rlnorm.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rlnorm.c.s
+.PHONY : Rmath/rlnorm.c.s
+
+Rmath/rlogis.o: Rmath/rlogis.c.o
+
+.PHONY : Rmath/rlogis.o
+
+# target to build an object file
+Rmath/rlogis.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rlogis.c.o
+.PHONY : Rmath/rlogis.c.o
+
+Rmath/rlogis.i: Rmath/rlogis.c.i
+
+.PHONY : Rmath/rlogis.i
+
+# target to preprocess a source file
+Rmath/rlogis.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rlogis.c.i
+.PHONY : Rmath/rlogis.c.i
+
+Rmath/rlogis.s: Rmath/rlogis.c.s
+
+.PHONY : Rmath/rlogis.s
+
+# target to generate assembly for a file
+Rmath/rlogis.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rlogis.c.s
+.PHONY : Rmath/rlogis.c.s
+
+Rmath/rmultinom.o: Rmath/rmultinom.c.o
+
+.PHONY : Rmath/rmultinom.o
+
+# target to build an object file
+Rmath/rmultinom.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rmultinom.c.o
+.PHONY : Rmath/rmultinom.c.o
+
+Rmath/rmultinom.i: Rmath/rmultinom.c.i
+
+.PHONY : Rmath/rmultinom.i
+
+# target to preprocess a source file
+Rmath/rmultinom.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rmultinom.c.i
+.PHONY : Rmath/rmultinom.c.i
+
+Rmath/rmultinom.s: Rmath/rmultinom.c.s
+
+.PHONY : Rmath/rmultinom.s
+
+# target to generate assembly for a file
+Rmath/rmultinom.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rmultinom.c.s
+.PHONY : Rmath/rmultinom.c.s
+
+Rmath/rnbinom.o: Rmath/rnbinom.c.o
+
+.PHONY : Rmath/rnbinom.o
+
+# target to build an object file
+Rmath/rnbinom.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rnbinom.c.o
+.PHONY : Rmath/rnbinom.c.o
+
+Rmath/rnbinom.i: Rmath/rnbinom.c.i
+
+.PHONY : Rmath/rnbinom.i
+
+# target to preprocess a source file
+Rmath/rnbinom.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rnbinom.c.i
+.PHONY : Rmath/rnbinom.c.i
+
+Rmath/rnbinom.s: Rmath/rnbinom.c.s
+
+.PHONY : Rmath/rnbinom.s
+
+# target to generate assembly for a file
+Rmath/rnbinom.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rnbinom.c.s
+.PHONY : Rmath/rnbinom.c.s
+
+Rmath/rnchisq.o: Rmath/rnchisq.c.o
+
+.PHONY : Rmath/rnchisq.o
+
+# target to build an object file
+Rmath/rnchisq.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rnchisq.c.o
+.PHONY : Rmath/rnchisq.c.o
+
+Rmath/rnchisq.i: Rmath/rnchisq.c.i
+
+.PHONY : Rmath/rnchisq.i
+
+# target to preprocess a source file
+Rmath/rnchisq.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rnchisq.c.i
+.PHONY : Rmath/rnchisq.c.i
+
+Rmath/rnchisq.s: Rmath/rnchisq.c.s
+
+.PHONY : Rmath/rnchisq.s
+
+# target to generate assembly for a file
+Rmath/rnchisq.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rnchisq.c.s
+.PHONY : Rmath/rnchisq.c.s
+
+Rmath/rnorm.o: Rmath/rnorm.c.o
+
+.PHONY : Rmath/rnorm.o
+
+# target to build an object file
+Rmath/rnorm.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rnorm.c.o
+.PHONY : Rmath/rnorm.c.o
+
+Rmath/rnorm.i: Rmath/rnorm.c.i
+
+.PHONY : Rmath/rnorm.i
+
+# target to preprocess a source file
+Rmath/rnorm.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rnorm.c.i
+.PHONY : Rmath/rnorm.c.i
+
+Rmath/rnorm.s: Rmath/rnorm.c.s
+
+.PHONY : Rmath/rnorm.s
+
+# target to generate assembly for a file
+Rmath/rnorm.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rnorm.c.s
+.PHONY : Rmath/rnorm.c.s
+
+Rmath/rpois.o: Rmath/rpois.c.o
+
+.PHONY : Rmath/rpois.o
+
+# target to build an object file
+Rmath/rpois.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rpois.c.o
+.PHONY : Rmath/rpois.c.o
+
+Rmath/rpois.i: Rmath/rpois.c.i
+
+.PHONY : Rmath/rpois.i
+
+# target to preprocess a source file
+Rmath/rpois.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rpois.c.i
+.PHONY : Rmath/rpois.c.i
+
+Rmath/rpois.s: Rmath/rpois.c.s
+
+.PHONY : Rmath/rpois.s
+
+# target to generate assembly for a file
+Rmath/rpois.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rpois.c.s
+.PHONY : Rmath/rpois.c.s
+
+Rmath/rt.o: Rmath/rt.c.o
+
+.PHONY : Rmath/rt.o
+
+# target to build an object file
+Rmath/rt.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rt.c.o
+.PHONY : Rmath/rt.c.o
+
+Rmath/rt.i: Rmath/rt.c.i
+
+.PHONY : Rmath/rt.i
+
+# target to preprocess a source file
+Rmath/rt.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rt.c.i
+.PHONY : Rmath/rt.c.i
+
+Rmath/rt.s: Rmath/rt.c.s
+
+.PHONY : Rmath/rt.s
+
+# target to generate assembly for a file
+Rmath/rt.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rt.c.s
+.PHONY : Rmath/rt.c.s
+
+Rmath/runif.o: Rmath/runif.c.o
+
+.PHONY : Rmath/runif.o
+
+# target to build an object file
+Rmath/runif.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/runif.c.o
+.PHONY : Rmath/runif.c.o
+
+Rmath/runif.i: Rmath/runif.c.i
+
+.PHONY : Rmath/runif.i
+
+# target to preprocess a source file
+Rmath/runif.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/runif.c.i
+.PHONY : Rmath/runif.c.i
+
+Rmath/runif.s: Rmath/runif.c.s
+
+.PHONY : Rmath/runif.s
+
+# target to generate assembly for a file
+Rmath/runif.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/runif.c.s
+.PHONY : Rmath/runif.c.s
+
+Rmath/rweibull.o: Rmath/rweibull.c.o
+
+.PHONY : Rmath/rweibull.o
+
+# target to build an object file
+Rmath/rweibull.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rweibull.c.o
+.PHONY : Rmath/rweibull.c.o
+
+Rmath/rweibull.i: Rmath/rweibull.c.i
+
+.PHONY : Rmath/rweibull.i
+
+# target to preprocess a source file
+Rmath/rweibull.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rweibull.c.i
+.PHONY : Rmath/rweibull.c.i
+
+Rmath/rweibull.s: Rmath/rweibull.c.s
+
+.PHONY : Rmath/rweibull.s
+
+# target to generate assembly for a file
+Rmath/rweibull.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/rweibull.c.s
+.PHONY : Rmath/rweibull.c.s
+
+Rmath/sexp.o: Rmath/sexp.c.o
+
+.PHONY : Rmath/sexp.o
+
+# target to build an object file
+Rmath/sexp.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/sexp.c.o
+.PHONY : Rmath/sexp.c.o
+
+Rmath/sexp.i: Rmath/sexp.c.i
+
+.PHONY : Rmath/sexp.i
+
+# target to preprocess a source file
+Rmath/sexp.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/sexp.c.i
+.PHONY : Rmath/sexp.c.i
+
+Rmath/sexp.s: Rmath/sexp.c.s
+
+.PHONY : Rmath/sexp.s
+
+# target to generate assembly for a file
+Rmath/sexp.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/sexp.c.s
+.PHONY : Rmath/sexp.c.s
+
+Rmath/sign.o: Rmath/sign.c.o
+
+.PHONY : Rmath/sign.o
+
+# target to build an object file
+Rmath/sign.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/sign.c.o
+.PHONY : Rmath/sign.c.o
+
+Rmath/sign.i: Rmath/sign.c.i
+
+.PHONY : Rmath/sign.i
+
+# target to preprocess a source file
+Rmath/sign.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/sign.c.i
+.PHONY : Rmath/sign.c.i
+
+Rmath/sign.s: Rmath/sign.c.s
+
+.PHONY : Rmath/sign.s
+
+# target to generate assembly for a file
+Rmath/sign.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/sign.c.s
+.PHONY : Rmath/sign.c.s
+
+Rmath/signrank.o: Rmath/signrank.c.o
+
+.PHONY : Rmath/signrank.o
+
+# target to build an object file
+Rmath/signrank.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/signrank.c.o
+.PHONY : Rmath/signrank.c.o
+
+Rmath/signrank.i: Rmath/signrank.c.i
+
+.PHONY : Rmath/signrank.i
+
+# target to preprocess a source file
+Rmath/signrank.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/signrank.c.i
+.PHONY : Rmath/signrank.c.i
+
+Rmath/signrank.s: Rmath/signrank.c.s
+
+.PHONY : Rmath/signrank.s
+
+# target to generate assembly for a file
+Rmath/signrank.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/signrank.c.s
+.PHONY : Rmath/signrank.c.s
+
+Rmath/snorm.o: Rmath/snorm.c.o
+
+.PHONY : Rmath/snorm.o
+
+# target to build an object file
+Rmath/snorm.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/snorm.c.o
+.PHONY : Rmath/snorm.c.o
+
+Rmath/snorm.i: Rmath/snorm.c.i
+
+.PHONY : Rmath/snorm.i
+
+# target to preprocess a source file
+Rmath/snorm.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/snorm.c.i
+.PHONY : Rmath/snorm.c.i
+
+Rmath/snorm.s: Rmath/snorm.c.s
+
+.PHONY : Rmath/snorm.s
+
+# target to generate assembly for a file
+Rmath/snorm.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/snorm.c.s
+.PHONY : Rmath/snorm.c.s
+
+Rmath/stirlerr.o: Rmath/stirlerr.c.o
+
+.PHONY : Rmath/stirlerr.o
+
+# target to build an object file
+Rmath/stirlerr.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/stirlerr.c.o
+.PHONY : Rmath/stirlerr.c.o
+
+Rmath/stirlerr.i: Rmath/stirlerr.c.i
+
+.PHONY : Rmath/stirlerr.i
+
+# target to preprocess a source file
+Rmath/stirlerr.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/stirlerr.c.i
+.PHONY : Rmath/stirlerr.c.i
+
+Rmath/stirlerr.s: Rmath/stirlerr.c.s
+
+.PHONY : Rmath/stirlerr.s
+
+# target to generate assembly for a file
+Rmath/stirlerr.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/stirlerr.c.s
+.PHONY : Rmath/stirlerr.c.s
+
+Rmath/sunif.o: Rmath/sunif.c.o
+
+.PHONY : Rmath/sunif.o
+
+# target to build an object file
+Rmath/sunif.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/sunif.c.o
+.PHONY : Rmath/sunif.c.o
+
+Rmath/sunif.i: Rmath/sunif.c.i
+
+.PHONY : Rmath/sunif.i
+
+# target to preprocess a source file
+Rmath/sunif.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/sunif.c.i
+.PHONY : Rmath/sunif.c.i
+
+Rmath/sunif.s: Rmath/sunif.c.s
+
+.PHONY : Rmath/sunif.s
+
+# target to generate assembly for a file
+Rmath/sunif.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/sunif.c.s
+.PHONY : Rmath/sunif.c.s
+
+Rmath/toms708.o: Rmath/toms708.c.o
+
+.PHONY : Rmath/toms708.o
+
+# target to build an object file
+Rmath/toms708.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/toms708.c.o
+.PHONY : Rmath/toms708.c.o
+
+Rmath/toms708.i: Rmath/toms708.c.i
+
+.PHONY : Rmath/toms708.i
+
+# target to preprocess a source file
+Rmath/toms708.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/toms708.c.i
+.PHONY : Rmath/toms708.c.i
+
+Rmath/toms708.s: Rmath/toms708.c.s
+
+.PHONY : Rmath/toms708.s
+
+# target to generate assembly for a file
+Rmath/toms708.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/toms708.c.s
+.PHONY : Rmath/toms708.c.s
+
+Rmath/wilcox.o: Rmath/wilcox.c.o
+
+.PHONY : Rmath/wilcox.o
+
+# target to build an object file
+Rmath/wilcox.c.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/wilcox.c.o
+.PHONY : Rmath/wilcox.c.o
+
+Rmath/wilcox.i: Rmath/wilcox.c.i
+
+.PHONY : Rmath/wilcox.i
+
+# target to preprocess a source file
+Rmath/wilcox.c.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/wilcox.c.i
+.PHONY : Rmath/wilcox.c.i
+
+Rmath/wilcox.s: Rmath/wilcox.c.s
+
+.PHONY : Rmath/wilcox.s
+
+# target to generate assembly for a file
+Rmath/wilcox.c.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Rmath/wilcox.c.s
+.PHONY : Rmath/wilcox.c.s
 
 main.o: main.cpp.o
 
@@ -590,7 +3371,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.cpp.o
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -599,7 +3380,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.cpp.i
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -608,413 +3389,8 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.cpp.s
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
-
-negative_binomial.o: negative_binomial.cpp.o
-
-.PHONY : negative_binomial.o
-
-# target to build an object file
-negative_binomial.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/negative_binomial.cpp.o
-.PHONY : negative_binomial.cpp.o
-
-negative_binomial.i: negative_binomial.cpp.i
-
-.PHONY : negative_binomial.i
-
-# target to preprocess a source file
-negative_binomial.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/negative_binomial.cpp.i
-.PHONY : negative_binomial.cpp.i
-
-negative_binomial.s: negative_binomial.cpp.s
-
-.PHONY : negative_binomial.s
-
-# target to generate assembly for a file
-negative_binomial.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/negative_binomial.cpp.s
-.PHONY : negative_binomial.cpp.s
-
-non_central_beta.o: non_central_beta.cpp.o
-
-.PHONY : non_central_beta.o
-
-# target to build an object file
-non_central_beta.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_beta.cpp.o
-.PHONY : non_central_beta.cpp.o
-
-non_central_beta.i: non_central_beta.cpp.i
-
-.PHONY : non_central_beta.i
-
-# target to preprocess a source file
-non_central_beta.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_beta.cpp.i
-.PHONY : non_central_beta.cpp.i
-
-non_central_beta.s: non_central_beta.cpp.s
-
-.PHONY : non_central_beta.s
-
-# target to generate assembly for a file
-non_central_beta.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_beta.cpp.s
-.PHONY : non_central_beta.cpp.s
-
-non_central_chisq.o: non_central_chisq.cpp.o
-
-.PHONY : non_central_chisq.o
-
-# target to build an object file
-non_central_chisq.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_chisq.cpp.o
-.PHONY : non_central_chisq.cpp.o
-
-non_central_chisq.i: non_central_chisq.cpp.i
-
-.PHONY : non_central_chisq.i
-
-# target to preprocess a source file
-non_central_chisq.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_chisq.cpp.i
-.PHONY : non_central_chisq.cpp.i
-
-non_central_chisq.s: non_central_chisq.cpp.s
-
-.PHONY : non_central_chisq.s
-
-# target to generate assembly for a file
-non_central_chisq.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_chisq.cpp.s
-.PHONY : non_central_chisq.cpp.s
-
-non_central_fdist.o: non_central_fdist.cpp.o
-
-.PHONY : non_central_fdist.o
-
-# target to build an object file
-non_central_fdist.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_fdist.cpp.o
-.PHONY : non_central_fdist.cpp.o
-
-non_central_fdist.i: non_central_fdist.cpp.i
-
-.PHONY : non_central_fdist.i
-
-# target to preprocess a source file
-non_central_fdist.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_fdist.cpp.i
-.PHONY : non_central_fdist.cpp.i
-
-non_central_fdist.s: non_central_fdist.cpp.s
-
-.PHONY : non_central_fdist.s
-
-# target to generate assembly for a file
-non_central_fdist.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_fdist.cpp.s
-.PHONY : non_central_fdist.cpp.s
-
-non_central_tdist.o: non_central_tdist.cpp.o
-
-.PHONY : non_central_tdist.o
-
-# target to build an object file
-non_central_tdist.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_tdist.cpp.o
-.PHONY : non_central_tdist.cpp.o
-
-non_central_tdist.i: non_central_tdist.cpp.i
-
-.PHONY : non_central_tdist.i
-
-# target to preprocess a source file
-non_central_tdist.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_tdist.cpp.i
-.PHONY : non_central_tdist.cpp.i
-
-non_central_tdist.s: non_central_tdist.cpp.s
-
-.PHONY : non_central_tdist.s
-
-# target to generate assembly for a file
-non_central_tdist.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/non_central_tdist.cpp.s
-.PHONY : non_central_tdist.cpp.s
-
-normal.o: normal.cpp.o
-
-.PHONY : normal.o
-
-# target to build an object file
-normal.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/normal.cpp.o
-.PHONY : normal.cpp.o
-
-normal.i: normal.cpp.i
-
-.PHONY : normal.i
-
-# target to preprocess a source file
-normal.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/normal.cpp.i
-.PHONY : normal.cpp.i
-
-normal.s: normal.cpp.s
-
-.PHONY : normal.s
-
-# target to generate assembly for a file
-normal.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/normal.cpp.s
-.PHONY : normal.cpp.s
-
-poisson.o: poisson.cpp.o
-
-.PHONY : poisson.o
-
-# target to build an object file
-poisson.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/poisson.cpp.o
-.PHONY : poisson.cpp.o
-
-poisson.i: poisson.cpp.i
-
-.PHONY : poisson.i
-
-# target to preprocess a source file
-poisson.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/poisson.cpp.i
-.PHONY : poisson.cpp.i
-
-poisson.s: poisson.cpp.s
-
-.PHONY : poisson.s
-
-# target to generate assembly for a file
-poisson.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/poisson.cpp.s
-.PHONY : poisson.cpp.s
-
-regression.o: regression.cpp.o
-
-.PHONY : regression.o
-
-# target to build an object file
-regression.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/regression.cpp.o
-.PHONY : regression.cpp.o
-
-regression.i: regression.cpp.i
-
-.PHONY : regression.i
-
-# target to preprocess a source file
-regression.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/regression.cpp.i
-.PHONY : regression.cpp.i
-
-regression.s: regression.cpp.s
-
-.PHONY : regression.s
-
-# target to generate assembly for a file
-regression.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/regression.cpp.s
-.PHONY : regression.cpp.s
-
-signrank.o: signrank.cpp.o
-
-.PHONY : signrank.o
-
-# target to build an object file
-signrank.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/signrank.cpp.o
-.PHONY : signrank.cpp.o
-
-signrank.i: signrank.cpp.i
-
-.PHONY : signrank.i
-
-# target to preprocess a source file
-signrank.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/signrank.cpp.i
-.PHONY : signrank.cpp.i
-
-signrank.s: signrank.cpp.s
-
-.PHONY : signrank.s
-
-# target to generate assembly for a file
-signrank.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/signrank.cpp.s
-.PHONY : signrank.cpp.s
-
-statistics.o: statistics.cpp.o
-
-.PHONY : statistics.o
-
-# target to build an object file
-statistics.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/statistics.cpp.o
-.PHONY : statistics.cpp.o
-
-statistics.i: statistics.cpp.i
-
-.PHONY : statistics.i
-
-# target to preprocess a source file
-statistics.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/statistics.cpp.i
-.PHONY : statistics.cpp.i
-
-statistics.s: statistics.cpp.s
-
-.PHONY : statistics.s
-
-# target to generate assembly for a file
-statistics.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/statistics.cpp.s
-.PHONY : statistics.cpp.s
-
-tdist.o: tdist.cpp.o
-
-.PHONY : tdist.o
-
-# target to build an object file
-tdist.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/tdist.cpp.o
-.PHONY : tdist.cpp.o
-
-tdist.i: tdist.cpp.i
-
-.PHONY : tdist.i
-
-# target to preprocess a source file
-tdist.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/tdist.cpp.i
-.PHONY : tdist.cpp.i
-
-tdist.s: tdist.cpp.s
-
-.PHONY : tdist.s
-
-# target to generate assembly for a file
-tdist.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/tdist.cpp.s
-.PHONY : tdist.cpp.s
-
-tukey.o: tukey.cpp.o
-
-.PHONY : tukey.o
-
-# target to build an object file
-tukey.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/tukey.cpp.o
-.PHONY : tukey.cpp.o
-
-tukey.i: tukey.cpp.i
-
-.PHONY : tukey.i
-
-# target to preprocess a source file
-tukey.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/tukey.cpp.i
-.PHONY : tukey.cpp.i
-
-tukey.s: tukey.cpp.s
-
-.PHONY : tukey.s
-
-# target to generate assembly for a file
-tukey.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/tukey.cpp.s
-.PHONY : tukey.cpp.s
-
-uniform.o: uniform.cpp.o
-
-.PHONY : uniform.o
-
-# target to build an object file
-uniform.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/uniform.cpp.o
-.PHONY : uniform.cpp.o
-
-uniform.i: uniform.cpp.i
-
-.PHONY : uniform.i
-
-# target to preprocess a source file
-uniform.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/uniform.cpp.i
-.PHONY : uniform.cpp.i
-
-uniform.s: uniform.cpp.s
-
-.PHONY : uniform.s
-
-# target to generate assembly for a file
-uniform.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/uniform.cpp.s
-.PHONY : uniform.cpp.s
-
-weibull.o: weibull.cpp.o
-
-.PHONY : weibull.o
-
-# target to build an object file
-weibull.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/weibull.cpp.o
-.PHONY : weibull.cpp.o
-
-weibull.i: weibull.cpp.i
-
-.PHONY : weibull.i
-
-# target to preprocess a source file
-weibull.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/weibull.cpp.i
-.PHONY : weibull.cpp.i
-
-weibull.s: weibull.cpp.s
-
-.PHONY : weibull.s
-
-# target to generate assembly for a file
-weibull.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/weibull.cpp.s
-.PHONY : weibull.cpp.s
-
-wilcoxon.o: wilcoxon.cpp.o
-
-.PHONY : wilcoxon.o
-
-# target to build an object file
-wilcoxon.cpp.o:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/wilcoxon.cpp.o
-.PHONY : wilcoxon.cpp.o
-
-wilcoxon.i: wilcoxon.cpp.i
-
-.PHONY : wilcoxon.i
-
-# target to preprocess a source file
-wilcoxon.cpp.i:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/wilcoxon.cpp.i
-.PHONY : wilcoxon.cpp.i
-
-wilcoxon.s: wilcoxon.cpp.s
-
-.PHONY : wilcoxon.s
-
-# target to generate assembly for a file
-wilcoxon.cpp.s:
-	cd /home/a008/coding/MiniR/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/wilcoxon.cpp.s
-.PHONY : wilcoxon.cpp.s
 
 # Help Target
 help:
@@ -1025,105 +3401,369 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... main"
-	@echo "... acmtoms.o"
-	@echo "... acmtoms.i"
-	@echo "... acmtoms.s"
-	@echo "... basedist.o"
-	@echo "... basedist.i"
-	@echo "... basedist.s"
-	@echo "... beta_randist.o"
-	@echo "... beta_randist.i"
-	@echo "... beta_randist.s"
-	@echo "... beta_specfun.o"
-	@echo "... beta_specfun.i"
-	@echo "... beta_specfun.s"
-	@echo "... binomial.o"
-	@echo "... binomial.i"
-	@echo "... binomial.s"
-	@echo "... cauchy.o"
-	@echo "... cauchy.i"
-	@echo "... cauchy.s"
-	@echo "... chisq.o"
-	@echo "... chisq.i"
-	@echo "... chisq.s"
-	@echo "... choose.o"
-	@echo "... choose.i"
-	@echo "... choose.s"
-	@echo "... exponential.o"
-	@echo "... exponential.i"
-	@echo "... exponential.s"
-	@echo "... fdist.o"
-	@echo "... fdist.i"
-	@echo "... fdist.s"
-	@echo "... gamma_randist.o"
-	@echo "... gamma_randist.i"
-	@echo "... gamma_randist.s"
-	@echo "... gamma_specfun.o"
-	@echo "... gamma_specfun.i"
-	@echo "... gamma_specfun.s"
-	@echo "... geometric.o"
-	@echo "... geometric.i"
-	@echo "... geometric.s"
-	@echo "... hypergeometric.o"
-	@echo "... hypergeometric.i"
-	@echo "... hypergeometric.s"
-	@echo "... infnan.o"
-	@echo "... infnan.i"
-	@echo "... infnan.s"
-	@echo "... logistic.o"
-	@echo "... logistic.i"
-	@echo "... logistic.s"
-	@echo "... lognormal.o"
-	@echo "... lognormal.i"
-	@echo "... lognormal.s"
+	@echo "... Rmath/bd0.o"
+	@echo "... Rmath/bd0.i"
+	@echo "... Rmath/bd0.s"
+	@echo "... Rmath/bessel_i.o"
+	@echo "... Rmath/bessel_i.i"
+	@echo "... Rmath/bessel_i.s"
+	@echo "... Rmath/bessel_j.o"
+	@echo "... Rmath/bessel_j.i"
+	@echo "... Rmath/bessel_j.s"
+	@echo "... Rmath/bessel_k.o"
+	@echo "... Rmath/bessel_k.i"
+	@echo "... Rmath/bessel_k.s"
+	@echo "... Rmath/bessel_y.o"
+	@echo "... Rmath/bessel_y.i"
+	@echo "... Rmath/bessel_y.s"
+	@echo "... Rmath/beta.o"
+	@echo "... Rmath/beta.i"
+	@echo "... Rmath/beta.s"
+	@echo "... Rmath/chebyshev.o"
+	@echo "... Rmath/chebyshev.i"
+	@echo "... Rmath/chebyshev.s"
+	@echo "... Rmath/choose.o"
+	@echo "... Rmath/choose.i"
+	@echo "... Rmath/choose.s"
+	@echo "... Rmath/cospi.o"
+	@echo "... Rmath/cospi.i"
+	@echo "... Rmath/cospi.s"
+	@echo "... Rmath/d1mach.o"
+	@echo "... Rmath/d1mach.i"
+	@echo "... Rmath/d1mach.s"
+	@echo "... Rmath/dbeta.o"
+	@echo "... Rmath/dbeta.i"
+	@echo "... Rmath/dbeta.s"
+	@echo "... Rmath/dbinom.o"
+	@echo "... Rmath/dbinom.i"
+	@echo "... Rmath/dbinom.s"
+	@echo "... Rmath/dcauchy.o"
+	@echo "... Rmath/dcauchy.i"
+	@echo "... Rmath/dcauchy.s"
+	@echo "... Rmath/dchisq.o"
+	@echo "... Rmath/dchisq.i"
+	@echo "... Rmath/dchisq.s"
+	@echo "... Rmath/dexp.o"
+	@echo "... Rmath/dexp.i"
+	@echo "... Rmath/dexp.s"
+	@echo "... Rmath/df.o"
+	@echo "... Rmath/df.i"
+	@echo "... Rmath/df.s"
+	@echo "... Rmath/dgamma.o"
+	@echo "... Rmath/dgamma.i"
+	@echo "... Rmath/dgamma.s"
+	@echo "... Rmath/dgeom.o"
+	@echo "... Rmath/dgeom.i"
+	@echo "... Rmath/dgeom.s"
+	@echo "... Rmath/dhyper.o"
+	@echo "... Rmath/dhyper.i"
+	@echo "... Rmath/dhyper.s"
+	@echo "... Rmath/dlnorm.o"
+	@echo "... Rmath/dlnorm.i"
+	@echo "... Rmath/dlnorm.s"
+	@echo "... Rmath/dlogis.o"
+	@echo "... Rmath/dlogis.i"
+	@echo "... Rmath/dlogis.s"
+	@echo "... Rmath/dnbeta.o"
+	@echo "... Rmath/dnbeta.i"
+	@echo "... Rmath/dnbeta.s"
+	@echo "... Rmath/dnbinom.o"
+	@echo "... Rmath/dnbinom.i"
+	@echo "... Rmath/dnbinom.s"
+	@echo "... Rmath/dnchisq.o"
+	@echo "... Rmath/dnchisq.i"
+	@echo "... Rmath/dnchisq.s"
+	@echo "... Rmath/dnf.o"
+	@echo "... Rmath/dnf.i"
+	@echo "... Rmath/dnf.s"
+	@echo "... Rmath/dnorm.o"
+	@echo "... Rmath/dnorm.i"
+	@echo "... Rmath/dnorm.s"
+	@echo "... Rmath/dnt.o"
+	@echo "... Rmath/dnt.i"
+	@echo "... Rmath/dnt.s"
+	@echo "... Rmath/dpois.o"
+	@echo "... Rmath/dpois.i"
+	@echo "... Rmath/dpois.s"
+	@echo "... Rmath/dt.o"
+	@echo "... Rmath/dt.i"
+	@echo "... Rmath/dt.s"
+	@echo "... Rmath/dunif.o"
+	@echo "... Rmath/dunif.i"
+	@echo "... Rmath/dunif.s"
+	@echo "... Rmath/dweibull.o"
+	@echo "... Rmath/dweibull.i"
+	@echo "... Rmath/dweibull.s"
+	@echo "... Rmath/fmax2.o"
+	@echo "... Rmath/fmax2.i"
+	@echo "... Rmath/fmax2.s"
+	@echo "... Rmath/fmin2.o"
+	@echo "... Rmath/fmin2.i"
+	@echo "... Rmath/fmin2.s"
+	@echo "... Rmath/fprec.o"
+	@echo "... Rmath/fprec.i"
+	@echo "... Rmath/fprec.s"
+	@echo "... Rmath/fround.o"
+	@echo "... Rmath/fround.i"
+	@echo "... Rmath/fround.s"
+	@echo "... Rmath/fsign.o"
+	@echo "... Rmath/fsign.i"
+	@echo "... Rmath/fsign.s"
+	@echo "... Rmath/ftrunc.o"
+	@echo "... Rmath/ftrunc.i"
+	@echo "... Rmath/ftrunc.s"
+	@echo "... Rmath/gamma.o"
+	@echo "... Rmath/gamma.i"
+	@echo "... Rmath/gamma.s"
+	@echo "... Rmath/gamma_cody.o"
+	@echo "... Rmath/gamma_cody.i"
+	@echo "... Rmath/gamma_cody.s"
+	@echo "... Rmath/gammalims.o"
+	@echo "... Rmath/gammalims.i"
+	@echo "... Rmath/gammalims.s"
+	@echo "... Rmath/i1mach.o"
+	@echo "... Rmath/i1mach.i"
+	@echo "... Rmath/i1mach.s"
+	@echo "... Rmath/imax2.o"
+	@echo "... Rmath/imax2.i"
+	@echo "... Rmath/imax2.s"
+	@echo "... Rmath/imin2.o"
+	@echo "... Rmath/imin2.i"
+	@echo "... Rmath/imin2.s"
+	@echo "... Rmath/lbeta.o"
+	@echo "... Rmath/lbeta.i"
+	@echo "... Rmath/lbeta.s"
+	@echo "... Rmath/lgamma.o"
+	@echo "... Rmath/lgamma.i"
+	@echo "... Rmath/lgamma.s"
+	@echo "... Rmath/lgammacor.o"
+	@echo "... Rmath/lgammacor.i"
+	@echo "... Rmath/lgammacor.s"
+	@echo "... Rmath/log1p.o"
+	@echo "... Rmath/log1p.i"
+	@echo "... Rmath/log1p.s"
+	@echo "... Rmath/mlutils.o"
+	@echo "... Rmath/mlutils.i"
+	@echo "... Rmath/mlutils.s"
+	@echo "... Rmath/pbeta.o"
+	@echo "... Rmath/pbeta.i"
+	@echo "... Rmath/pbeta.s"
+	@echo "... Rmath/pbinom.o"
+	@echo "... Rmath/pbinom.i"
+	@echo "... Rmath/pbinom.s"
+	@echo "... Rmath/pcauchy.o"
+	@echo "... Rmath/pcauchy.i"
+	@echo "... Rmath/pcauchy.s"
+	@echo "... Rmath/pchisq.o"
+	@echo "... Rmath/pchisq.i"
+	@echo "... Rmath/pchisq.s"
+	@echo "... Rmath/pexp.o"
+	@echo "... Rmath/pexp.i"
+	@echo "... Rmath/pexp.s"
+	@echo "... Rmath/pf.o"
+	@echo "... Rmath/pf.i"
+	@echo "... Rmath/pf.s"
+	@echo "... Rmath/pgamma.o"
+	@echo "... Rmath/pgamma.i"
+	@echo "... Rmath/pgamma.s"
+	@echo "... Rmath/pgeom.o"
+	@echo "... Rmath/pgeom.i"
+	@echo "... Rmath/pgeom.s"
+	@echo "... Rmath/phyper.o"
+	@echo "... Rmath/phyper.i"
+	@echo "... Rmath/phyper.s"
+	@echo "... Rmath/plnorm.o"
+	@echo "... Rmath/plnorm.i"
+	@echo "... Rmath/plnorm.s"
+	@echo "... Rmath/plogis.o"
+	@echo "... Rmath/plogis.i"
+	@echo "... Rmath/plogis.s"
+	@echo "... Rmath/pnbeta.o"
+	@echo "... Rmath/pnbeta.i"
+	@echo "... Rmath/pnbeta.s"
+	@echo "... Rmath/pnbinom.o"
+	@echo "... Rmath/pnbinom.i"
+	@echo "... Rmath/pnbinom.s"
+	@echo "... Rmath/pnchisq.o"
+	@echo "... Rmath/pnchisq.i"
+	@echo "... Rmath/pnchisq.s"
+	@echo "... Rmath/pnf.o"
+	@echo "... Rmath/pnf.i"
+	@echo "... Rmath/pnf.s"
+	@echo "... Rmath/pnorm.o"
+	@echo "... Rmath/pnorm.i"
+	@echo "... Rmath/pnorm.s"
+	@echo "... Rmath/pnt.o"
+	@echo "... Rmath/pnt.i"
+	@echo "... Rmath/pnt.s"
+	@echo "... Rmath/polygamma.o"
+	@echo "... Rmath/polygamma.i"
+	@echo "... Rmath/polygamma.s"
+	@echo "... Rmath/ppois.o"
+	@echo "... Rmath/ppois.i"
+	@echo "... Rmath/ppois.s"
+	@echo "... Rmath/pt.o"
+	@echo "... Rmath/pt.i"
+	@echo "... Rmath/pt.s"
+	@echo "... Rmath/ptukey.o"
+	@echo "... Rmath/ptukey.i"
+	@echo "... Rmath/ptukey.s"
+	@echo "... Rmath/punif.o"
+	@echo "... Rmath/punif.i"
+	@echo "... Rmath/punif.s"
+	@echo "... Rmath/pweibull.o"
+	@echo "... Rmath/pweibull.i"
+	@echo "... Rmath/pweibull.s"
+	@echo "... Rmath/qbeta.o"
+	@echo "... Rmath/qbeta.i"
+	@echo "... Rmath/qbeta.s"
+	@echo "... Rmath/qbinom.o"
+	@echo "... Rmath/qbinom.i"
+	@echo "... Rmath/qbinom.s"
+	@echo "... Rmath/qcauchy.o"
+	@echo "... Rmath/qcauchy.i"
+	@echo "... Rmath/qcauchy.s"
+	@echo "... Rmath/qchisq.o"
+	@echo "... Rmath/qchisq.i"
+	@echo "... Rmath/qchisq.s"
+	@echo "... Rmath/qexp.o"
+	@echo "... Rmath/qexp.i"
+	@echo "... Rmath/qexp.s"
+	@echo "... Rmath/qf.o"
+	@echo "... Rmath/qf.i"
+	@echo "... Rmath/qf.s"
+	@echo "... Rmath/qgamma.o"
+	@echo "... Rmath/qgamma.i"
+	@echo "... Rmath/qgamma.s"
+	@echo "... Rmath/qgeom.o"
+	@echo "... Rmath/qgeom.i"
+	@echo "... Rmath/qgeom.s"
+	@echo "... Rmath/qhyper.o"
+	@echo "... Rmath/qhyper.i"
+	@echo "... Rmath/qhyper.s"
+	@echo "... Rmath/qlnorm.o"
+	@echo "... Rmath/qlnorm.i"
+	@echo "... Rmath/qlnorm.s"
+	@echo "... Rmath/qlogis.o"
+	@echo "... Rmath/qlogis.i"
+	@echo "... Rmath/qlogis.s"
+	@echo "... Rmath/qnbeta.o"
+	@echo "... Rmath/qnbeta.i"
+	@echo "... Rmath/qnbeta.s"
+	@echo "... Rmath/qnbinom.o"
+	@echo "... Rmath/qnbinom.i"
+	@echo "... Rmath/qnbinom.s"
+	@echo "... Rmath/qnchisq.o"
+	@echo "... Rmath/qnchisq.i"
+	@echo "... Rmath/qnchisq.s"
+	@echo "... Rmath/qnf.o"
+	@echo "... Rmath/qnf.i"
+	@echo "... Rmath/qnf.s"
+	@echo "... Rmath/qnorm.o"
+	@echo "... Rmath/qnorm.i"
+	@echo "... Rmath/qnorm.s"
+	@echo "... Rmath/qnt.o"
+	@echo "... Rmath/qnt.i"
+	@echo "... Rmath/qnt.s"
+	@echo "... Rmath/qpois.o"
+	@echo "... Rmath/qpois.i"
+	@echo "... Rmath/qpois.s"
+	@echo "... Rmath/qt.o"
+	@echo "... Rmath/qt.i"
+	@echo "... Rmath/qt.s"
+	@echo "... Rmath/qtukey.o"
+	@echo "... Rmath/qtukey.i"
+	@echo "... Rmath/qtukey.s"
+	@echo "... Rmath/qunif.o"
+	@echo "... Rmath/qunif.i"
+	@echo "... Rmath/qunif.s"
+	@echo "... Rmath/qweibull.o"
+	@echo "... Rmath/qweibull.i"
+	@echo "... Rmath/qweibull.s"
+	@echo "... Rmath/rbeta.o"
+	@echo "... Rmath/rbeta.i"
+	@echo "... Rmath/rbeta.s"
+	@echo "... Rmath/rbinom.o"
+	@echo "... Rmath/rbinom.i"
+	@echo "... Rmath/rbinom.s"
+	@echo "... Rmath/rcauchy.o"
+	@echo "... Rmath/rcauchy.i"
+	@echo "... Rmath/rcauchy.s"
+	@echo "... Rmath/rchisq.o"
+	@echo "... Rmath/rchisq.i"
+	@echo "... Rmath/rchisq.s"
+	@echo "... Rmath/rexp.o"
+	@echo "... Rmath/rexp.i"
+	@echo "... Rmath/rexp.s"
+	@echo "... Rmath/rf.o"
+	@echo "... Rmath/rf.i"
+	@echo "... Rmath/rf.s"
+	@echo "... Rmath/rgamma.o"
+	@echo "... Rmath/rgamma.i"
+	@echo "... Rmath/rgamma.s"
+	@echo "... Rmath/rgeom.o"
+	@echo "... Rmath/rgeom.i"
+	@echo "... Rmath/rgeom.s"
+	@echo "... Rmath/rhyper.o"
+	@echo "... Rmath/rhyper.i"
+	@echo "... Rmath/rhyper.s"
+	@echo "... Rmath/rlnorm.o"
+	@echo "... Rmath/rlnorm.i"
+	@echo "... Rmath/rlnorm.s"
+	@echo "... Rmath/rlogis.o"
+	@echo "... Rmath/rlogis.i"
+	@echo "... Rmath/rlogis.s"
+	@echo "... Rmath/rmultinom.o"
+	@echo "... Rmath/rmultinom.i"
+	@echo "... Rmath/rmultinom.s"
+	@echo "... Rmath/rnbinom.o"
+	@echo "... Rmath/rnbinom.i"
+	@echo "... Rmath/rnbinom.s"
+	@echo "... Rmath/rnchisq.o"
+	@echo "... Rmath/rnchisq.i"
+	@echo "... Rmath/rnchisq.s"
+	@echo "... Rmath/rnorm.o"
+	@echo "... Rmath/rnorm.i"
+	@echo "... Rmath/rnorm.s"
+	@echo "... Rmath/rpois.o"
+	@echo "... Rmath/rpois.i"
+	@echo "... Rmath/rpois.s"
+	@echo "... Rmath/rt.o"
+	@echo "... Rmath/rt.i"
+	@echo "... Rmath/rt.s"
+	@echo "... Rmath/runif.o"
+	@echo "... Rmath/runif.i"
+	@echo "... Rmath/runif.s"
+	@echo "... Rmath/rweibull.o"
+	@echo "... Rmath/rweibull.i"
+	@echo "... Rmath/rweibull.s"
+	@echo "... Rmath/sexp.o"
+	@echo "... Rmath/sexp.i"
+	@echo "... Rmath/sexp.s"
+	@echo "... Rmath/sign.o"
+	@echo "... Rmath/sign.i"
+	@echo "... Rmath/sign.s"
+	@echo "... Rmath/signrank.o"
+	@echo "... Rmath/signrank.i"
+	@echo "... Rmath/signrank.s"
+	@echo "... Rmath/snorm.o"
+	@echo "... Rmath/snorm.i"
+	@echo "... Rmath/snorm.s"
+	@echo "... Rmath/stirlerr.o"
+	@echo "... Rmath/stirlerr.i"
+	@echo "... Rmath/stirlerr.s"
+	@echo "... Rmath/sunif.o"
+	@echo "... Rmath/sunif.i"
+	@echo "... Rmath/sunif.s"
+	@echo "... Rmath/toms708.o"
+	@echo "... Rmath/toms708.i"
+	@echo "... Rmath/toms708.s"
+	@echo "... Rmath/wilcox.o"
+	@echo "... Rmath/wilcox.i"
+	@echo "... Rmath/wilcox.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... negative_binomial.o"
-	@echo "... negative_binomial.i"
-	@echo "... negative_binomial.s"
-	@echo "... non_central_beta.o"
-	@echo "... non_central_beta.i"
-	@echo "... non_central_beta.s"
-	@echo "... non_central_chisq.o"
-	@echo "... non_central_chisq.i"
-	@echo "... non_central_chisq.s"
-	@echo "... non_central_fdist.o"
-	@echo "... non_central_fdist.i"
-	@echo "... non_central_fdist.s"
-	@echo "... non_central_tdist.o"
-	@echo "... non_central_tdist.i"
-	@echo "... non_central_tdist.s"
-	@echo "... normal.o"
-	@echo "... normal.i"
-	@echo "... normal.s"
-	@echo "... poisson.o"
-	@echo "... poisson.i"
-	@echo "... poisson.s"
-	@echo "... regression.o"
-	@echo "... regression.i"
-	@echo "... regression.s"
-	@echo "... signrank.o"
-	@echo "... signrank.i"
-	@echo "... signrank.s"
-	@echo "... statistics.o"
-	@echo "... statistics.i"
-	@echo "... statistics.s"
-	@echo "... tdist.o"
-	@echo "... tdist.i"
-	@echo "... tdist.s"
-	@echo "... tukey.o"
-	@echo "... tukey.i"
-	@echo "... tukey.s"
-	@echo "... uniform.o"
-	@echo "... uniform.i"
-	@echo "... uniform.s"
-	@echo "... weibull.o"
-	@echo "... weibull.i"
-	@echo "... weibull.s"
-	@echo "... wilcoxon.o"
-	@echo "... wilcoxon.i"
-	@echo "... wilcoxon.s"
 .PHONY : help
 
 
@@ -1135,6 +3775,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/a008/coding/MiniR/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/a008/coding/MiniLab/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

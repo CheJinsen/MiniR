@@ -1,4 +1,4 @@
-# Install script for directory: /home/a008/coding/MiniR/src
+# Install script for directory: /home/a008/coding/MiniLab/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,6 +34,6 @@ endif()
 
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
-  set(CMAKE_CROSSCOMPILING "FALSE")
+  set(CMAKE_CROSSCOMPILING "false")
 endif()
 
