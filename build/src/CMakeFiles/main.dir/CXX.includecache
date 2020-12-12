@@ -20,6 +20,10 @@ math.h
 R_ext/Boolean.h
 -
 
+/home/a008/coding/MiniLab/src/Random/rng.cpp
+Random/rng.h
+/home/a008/coding/MiniLab/src/Random/Random/rng.h
+
 /home/a008/coding/MiniLab/src/main.cpp
 Rmath.h
 -

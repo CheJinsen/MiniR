@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/main.dir/main.cpp.o  -o ../../bin/main   -L/home/a008/coding/MiniLab/src/../lib  -Wl,-rpath,/home/a008/coding/MiniLab/src/../lib -lm -lRmath 
+/usr/bin/c++     CMakeFiles/main.dir/main.cpp.o CMakeFiles/main.dir/Random/rng.cpp.o  -o ../../bin/main   -L/home/a008/coding/MiniLab/src/../lib  -Wl,-rpath,/home/a008/coding/MiniLab/src/../lib -lm -lRmath 

@@ -125,6 +125,33 @@ main/fast:
 	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+Random/rng.o: Random/rng.cpp.o
+
+.PHONY : Random/rng.o
+
+# target to build an object file
+Random/rng.cpp.o:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Random/rng.cpp.o
+.PHONY : Random/rng.cpp.o
+
+Random/rng.i: Random/rng.cpp.i
+
+.PHONY : Random/rng.i
+
+# target to preprocess a source file
+Random/rng.cpp.i:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Random/rng.cpp.i
+.PHONY : Random/rng.cpp.i
+
+Random/rng.s: Random/rng.cpp.s
+
+.PHONY : Random/rng.s
+
+# target to generate assembly for a file
+Random/rng.cpp.s:
+	cd /home/a008/coding/MiniLab/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Random/rng.cpp.s
+.PHONY : Random/rng.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -161,6 +188,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... main"
+	@echo "... Random/rng.o"
+	@echo "... Random/rng.i"
+	@echo "... Random/rng.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

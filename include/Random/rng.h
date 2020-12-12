@@ -54,7 +54,6 @@ public:
 	RNG();
 	RNG(unsigned long s);
 	RNG(unsigned long init_key[], int key_length);
-	~RNG() = default;
 
 	// initializes mt[N] with a seed
 	void seed(unsigned long s);
@@ -74,8 +73,6 @@ public:
 	double randReal4();
 
 	double randRes53();
-
-	void demo();
 
 private:
 	const int N = 624;

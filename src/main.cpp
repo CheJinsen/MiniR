@@ -35,10 +35,8 @@ typedef enum {
 #include <iostream>
 #include "Random/rng.h"
 
-using namespace minilab::random;
 
-int
-main(int argc, char** argv)
+int main(int argc, char** argv)
 {
 /* something to force the library to be included */
     qnorm(0.7, 0.0, 1.0, 0, 0);
@@ -52,8 +50,8 @@ main(int argc, char** argv)
     
     printf("%.18e\n", bessel_j(5.0, 0.0));
 
-    // RNG r;
-    // std::cout << r.randReal2() << std::endl;
+    minilab::random::RNG R1;
+    std::cout << R1.randReal2() << std::endl;
 
     // Demo d;
 
