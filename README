@@ -1,7 +1,7 @@
 MiniLab (under ubuntu20.04 X86_64 platform)
 
 This program is the Minimial/subset of R(The R Project for Statistical Computing) or GSL(GNU Scientific Library).
-It just include random distribution functions(density/probability/quantile/random) currently. It passed test on Ubuntu-20.04/FreeBSD-12.1.
+It just include random distribution functions(density/probability/quantile/random) currently. It passed test on Ubuntu-20.04.
 
 cd to the source's root directory
 build:
