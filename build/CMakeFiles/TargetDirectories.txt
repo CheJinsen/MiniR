@@ -1,5 +1,0 @@
-/home/a008/coding/MiniLab/build/CMakeFiles/rebuild_cache.dir
-/home/a008/coding/MiniLab/build/CMakeFiles/edit_cache.dir
-/home/a008/coding/MiniLab/build/src/CMakeFiles/rebuild_cache.dir
-/home/a008/coding/MiniLab/build/src/CMakeFiles/edit_cache.dir
-/home/a008/coding/MiniLab/build/src/CMakeFiles/main.dir
